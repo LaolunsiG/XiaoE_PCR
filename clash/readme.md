@@ -1,5 +1,5 @@
 # clash配置资源
-# 一.规则集
+# 一.规则集(stash&clash通用)
 # 1.RULES 
 1.https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash   
 
