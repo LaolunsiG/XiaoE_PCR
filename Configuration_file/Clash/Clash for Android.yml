@@ -1,0 +1,545 @@
+#代理集
+proxy-providers:
+  机场1:
+    type: http
+    # 机场订阅链接，使用 Clash 链接
+    url: ""
+    path: ./proxies/airport1.yaml
+    interval: 43200
+    # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
+    health-check:
+      enable: true
+      # 未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
+      lazy: true
+      #测速链接
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场2:
+    type: http
+    url: ""
+    path: ./proxies/airport2.yaml
+    interval: 43200
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场3:
+    type: http
+    url: ""
+    path: ./proxies/airport3.yaml
+    interval: 43200
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场4:
+    type: http
+    url: ""
+    path: ./proxies/airport4.yaml
+    interval: 43200
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场5:
+    type: http
+    url: ""
+    path: ./proxies/airport5.yaml
+    interval: 43200
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+mixed-port: 7890
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: silent
+ipv6: false
+find-process-mode: strict
+external-controller: '127.0.0.1:9090'
+unified-delay: false
+tcp-concurrent: true
+global-client-fingerprint: chrome
+profile: {store-selected: true, store-fake-ip: true}
+sniffer:
+  enable: true
+  sniff: {HTTP: {ports: [80, 8080-8880], override-destination: true}, TLS: {ports: [443, 8443]}, QUIC: {ports: [443, 8443]}}
+  skip-domain: ['Mijia Cloud']
+tun:
+  enable: true
+  stack: system
+  dns-hijack: ['any:53']
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  prefer-h3: true
+  ipv6: true
+  default-nameserver:
+    - 114.114.114.114
+    - 233.5.5.5
+    - 1.1.1.1
+#    - https://223.5.5.5/dns-query
+#    - https://1.12.12.12/dns-query
+#    - https://1.1.1.1/dns-query
+  listen: 0.0.0.0:1053
+  fake-ip-range: 198.18.0.1/16
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'time.*.edu.cn'
+    - 'time.*.apple.com'
+    - 'time-ios.apple.com'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    - 'music.163.com'
+    - '*.music.163.com'
+    - '*.126.net'
+    - 'musicapi.taihe.com'
+    - 'music.taihe.com'
+    - 'songsearch.kugou.com'
+    - 'trackercdn.kugou.com'
+    - '*.kuwo.cn'
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'joox.com'
+    - 'y.qq.com'
+    - '*.y.qq.com'
+    - 'streamoc.music.tc.qq.com'
+    - 'mobileoc.music.tc.qq.com'
+    - 'isure.stream.qqmusic.qq.com'
+    - 'dl.stream.qqmusic.qq.com'
+    - 'aqqmusic.tc.qq.com'
+    - 'amobile.music.tc.qq.com'
+    - '*.xiami.com'
+    - '*.music.migu.cn'
+    - 'music.migu.cn'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    - '+.qq.com'
+    - '+.tencent.com'
+    - '+.srv.nintendo.net'
+    - '*.n.n.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - 'xbox.*.*.microsoft.com'
+    - '*.*.xboxlive.com'
+    - 'xbox.*.microsoft.com'
+    - 'xnotify.xboxlive.com'
+    - '+.battlenet.com.cn'
+    - '+.wotgame.cn'
+    - '+.wggames.cn'
+    - '+.wowsgame.cn'
+    - '+.wargaming.net'
+    - 'proxy.golang.org'
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*.*.*'
+    - 'heartbeat.belkin.com'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - '*.router.asus.com'
+    - 'mesu.apple.com'
+    - 'swscan.apple.com'
+    - 'swquery.apple.com'
+    - 'swdownload.apple.com'
+    - 'swcdn.apple.com'
+    - 'swdist.apple.com'
+    - 'lens.l.google.com'
+    - 'stun.l.google.com'
+    - 'na.b.g-tun.com'
+    - '+.nflxvideo.net'
+    - '*.square-enix.com'
+    - '*.finalfantasyxiv.com'
+    - '*.ffxiv.com'
+    - '*.ff14.sdo.com'
+    - 'ff.dorado.sdo.com'
+    - '*.mcdn.bilivideo.cn'
+    - '+.media.dssott.com'
+    - 'shark007.net'
+    - 'Mijia Cloud'
+    - '+.cmbchina.com'
+    - '+.cmbimg.com'
+    - 'local.adguard.org'
+    - 'static.adtidy.org'
+    - '+.sandai.net'
+    - '+.n0808.com'
+    - '+.3gppnetwork.org'
+    - 'adguardteam.github.io'
+    - 'anti-ad.net'
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://doh.apad.pro/dns-query
+    - https://dns.alidns.com/dns-query
+#    - https://doh.pub/dns-query
+  nameserver-policy:
+    'rule-set:ads': rcode://success
+    'rule-set:microsoft-cn,apple,icloud,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+    'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+    'rule-set:proxy': ['https://dns.google/dns-query#🪜 代理域名', 'https://cloudflare-dns.com/dns-query#🪜 代理域名']
+#代理节点
+proxies: null
+#代理组
+proxy-groups:
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: ♻️ 自动选择, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], url: http://www.google.com/generate_204, interval: 600}
+  - {name: 🤣 手动选择, type: select, use: [机场1, 机场2, 机场3, 机场4, 机场5]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
+  - {name: 🍃 应用净化, type: select, proxies: [🛑 全球拦截, 🎯 全球直连]}
+  #机场测试
+  - {name: 机场1, type: url-test, tolerance: 50, lazy: true, use: [机场1]}
+  - {name: 机场2, type: url-test, tolerance: 50, lazy: true, use: [机场2]}
+  - {name: 机场3, type: url-test, tolerance: 50, lazy: true, use: [机场3]}
+  - {name: 机场4, type: url-test, tolerance: 50, lazy: true, use: [机场4]}
+  - {name: 机场5, type: url-test, tolerance: 50, lazy: true, use: [机场5]}
+# 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
+#交流平台
+  - {name: 💬 Twitter, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国]}
+  - {name: 💬 Facebook, type: select, proxies: [香港, 🚀 节点选择, 美国, 台湾, 日本, 新加坡]}
+  - {name: 📲 电报消息, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🐦 Discord, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]} 
+#流媒体
+#国外媒体
+#小分流
+  - {name: 📽️ 迪士尼+, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🎞️ Max, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🎬 Prime Video, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🍎 Apple TV+, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 📹 YouTube, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🎵 TikTok, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🎥 奈飞视频, type: select, proxies: [美国, 🚀 节点选择, 香港, 台湾, 日本, 新加坡, 加拿大, 德国, 英国]}
+#大分流
+  - {name: 🙈 国外媒体, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]} 
+#国内媒体
+  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 日本, 新加坡]}
+#大分流
+  - {name: 📺 国内媒体, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+#支付平台
+  - {name: 💴 PayPal, type: select, proxies: [美国, 香港, 台湾, 日本, 新加坡, 🚀 节点选择]} 
+#人工智能
+  - {name: 🤖 人工智能, type: select, proxies: [美国, 香港, 日本, 新加坡, 🚀 节点选择]}
+#游戏
+  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+#服务
+  - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+  - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+#大分流
+  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+  - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
+  - {name: 🛑 全球拦截, type: select, proxies: [REJECT]}
+  - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
+   #地区节点选择
+  # 自动选择节点，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 100ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
+  - {name: 香港, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)港|hk|hongkong|hong kong"}
+  # 节点负载均衡，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
+  - {name: 台湾, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)台|tw|taiwan"}
+  - {name: 日本, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)日本|jp|japan"}
+  - {name: 新加坡, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)新|sg|singapore"}
+  - {name: 美国, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)美|us|unitedstates|united states"}
+  - {name: 英国, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)英|uk|unitedstates|united kingdom"}
+  - {name: 德国, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany"}
+  - {name: 加拿大, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "🇨🇦|加拿大|CA|渥太华"}
+#规则集
+rule-providers:
+#本地网络
+  lan:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+#广告拦截
+#国外网络
+#聊天平台
+#小分流
+  Telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
+    path: ./ruleset/Telegram.yaml
+    interval: 86400
+  Twitter:
+    behavior: classical
+    type: http
+    url: "https://whatshub.top/rule/Twitter.rule"
+    interval: 86400
+    path: ./ruleset/Twitter.yaml
+  Facebook:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook_No_Resolve.yaml"
+    path: ./ruleset/Facebook.yaml
+    interval: 86400
+  Discord:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord_No_Resolve.yaml"
+    path: ./ruleset/Discord.yaml
+    interval: 86400
+ #国外媒体
+ #小分流
+  netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml"
+    path: ./ruleset/netflix.yaml
+    interval: 86400
+  disney:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/disney.yaml"
+    path: ./ruleset/disney.yaml
+    interval: 86400
+  max:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/max.yaml"
+    path: ./ruleset/max.yaml
+    interval: 86400
+  primevideo:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/primevideo.yaml"
+    path: ./ruleset/primevideo.yaml
+    interval: 86400
+  appletv:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/appletv.yaml"
+    path: ./ruleset/appletv.yaml
+    interval: 86400
+#YouTube
+  youtubemusic:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic_No_Resolve.yaml"
+    path: ./ruleset/youtubemusic.yaml
+    interval: 86400
+  youtube:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube_No_Resolve.yaml"
+    path: ./ruleset/youtube.yaml
+    interval: 86400
+  tiktok:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
+    path: ./ruleset/tiktok.yaml
+    interval: 86400
+#大分流
+  GlobalMedia:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"
+    path: ./ruleset/GlobalMedia.yaml
+    interval: 86400
+ #支付平台
+  PayPal:
+    behavior: classical
+    type: http
+    url: "https://whatshub.top/rule/PayPal.rule"
+    interval: 86400
+    path: ./ruleset/PayPal.yaml
+#人工智能
+  ai:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/ai.yaml"
+    path: ./ruleset/ai.yaml
+    interval: 86400
+  OpenAI:
+    behavior: classical
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/OpenAI.yaml
+#游戏平台
+  games-global:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/classical/GamesPlatform.yaml"
+    path: ./ruleset/games-global.yaml
+    interval: 86400
+#大分流
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+#国内网络
+#小分流
+#游戏
+  games-cn:
+    type: http
+    behavior: domain
+    url: "https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/games-cn.yaml"
+    path: ./ruleset/games-cn.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+#国内媒体
+#小分流
+  microsoft-cn:
+    type: http
+    behavior: domain
+    url: "https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/microsoft-cn.yaml"
+    path: ./ruleset/microsoft-cn.yaml
+  DouYin:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin_No_Resolve.yaml"
+    path: ./ruleset/DouYin.yaml
+    interval: 86400
+  huya:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa_No_Resolve.yaml"
+    path: ./ruleset/huya.yaml
+    interval: 86400
+  bilibili:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/bilibili.yaml"
+    path: ./ruleset/bilibili.yaml
+    interval: 86400
+  Douyu:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu_No_Resolve.yaml"
+    path: ./ruleset/Douyu.yaml
+    interval: 86400
+#大分流
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia_No_Resolve.yaml"
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400
+ #大分流
+  cn1:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
+    path: ./ruleset/cn1.yaml
+    interval: 86400
+  cn2:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_Resolve.yaml"
+    path: ./ruleset/cn2.yaml
+    interval: 86400
+#规则
+rules:
+#本地网络
+  - RULE-SET,lan,🎯 全球直连,no-resolve
+  - DOMAIN-KEYWORD,muhu,🎯 全球直连
+#广告拦截
+#国外网络
+#交流平台
+#telegram
+  - RULE-SET,Discord,📲 电报消息
+  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,Twitter,💬 Twitter
+  - RULE-SET,Facebook,💬 Facebook
+#国外媒体
+#小分流
+  - RULE-SET,netflix,🎥 奈飞视频
+  - RULE-SET,disney,📽️ 迪士尼+
+  - RULE-SET,max,🎞️ Max
+  - RULE-SET,primevideo,🎬 Prime Video
+  - RULE-SET,appletv,🍎 Apple TV+
+#YouTube
+  - RULE-SET,youtube,📹 YouTube
+  - RULE-SET,youtubemusic,📹 YouTube
+  - RULE-SET,tiktok,🎵 TikTok
+#支付平台
+  - RULE-SET,PayPal,💴 PayPal
+#人工智能
+  - RULE-SET,OpenAI,🤖 人工智能
+  - RULE-SET,ai,🤖 人工智能
+#游戏
+  - RULE-SET,games-global,🎮 游戏平台(global)
+#大分流
+  - RULE-SET,GlobalMedia,🙈 国外媒体
+#大分流
+  - RULE-SET,tld-not-cn,🪜 代理域名
+  - RULE-SET,proxy,🪜 代理域名
+#国内网络
+#服务
+  - RULE-SET,microsoft-cn,Ⓜ️ 微软服务
+  - RULE-SET,icloud,🍎 苹果服务
+  - RULE-SET,apple,🍎 苹果服务
+#小分流
+#游戏平台
+  - RULE-SET,games-cn,🎮 游戏平台(cn)
+  #国内媒体
+  - RULE-SET,bilibili,📺 哔哩哔哩
+  - RULE-SET,huya,📺 国内媒体
+  - RULE-SET,DouYin,📺 国内媒体
+  - RULE-SET,Douyu,📺 国内媒体
+  - RULE-SET,ChinaMedia,📺 国内媒体
+#单分流
+  - DOMAIN,clash.razord.top,🎯 全球直连
+  - DOMAIN,yacd.haishan.me,🎯 全球直连
+  - DOMAIN-SUFFIX,cn,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
+#大分流
+  - RULE-SET,cn1,🔗 直连域名
+  - RULE-SET,cn2,🔗 直连域名
+#其他分流
+  - MATCH,🐟 漏网之鱼
