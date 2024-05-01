@@ -1,1 +1,0 @@
-OpenAI使用classical
