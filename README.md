@@ -8,9 +8,12 @@ clash规则可用于旧版clash for Android
 1.[ios_rule_script ](https://github.com/blackmatrix7/ios_rule_script) 
 ## clash规则来源(规则集)
 ### RULES 
-1.[ios_rule_script/tree/master/rule/Clash ](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash）
+1.[ios_rule_script/tree/master/rule/Clash ](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
+
 2.[ProxyTools ](https://github.com/mphin/ProxyTools)
+
 3.[strule](https://whatshub.top/strule)
+
 4.[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 ### geodata
 1.[meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
