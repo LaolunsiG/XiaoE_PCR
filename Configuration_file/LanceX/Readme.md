@@ -1,0 +1,1 @@
+代理工具LanceX适用shadowrocket的代理规则
