@@ -29,33 +29,39 @@
 匹配 Geosite 内的域名，部分内容参考 v2fly/domain-list-community
 ## IP规则
 
-IP-CIDR & IP-CIDR6
+1.IP-CIDR & IP-CIDR6
+
 匹配 IP 地址范围，IP-CIDR和IP-CIDR6效果是一样的，IP-CIDR6只是一个别名
 
-IP-SUFFIX
+2.IP-SUFFIX
+
 匹配 IP 后缀范围
 
-IP-ASN
+3.IP-ASN
+
 匹配 IP 所属 ASN
 
-GEOIP
+4.GEOIP
 匹配 IP 所属国家代码
 
-SRC-GEOIP
+5.SRC-GEOIP
+
 匹配来源 IP 所属国家代码
 
-SRC-IP-ASN
+6.SRC-IP-ASN
+
 匹配来源 IP 所属 ASN
 
-SRC-IP-CIDR
+7.SRC-IP-CIDR
+
 匹配来源 IP 地址范围
 
-SRC-IP-SUFFIX
+8.SRC-IP-SUFFIX
 
 匹配来源 IP 后缀范围
 
 ## 端口规则
-4.DST-PORT
+1.DST-PORT
 
 匹配请求目标端口范围
 
