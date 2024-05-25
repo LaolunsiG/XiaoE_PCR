@@ -39,7 +39,7 @@ dns:
   listen: 0.0.0.0:1053
   nameserver:
     - 114.114.114.114
-    - 223.5.5.5sl
+    - 223.5.5.5
     - system
 external-controller: 127.0.0.1:9090
 log-level: info
@@ -49,9 +49,10 @@ proxies:
 proxy-groups:
   - name: "🚀 策略选择"
     proxies:
-      - ♻️All 3
-      - ♻️All 2
-      - ♻️All 1
+      - ♻️Payment Fast 1
+      - ♻️Payment Speed limit
+      - ♻️Free Fast 2
+      - ♻️Free Fast 1
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇺🇸 美国节点
@@ -67,33 +68,38 @@ proxy-groups:
     type: select
     use: null
     lazy: true
-  - name: ♻️All 3
+  - name: ♻️Free Fast 1
     type: url-test
     url: "http://www.google.com/generate_204"
     use:
-      - Tbalck
-      - 顶级机场
-      - element
+      - Free-freenode
+      - Free-get_subscribe-clash
+      - Free-空想家-ss
     interval: 600
     lazy: true
-  - name: ♻️All 2
+  - name: ♻️Free Fast 2
     proxies: null
     type: url-test
     url: "http://www.google.com/generate_204"
     interval: 600
     use:
-      - freenode
-      - sub
+      - Free-未知-ss
     include-all: null
     lazy: true
-  - name: ♻️All 1
+  - lazy: true
+    name: ♻️Payment Speed limit
+    type: url-test
+    use:
+      - Payment-便宜机场
+      - Payment-超级机场
+  - name: ♻️Payment Fast 1
     type: url-test
     url: "http://www.google.com/generate_204"
     interval: 600
     use:
-      - pithecia
-      - haitunyun
-      - ss
+      - Payment-pithecia
+      - Payment-顶级机场
+      - Payment-Tbalck
     include-all: null
     lazy: true
   - icon: null
@@ -107,7 +113,7 @@ proxy-groups:
       - 🌐 全球直连
       - 🚫 全球拦截
     type: select
-#——————代理组\策略组——————
+    #——————代理组\策略组——————
   - name: 📈 网络测试
     proxies:
       - 🚀 策略选择
@@ -128,7 +134,7 @@ proxy-groups:
       - 🇯🇵 日本节点
     type: select
     use: null
-  - name: 📲 Telegram
+  - name: 🪙 Paypal
     proxies:
       - 🚀 策略选择
       - 🇭🇰 香港节点
@@ -140,6 +146,30 @@ proxy-groups:
       - 🇸🇬 新加坡节点
     type: select
     use: null
+  - name: Ⓜ️ 微软服务
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍎 苹果服务
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use:
   - name: 📹 YouTube
     proxies:
       - 🚀 策略选择
@@ -167,8 +197,8 @@ proxy-groups:
   - name: 🎬 Disney+
     proxies:
       - 🚀 策略选择
-      - ♻️All 1
-      - ♻️All 2
+      - ♻️Payment Fast 1
+      - ♻️Free Fast 2
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇺🇸 美国节点
@@ -179,6 +209,54 @@ proxy-groups:
     type: select
     use: null
   - name: 🎻 Spotify
+    proxies:
+      - 🚀 策略选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 📽 哔哩哔哩
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍿 国外媒体
+    proxies:
+      - 🚀 策略选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍔 国内媒体
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 📲 Telegram
     proxies:
       - 🚀 策略选择
       - 🇭🇰 香港节点
@@ -203,18 +281,6 @@ proxy-groups:
       - 🇮🇳 印度
       - 🇩🇪 德国
       - 🇨🇦 加拿大
-    type: select
-    use: null
-  - name: 🪙 Paypal
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
     type: select
     use: null
   - name: 👤 Facebook
@@ -253,42 +319,6 @@ proxy-groups:
       - 🇸🇬 新加坡节点
     type: select
     use: null
-  - name: 🍿 国外媒体
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 📽 哔哩哔哩
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🍔 国内媒体
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
   - name: 🍟 新浪微博
     proxies:
       - 🌐 全球直连
@@ -301,30 +331,6 @@ proxy-groups:
       - 🇸🇬 新加坡节点
     type: select
     use: null
-  - name: Ⓜ️ 微软服务
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🍎 苹果服务
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use:
   - name: 🎮 游戏平台
     proxies:
       - 🌐 全球直连
@@ -458,39 +464,53 @@ proxy-groups:
       - REJECT
     type: select
 proxy-providers:
-  Tbalck:
+  Payment-Tbalck:
     interval: 86400
     url: https://dy.hhyxt.top/api/v1/client/subscribe?token=1421069c6205d4a22fae4dd4d16c81b0
-  freenode:
+    benchmark-url: http://www.google.com/generate_204
+    benchmark-timeout: 5
+  Free-freenode:
     interval: 1440
     url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
-  element:
+  Payment-element:
     interval: 86400
     url: https://cn.yuansu.app/v1/client/subscribe?token=220d960189e95961d03a4e09dfd83dc8&flag=clash
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
-  sub:
-    interval: 86400
-    url: https://sub.tgzdyz2.xyz/sub
-  '顶级机场':
+  'Payment-顶级机场':
     interval: 86400
     url: https://gates.djjc.cfd/api/v1/client/subscribe?token=e2d67994f157a48ef86ec60e80a3f0d5
-  pithecia:
+  Payment-pithecia:
     interval: 86400
-    url: https://oss.pithecia.com/api/v1/client/subscribe?token=a3b474adccae41c32945544d9801f09c
-  haitunyun:
+    url: https://oss.pithecia.com/api/v1/client/subscribe?token=854979b4c30d38234d0aad0caac92ad9
+  Payment-超级机场:
     interval: 86400
-    url: https://haitunyun.online/api/v1/client/subscribe?token=73b37b0f436571151978e7fca5358cce
+    url: https://api.zzzzzl.me/api/v1/client/subscribe?token=97b91df444afd8e91fe143412e41e5aa
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
-  ss:
+  Free-未知-ss:
     interval: 86400
     url: https://ss.wxgqlfx.top/wxgqlfx
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
+  Payment-便宜机场:
+    interval: 86400
+    url: https://xn--wtq35pfyd55o.co/pianyi/v0/client/subscribe?token=03abbcc037b92c80ad56c7562aeaf245
+  Free-空想家-ss:
+    interval: 86400
+    url: https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/ss
+  Free-get_subscribe-clash:
+    interval: 86400
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
 rule-providers:
+#网络测试
+  networktest:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/networktest.yaml
 #广告拦截
   UnBan:
     behavior: classical
@@ -556,8 +576,16 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Discord.rule
+  新浪微博:
+    behavior: classical
+    interval: 86400
+    url: https://whatshub.top/rule/Weibo.rule
+  Wechat:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
+    format: yaml
 #游戏平台
-#小分流
   PlayStation:
     behavior: classical
     interval: 86400
@@ -586,13 +614,12 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Blizzard.rule
-#支付平台
+    #支付平台
   PAYPAL:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/PayPal.rule
-#国外媒体
-##音乐
+#音乐
   SPOTIFY:
     behavior: classical
     interval: 86400
@@ -618,26 +645,11 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Twitch.rule
+#大分流
   国外媒体:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/ProxyMedia.rule
-  代理域名:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
-#国内网络
-#国内媒体
-#小分流
-  新浪微博:
-    behavior: classical
-    interval: 86400
-    url: https://whatshub.top/rule/Weibo.rule
-  Wechat:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
-    format: yaml
   斗鱼:
     behavior: classical
     interval: 86400
@@ -646,11 +658,16 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/BiliBili.rule
-    #大分流
+##大分流
   国内媒体:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/ChinaMedia.rule
+#大分流
+  代理域名:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
   国内直连1:
     behavior: classical
     interval: 86400
@@ -661,60 +678,54 @@ rule-providers:
     format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_Resolve.yaml
-#网络测试
-  networktest:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/networktest.yaml
 #规则
 rules:
-#网络测试
+#  网络测试
   - RULE-SET,networktest,📈 网络测试
   - DOMAIN-KEYWORD,mubu,🌐 全球直连
-#本地网络
+  #本地网络
   - RULE-SET,lan,🌐 全球直连,no-resolve
 #广告拦截
-  - RULE-SET,UnBan,🌐 全球直连
-  - RULE-SET,BanProgramAD,🍃 应用净化
+#  - RULE-SET,UnBan,🌐 全球直连
+#  - RULE-SET,BanProgramAD,🍃 应用净化
 #隐私保护
-  - RULE-SET,privacy,🚫 全球拦截
-#人工智能
+#  - RULE-SET,privacy,🚫 全球拦截
+#  人工智能
   - RULE-SET,人工智能,🤖️ 人工智能
-#服务平台
-##微软服务
+  #服务平台
+  ##微软服务
   - RULE-SET,微软服务,Ⓜ️ 微软服务
-##苹果服务
+  ##苹果服务
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,AppStore,🍎 苹果服务
   - RULE-SET,AppleProxy,🚀 策略选择
   - RULE-SET,Google服务,🚀 策略选择
-#支付平台
+  #支付平台
   - RULE-SET,PAYPAL,🪙 Paypal
-#社交媒体
-##国外
+  #社交媒体
+  ##国外
   - RULE-SET,TWITTER,📄 Twitter
   - RULE-SET,SPOTIFY,🎻 Spotify
   - RULE-SET,FACEBOOK,👤 Facebook
   - RULE-SET,REDDIT,📖 Reddit
   - RULE-SET,DISCORD,🐦 Discord
   - RULE-SET,TELEGRAM,📲 Telegram
-##国内
+  ##国内
   - RULE-SET,Wechat,🌐 全球直连
   - RULE-SET,新浪微博,🍟 新浪微博
-#流媒体
-##国外
+  #流媒体
+  ##国外
   - RULE-SET,YOUTUBE1,📹 YouTube
   - RULE-SET,YOUTUBE2,📹 YouTube
   - RULE-SET,NETFLIX,🎥 Netflix
   - RULE-SET,DISNEY+,🎬 Disney+
   - RULE-SET,Twitch,🚀 策略选择
   - RULE-SET,国外媒体,🍿 国外媒体
-##国内
+  ##国内
   - RULE-SET,哔哩哔哩,📽 哔哩哔哩
   - RULE-SET,斗鱼,🍔 国内媒体、
   - RULE-SET,国内媒体,🍔 国内媒体
-#游戏平台
+  #游戏平台
   - RULE-SET,PlayStation,🎮 游戏平台
   - RULE-SET,Epic,🎮 游戏平台
   - RULE-SET,Sony,🎮 游戏平台
@@ -722,11 +733,11 @@ rules:
   - RULE-SET,Nintendo,🎮 游戏平台
   - RULE-SET,WanMeiShiJie,🎮 游戏平台
   - RULE-SET,Blizzard,🎮 游戏平台
-#国外网络
-##大分流
+  #国外网络
+  ##大分流
   - RULE-SET,代理域名,🚀 策略选择
-#国内网络
-##大分流
+  #国内网络
+  ##大分流
   - RULE-SET,国内直连1,🌐 全球直连
   - RULE-SET,国内直连2,🌐 全球直连
   - MATCH,🐟 漏网之鱼
