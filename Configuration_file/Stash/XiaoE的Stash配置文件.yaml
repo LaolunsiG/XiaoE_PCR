@@ -40,7 +40,9 @@ dns:
   nameserver:
     - 114.114.114.114
     - 223.5.5.5
-    - system
+    - 1.1.1.1
+    - 8.8.8.8
+#外部控制器
 external-controller: 127.0.0.1:9090
 log-level: info
 mixed-port: 7890
@@ -504,13 +506,32 @@ proxy-providers:
   Free-get_subscribe-clash:
     interval: 86400
     url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+#远程规则集
 rule-providers:
+#下载网络
+  Download:
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download_No_Resolve.yaml
+    interval: 86400
 #网络测试
   networktest:
-    behavior: domain
+    behavior: classical
     format: yaml
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/networktest.yaml
+#本地网络
+  lan:
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml
+    interval: 86400
+#人工智能
+  人工智能:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/rules/Clash_Meta/AI/AI_Global.yaml
 #广告拦截
   UnBan:
     behavior: classical
@@ -525,15 +546,6 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical_No_Resolve.yaml
     interval: 86400
-#本地网络
-  lan:
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml
-    interval: 86400
-  人工智能:
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml
 #服务平台
   微软服务:
     behavior: classical
@@ -556,6 +568,7 @@ rule-providers:
     interval: 86400
     url: https://whatshub.top/rule/Google.rule
 #社交媒体
+##国外
   TELEGRAM:
     behavior: classical
     interval: 86400
@@ -576,6 +589,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Discord.rule
+##国内
   新浪微博:
     behavior: classical
     interval: 86400
@@ -629,6 +643,7 @@ rule-providers:
     interval: 86400
     url: https://whatshub.top/rule/YouTubeMusic.rule
 #流媒体
+##国外网络
   YOUTUBE1:
     behavior: classical
     interval: 86400
@@ -645,11 +660,12 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Twitch.rule
-#大分流
+###大分流
   国外媒体:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/ProxyMedia.rule
+##国内媒体
   斗鱼:
     behavior: classical
     interval: 86400
@@ -658,16 +674,18 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/BiliBili.rule
-##大分流
+###大分流
   国内媒体:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/ChinaMedia.rule
-#大分流
+#代理和直连网络大分流
+##代理网络
   代理域名:
     behavior: classical
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
+#直连网络
   国内直连1:
     behavior: classical
     interval: 86400
@@ -680,52 +698,52 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_Resolve.yaml
 #规则
 rules:
-#  网络测试
+#网络测试
   - RULE-SET,networktest,📈 网络测试
   - DOMAIN-KEYWORD,mubu,🌐 全球直连
-  #本地网络
+#本地网络
   - RULE-SET,lan,🌐 全球直连,no-resolve
 #广告拦截
 #  - RULE-SET,UnBan,🌐 全球直连
 #  - RULE-SET,BanProgramAD,🍃 应用净化
-#隐私保护
+   #隐私保护
 #  - RULE-SET,privacy,🚫 全球拦截
-#  人工智能
+#人工智能
   - RULE-SET,人工智能,🤖️ 人工智能
-  #服务平台
-  ##微软服务
+#服务平台
+##微软服务
   - RULE-SET,微软服务,Ⓜ️ 微软服务
-  ##苹果服务
+##苹果服务
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,AppStore,🍎 苹果服务
   - RULE-SET,AppleProxy,🚀 策略选择
   - RULE-SET,Google服务,🚀 策略选择
-  #支付平台
+#支付平台
   - RULE-SET,PAYPAL,🪙 Paypal
-  #社交媒体
-  ##国外
+#社交媒体
+##国外
   - RULE-SET,TWITTER,📄 Twitter
   - RULE-SET,SPOTIFY,🎻 Spotify
   - RULE-SET,FACEBOOK,👤 Facebook
   - RULE-SET,REDDIT,📖 Reddit
   - RULE-SET,DISCORD,🐦 Discord
   - RULE-SET,TELEGRAM,📲 Telegram
-  ##国内
+##国内
   - RULE-SET,Wechat,🌐 全球直连
   - RULE-SET,新浪微博,🍟 新浪微博
-  #流媒体
-  ##国外
+#流媒体
+##国外媒体
   - RULE-SET,YOUTUBE1,📹 YouTube
   - RULE-SET,YOUTUBE2,📹 YouTube
   - RULE-SET,NETFLIX,🎥 Netflix
   - RULE-SET,DISNEY+,🎬 Disney+
   - RULE-SET,Twitch,🚀 策略选择
   - RULE-SET,国外媒体,🍿 国外媒体
-  ##国内
+##国内媒体
   - RULE-SET,哔哩哔哩,📽 哔哩哔哩
   - RULE-SET,斗鱼,🍔 国内媒体、
   - RULE-SET,国内媒体,🍔 国内媒体
-  #游戏平台
+#游戏平台
   - RULE-SET,PlayStation,🎮 游戏平台
   - RULE-SET,Epic,🎮 游戏平台
   - RULE-SET,Sony,🎮 游戏平台
@@ -733,12 +751,14 @@ rules:
   - RULE-SET,Nintendo,🎮 游戏平台
   - RULE-SET,WanMeiShiJie,🎮 游戏平台
   - RULE-SET,Blizzard,🎮 游戏平台
-  #国外网络
-  ##大分流
+#代理和直连网络大分流
+##代理网络
   - RULE-SET,代理域名,🚀 策略选择
-  #国内网络
-  ##大分流
+##直连网络
   - RULE-SET,国内直连1,🌐 全球直连
-  - RULE-SET,国内直连2,🌐 全球直连
+#  - RULE-SET,国内直连2,🌐 全球直连
+###直连IP规则
+  - GEOIP,CN,🌐 全球直连
+#兜底规则
   - MATCH,🐟 漏网之鱼
 subscribe-url: null
