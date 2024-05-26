@@ -1,3 +1,4 @@
+#用代理的AI规则
 #OpenAI
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,static.cloudflareinsights.com
