@@ -18,6 +18,6 @@ clash规则可用于旧版clash for Android and Clash for Windows
 1.[meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
 ### ruleset&geodata  
 1.[ruleset_geodata](https://github.com/DustinWin/ruleset_geodata?tab=readme-ov-file)
--定制适合 Clash 内核和 sing-box 内核的 ruleset&geodata 规则集文件
+--定制适合 Clash 内核和 sing-box 内核的 ruleset&geodata 规则集文件
 
 
