@@ -4,6 +4,10 @@ clash因许久未更新，不支持新规则和新的加密,所以创建此存�
 
 clash规则可用于旧版clash for Android and Clash for Windows 
 
+# 代理教程
+
+1.[GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
+
 ## 规则来源
 
 1.[ios_rule_script ](https://github.com/blackmatrix7/ios_rule_script) 
