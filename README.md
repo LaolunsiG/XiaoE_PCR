@@ -1,7 +1,5 @@
 # Proxy-configuration-resources 
-clash for Android因许久未更新，不支持新规则和新的加密
-
-所以创建此存储库
+clash因许久未更新，不支持新规则和新的加密,所以创建此存储库。
 
 clash规则可用于旧版clash for Android and Clash for Windows 
 ## 规则来源
