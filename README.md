@@ -3,7 +3,7 @@ clash for Android因许久未更新，不支持新规则和新的加密
 
 所以创建此存储库
 
-clash规则可用于旧版clash for Android
+clash规则可用于旧版clash for Android and Clash for Windows 
 ## 规则来源
 1.[ios_rule_script ](https://github.com/blackmatrix7/ios_rule_script) 
 ## clash规则来源(规则集)
