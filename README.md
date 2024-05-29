@@ -1,20 +1,20 @@
 # Proxy_configuration_resources 
 
-clash因许久未更新，不支持新规则和新的加密,所以创建此存储库。
+Clash因许久未更新，不支持新规则和新的加密,所以创建此存储库。
 
-clash规则可用于旧版clash for Android and Clash for Windows 
+Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
-# 代理教程
+# 代理扩展教程（代理工具额外教程）
 
 1.[GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
-## 规则来源
+## Rules（规则）
 
 1.[ios_rule_script ](https://github.com/blackmatrix7/ios_rule_script) 
 
-## clash规则来源(规则集)
+## Clash_Rules(规则)
 
-### RULES 
+### RULES
 
 1.[ios_rule_script/tree/master/rule/Clash ](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 
@@ -24,11 +24,11 @@ clash规则可用于旧版clash for Android and Clash for Windows
 
 4.[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 
-### geodata
+### Geodata
 
 1.[meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
 
-### ruleset&geodata  
+### Ruleset&Geodata
 
 1.[ruleset_geodata](https://github.com/DustinWin/ruleset_geodata?tab=readme-ov-file)
 
