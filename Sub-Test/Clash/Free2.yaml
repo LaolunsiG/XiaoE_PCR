@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-05 21:13:21
+# 创建时间：2024-06-05 22:11:30
 # 使用模版：V2RaySE 默认模版
-# 节点数量：21
+# 节点数量：20
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,186 +85,179 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳 TW 01 (胖虎频道@gitbig)","type":"trojan","server":"dc0.forlive.live","port":41003,"udp":true,"password":"f28563da-8d5a-45d5-91da-1047a555b3c8","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳 TW 02 (胖虎频道@gitbig)","type":"trojan","server":"dc0.forlive.live","port":41003,"udp":true,"password":"187d7254-9574-4da1-9f53-0bbc02dbd027","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵 JP 02 (胖虎频道@gitbig)","type":"trojan","server":"36.151.195.48","port":29841,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵 JP 03 (胖虎频道@gitbig)","type":"ss","server":"03.forlive.live","port":22233,"password":"a77c6663-eae4-49e9-8734-a535cfa24799","cipher":"aes-128-gcm"}
-  - {"name":"🇯🇵 JP 04 (胖虎频道@gitbig)","type":"ss","server":"03.forlive.live","port":22233,"password":"15fc4af5-73df-4afd-b020-722076c6786b","cipher":"aes-128-gcm"}
-  - {"name":"🇯🇵 JP 05 (胖虎频道@gitbig)","type":"trojan","server":"36.151.195.48","port":29841,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵 JP 06 (胖虎频道@gitbig)","type":"trojan","server":"dc0.forlive.live","port":41010,"udp":true,"password":"3db1a266-a35f-4882-8cd3-341472c5fbda","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇰🇷 KR 03 (胖虎频道@gitbig)","type":"vmess","server":"sui.forlive.live","port":40396,"cipher":"auto","uuid":"502615aa-fa3d-42d1-8e4f-6ed9ecf0c95a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇸🇬 SG 02 (胖虎频道@gitbig)","type":"trojan","server":"dc0.forlive.live","port":41024,"udp":true,"password":"4c48d0df-0ee1-4d35-8d51-19ef6f80ad4c","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇹🇬 TG 01 (胖虎频道@gitbig)","type":"vmess","server":"hn.xn--wlqw1swrj04ju56d.com","port":80,"cipher":"auto","uuid":"3386ba49-a04b-49c7-8dfd-169981793568","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇹🇬 TG 02 (胖虎频道@gitbig)","type":"vmess","server":"124.220.57.75","port":80,"cipher":"auto","uuid":"d84576c3-0de7-4ba3-8cba-d9c56c8031a5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸 US 03 (胖虎频道@gitbig)","type":"vmess","server":"104.20.232.184","port":80,"cipher":"chacha20-poly1305","uuid":"5d75216f-c2ec-3136-b749-fcfe40ed4b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.20.232.184"}}
-  - {"name":"🇺🇸 US 08 (胖虎频道@gitbig)","type":"vmess","server":"104.16.24.141","port":2052,"cipher":"chacha20-poly1305","uuid":"5d75216f-c2ec-3136-b749-fcfe40ed4b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.16.24.141"}}
-  - {"name":"🇺🇸 US 04 (胖虎频道@gitbig)","type":"vmess","server":"104.20.224.183","port":2082,"cipher":"chacha20-poly1305","uuid":"5d75216f-c2ec-3136-b749-fcfe40ed4b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.20.224.183"}}
-  - {"name":"🇺🇸 US 05 (胖虎频道@gitbig)","type":"vmess","server":"104.16.53.208","port":2095,"cipher":"chacha20-poly1305","uuid":"5d75216f-c2ec-3136-b749-fcfe40ed4b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.16.53.208"}}
-  - {"name":"🇺🇸 US 06 (胖虎频道@gitbig)","type":"vmess","server":"172.64.34.35","port":8880,"cipher":"chacha20-poly1305","uuid":"5d75216f-c2ec-3136-b749-fcfe40ed4b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in172.64.34.35"}}
-  - {"name":"🇺🇸 US 07 (胖虎频道@gitbig)","type":"vmess","server":"104.25.76.110","port":2095,"cipher":"chacha20-poly1305","uuid":"5d75216f-c2ec-3136-b749-fcfe40ed4b4e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dabai.in104.25.76.110"}}
-  - {"name":"🇺🇸 US 12 (胖虎频道@gitbig)","type":"trojan","server":"36.151.195.48","port":4603,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸 US 10 (胖虎频道@gitbig)","type":"trojan","server":"36.151.195.48","port":4787,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸 US 14 (胖虎频道@gitbig)","type":"trojan","server":"36.151.195.48","port":4603,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸 US 11 (胖虎频道@gitbig)","type":"trojan","server":"36.151.195.48","port":4787,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本高速 1[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50120,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 2[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50121,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 3[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50122,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 4[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50123,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 5[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50124,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 6[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50125,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 7[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50126,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 8[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50127,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 9[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50128,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 10[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50129,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 11[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50130,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 12[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50131,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 13[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50132,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 14[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50133,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 15[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50134,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"日本高速 16[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50135,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"新加坡高速 17[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50136,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"新加坡高速 18[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50137,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"新加坡高速 19[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50138,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"新加坡高速 20[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50139,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -287,27 +280,26 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 TW 01 (胖虎频道@gitbig)
-      - 🇨🇳 TW 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 02 (胖虎频道@gitbig)
-      - 🇯🇵 JP 03 (胖虎频道@gitbig)
-      - 🇯🇵 JP 04 (胖虎频道@gitbig)
-      - 🇯🇵 JP 05 (胖虎频道@gitbig)
-      - 🇯🇵 JP 06 (胖虎频道@gitbig)
-      - 🇰🇷 KR 03 (胖虎频道@gitbig)
-      - 🇸🇬 SG 02 (胖虎频道@gitbig)
-      - 🇹🇬 TG 01 (胖虎频道@gitbig)
-      - 🇹🇬 TG 02 (胖虎频道@gitbig)
-      - 🇺🇸 US 03 (胖虎频道@gitbig)
-      - 🇺🇸 US 08 (胖虎频道@gitbig)
-      - 🇺🇸 US 04 (胖虎频道@gitbig)
-      - 🇺🇸 US 05 (胖虎频道@gitbig)
-      - 🇺🇸 US 06 (胖虎频道@gitbig)
-      - 🇺🇸 US 07 (胖虎频道@gitbig)
-      - 🇺🇸 US 12 (胖虎频道@gitbig)
-      - 🇺🇸 US 10 (胖虎频道@gitbig)
-      - 🇺🇸 US 14 (胖虎频道@gitbig)
-      - 🇺🇸 US 11 (胖虎频道@gitbig)
+      - 日本高速 1[普通]|Github搜索TrojanLinks
+      - 日本高速 2[普通]|Github搜索TrojanLinks
+      - 日本高速 3[普通]|Github搜索TrojanLinks
+      - 日本高速 4[普通]|Github搜索TrojanLinks
+      - 日本高速 5[普通]|Github搜索TrojanLinks
+      - 日本高速 6[普通]|Github搜索TrojanLinks
+      - 日本高速 7[普通]|Github搜索TrojanLinks
+      - 日本高速 8[普通]|Github搜索TrojanLinks
+      - 日本高速 9[普通]|Github搜索TrojanLinks
+      - 日本高速 10[普通]|Github搜索TrojanLinks
+      - 日本高速 11[普通]|Github搜索TrojanLinks
+      - 日本高速 12[普通]|Github搜索TrojanLinks
+      - 日本高速 13[普通]|Github搜索TrojanLinks
+      - 日本高速 14[普通]|Github搜索TrojanLinks
+      - 日本高速 15[普通]|Github搜索TrojanLinks
+      - 日本高速 16[普通]|Github搜索TrojanLinks
+      - 新加坡高速 17[普通]|Github搜索TrojanLinks
+      - 新加坡高速 18[普通]|Github搜索TrojanLinks
+      - 新加坡高速 19[普通]|Github搜索TrojanLinks
+      - 新加坡高速 20[普通]|Github搜索TrojanLinks
 
 rules:
 # 本地/局域网地址
