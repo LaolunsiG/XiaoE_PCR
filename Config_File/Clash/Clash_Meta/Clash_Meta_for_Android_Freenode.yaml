@@ -9,7 +9,7 @@ proxy-providers:
   机场1:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-Yaney01"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free1"
     path: ./proxies/airport1.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -21,7 +21,7 @@ proxy-providers:
       interval: 600
   机场2:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-A_freeloading_home"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free2"
     path: ./proxies/airport2.yaml
     interval: 43200
     health-check:
@@ -41,7 +41,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-kongxiangjia-ssr"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Temporary1"
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -51,7 +51,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-panghu"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free3"
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
@@ -63,7 +63,7 @@ proxy-providers:
   机场6:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://sub.sanfen018.xyz/api/v1/client/subscribe?token=10e3910f8a610464fd09aac4abb147bb&flag=clash"
+    url: "https://raw.githubusercontent.com/yaney01/chromego_merge/main/sub/merged_proxies_new.yaml"
     path: ./proxies/airport6.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -75,7 +75,7 @@ proxy-providers:
       interval: 600
   机场7:
     type: http
-    url: "https://dash.djjc.cfd/api/v1/client/subscribe?token=e2d67994f157a48ef86ec60e80a3f0d5"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free4"
     path: ./proxies/airport7.yaml
     interval: 43200
     health-check:
@@ -85,7 +85,7 @@ proxy-providers:
       interval: 600
   机场8:
     type: http
-    url: "http://api.zzzzzl.me/api/v1/client/subscribe?token=97b91df444afd8e91fe143412e41e5aa"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free5"
     path: ./proxies/airport8.yaml
     interval: 43200
     health-check:
@@ -95,7 +95,7 @@ proxy-providers:
       interval: 600
   机场9:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Payment-pithecia"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free6"
     path: ./proxies/airport9.yaml
     interval: 43200
     health-check:
@@ -105,7 +105,7 @@ proxy-providers:
       interval: 600
   机场10:
     type: http
-    url: "https://api.yuansu.app/v1/client/subscribe?token=220d960189e95961d03a4e09dfd83dc8&flag=clash"
+    url: "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
     path: ./proxies/airport10.yaml
     interval: 43200
     health-check:
