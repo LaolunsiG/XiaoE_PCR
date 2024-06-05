@@ -3,7 +3,7 @@ proxy-providers:
   机场1:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-A_freeloading_home"
+    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
     path: ./proxies/airport1.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -16,7 +16,7 @@ proxy-providers:
       interval: 600
   机场2:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-panghu"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_Sub_Test/main/Clash-Sub-Test/Free-panghu.yaml"
     path: ./proxies/airport2.yaml
     interval: 43200
     health-check:
@@ -26,7 +26,7 @@ proxy-providers:
       interval: 600
   机场3:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-kongxiangjia-ssr"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_Sub_Test/main/Clash-Sub-Test/speednodes.yaml"
     path: ./proxies/airport3.yaml
     interval: 43200
     health-check:
@@ -36,7 +36,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_Sub_Test/main/Clash-Sub-Test/speednodes.yaml"
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -46,7 +46,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://ghproxy.net/https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_Sub_Test/main/Clash-Sub-Test/speednodes.yaml"
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
