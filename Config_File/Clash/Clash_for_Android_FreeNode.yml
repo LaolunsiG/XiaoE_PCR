@@ -46,7 +46,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_Sub_Test/main/Clash-Sub-Test/speednodes.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_Sub_Test/main/Clash-Sub-Test/Temporary1.yaml"
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
