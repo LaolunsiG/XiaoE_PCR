@@ -9,7 +9,7 @@ proxy-providers:
   机场1:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://shz.al/RjZR"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-Yaney01"
     path: ./proxies/airport1.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -21,7 +21,7 @@ proxy-providers:
       interval: 600
   机场2:
     type: http
-    url: "https://flynb.site/sub/?token=F9F9zZcllpdyN5TluF9F9zZF9F9zZ11EEfx0g&tag=clash"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-A_freeloading_home"
     path: ./proxies/airport2.yaml
     interval: 43200
     health-check:
@@ -41,7 +41,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-kongxiangjia-ssr"
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -51,7 +51,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free-panghu"
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
@@ -63,7 +63,7 @@ proxy-providers:
   机场6:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://dy.hhyxt.top/api/v1/client/subscribe?token=1421069c6205d4a22fae4dd4d16c81b0"
+    url: "https://sub.sanfen018.xyz/api/v1/client/subscribe?token=10e3910f8a610464fd09aac4abb147bb&flag=clash"
     path: ./proxies/airport6.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -85,7 +85,7 @@ proxy-providers:
       interval: 600
   机场8:
     type: http
-    url: "https://sub.tgzdyz2.xyz/sub"
+    url: "http://api.zzzzzl.me/api/v1/client/subscribe?token=97b91df444afd8e91fe143412e41e5aa"
     path: ./proxies/airport8.yaml
     interval: 43200
     health-check:
@@ -95,7 +95,7 @@ proxy-providers:
       interval: 600
   机场9:
     type: http
-    url: "https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/trojan"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Payment-pithecia"
     path: ./proxies/airport9.yaml
     interval: 43200
     health-check:
