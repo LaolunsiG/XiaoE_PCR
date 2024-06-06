@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-05 21:17:27
+# 创建时间：2024-06-06 13:37:22
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：9
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,179 +85,102 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"日本高速 1[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50120,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 2[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50121,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 3[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50122,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 4[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50123,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 5[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50124,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 6[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50125,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 7[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50126,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 8[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50127,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 9[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50128,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 10[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50129,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 11[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50130,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 12[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50131,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 13[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50132,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 14[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50133,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 15[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50134,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"日本高速 16[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50135,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"新加坡高速 17[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50136,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"新加坡高速 18[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50137,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"新加坡高速 19[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50138,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
-  - {"name":"新加坡高速 20[普通]|Github搜索TrojanLinks","type":"ssr","server":"tacm.ix2.edge.kunlunae.com","port":50139,"password":"mPQ5C9","cipher":"dummy","obfs":"tls1.2_ticket_auth","protocol":"auth_chain_a","protocol-param":"33030706:aTcDVA"}
+  - {"name":"🇰🇷 |KR|韩国|@wxgqlfx|31","type":"trojan","server":"61.247.83.116","port":39308,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇰🇷 |KR|韩国|@wxgqlfx|32","type":"trojan","server":"210.126.38.13","port":33452,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇰🇷 |KR|韩国|@wxgqlfx|104","type":"trojan","server":"222.108.215.96","port":11180,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇸🇬 |SG|新加坡|@wxgqlfx|236","type":"trojan","server":"8.219.237.250","port":443,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸 |US|美国|@wxgqlfx|256","type":"trojan","server":"43.153.80.208","port":443,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸 |US|美国|@wxgqlfx|277","type":"trojan","server":"ip.sb","port":2053,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸 |US|美国|@wxgqlfx|287","type":"trojan","server":"kk005.ylks.link","port":443,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸 |US|美国|@wxgqlfx|292","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"🇺🇸 |US|美国|@wxgqlfx|307","type":"trojan","server":"kk005.ylks.link","port":2053,"udp":true,"password":"NISHIKUITAN222","sni":"t005.ylks.link","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -280,26 +203,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本高速 1[普通]|Github搜索TrojanLinks
-      - 日本高速 2[普通]|Github搜索TrojanLinks
-      - 日本高速 3[普通]|Github搜索TrojanLinks
-      - 日本高速 4[普通]|Github搜索TrojanLinks
-      - 日本高速 5[普通]|Github搜索TrojanLinks
-      - 日本高速 6[普通]|Github搜索TrojanLinks
-      - 日本高速 7[普通]|Github搜索TrojanLinks
-      - 日本高速 8[普通]|Github搜索TrojanLinks
-      - 日本高速 9[普通]|Github搜索TrojanLinks
-      - 日本高速 10[普通]|Github搜索TrojanLinks
-      - 日本高速 11[普通]|Github搜索TrojanLinks
-      - 日本高速 12[普通]|Github搜索TrojanLinks
-      - 日本高速 13[普通]|Github搜索TrojanLinks
-      - 日本高速 14[普通]|Github搜索TrojanLinks
-      - 日本高速 15[普通]|Github搜索TrojanLinks
-      - 日本高速 16[普通]|Github搜索TrojanLinks
-      - 新加坡高速 17[普通]|Github搜索TrojanLinks
-      - 新加坡高速 18[普通]|Github搜索TrojanLinks
-      - 新加坡高速 19[普通]|Github搜索TrojanLinks
-      - 新加坡高速 20[普通]|Github搜索TrojanLinks
+      - 🇰🇷 |KR|韩国|@wxgqlfx|31
+      - 🇰🇷 |KR|韩国|@wxgqlfx|32
+      - 🇰🇷 |KR|韩国|@wxgqlfx|104
+      - 🇸🇬 |SG|新加坡|@wxgqlfx|236
+      - 🇺🇸 |US|美国|@wxgqlfx|256
+      - 🇺🇸 |US|美国|@wxgqlfx|277
+      - 🇺🇸 |US|美国|@wxgqlfx|287
+      - 🇺🇸 |US|美国|@wxgqlfx|292
+      - 🇺🇸 |US|美国|@wxgqlfx|307
 
 rules:
 # 本地/局域网地址
