@@ -36,7 +36,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Free3.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment4.yaml"
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -46,7 +46,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Free4.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment5.yaml"
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
