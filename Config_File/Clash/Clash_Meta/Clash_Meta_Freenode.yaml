@@ -41,7 +41,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Temporary1"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free7"
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -63,7 +63,7 @@ proxy-providers:
   机场6:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://raw.githubusercontent.com/yaney01/chromego_merge/main/sub/merged_proxies_new.yaml"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/9199ecbcd41d4b0c76819775ad87c20d4e07ada5/Free8"
     path: ./proxies/airport6.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -105,7 +105,7 @@ proxy-providers:
       interval: 600
   机场10:
     type: http
-    url: "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free9"
     path: ./proxies/airport10.yaml
     interval: 43200
     health-check:
