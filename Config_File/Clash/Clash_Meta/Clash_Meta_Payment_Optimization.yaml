@@ -92,7 +92,7 @@ proxy-providers:
       interval: 600
   机场9:
     type: http
-    url: "https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/ssr"
+    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free4"
     path: ./proxies/airport9.yaml
     interval: 43200
     health-check:
