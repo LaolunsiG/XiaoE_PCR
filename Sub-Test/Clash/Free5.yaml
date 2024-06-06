@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-06 13:05:46
+# 创建时间：2024-06-06 13:11:30
 # 使用模版：V2RaySE 默认模版
-# 节点数量：16
+# 节点数量：63
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,151 +85,480 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"剩余流量：60 GB","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"套餐到期：2024-07-06","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"注册网址：chaozhijc.xyz","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"TG频道：https://t.me/chaozhijc","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"超级|巴西1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bx.chaozhijc.xyz"}}}
-  - {"name":"超级|巴西2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bx.chaozhijc.xyz"}}}
-  - {"name":"优化|o纽约1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
-  - {"name":"优化|o纽约2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
-  - {"name":"优化|o新加坡1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
-  - {"name":"优化|o新加坡2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
-  - {"name":"优化|o印度1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
-  - {"name":"优化|o印度2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
-  - {"name":"优化|o澳大利亚1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"优化|o澳大利亚2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"优化|o德国1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
-  - {"name":"优化|o德国2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
+  - {"name":"TG频道:@CitizenScyu_1","type":"vmess","server":"th5.boomzvpn.cloud","port":443,"cipher":"auto","uuid":"f3372f18-dccb-431a-ae91-2e45bd27f7ce","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"th5.boomzvpn.cloud","network":"grpc","grpc-opts":{"grpc-service-name":"vmess-grpc","grpc-mode":"gun"}}
+  - {"name":"TG频道:@CitizenScyu_2","type":"vmess","server":"th5.boomzvpn.cloud","port":443,"cipher":"auto","uuid":"4098b9b3-6f6f-44ee-aa59-462a976a4f99","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"th5.boomzvpn.cloud","network":"grpc","grpc-opts":{"grpc-service-name":"vmess-grpc","grpc-mode":"gun"}}
+  - {"name":"SCP2","type":"vmess","server":"www.smcacre.gov","port":443,"cipher":"auto","uuid":"3cc8e2d2-e4a4-4d87-c16c-a8fc70296a7b","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"www.smcacre.gov","network":"ws","ws-opts":{"path":"/3cc8e2d2","headers":{"host":"lajihuawei.com"}}}
+  - {"name":"Relay_ | 9.37Mb","type":"vmess","server":"web.com","port":2052,"cipher":"auto","uuid":"a1ec3211-b1ff-4e53-a729-e5b7b55567eb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":" |16.82Mb","type":"vmess","server":"109.104.153.69","port":80,"cipher":"auto","uuid":"2b7ce1d2-0372-4104-aa06-f7d999f26e1d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":" |15.32Mb","type":"vmess","server":"158.51.121.36","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
+  - {"name":"Relay_ |43.82Mb","type":"vmess","server":"ca-full.privateip.net","port":443,"cipher":"auto","uuid":"27b62e51-7efb-4a18-ad9c-a4b073149f27","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":"ca-full.privateip.net"}}}
+  - {"name":"Relay_ |10.86Mb","type":"vmess","server":"ca-v2ray.ipracevpn.com","port":443,"cipher":"auto","uuid":"e3ef2387-33aa-4c0f-86b5-008ee3bcb945","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":" |226.38Mb","type":"vmess","server":"107.148.192.148","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":" |254.58Mb","type":"vmess","server":"107.148.192.156","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |47.59Mb","type":"vmess","server":"142.0.134.241","port":45017,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |27.55Mb","type":"vmess","server":"188.114.98.39","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
+  - {"name":"Relay_ | 9.10Mb","type":"vmess","server":"188.114.99.183","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"Relay_ |27.34Mb","type":"vmess","server":"188.114.97.79","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"Relay_ | 3.75Mb","type":"vmess","server":"uk-full.privateip.net","port":443,"cipher":"auto","uuid":"d136c5a9-b7e8-4221-b5ad-829ea26bff7e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":"Relay_🇫🇷FR-🇫🇷FR_24","type":"vmess","server":"fr-full.privateip.net","port":443,"cipher":"auto","uuid":"d8d9a946-c231-426a-8170-069cc2f0df2f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":"🇫🇷FR_25","type":"vmess","server":"162.19.25.207","port":44513,"cipher":"auto","uuid":"4552bdb6-e008-43ac-926d-c6c6c5a6fc76","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ | 4.03Mb","type":"vmess","server":"kz-v2ray.ipracevpn.com","port":2083,"cipher":"auto","uuid":"2595193e-3b5e-437e-8998-7be6dbfbed71","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |29.28Mb","type":"vmess","server":"de2-full.privateip.net","port":443,"cipher":"auto","uuid":"9b12b685-9089-4f5e-bed4-ca060db7b979","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":"Relay_ | 3.64Mb","type":"vmess","server":"tr-full.privateip.net","port":443,"cipher":"auto","uuid":"581bba15-c9e9-43b3-9d63-d6b2614e959c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":"Relay_ | 6.87Mb","type":"vmess","server":"in-v2ray.ipracevpn.com","port":443,"cipher":"auto","uuid":"c7e92e33-b16e-4744-88c4-d8c0b23860af","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |39.77Mb","type":"vmess","server":"jp5g.forlive.live","port":80,"cipher":"auto","uuid":"e9394d66-d3cd-4e66-89dd-cda991bde821","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"Relay_ | 8.38Mb","type":"vmess","server":"jp-v2ray.ipracevpn.com","port":2083,"cipher":"auto","uuid":"3a0c6a81-236b-4e73-ac22-a580549edbf9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |16.03Mb","type":"vmess","server":"202.86.138.58","port":50000,"cipher":"auto","uuid":"cab438c4-9c5a-43fd-a623-ce81cb93085c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ikun","headers":{"host":"hkv6.linyuch3.eu.org"}}}
+  - {"name":"Relay_ |24.43Mb","type":"vmess","server":"nl-v2ray.ipracevpn.com","port":443,"cipher":"auto","uuid":"836181bb-cf0e-4e3a-9795-0b4264e76ad5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |14.99Mb","type":"vmess","server":"nl-full.privateip.net","port":443,"cipher":"auto","uuid":"eb0a9882-61ae-40ae-ae5a-b42771fbf65a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":" |18.08Mb","type":"vmess","server":"45.14.244.133","port":2024,"cipher":"auto","uuid":"39d755be-0123-418b-9638-a383957a28d2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":" | 2.98Mb","type":"vmess","server":"31.192.234.7","port":12954,"cipher":"auto","uuid":"8259cb1c-dd6c-4739-9c88-af550d977525","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ | 9.75Mb","type":"vmess","server":"sg2-v2ray.ipracevpn.com","port":2083,"cipher":"auto","uuid":"7cc6a250-f767-4d4b-9421-03b1bbf23f88","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_ |28.67Mb","type":"vmess","server":"it-full.privateip.net","port":443,"cipher":"auto","uuid":"509fd5aa-5859-4618-8de8-428b38c269ec","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":" | 3.81Mb","type":"vmess","server":"zula.ir","port":2095,"cipher":"auto","uuid":"edf2bc84-8723-4c98-82d3-52a3a59875a4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"Asdfghjkl10.unique69.com."}}}
+  - {"name":" |17.17Mb","type":"vmess","server":"129.146.46.181","port":52408,"cipher":"auto","uuid":"a797ff7b-8161-40a6-d577-1b2c213b3885","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"Relay_🇺🇸US-🇺🇸US_68 |19.47Mb","type":"vmess","server":"cold-dawn-9246.fly.dev","port":443,"cipher":"auto","uuid":"ea4909ef-7ca6-4b46-bf2e-6c07896ef338","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm"}}
+  - {"name":"🇺🇸US_69 |29.90Mb","type":"vmess","server":"50.114.243.61","port":43834,"cipher":"auto","uuid":"b246e34d-bbd1-4016-8f74-ea461c37e411","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":" |17.69Mb","type":"vmess","server":"172.67.204.84","port":2095,"cipher":"auto","uuid":"edf2bc84-8723-4c98-82d3-52a3a59875a4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"Asdfghjkl10.unique69.com."}}}
+  - {"name":"Relay_🇺🇸US-🇺🇸US_71 |50.39Mb","type":"vmess","server":"172.67.144.201","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdny.xyyjc.top"}}}
+  - {"name":"Relay_ |34.87Mb","type":"vmess","server":"172.67.74.4","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
+  - {"name":"Relay_ | 2.11Mb","type":"vmess","server":"us-full.privateip.net","port":443,"cipher":"auto","uuid":"9c0ff824-2915-4fbc-8687-992dfb3e3a79","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":" | 6.14Mb","type":"vmess","server":"152.69.197.74","port":12345,"cipher":"auto","uuid":"b8a6bf58-485a-4046-b386-b3661bf65eff","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bb"}}
+  - {"name":"🇺🇸US_75 | 8.41Mb","type":"vmess","server":"172.67.204.84","port":80,"cipher":"auto","uuid":"1886c4a7-c395-4aee-a1a2-a816722f5d29","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE","headers":{"host":"Pl2.vmess.site."}}}
+  - {"name":"Relay_ |21.93Mb","type":"vmess","server":"obdii.cfd","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
+  - {"name":"Relay_ |23.91Mb","type":"vmess","server":"172.67.175.56","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
+  - {"name":" |109.64Mb","type":"vmess","server":"155.138.242.207","port":54316,"cipher":"auto","uuid":"67797c6a-e898-49bd-8f61-5fb1523ce0bd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"155.138.242.207"}}}
+  - {"name":"🇺🇸US_79","type":"vmess","server":"172.67.164.164","port":443,"cipher":"auto","uuid":"a1655f51-1e20-4a92-8a11-b7ca30a7a353","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"afrhms07.xfixedfloat.cfd"}}}
+  - {"name":" |61.06Mb","type":"vmess","server":"107.175.37.186","port":80,"cipher":"auto","uuid":"dccb5580-de8d-4aca-a9a5-f986da33faa6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":" | 2.96Mb","type":"vmess","server":"64.176.15.74","port":3389,"cipher":"auto","uuid":"9c050a86-d612-48f1-ec32-e573df08a1b7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"Relay_ | 6.65Mb","type":"vmess","server":"hms082.gwdef.sbs","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
+  - {"name":"Relay_🇺🇸US-🇺🇸US_83","type":"vmess","server":"caretaker.com","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
+  - {"name":"Relay_ |109.67Mb","type":"vmess","server":"172.67.161.77","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"🇺🇸US_85 |10.39Mb","type":"vmess","server":"zula.ir","port":80,"cipher":"auto","uuid":"1886c4a7-c395-4aee-a1a2-a816722f5d29","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE","headers":{"host":"Pl2.vmess.site."}}}
+  - {"name":"Relay_ |18.62Mb","type":"vmess","server":"in-full.privateip.net","port":443,"cipher":"auto","uuid":"7ac33d15-d4a3-4cad-8c83-fe916f0eaf3c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":" |96.06Mb","type":"vmess","server":"155.138.242.207","port":80,"cipher":"auto","uuid":"81f40c2c-e3e8-4e0a-cb51-33db25e20b97","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":" | 9.72Mb","type":"vmess","server":"129.151.164.152","port":55600,"cipher":"auto","uuid":"e30f8588-2555-48b8-c354-c8e63f57232d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Relay_ |30.75Mb","type":"vmess","server":"hsj108k.mm-cc.top","port":2052,"cipher":"auto","uuid":"912e72b1-91c9-42b1-b16f-c4a823171388","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sjyhkap.mmaccc.top"}}}
+  - {"name":"Relay_ |13.07Mb","type":"vmess","server":"nl2-full.privateip.net","port":443,"cipher":"auto","uuid":"305705d2-ffcc-487f-a827-e728e61681d2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":"nl2-full.privateip.net"}}}
+  - {"name":" | 2.94Mb","type":"vmess","server":"Www.speedtest.net","port":2095,"cipher":"auto","uuid":"edf2bc84-8723-4c98-82d3-52a3a59875a4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"Asdfghjkl10.unique69.com."}}}
+  - {"name":" | 4.07Mb","type":"vmess","server":"104.18.202.232","port":2095,"cipher":"auto","uuid":"edf2bc84-8723-4c98-82d3-52a3a59875a4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"Asdfghjkl10.unique69.com."}}}
+  - {"name":" | 9.68Mb","type":"vmess","server":"104.21.69.44","port":2095,"cipher":"auto","uuid":"edf2bc84-8723-4c98-82d3-52a3a59875a4","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"Asdfghjkl10.unique69.com."}}}
+  - {"name":"Relay_ |14.33Mb","type":"vmess","server":"speed.cloudflare.com","port":443,"cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v149-dskds65","headers":{"host":"us4e-20240111.v2freevpn.com"}}}
+  - {"name":"Relay_ | 2.24Mb","type":"vmess","server":"104.21.55.234","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
+  - {"name":"Relay_🏁ZZ-🇺🇸US_102","type":"vmess","server":"hsj108k.mm-cc.top","port":2086,"cipher":"auto","uuid":"912e72b1-91c9-42b1-b16f-c4a823171388","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"akjp1um.mmaccc.top"}}}
+  - {"name":" | 6.99Mb","type":"vmess","server":"23.154.136.2","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
+  - {"name":"Relay_ |30.24Mb","type":"vmess","server":"hsj108k.mm-cc.top","port":2082,"cipher":"auto","uuid":"912e72b1-91c9-42b1-b16f-c4a823171388","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sjyhk.mmaccc.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -252,22 +581,69 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 剩余流量：60 GB
-      - 套餐到期：2024-07-06
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 超级|巴西1
-      - 超级|巴西2
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - TG频道:@CitizenScyu_1
+      - TG频道:@CitizenScyu_2
+      - SCP2
+      - Relay_ | 9.37Mb
+      - ' |16.82Mb'
+      - ' |15.32Mb'
+      - Relay_ |43.82Mb
+      - Relay_ |10.86Mb
+      - ' |226.38Mb'
+      - ' |254.58Mb'
+      - Relay_ |47.59Mb
+      - Relay_ |27.55Mb
+      - Relay_ | 9.10Mb
+      - Relay_ |27.34Mb
+      - Relay_ | 3.75Mb
+      - Relay_🇫🇷FR-🇫🇷FR_24
+      - 🇫🇷FR_25
+      - Relay_ | 4.03Mb
+      - Relay_ |29.28Mb
+      - Relay_ | 3.64Mb
+      - Relay_ | 6.87Mb
+      - Relay_ |39.77Mb
+      - Relay_ | 8.38Mb
+      - Relay_ |16.03Mb
+      - Relay_ |24.43Mb
+      - Relay_ |14.99Mb
+      - ' |18.08Mb'
+      - ' | 2.98Mb'
+      - Relay_ | 9.75Mb
+      - Relay_ |28.67Mb
+      - ' | 3.81Mb'
+      - ' |17.17Mb'
+      - Relay_🇺🇸US-🇺🇸US_68 |19.47Mb
+      - 🇺🇸US_69 |29.90Mb
+      - ' |17.69Mb'
+      - Relay_🇺🇸US-🇺🇸US_71 |50.39Mb
+      - Relay_ |34.87Mb
+      - Relay_ | 2.11Mb
+      - ' | 6.14Mb'
+      - 🇺🇸US_75 | 8.41Mb
+      - Relay_ |21.93Mb
+      - Relay_ |23.91Mb
+      - ' |109.64Mb'
+      - 🇺🇸US_79
+      - ' |61.06Mb'
+      - ' | 2.96Mb'
+      - Relay_ | 6.65Mb
+      - Relay_🇺🇸US-🇺🇸US_83
+      - Relay_ |109.67Mb
+      - 🇺🇸US_85 |10.39Mb
+      - Relay_ |18.62Mb
+      - ' |96.06Mb'
+      - ' | 9.72Mb'
+      - Relay_ |30.75Mb
+      - Relay_ |13.07Mb
+      - ' | 2.94Mb'
+      - ' | 4.07Mb'
+      - ' | 9.68Mb'
+      - Relay_ |14.33Mb
+      - Relay_ | 2.24Mb
+      - Relay_🏁ZZ-🇺🇸US_102
+      - ' | 6.99Mb'
+      - Relay_ |30.24Mb
 
 rules:
 # 本地/局域网地址
