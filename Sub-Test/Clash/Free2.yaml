@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-06 07:35:19
+# 创建时间：2024-06-06 13:12:57
 # 使用模版：V2RaySE 默认模版
-# 节点数量：13
+# 节点数量：16
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,130 +85,151 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"CA_speednode_0004","type":"vmess","server":"158.51.121.36","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"CN_speednode_0005","type":"ss","server":"mwd-mfzj777rc1.x7kp-hk02.my777999.top","port":35997,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0006","type":"ss","server":"qs9.anpxrc7hk-l2mcmp7-hk01.my777999.top","port":35998,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0007","type":"ss","server":"98899.xef9wvmj31-gc3qil6-jp02.my777999.top","port":38998,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0008","type":"ss","server":"fg5d.84bbo0t-olimkrx-kr02.my777999.top","port":32998,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0009","type":"ss","server":"gfoq.b4-h5a6gq7.h3w-kr01.my777999.top","port":32999,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0010","type":"ss","server":"4349ufu.54jvd5y6ojams-us02.my777999.top","port":33998,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0011","type":"ss","server":"7879va.xikv2dvn-3g5erg0-us01.my777999.top","port":33999,"password":"33aefd89-3285-4347-9083-6249711f02e9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"CN_speednode_0013","type":"trojan","server":"36.151.195.48","port":4603,"udp":true,"password":"TNDSJfNv","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"JP_speednode_0047","type":"vmess","server":"qzmdu-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"c63472a3-b844-305f-9892-fe6bed02ffc7","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"JP_speednode_0048","type":"vmess","server":"0sc4v-g03.jp03-7d22-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"d8ffec7e-bdbc-3df9-9dea-0f44eba73ce0","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"JP_speednode_0049","type":"vmess","server":"bpv5y-g06.jp03-7d22-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"c63472a3-b844-305f-9892-fe6bed02ffc7","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"TW_speednode_0110","type":"vmess","server":"103.123.132.27","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/341901080027"}}
+  - {"name":"剩余流量：60 GB","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"套餐到期：2024-07-06","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"注册网址：chaozhijc.xyz","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"TG频道：https://t.me/chaozhijc","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"超级|巴西1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bx.chaozhijc.xyz"}}}
+  - {"name":"超级|巴西2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bx.chaozhijc.xyz"}}}
+  - {"name":"优化|o纽约1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
+  - {"name":"优化|o纽约2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
+  - {"name":"优化|o新加坡1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
+  - {"name":"优化|o新加坡2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
+  - {"name":"优化|o印度1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
+  - {"name":"优化|o印度2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
+  - {"name":"优化|o澳大利亚1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"优化|o澳大利亚2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"优化|o德国1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
+  - {"name":"优化|o德国2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -231,19 +252,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_speednode_0004
-      - CN_speednode_0005
-      - CN_speednode_0006
-      - CN_speednode_0007
-      - CN_speednode_0008
-      - CN_speednode_0009
-      - CN_speednode_0010
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - JP_speednode_0047
-      - JP_speednode_0048
-      - JP_speednode_0049
-      - TW_speednode_0110
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
 
 rules:
 # 本地/局域网地址
