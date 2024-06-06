@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-05 21:10:44
+# 创建时间：2024-06-06 13:05:46
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：16
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,179 +85,151 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"官网1:xyyjc.top","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdny.xyyjc.top"}}}
-  - {"name":"官网2:x1yjc.top","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdny.xyyjc.top"}}}
-  - {"name":"普通1|纽约|vmess|解锁","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdny.xyyjc.top"}}}
-  - {"name":"普通2|纽约|vmess|解锁","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdny.xyyjc.top"}}}
-  - {"name":"普通3|纽约|vmess|解锁","type":"vmess","server":"pt3.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdny.xyyjc.top"}}}
-  - {"name":"普通1|新加坡|vmess|解锁","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdxjp.xyyjc.top"}}}
-  - {"name":"普通2|新加坡|vmess|解锁","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdxjp.xyyjc.top"}}}
-  - {"name":"普通3|新加坡|vmess|解锁","type":"vmess","server":"pt3.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdxjp.xyyjc.top"}}}
-  - {"name":"普通1|印度|vmess|解锁","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdyd.xyyjc.top"}}}
-  - {"name":"普通2|印度|vmess|解锁","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdyd.xyyjc.top"}}}
-  - {"name":"普通3|印度|vmess|解锁","type":"vmess","server":"pt3.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdyd.xyyjc.top"}}}
-  - {"name":"普通1|澳大利亚|vmess|解锁","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptadly.xyyjc.top"}}}
-  - {"name":"普通2|澳大利亚|vmess|解锁","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptadly.xyyjc.top"}}}
-  - {"name":"普通3|澳大利亚|vmess|解锁","type":"vmess","server":"pt3.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptadly.xyyjc.top"}}}
-  - {"name":"普通1|德国|vmess|解锁","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptddg.xyyjc.top"}}}
-  - {"name":"普通2|德国|vmess|解锁","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptddg.xyyjc.top"}}}
-  - {"name":"普通3|德国|vmess|解锁","type":"vmess","server":"pt3.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptddg.xyyjc.top"}}}
-  - {"name":"普通1|荷兰|vmess|解锁","type":"vmess","server":"pt1.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdhl.xyyjc.top"}}}
-  - {"name":"普通2|荷兰|vmess|解锁","type":"vmess","server":"pt2.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdhl.xyyjc.top"}}}
-  - {"name":"普通3|荷兰|vmess|解锁","type":"vmess","server":"pt3.xyyjc.top","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdhl.xyyjc.top"}}}
+  - {"name":"剩余流量：60 GB","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"套餐到期：2024-07-06","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"注册网址：chaozhijc.xyz","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"TG频道：https://t.me/chaozhijc","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"超级|巴西1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bx.chaozhijc.xyz"}}}
+  - {"name":"超级|巴西2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bx.chaozhijc.xyz"}}}
+  - {"name":"优化|o纽约1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
+  - {"name":"优化|o纽约2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
+  - {"name":"优化|o新加坡1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
+  - {"name":"优化|o新加坡2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
+  - {"name":"优化|o印度1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
+  - {"name":"优化|o印度2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
+  - {"name":"优化|o澳大利亚1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"优化|o澳大利亚2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
+  - {"name":"优化|o德国1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
+  - {"name":"优化|o德国2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"898b6624-51a6-40ea-b1cd-567226ea5fcf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -280,26 +252,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 官网1:xyyjc.top
-      - 官网2:x1yjc.top
-      - 普通1|纽约|vmess|解锁
-      - 普通2|纽约|vmess|解锁
-      - 普通3|纽约|vmess|解锁
-      - 普通1|新加坡|vmess|解锁
-      - 普通2|新加坡|vmess|解锁
-      - 普通3|新加坡|vmess|解锁
-      - 普通1|印度|vmess|解锁
-      - 普通2|印度|vmess|解锁
-      - 普通3|印度|vmess|解锁
-      - 普通1|澳大利亚|vmess|解锁
-      - 普通2|澳大利亚|vmess|解锁
-      - 普通3|澳大利亚|vmess|解锁
-      - 普通1|德国|vmess|解锁
-      - 普通2|德国|vmess|解锁
-      - 普通3|德国|vmess|解锁
-      - 普通1|荷兰|vmess|解锁
-      - 普通2|荷兰|vmess|解锁
-      - 普通3|荷兰|vmess|解锁
+      - 剩余流量：60 GB
+      - 套餐到期：2024-07-06
+      - 注册网址：chaozhijc.xyz
+      - TG频道：https://t.me/chaozhijc
+      - 超级|巴西1
+      - 超级|巴西2
+      - 优化|o纽约1
+      - 优化|o纽约2
+      - 优化|o新加坡1
+      - 优化|o新加坡2
+      - 优化|o印度1
+      - 优化|o印度2
+      - 优化|o澳大利亚1
+      - 优化|o澳大利亚2
+      - 优化|o德国1
+      - 优化|o德国2
 
 rules:
 # 本地/局域网地址
