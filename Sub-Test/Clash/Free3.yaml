@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-07 19:28:08
+# 创建时间：2024-06-07 19:30:06
 # 使用模版：V2RaySE 默认模版
-# 节点数量：102
+# 节点数量：101
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,7 +85,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"节点_🇺🇸_US_2","type":"vmess","server":"github.com","port":443,"cipher":"auto","uuid":"mianfeifq","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"节点_🇺🇸_US_3","type":"vmess","server":"104.26.7.65","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
   - {"name":"节点_🇺🇸_US_4","type":"vmess","server":"107.148.192.148","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"节点_🇺🇸_US_5","type":"vmess","server":"us3e-mmnnfr9dop0.v2freevpn.com","port":80,"cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v118-fccxmxm35","headers":{"host":"us3e-mmnnfr9dop0.v2freevpn.com"}}}
@@ -193,7 +192,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
@@ -301,7 +299,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
@@ -409,7 +406,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
@@ -516,7 +512,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
@@ -623,7 +618,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
@@ -730,7 +724,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
@@ -854,7 +847,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 节点_🇺🇸_US_2
       - 节点_🇺🇸_US_3
       - 节点_🇺🇸_US_4
       - 节点_🇺🇸_US_5
