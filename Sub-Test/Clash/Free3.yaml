@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-07 19:17:56
+# 创建时间：2024-06-07 19:20:12
 # 使用模版：V2RaySE 默认模版
-# 节点数量：104
+# 节点数量：103
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -179,7 +179,6 @@ proxies:
   - {"name":"🇬🇧GB | 🟢 | trojan | @DirectVPN | 5","type":"trojan","server":"13.40.247.32","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1"]}
   - {"name":"🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0","type":"vmess","server":"107.148.192.156","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore","type":"vmess","server":"155.138.242.207","port":54316,"cipher":"auto","uuid":"67797c6a-e898-49bd-8f61-5fb1523ce0bd","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"155.138.242.207"}}}
-  - {"name":"%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore","type":"vmess","server":"nl-v2ray.freevmess.com","port":2083,"cipher":"auto","uuid":"559b094d-5c14-44df-ad21-cfb4e5abb4c0","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880","type":"vmess","server":"217.160.45.31","port":8880,"cipher":"auto","uuid":"4e186678-fcca-4325-e4bc-b2916bdf6708","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":""}}
   - {"name":"YouTube面具人哈乐_美国_19","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
   - {"name":"🇬🇧_GB_英国","type":"trojan","server":"35.177.111.206","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
@@ -289,7 +288,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore'
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
@@ -399,7 +397,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      -   %F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
@@ -509,7 +506,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      -   %F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
@@ -618,7 +614,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      -   %F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
@@ -727,7 +722,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      -   %F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
@@ -836,7 +830,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      -   %F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
@@ -962,7 +955,6 @@ proxy-groups:
       - 🇬🇧GB | 🟢 | trojan | @DirectVPN | 5
       - 🇺🇸US | 🟢 | vmess | @v2raydailyupdate | 0
       - '%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20Vmess%20@V2rayStore'
-      -   %F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Mobitel%20Server%2003%20@V2rayStore
       - 🔒 VM-WS-NA 🇬🇧 GB-217.160.45.31:8880
       - YouTube面具人哈乐_美国_19
       - 🇬🇧_GB_英国
