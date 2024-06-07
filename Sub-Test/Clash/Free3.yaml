@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-07 19:23:55
+# 创建时间：2024-06-07 19:27:23
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,179 +85,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"高性价比机场:https://kfyun.uk","type":"ss","server":"127.0.0.1","port":443,"password":"6601fb90e9b3","cipher":"aes-128-gcm"}
-  - {"name":"2024-06-07T00:22:21+08:00 102 kfyun.uk ","type":"vmess","server":"github.com","port":443,"cipher":"auto","uuid":"mianfeifq","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443","type":"vmess","server":"104.26.7.65","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"caretaker.com","network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
-  - {"name":"🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911","type":"vmess","server":"107.148.192.148","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"🇺🇸US | 🟢 | vmess | @v2Line | 3","type":"vmess","server":"us3e-mmnnfr9dop0.v2freevpn.com","port":80,"cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/v118-fccxmxm35","headers":{"host":"us3e-mmnnfr9dop0.v2freevpn.com"}}}
-  - {"name":"%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore","type":"vmess","server":"de2-full.privateip.net","port":443,"cipher":"auto","uuid":"9b12b685-9089-4f5e-bed4-ca060db7b979","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":"de2-full.privateip.net"}}}
-  - {"name":"[🇨🇦]t.me/ConfigsHub","type":"vmess","server":"188.114.97.210","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"linde06.indiavideo.sbs","network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"美国【TG：@v2raydailyupdate】定时更新节点订阅 11","type":"vmess","server":"172.67.144.19","port":80,"cipher":"auto","uuid":"6808508f-c51c-4888-8370-d49e78a7f64e","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso","headers":{"host":"kr1-amazonwebservices.tjycdn.online"}}}
-  - {"name":"🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000","type":"vmess","server":"202.86.138.58","port":50000,"cipher":"auto","uuid":"cab438c4-9c5a-43fd-a623-ce81cb93085c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"cdn2.twitter.now.cc","network":"ws","ws-opts":{"path":"/ikun","headers":{"host":"hkv6.linyuch3.eu.org"}}}
-  - {"name":"%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore","type":"vmess","server":"nl-full.privateip.net","port":443,"cipher":"auto","uuid":"eb0a9882-61ae-40ae-ae5a-b42771fbf65a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"🇮🇹 Italy Trojan @V2rayStore","type":"trojan","server":"it-full.privateip.net","port":443,"udp":true,"password":"a102dc28-df1b-42bd-a394-f6c29c3e8586","skip-cert-verify":true}
-  - {"name":"剩余流量：811.7 MB","type":"vmess","server":"us4.moluo.xyz","port":80,"cipher":"auto","uuid":"61427926-2764-4863-b8b7-ed65074544da","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428","type":"trojan","server":"159.223.207.182","port":34428,"udp":true,"password":"zIvR7ryOXv","sni":"drehitm.duckdns.org","skip-cert-verify":true}
-  - {"name":"🇺🇸US-107.173.146.129-0745","type":"vmess","server":"107.173.146.129","port":80,"cipher":"auto","uuid":"5820093a-bb7d-4e15-8575-1a529f2d8282","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3","type":"trojan","server":"13.51.82.216","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1"]}
-  - {"name":"🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024","type":"vmess","server":"45.14.244.133","port":2024,"cipher":"auto","uuid":"39d755be-0123-418b-9638-a383957a28d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222","type":"trojan","server":"52.47.207.7","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1"]}
-  - {"name":"🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005","type":"trojan","server":"154.44.27.99","port":43005,"udp":true,"password":"4CCF9A9AB80E9889198B02ECE7FA08DD","sni":"j0080.ruixiangseo.xyz","skip-cert-verify":true}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13","type":"trojan","server":"16.16.72.6","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1"]}
-  - {"name":"%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore","type":"vmess","server":"nl2-full.privateip.net","port":443,"cipher":"auto","uuid":"305705d2-ffcc-487f-a827-e728e61681d2","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
+  - {"name":"节点_🏳️‍🌈_UN_1","type":"ss","server":"127.0.0.1","port":443,"password":"6601fb90e9b3","cipher":"aes-128-gcm"}
+  - {"name":"节点_🇺🇸_US_2","type":"vmess","server":"github.com","port":443,"cipher":"auto","uuid":"mianfeifq","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"节点_🇺🇸_US_3","type":"vmess","server":"104.26.7.65","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
+  - {"name":"节点_🇺🇸_US_4","type":"vmess","server":"107.148.192.148","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"节点_🇺🇸_US_5","type":"vmess","server":"us3e-mmnnfr9dop0.v2freevpn.com","port":80,"cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v118-fccxmxm35","headers":{"host":"us3e-mmnnfr9dop0.v2freevpn.com"}}}
+  - {"name":"节点_🇺🇸_US_6","type":"vmess","server":"de2-full.privateip.net","port":443,"cipher":"auto","uuid":"9b12b685-9089-4f5e-bed4-ca060db7b979","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":"de2-full.privateip.net"}}}
+  - {"name":"节点_🇳🇱_NL_7","type":"vmess","server":"188.114.97.210","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"节点_🇺🇸_US_8","type":"vmess","server":"172.67.144.19","port":80,"cipher":"auto","uuid":"6808508f-c51c-4888-8370-d49e78a7f64e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso","headers":{"host":"kr1-amazonwebservices.tjycdn.online"}}}
+  - {"name":"节点_🇲🇴_MO_9","type":"vmess","server":"202.86.138.58","port":50000,"cipher":"auto","uuid":"cab438c4-9c5a-43fd-a623-ce81cb93085c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ikun","headers":{"host":"hkv6.linyuch3.eu.org"}}}
+  - {"name":"节点_🇳🇱_NL_10","type":"vmess","server":"nl-full.privateip.net","port":443,"cipher":"auto","uuid":"eb0a9882-61ae-40ae-ae5a-b42771fbf65a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -280,26 +210,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 高性价比机场:https://kfyun.uk
-      - '2024-06-07T00:22:21+08:00 102 kfyun.uk '
-      - 🔒 VM-WS-TLS 🏴‍☠️ NA-104.26.7.65:443
-      - 🔒 VM-TCP-NA 🇺🇸 US-107.148.192.148:41911
-      - 🇺🇸US | 🟢 | vmess | @v2Line | 3
-      - '%F0%9F%87%A9%F0%9F%87%AA%20Germany%20Vmess%20@V2rayStore'
-      - '[🇨🇦]t.me/ConfigsHub'
-      - 美国【TG：@v2raydailyupdate】定时更新节点订阅 11
-      - 🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.58:50000
-      - '%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20Vmess%20WS%20@V2rayStore'
-      - 🇮🇹 Italy Trojan @V2rayStore
-      - 剩余流量：811.7 MB
-      - 🔒 TR-TCP-TLS 🇺🇸 US-159.223.207.182:34428
-      - 🇺🇸US-107.173.146.129-0745
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 3
-      - 🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133:2024
-      - 🔒 TR-TCP-TLS 🇫🇷 FR-52.47.207.7:22222
-      - 🔒 TR-TCP-NA 🇭🇰 HK-154.44.27.99:43005
-      - 🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 13
-      - '%F0%9F%87%B3%F0%9F%87%B1%20Netherlands%20Vmess%20WS%20@V2rayStore'
+      - 节点_🏳️‍🌈_UN_1
+      - 节点_🇺🇸_US_2
+      - 节点_🇺🇸_US_3
+      - 节点_🇺🇸_US_4
+      - 节点_🇺🇸_US_5
+      - 节点_🇺🇸_US_6
+      - 节点_🇳🇱_NL_7
+      - 节点_🇺🇸_US_8
+      - 节点_🇲🇴_MO_9
+      - 节点_🇳🇱_NL_10
 
 rules:
 # 本地/局域网地址
