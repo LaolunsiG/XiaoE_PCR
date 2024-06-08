@@ -226,11 +226,11 @@ proxy-groups:
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
 #  - {name: 🍃 应用净化, type: select, proxies: [🛑 全球拦截, 🎯 全球直连]}
   #机场测试
-  - {name: 机场1, type: url-test, tolerance: 50, lazy: true, use: [机场1], url: http://www.google.com/generate_204, interval: 600}
-  - {name: 机场2, type: url-test, tolerance: 50, lazy: true, use: [机场2], url: http://www.google.com/generate_204, interval: 600}
-  - {name: 机场3, type: url-test, tolerance: 50, lazy: true, use: [机场3], url: http://www.google.com/generate_204, interval: 600}
-  - {name: 机场4, type: url-test, tolerance: 50, lazy: true, use: [机场4], url: http://www.google.com/generate_204, interval: 600}
-  - {name: 机场5, type: url-test, tolerance: 50, lazy: true, use: [机场5], url: http://www.google.com/generate_204, interval: 600}
+  - {name: 机场1, type: url-test, tolerance: 50, lazy: true, use: [机场1]}
+  - {name: 机场2, type: url-test, tolerance: 50, lazy: true, use: [机场2]}
+  - {name: 机场3, type: url-test, tolerance: 50, lazy: true, use: [机场3]}
+  - {name: 机场4, type: url-test, tolerance: 50, lazy: true, use: [机场4]}
+  - {name: 机场5, type: url-test, tolerance: 50, lazy: true, use: [机场5]}
 # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
   - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 新加坡, 美国]}
 #人工智能
