@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-08 10:38:31
+# 创建时间：2024-06-08 10:42:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：66
+# 节点数量：50
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,501 +85,389 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"_13","type":"vmess","server":"104.18.14.19","port":80,"cipher":"auto","uuid":"4e63f0da-80ff-4b1e-8f68-80158ad0ff2a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"4e63f0da"}}
-  - {"name":"Relay_-🇺🇸US_14 | 1.63Mb","type":"vmess","server":"www.speedtest.net","port":80,"cipher":"auto","uuid":"31488365-7b6a-434a-8b7b-8f35012c6a22","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE"}}
-  - {"name":"Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb","type":"vmess","server":"au-full.privateip.net","port":443,"cipher":"auto","uuid":"09d4b837-72f6-4f9f-a0fe-db52aea19564","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"🇨🇦CA_18 |62.32Mb","type":"vmess","server":"158.51.121.36","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb","type":"vmess","server":"ca-v2ray.ipracevpn.com","port":443,"cipher":"auto","uuid":"e3ef2387-33aa-4c0f-86b5-008ee3bcb945","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳CN_22 |12.52Mb","type":"vmess","server":"112.132.212.19","port":50004,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb","type":"vmess","server":"142.0.134.241","port":45017,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳CN_24 |62.18Mb","type":"vmess","server":"107.148.192.156","port":41911,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb","type":"vmess","server":"188.114.97.3","port":443,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"afrhms16v.bestxray.buzz"}}}
-  - {"name":"Relay_🇨🇴CO-🇺🇸US_26","type":"vmess","server":"188.114.99.183","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"Relay_🇨🇴CO-🇬🇧GB_27","type":"vmess","server":"188.114.97.3","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"Relay_🇨🇴CO-🇬🇧GB_28","type":"vmess","server":"188.114.97.210","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"Relay_🇨🇴CO-🇬🇧GB_29","type":"vmess","server":"188.114.97.79","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
-  - {"name":"🇩🇪DE_30 | 2.00Mb","type":"vmess","server":"217.160.45.31","port":8880,"cipher":"auto","uuid":"4e186678-fcca-4325-e4bc-b2916bdf6708","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇩🇪DE_31 |31.63Mb","type":"vmess","server":"192.248.190.110","port":11005,"cipher":"auto","uuid":"67ddcdc0-eb50-11ee-a09c-3759ee9e5e87","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb","type":"vmess","server":"135.181.109.197","port":80,"cipher":"auto","uuid":"1b457053-80cc-4391-b2bf-badfd71ad8cd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ZXzpLGLXPrYffqWUhE"}}
-  - {"name":"Relay_🇫🇷FR-🇫🇷FR_51","type":"vmess","server":"fr-full.privateip.net","port":443,"cipher":"auto","uuid":"d8d9a946-c231-426a-8170-069cc2f0df2f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":"fr-full.privateip.net"}}}
-  - {"name":"🇬🇧GB_58 |36.19Mb","type":"vmess","server":"149.7.16.174","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb","type":"vmess","server":"uk2-full.privateip.net","port":443,"cipher":"auto","uuid":"2880d739-64ef-4d82-b6fe-a96c3a053bd7","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb","type":"vmess","server":"tr-full.privateip.net","port":443,"cipher":"auto","uuid":"581bba15-c9e9-43b3-9d63-d6b2614e959c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":"tr-full.privateip.net"}}}
-  - {"name":"Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb","type":"vmess","server":"de-v2ray.freevmess.com","port":52808,"cipher":"auto","uuid":"2c864223-74fd-4314-b947-2c346dc4c9d1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb","type":"vmess","server":"in-full.privateip.net","port":443,"cipher":"auto","uuid":"7ac33d15-d4a3-4cad-8c83-fe916f0eaf3c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"🇰🇷KR_72 |10.50Mb","type":"vmess","server":"103.214.68.57","port":10001,"cipher":"auto","uuid":"ebca5f68-bf59-4081-e658-f158839c2f5c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb","type":"vmess","server":"ua-full.privateip.net","port":443,"cipher":"auto","uuid":"45e7e09e-57ff-497c-aef8-eddb332704e5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb","type":"vmess","server":"202.86.138.58","port":50000,"cipher":"auto","uuid":"cab438c4-9c5a-43fd-a623-ce81cb93085c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ikun","headers":{"host":"hkv6.linyuch3.eu.org"}}}
-  - {"name":"🇳🇱NL_75 |34.43Mb","type":"vmess","server":"130.162.47.123","port":6854,"cipher":"auto","uuid":"b5f7e932-f730-4ad2-b425-40977b9db332","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zBLPou"}}
-  - {"name":"Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb","type":"vmess","server":"nl-v2ray.ipracevpn.com","port":443,"cipher":"auto","uuid":"836181bb-cf0e-4e3a-9795-0b4264e76ad5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb","type":"vmess","server":"nl-full.privateip.net","port":443,"cipher":"auto","uuid":"eb0a9882-61ae-40ae-ae5a-b42771fbf65a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"🇷🇺RU_93 |13.25Mb","type":"vmess","server":"31.192.234.7","port":12954,"cipher":"auto","uuid":"8259cb1c-dd6c-4739-9c88-af550d977525","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb","type":"vmess","server":"sg-full.privateip.net","port":443,"cipher":"auto","uuid":"fa3c063e-a5eb-416b-882b-852d40a3ee09","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb","type":"vmess","server":"it-full.privateip.net","port":443,"cipher":"auto","uuid":"509fd5aa-5859-4618-8de8-428b38c269ec","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"Pool_🇺🇸US_107 |89.86Mb","type":"vmess","server":"38.33.34.17","port":38001,"cipher":"auto","uuid":"b65da4af-a12a-4a59-9316-4549e12ba62c","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/150907203104"}}
-  - {"name":"🇺🇸US_108 |153.41Mb","type":"vmess","server":"129.146.46.181","port":52408,"cipher":"auto","uuid":"a797ff7b-8161-40a6-d577-1b2c213b3885","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸US_109 |120.62Mb","type":"vmess","server":"192.3.150.233","port":8443,"cipher":"auto","uuid":"a6a37e04-5e81-44c9-be53-baa3ff46eb8b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/8cda48b3"}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_110 |17.01Mb","type":"vmess","server":"caretaker.com","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb","type":"vmess","server":"us2-full.privateip.net","port":443,"cipher":"auto","uuid":"c9e7de6a-fde7-4cbe-8adf-081239a0143d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN"}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_112 |32.19Mb","type":"vmess","server":"172.67.170.13","port":443,"cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.sbs"}}}
-  - {"name":"🇺🇸US_113 |90.20Mb","type":"vmess","server":"155.138.242.207","port":54316,"cipher":"auto","uuid":"67797c6a-e898-49bd-8f61-5fb1523ce0bd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"155.138.242.207"}}}
-  - {"name":"🇺🇸US_114 |37.64Mb","type":"vmess","server":"152.69.197.74","port":12345,"cipher":"auto","uuid":"b8a6bf58-485a-4046-b386-b3661bf65eff","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/bb"}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_115","type":"vmess","server":"104.26.0.95","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
-  - {"name":"🇺🇸US_116 |202.78Mb","type":"vmess","server":"107.173.146.129","port":80,"cipher":"auto","uuid":"5820093a-bb7d-4e15-8575-1a529f2d8282","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_117","type":"vmess","server":"172.67.175.56","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
-  - {"name":"Relay_🇺🇸US-🇩🇪DE_118","type":"vmess","server":"172.67.131.108","port":443,"cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_119 |51.33Mb","type":"vmess","server":"104.26.7.65","port":443,"cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
-  - {"name":"🇺🇸US_120 |80.11Mb","type":"vmess","server":"162.251.62.115","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Pool_🇺🇸US_121 | 9.29Mb","type":"vmess","server":"198.2.218.102","port":41400,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_122 |137.02Mb","type":"vmess","server":"172.67.244.191","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
-  - {"name":"🇺🇸US_123 |62.44Mb","type":"vmess","server":"107.175.37.186","port":80,"cipher":"auto","uuid":"dccb5580-de8d-4aca-a9a5-f986da33faa6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸US_124 |79.91Mb","type":"vmess","server":"64.23.196.139","port":13337,"cipher":"auto","uuid":"bdd22841-c4d2-4aa8-acf2-95aa9125f159","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Relay_🇺🇸US-🇺🇸US_126","type":"vmess","server":"cold-dawn-9246.fly.dev","port":443,"cipher":"auto","uuid":"ea4909ef-7ca6-4b46-bf2e-6c07896ef338","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm"}}
-  - {"name":"🇺🇸US_127 |234.73Mb","type":"vmess","server":"38.75.137.27","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb","type":"vmess","server":"upload.ir","port":443,"cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"afrhms16v.bestxray.buzz"}}}
-  - {"name":"Relay_🇺🇸US-🇫🇷FR_129","type":"vmess","server":"172.67.130.140","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"s1c.v2.v001sss.xyz"}}}
-  - {"name":"🇿🇦ZA_138 | 9.81Mb","type":"vmess","server":"129.151.164.152","port":55600,"cipher":"auto","uuid":"e30f8588-2555-48b8-c354-c8e63f57232d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb","type":"vmess","server":"104.21.83.108","port":443,"cipher":"auto","uuid":"6c168fcc-2231-4f3b-8c1e-f6391692df4a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/link","headers":{"host":"hms02.fxiaomi.sbs"}}}
-  - {"name":"Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb","type":"vmess","server":"104.21.44.106","port":443,"cipher":"auto","uuid":"93ea486a-bada-42a4-ac38-d088b320fa1e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"xmivideo.cfd"}}}
-  - {"name":"Relay_🏁ZZ-🇺🇸US_142","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":2052,"cipher":"auto","uuid":"bf475e6c-a607-415e-a7f7-45c889320633","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/9TfVEyku","headers":{"host":"wtywwcrzjp5.yofnhkfc.xyz"}}}
-  - {"name":"Relay_🏁ZZ-🇫🇷FR_144","type":"vmess","server":"104.21.8.157","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"s1c.v2.v001sss.xyz"}}}
-  - {"name":"Relay_🏁ZZ-🇺🇸US_145 |112.04Mb","type":"vmess","server":"speed.cloudflare.com","port":443,"cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v149-dskds65","headers":{"host":"us4e-20240111.v2freevpn.com"}}}
-  - {"name":"Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb","type":"vmess","server":"zula.ir","port":443,"cipher":"auto","uuid":"950db6aa-4926-4616-816e-ec0312dcb87b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"jahfkjha.cfd"}}}
-  - {"name":"Relay_🏁ZZ-🇺🇸US_147","type":"vmess","server":"obdii.cfd","port":443,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
-  - {"name":"🏁ZZ_148 |66.33Mb","type":"vmess","server":"23.154.136.2","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkvws"}}
-  - {"name":"Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb","type":"vmess","server":"cfcdn2.sanfencdn9.com","port":2052,"cipher":"auto","uuid":"bf475e6c-a607-415e-a7f7-45c889320633","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/c9efxRCi","headers":{"host":"7nAi74jJsg1.yofnhkfc.xyz"}}}
-  - {"name":"Relay_🏁ZZ-🇺🇸US_150 |261.72Mb","type":"vmess","server":"104.21.55.234","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
-  - {"name":"Relay_🏁ZZ-🏁ZZ_151 |35.20Mb","type":"vmess","server":"nl-v2ray.freevmess.com","port":2083,"cipher":"auto","uuid":"559b094d-5c14-44df-ad21-cfb4e5abb4c0","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Relay_🏁ZZ-🇺🇸US_152 |243.24Mb","type":"vmess","server":"hms082.gwdef.sbs","port":443,"cipher":"auto","uuid":"bc864078-dcf3-4bf4-8dbf-ca9f200b56be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"gwdef.sbs"}}}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"74.211.99.116","port":80,"cipher":"auto","uuid":"7233ea84-9f86-4e09-dece-db3a472ad1a8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇹🇼_TW_台湾","type":"vmess","server":"35.229.236.201","port":12345,"cipher":"auto","uuid":"957c0034-9066-48a8-b824-5f6203298746","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/957c0034"}}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"172.67.144.2","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ptdny.xyyjc.top"}}}
+  - {"name":"🇵🇱_PL_波兰_1","type":"ss","server":"51.77.53.200","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_2","type":"ss","server":"51.77.53.200","port":6379,"password":"zDNVedRFPQexG9v","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_3","type":"ss","server":"51.77.53.200","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_4","type":"ss","server":"51.77.53.200","port":5001,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇬🇧_GB_英国","type":"ss","server":"212.102.53.78","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"🇵🇱_PL_波兰_5","type":"ss","server":"51.77.53.200","port":8119,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_6","type":"ss","server":"51.77.53.200","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_3","type":"ss","server":"38.114.114.207","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_7","type":"ss","server":"51.77.53.200","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"🇩🇪_DE_德国_1","type":"trojan","server":"3.127.125.40","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"🇵🇱_PL_波兰_8","type":"ss","server":"51.77.53.200","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"64.176.15.74","port":3389,"cipher":"auto","uuid":"9c050a86-d612-48f1-ec32-e573df08a1b7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇺🇸_US_美国_5","type":"ss","server":"38.114.114.207","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国->🇫🇷_FR_法国","type":"vmess","server":"104.21.8.157","port":2082,"cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"s1c.v2.v001sss.xyz"}}}
+  - {"name":"🇵🇱_PL_波兰_9","type":"ss","server":"51.77.53.200","port":5000,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_10","type":"ss","server":"51.77.53.200","port":8091,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_6","type":"vmess","server":"russia.com","port":2095,"cipher":"auto","uuid":"4b05abf5-c68d-4ffc-915f-add2f3786dca","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v3/download.getFile","headers":{"host":"sssub.v2.001.ssrsub.com"}}}
+  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"trojan","server":"104.21.43.13","port":443,"udp":true,"password":"f91f38bb-72d5-4f3e-8311-1788986293f5","sni":"iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpnc.iran-mehr14.ir","skip-cert-verify":false,"network":"grpc","grpc-opts":{"grpc-service-name":"2pxF1YL0obWgOVYsTfLJX3ihXJUp"}}
+  - {"name":"🇵🇱_PL_波兰_11","type":"ss","server":"51.77.53.200","port":6697,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_7","type":"ss","server":"38.114.114.207","port":5000,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"172.67.144.12","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptdhl.xyyjc.top"}}}
+  - {"name":"🇺🇸_US_美国_8","type":"ss","server":"38.114.114.207","port":5600,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳_CN_中国->🇨🇿_CZ_捷克_1","type":"trojan","server":"211.99.98.65","port":32039,"udp":true,"password":"ed4f18fc-fdc9-4296-a69a-a2c908f9b09e","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_9","type":"ss","server":"38.114.114.207","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳_CN_中国->🇨🇿_CZ_捷克_2","type":"trojan","server":"211.99.98.83","port":32039,"udp":true,"password":"ed4f18fc-fdc9-4296-a69a-a2c908f9b09e","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇵🇱_PL_波兰_12","type":"ss","server":"51.77.53.200","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_13","type":"ss","server":"51.77.53.200","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳_CN_中国->🇨🇿_CZ_捷克_3","type":"trojan","server":"211.99.98.151","port":32039,"udp":true,"password":"ed4f18fc-fdc9-4296-a69a-a2c908f9b09e","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_10","type":"ss","server":"38.114.114.207","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇩🇪_DE_德国_2","type":"trojan","server":"52.57.148.112","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":false,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_11","type":"ss","server":"184.170.241.194","port":443,"password":"shadowsocks","cipher":"aes-128-cfb"}
+  - {"name":"🇵🇱_PL_波兰_14","type":"ss","server":"51.77.53.200","port":5500,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_15","type":"ss","server":"51.77.53.200","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇦_CA_加拿大","type":"vmess","server":"167.114.90.198","port":50577,"cipher":"auto","uuid":"132b0296-e304-45a6-b045-4cdf0902e2b7","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇵🇱_PL_波兰_16","type":"ss","server":"51.77.53.200","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳_CN_中国->🇨🇿_CZ_捷克_4","type":"trojan","server":"211.99.98.144","port":32039,"udp":true,"password":"ed4f18fc-fdc9-4296-a69a-a2c908f9b09e","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇵🇱_PL_波兰_17","type":"ss","server":"51.77.53.200","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_12","type":"vmess","server":"172.67.144.201","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ptdny.xyyjc.top"}}}
+  - {"name":"🇺🇸_US_美国_13","type":"vmess","server":"170.178.179.190","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_14","type":"vmess","server":"104.17.16.37","port":2052,"cipher":"auto","uuid":"1d95edba-c8c7-4f0e-be25-5503fa31b509","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ptddg.xyyjc.top"}}}
+  - {"name":"🇺🇸_US_美国_15","type":"ss","server":"38.114.114.207","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱_NL_荷兰","type":"vmess","server":"188.114.97.3","port":80,"cipher":"auto","uuid":"b25f8da6-54a2-49b3-bacf-8403b4c36556","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE","headers":{"host":"De1.vmess.site."}}}
+  - {"name":"🇵🇱_PL_波兰_18","type":"ss","server":"51.77.53.200","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"🇵🇱_PL_波兰_19","type":"ss","server":"51.77.53.200","port":9102,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_16","type":"ss","server":"172.233.51.128","port":80,"password":"fLAIbz76BnOmJ6HNuK2qvm","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇱_PL_波兰_20","type":"ss","server":"51.77.53.200","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸_US_美国_17","type":"ss","server":"38.114.114.207","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -602,72 +490,56 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _13
-      - Relay_-🇺🇸US_14 | 1.63Mb
-      - Relay_🇦🇺AU-🇦🇺AU_16 | 2.65Mb
-      - 🇨🇦CA_18 |62.32Mb
-      - Relay_🇨🇦CA-🇨🇦CA_19 |24.62Mb
-      - 🇨🇳CN_22 |12.52Mb
-      - Relay_🇨🇳CN-🇺🇸US_23 |36.64Mb
-      - 🇨🇳CN_24 |62.18Mb
-      - Relay_🇨🇴CO-🇫🇷FR_25 |29.81Mb
-      - Relay_🇨🇴CO-🇺🇸US_26
-      - Relay_🇨🇴CO-🇬🇧GB_27
-      - Relay_🇨🇴CO-🇬🇧GB_28
-      - Relay_🇨🇴CO-🇬🇧GB_29
-      - 🇩🇪DE_30 | 2.00Mb
-      - 🇩🇪DE_31 |31.63Mb
-      - Relay_🇫🇮FI-🇺🇸US_36 | 5.67Mb
-      - Relay_🇫🇷FR-🇫🇷FR_51
-      - 🇬🇧GB_58 |36.19Mb
-      - Relay_🇬🇧GB-🇬🇧GB_59 |28.20Mb
-      - Relay_🇬🇮GI-🇬🇮GI_64 | 1.93Mb
-      - Relay_🇬🇮GI-🇬🇮GI_65 | 2.60Mb
-      - Relay_🇮🇳IN-🇮🇳IN_66 | 2.06Mb
-      - 🇰🇷KR_72 |10.50Mb
-      - Relay_🇱🇻LV-🇱🇻LV_73 | 2.14Mb
-      - Relay_🇲🇴MO-🇺🇸US_74 |32.44Mb
-      - 🇳🇱NL_75 |34.43Mb
-      - Relay_🇳🇱NL-🇳🇱NL_76 |27.25Mb
-      - Relay_🇳🇱NL-🇳🇱NL_77 | 4.14Mb
-      - 🇷🇺RU_93 |13.25Mb
-      - Relay_🇸🇬SG-🇸🇬SG_95 | 5.09Mb
-      - Relay_🇺🇦UA-🇺🇦UA_98 | 2.64Mb
-      - Pool_🇺🇸US_107 |89.86Mb
-      - 🇺🇸US_108 |153.41Mb
-      - 🇺🇸US_109 |120.62Mb
-      - Relay_🇺🇸US-🇺🇸US_110 |17.01Mb
-      - Relay_🇺🇸US-🇺🇸US_111 | 2.43Mb
-      - Relay_🇺🇸US-🇺🇸US_112 |32.19Mb
-      - 🇺🇸US_113 |90.20Mb
-      - 🇺🇸US_114 |37.64Mb
-      - Relay_🇺🇸US-🇺🇸US_115
-      - 🇺🇸US_116 |202.78Mb
-      - Relay_🇺🇸US-🇺🇸US_117
-      - Relay_🇺🇸US-🇩🇪DE_118
-      - Relay_🇺🇸US-🇺🇸US_119 |51.33Mb
-      - 🇺🇸US_120 |80.11Mb
-      - Pool_🇺🇸US_121 | 9.29Mb
-      - Relay_🇺🇸US-🇺🇸US_122 |137.02Mb
-      - 🇺🇸US_123 |62.44Mb
-      - 🇺🇸US_124 |79.91Mb
-      - Relay_🇺🇸US-🇺🇸US_126
-      - 🇺🇸US_127 |234.73Mb
-      - Relay_🇺🇸US-🇫🇷FR_128 |30.51Mb
-      - Relay_🇺🇸US-🇫🇷FR_129
-      - 🇿🇦ZA_138 | 9.81Mb
-      - Relay_🏁ZZ-🇩🇪DE_139 |116.73Mb
-      - Relay_🏁ZZ-🇩🇪DE_140 |68.73Mb
-      - Relay_🏁ZZ-🇺🇸US_142
-      - Relay_🏁ZZ-🇫🇷FR_144
-      - Relay_🏁ZZ-🇺🇸US_145 |112.04Mb
-      - Relay_🏁ZZ-🇩🇪DE_146 |33.11Mb
-      - Relay_🏁ZZ-🇺🇸US_147
-      - 🏁ZZ_148 |66.33Mb
-      - Relay_🏁ZZ-🇸🇬SG_149 |39.95Mb
-      - Relay_🏁ZZ-🇺🇸US_150 |261.72Mb
-      - Relay_🏁ZZ-🏁ZZ_151 |35.20Mb
-      - Relay_🏁ZZ-🇺🇸US_152 |243.24Mb
+      - 🇺🇸_US_美国_1
+      - 🇹🇼_TW_台湾
+      - 🇺🇸_US_美国_2
+      - 🇵🇱_PL_波兰_1
+      - 🇵🇱_PL_波兰_2
+      - 🇵🇱_PL_波兰_3
+      - 🇵🇱_PL_波兰_4
+      - 🇬🇧_GB_英国
+      - 🇵🇱_PL_波兰_5
+      - 🇵🇱_PL_波兰_6
+      - 🇺🇸_US_美国_3
+      - 🇵🇱_PL_波兰_7
+      - 🇩🇪_DE_德国_1
+      - 🇵🇱_PL_波兰_8
+      - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇵🇱_PL_波兰_9
+      - 🇵🇱_PL_波兰_10
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇵🇱_PL_波兰_11
+      - 🇺🇸_US_美国_7
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_1
+      - 🇺🇸_US_美国_9
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_2
+      - 🇵🇱_PL_波兰_12
+      - 🇵🇱_PL_波兰_13
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_3
+      - 🇺🇸_US_美国_10
+      - 🇩🇪_DE_德国_2
+      - 🇺🇸_US_美国_11
+      - 🇵🇱_PL_波兰_14
+      - 🇵🇱_PL_波兰_15
+      - 🇨🇦_CA_加拿大
+      - 🇵🇱_PL_波兰_16
+      - 🇨🇳_CN_中国->🇨🇿_CZ_捷克_4
+      - 🇵🇱_PL_波兰_17
+      - 🇺🇸_US_美国_12
+      - 🇺🇸_US_美国_13
+      - 🇺🇸_US_美国_14
+      - 🇺🇸_US_美国_15
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰_18
+      - 🇵🇱_PL_波兰_19
+      - 🇺🇸_US_美国_16
+      - 🇵🇱_PL_波兰_20
+      - 🇺🇸_US_美国_17
 
 rules:
 # 本地/局域网地址
