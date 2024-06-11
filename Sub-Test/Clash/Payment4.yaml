@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-06-11 21:32:14
+# 客户端：Clash.Meta
+# 创建时间：2024-06-11 21:35:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：15
+# 节点数量：28
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,144 +86,235 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"剩余流量：0","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"距离下次重置剩余：19 天","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"套餐到期：2024-06-30","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"注册网址：chaozhijc.xyz","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"TG频道：https://t.me/chaozhijc","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"优化|o纽约1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
-  - {"name":"优化|o纽约2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dny.chaozhijc.xyz"}}}
-  - {"name":"优化|o新加坡1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
-  - {"name":"优化|o新加坡2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dxjp.chaozhijc.xyz"}}}
-  - {"name":"优化|o印度1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
-  - {"name":"优化|o印度2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dyd.chaozhijc.xyz"}}}
-  - {"name":"优化|o澳大利亚1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"优化|o澳大利亚2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"dadly.chaozhijc.xyz"}}}
-  - {"name":"优化|o德国1","type":"vmess","server":"chaoji1.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
-  - {"name":"优化|o德国2","type":"vmess","server":"chaoji2.chaozhijc.xyz","port":2082,"cipher":"auto","uuid":"0ff2af1f-4993-41a8-849f-0161cf33bce2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"ddg.chaozhijc.xyz"}}}
+  - {"name":"defaultName_1","type":"vmess","server":"YXV0bzo0MTgwNDhhZi1hMjkzLTRiOTktOWIwYy05OGNhMzU4MGRkMjRAMTEyLjEzMi4yMTIuMTk6NTAwMDQ?remarks=%F0%9F%87%AD%F0%9F%87%B0%20HK%2001%20(%E8%83%96%E8%99%8E%E9%A2%91%E9%81%93@gitbig)&obfs=none&alterId=64","port":0,"cipher":"auto","uuid":"gitbig)&obfs=none&alterId=64","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"defaultName_2","type":"vmess","server":"YXV0bzo0MTgwNDhhZi1hMjkzLTRiOTktOWIwYy05OGNhMzU4MGRkMjRAMTEyLjEzMi4yMTIuMTk6NTAwMDQ?remarks=%F0%9F%87%AD%F0%9F%87%B0%20HK%2002%20(%E8%83%96%E8%99%8E%E9%A2%91%E9%81%93@gitbig)&obfs=none&alterId=64","port":0,"cipher":"auto","uuid":"gitbig)&obfs=none&alterId=64","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇭🇰 HK 03 (胖虎频道@gitbig)","type":"ss","server":"59.56.77.178","port":15001,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"defaultName_3","type":"vmess","server":"YXV0bzo0MTgwNDhhZi1hMjkzLTRiOTktOWIwYy05OGNhMzU4MGRkMjRAMTEyLjEzMi4yMTIuMTk6NTAwMDQ?remarks=%F0%9F%87%AD%F0%9F%87%B0%20HK%2004%20(%E8%83%96%E8%99%8E%E9%A2%91%E9%81%93@gitbig)&obfs=none&alterId=64","port":0,"cipher":"auto","uuid":"gitbig)&obfs=none&alterId=64","alterId":64,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇭🇰 HK 09 (胖虎频道@gitbig)","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName_4","type":"vmess","server":"gitbig)&obfsParam=%7B%22Host%22","port":0,"cipher":"auto","uuid":"gitbig)&obfsParam=%7B%22Host%22:%22tms.dingtalk.com%22%7D&path=/&obfs=websocket&alterId=0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"defaultName_5","type":"vmess","server":"gitbig)&obfsParam=%7B%22Host%22","port":0,"cipher":"auto","uuid":"gitbig)&obfsParam=%7B%22Host%22:%22tms.dingtalk.com%22%7D&path=/&obfs=websocket&alterId=0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇸🇬 SG 01 (胖虎频道@gitbig)","type":"ss","server":"iepl2.forlive.live","port":50006,"password":"fb48497f-fd64-4ef8-b434-00ef05f38a67","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"%252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)","type":"hysteria","server":"sg6.xiaoliyu.cyou","port":8060,"sni":"sg6.xiaoliyu.cyou","alpn":["h3"],"protocol":"udp","auth_str":"7d6f8b38-a1aa-4c50-b6ac-6c02c9190deb","up":30,"down":70}
+  - {"name":"🇸🇬 SG 04 (胖虎频道@gitbig)","type":"ss","server":"dcl1.forlive.live","port":42028,"password":"8ca2d58e-9a1d-4756-842e-df4fd7a656a7","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_6","type":"vmess","server":"gitbig)&obfsParam=%7B%22Host%22","port":0,"cipher":"auto","uuid":"gitbig)&obfsParam=%7B%22Host%22:%22tms.dingtalk.com%22%7D&path=/&obfs=websocket&alterId=0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"defaultName_7","type":"vmess","server":"gitbig)&obfsParam=%7B%22Host%22","port":0,"cipher":"auto","uuid":"gitbig)&obfsParam=%7B%22Host%22:%22tms.dingtalk.com%22%7D&path=/&obfs=websocket&alterId=0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"defaultName_8","type":"vmess","server":"YXV0bzozYTk4ODM2Ny01ZGFhLTRiZWItYmU2Mi1hYWJhM2U3OTUzNGFAYWxtMi50aGUtZ2FsZ28udG9wOjMyMDEy?remarks=%F0%9F%87%A8%F0%9F%87%B3%20TW%2001%20(%E8%83%96%E8%99%8E%E9%A2%91%E9%81%93@gitbig)&obfs=none&alterId=0","port":0,"cipher":"auto","uuid":"gitbig)&obfs=none&alterId=0","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇨🇳 TW 02 (胖虎频道@gitbig)","type":"ss","server":"03.forlive.live","port":22302,"password":"a4816dc5-152b-4f52-8ec5-c1fbf543ec10","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 TW 03 (胖虎频道@gitbig)","type":"ss","server":"04.forlive.live","port":22302,"password":"28fe58c4-9fe0-4ea6-b189-2f1b35dc0821","cipher":"aes-128-gcm"}
+  - {"name":"%252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)","type":"hysteria","server":"fr2.xiaoliyu.cyou","port":9305,"sni":"fr2.xiaoliyu.cyou","alpn":["h3"],"protocol":"udp","auth_str":"7d6f8b38-a1aa-4c50-b6ac-6c02c9190deb","up":30,"down":70}
+  - {"name":"%252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)","type":"hysteria","server":"mx1.xiaoliyu.cyou","port":10620,"sni":"mx1.xiaoliyu.cyou","alpn":["h3"],"protocol":"udp","auth_str":"7d6f8b38-a1aa-4c50-b6ac-6c02c9190deb","up":30,"down":70}
+  - {"name":"%252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)","type":"hysteria","server":"es1.xiaoliyu.cyou","port":9611,"sni":"es1.xiaoliyu.cyou","alpn":["h3"],"protocol":"udp","auth_str":"7d6f8b38-a1aa-4c50-b6ac-6c02c9190deb","up":30,"down":70}
+  - {"name":"🇯🇵 JP 01 (胖虎频道@gitbig)","type":"ss","server":"59.56.77.178","port":15084,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇯🇵 JP 03 (胖虎频道@gitbig)","type":"ss","server":"03.forlive.live","port":22233,"password":"adc84fb7-8ed6-4d6b-bc55-f91895c43513","cipher":"aes-128-gcm"}
+  - {"name":"%252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)","type":"hysteria","server":"br1.xiaoliyu.cyou","port":6005,"sni":"br1.xiaoliyu.cyou","alpn":["h3"],"protocol":"udp","auth_str":"7d6f8b38-a1aa-4c50-b6ac-6c02c9190deb","up":30,"down":70}
+  - {"name":"🇺🇸 US 01 (胖虎频道@gitbig)","type":"ss","server":"59.56.77.178","port":16058,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US 02 (胖虎频道@gitbig)","type":"ss","server":"59.56.77.178","port":16058,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US 03 (胖虎频道@gitbig)","type":"ss","server":"59.56.77.178","port":16058,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US 04 (胖虎频道@gitbig)","type":"trojan","server":"183.232.139.22","port":50611,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 05 (胖虎频道@gitbig)","type":"trojan","server":"223.113.54.160","port":23223,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 06 (胖虎频道@gitbig)","type":"trojan","server":"223.113.54.160","port":23223,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 07 (胖虎频道@gitbig)","type":"trojan","server":"183.232.139.22","port":50611,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -245,21 +337,34 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 剩余流量：0
-      - 距离下次重置剩余：19 天
-      - 套餐到期：2024-06-30
-      - 注册网址：chaozhijc.xyz
-      - TG频道：https://t.me/chaozhijc
-      - 优化|o纽约1
-      - 优化|o纽约2
-      - 优化|o新加坡1
-      - 优化|o新加坡2
-      - 优化|o印度1
-      - 优化|o印度2
-      - 优化|o澳大利亚1
-      - 优化|o澳大利亚2
-      - 优化|o德国1
-      - 优化|o德国2
+      - defaultName_1
+      - defaultName_2
+      - 🇭🇰 HK 03 (胖虎频道@gitbig)
+      - defaultName_3
+      - 🇭🇰 HK 09 (胖虎频道@gitbig)
+      - defaultName_4
+      - defaultName_5
+      - 🇸🇬 SG 01 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525B8%252525F0%2525259F%25252587%252525AC%25252520SG%2525252003%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇸🇬 SG 04 (胖虎频道@gitbig)
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - 🇨🇳 TW 02 (胖虎频道@gitbig)
+      - 🇨🇳 TW 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525AB%252525F0%2525259F%25252587%252525B7%25252520FR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525B2%252525F0%2525259F%25252587%252525BD%25252520MX%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      -   %252525F0%2525259F%25252587%252525AA%252525F0%2525259F%25252587%252525B8%25252520ES%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇯🇵 JP 01 (胖虎频道@gitbig)
+      - 🇯🇵 JP 03 (胖虎频道@gitbig)
+      -   %252525F0%2525259F%25252587%252525A7%252525F0%2525259F%25252587%252525B7%25252520BR%2525252001%25252520(%252525E8%25252583%25252596%252525E8%25252599%2525258E%252525E9%252525A2%25252591%252525E9%25252581%25252593%252540gitbig)
+      - 🇺🇸 US 01 (胖虎频道@gitbig)
+      - 🇺🇸 US 02 (胖虎频道@gitbig)
+      - 🇺🇸 US 03 (胖虎频道@gitbig)
+      - 🇺🇸 US 04 (胖虎频道@gitbig)
+      - 🇺🇸 US 05 (胖虎频道@gitbig)
+      - 🇺🇸 US 06 (胖虎频道@gitbig)
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
 
 rules:
 # 本地/局域网地址
