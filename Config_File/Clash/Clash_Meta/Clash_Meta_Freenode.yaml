@@ -9,7 +9,7 @@ proxy-providers:
   机场1:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free1"
+    url: ""
     path: ./proxies/airport1.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -21,7 +21,7 @@ proxy-providers:
       interval: 600
   机场2:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free2"
+    url: ""
     path: ./proxies/airport2.yaml
     interval: 43200
     health-check:
@@ -31,7 +31,7 @@ proxy-providers:
       interval: 600
   机场3:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free3"
+    url: ""
     path: ./proxies/airport3.yaml
     interval: 43200
     health-check:
@@ -41,7 +41,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free4"
+    url: ""
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -51,7 +51,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free5"
+    url: ""
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
@@ -62,7 +62,7 @@ proxy-providers:
   机场6:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free6"
+    url: ""
     path: ./proxies/airport6.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -74,7 +74,7 @@ proxy-providers:
       interval: 600
   机场7:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free7"
+    url: ""
     path: ./proxies/airport7.yaml
     interval: 43200
     health-check:
@@ -84,7 +84,7 @@ proxy-providers:
       interval: 600
   机场8:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free8"
+    url: ""
     path: ./proxies/airport8.yaml
     interval: 43200
     health-check:
@@ -94,7 +94,7 @@ proxy-providers:
       interval: 600
   机场9:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free9"
+    url: ""
     path: ./proxies/airport9.yaml
     interval: 43200
     health-check:
@@ -104,7 +104,7 @@ proxy-providers:
       interval: 600
   机场10:
     type: http
-    url: "https://gist.githubusercontent.com/LaolunsiG/78d63934e9f2973b8e88d2ad4bbda65d/raw/Free10"
+    url: ""
     path: ./proxies/airport10.yaml
     interval: 43200
     health-check:
