@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-06 10:36:23
+# 创建时间：2024-06-11 21:43:14
 # 使用模版：V2RaySE 默认模版
-# 节点数量：29
+# 节点数量：11
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,242 +85,116 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"剩余流量：444.5 GB\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":16364,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"套餐到期：长期有效\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":16364,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"官网：tblack.xyz\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":16364,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"邀请返佣：40%\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":16364,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"新疆日本\r","type":"trojan","server":"sretdfhgbtrfhb.llp-llp-llp-007.icu","port":32111,"udp":true,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","sni":"3d-academy.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新疆美国\r","type":"trojan","server":"edrfgbvredfhbsrtfgdnhb.llp-llp-llp-007.icu","port":32112,"udp":true,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","sni":"3d-academy.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇭🇰 • [1x] • 香港1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":16364,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 • [1x] • 香港2\r","type":"ss","server":"apvboyuy4knhmvk2mjxquzjrf1m16sd7fxdrd9lpghf686jrbsgkgonixtk96.llp-llp-llp-007.icu","port":15212,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 • [1x] • 香港3\r","type":"ss","server":"0zufqczy0hopjc5lzqufuamyyb43cogtnuz1ofr3t2izoezfvswyehvj86lq.llp-llp-llp-007.icu","port":15223,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇭🇰 • [1x] • 香港4\r","type":"ss","server":"zhst0wppg1h7udtsvaftmeu8pizlppmpxro8rsadlok6o4o2btsanwhzcaqo.llp-llp-llp-007.icu","port":15294,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇳 • [1x] • 台湾1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15124,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇳 • [1x] • 台湾2\r","type":"ss","server":"apvboyuy4knhmvk2mjxquzjrf1m16sd7fxdrd9lpghf686jrbsgkgonixtk96.llp-llp-llp-007.icu","port":15135,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇸🇬 • [1x] • 新加坡1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15301,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇸🇬 • [1x] • 新加坡2\r","type":"ss","server":"apvboyuy4knhmvk2mjxquzjrf1m16sd7fxdrd9lpghf686jrbsgkgonixtk96.llp-llp-llp-007.icu","port":15312,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇸🇬 • [1x] • 新加坡3\r","type":"ss","server":"0zufqczy0hopjc5lzqufuamyyb43cogtnuz1ofr3t2izoezfvswyehvj86lq.llp-llp-llp-007.icu","port":15323,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇸🇬 • [1x] • 新加坡4\r","type":"ss","server":"zhst0wppg1h7udtsvaftmeu8pizlppmpxro8rsadlok6o4o2btsanwhzcaqo.llp-llp-llp-007.icu","port":15334,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇯🇵 • [1x] • 日本1\r","type":"ss","server":"saebub07ohvcd76gkrfestf2qkgnryq6johupt0qbcrgkufn7ecthlwblfay.llp-llp-llp-007.icu","port":15401,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇯🇵 • [1x] • 日本2\r","type":"ss","server":"vx2wivgau1kzk7nototc56zem733qnk6zqugskhvgml7iafdvmpddkutkkhs.llp-llp-llp-007.icu","port":15412,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇯🇵 • [1x] • 日本3\r","type":"ss","server":"hqcnwipljt4lmd0oo9ksoz1hznywitdoduzkrlovllj89bizlmfyoftcbpws.llp-llp-llp-007.icu","port":15423,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇯🇵 • [1x] • 日本4\r","type":"ss","server":"icqdjaazqrk3bxxkhuwqknm7gx9azklf8rofiocegefutqmyxz5bnvaij5nf.llp-llp-llp-007.icu","port":15434,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸 • [1x] • 美国1\r","type":"ss","server":"saebub07ohvcd76gkrfestf2qkgnryq6johupt0qbcrgkufn7ecthlwblfay.llp-llp-llp-007.icu","port":15501,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸 • [1x] • 美国2\r","type":"ss","server":"vx2wivgau1kzk7nototc56zem733qnk6zqugskhvgml7iafdvmpddkutkkhs.llp-llp-llp-007.icu","port":15512,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇲🇾 • [1x] • 马来西亚1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15291,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇰🇷 • [1x] • 韩国1\r","type":"ss","server":"saebub07ohvcd76gkrfestf2qkgnryq6johupt0qbcrgkufn7ecthlwblfay.llp-llp-llp-007.icu","port":18732,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇷🇺 • [1x] • 俄罗斯1\r","type":"ss","server":"saebub07ohvcd76gkrfestf2qkgnryq6johupt0qbcrgkufn7ecthlwblfay.llp-llp-llp-007.icu","port":15884,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇹🇷 • [1x] • 土耳其1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15651,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧 • [1x] • 英国1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15701,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪 • [1x] • 德国1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15801,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇮🇳 • [1x] • 印度1\r","type":"ss","server":"mo635hecu2mdqb4mj3pxcyldecv9y4f2nyyaeoip8kljvx1rfd2yjnt2x7gp.llp-llp-llp-007.icu","port":15192,"password":"23ffd3c8-ddbe-4d2a-ad30-eede5e90d294","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰 HK 03 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":15001,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇭🇰 HK 09 (胖虎频道@gitbig)\r","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 SG 01 (胖虎频道@gitbig)\r","type":"ss","server":"iepl2.forlive.live","port":50006,"password":"fb48497f-fd64-4ef8-b434-00ef05f38a67","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬 SG 04 (胖虎频道@gitbig)\r","type":"ss","server":"dcl1.forlive.live","port":42028,"password":"8ca2d58e-9a1d-4756-842e-df4fd7a656a7","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳 TW 02 (胖虎频道@gitbig)\r","type":"ss","server":"03.forlive.live","port":22302,"password":"a4816dc5-152b-4f52-8ec5-c1fbf543ec10","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 TW 03 (胖虎频道@gitbig)\r","type":"ss","server":"04.forlive.live","port":22302,"password":"28fe58c4-9fe0-4ea6-b189-2f1b35dc0821","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 JP 01 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":15084,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇯🇵 JP 03 (胖虎频道@gitbig)\r","type":"ss","server":"03.forlive.live","port":22233,"password":"adc84fb7-8ed6-4d6b-bc55-f91895c43513","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 US 03 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":16058,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US 07 (胖虎频道@gitbig)","type":"trojan","server":"183.232.139.22","port":50611,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 06 (胖虎频道@gitbig)\r","type":"trojan","server":"223.113.54.160","port":23223,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -343,35 +217,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "剩余流量：444.5 GB\r"
-      - "套餐到期：长期有效\r"
-      - "官网：tblack.xyz\r"
-      - "邀请返佣：40%\r"
-      - "新疆日本\r"
-      - "新疆美国\r"
-      - "🇭🇰 • [1x] • 香港1\r"
-      - "🇭🇰 • [1x] • 香港2\r"
-      - "🇭🇰 • [1x] • 香港3\r"
-      - "🇭🇰 • [1x] • 香港4\r"
-      - "🇨🇳 • [1x] • 台湾1\r"
-      - "🇨🇳 • [1x] • 台湾2\r"
-      - "🇸🇬 • [1x] • 新加坡1\r"
-      - "🇸🇬 • [1x] • 新加坡2\r"
-      - "🇸🇬 • [1x] • 新加坡3\r"
-      - "🇸🇬 • [1x] • 新加坡4\r"
-      - "🇯🇵 • [1x] • 日本1\r"
-      - "🇯🇵 • [1x] • 日本2\r"
-      - "🇯🇵 • [1x] • 日本3\r"
-      - "🇯🇵 • [1x] • 日本4\r"
-      - "🇺🇸 • [1x] • 美国1\r"
-      - "🇺🇸 • [1x] • 美国2\r"
-      - "🇲🇾 • [1x] • 马来西亚1\r"
-      - "🇰🇷 • [1x] • 韩国1\r"
-      - "🇷🇺 • [1x] • 俄罗斯1\r"
-      - "🇹🇷 • [1x] • 土耳其1\r"
-      - "🇬🇧 • [1x] • 英国1\r"
-      - "🇩🇪 • [1x] • 德国1\r"
-      - "🇮🇳 • [1x] • 印度1\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
 
 rules:
 # 本地/局域网地址
