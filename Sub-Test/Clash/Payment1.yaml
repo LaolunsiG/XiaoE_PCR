@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-06 10:31:57
+# 创建时间：2024-06-11 21:43:14
 # 使用模版：V2RaySE 默认模版
-# 节点数量：18
+# 节点数量：11
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,165 +85,116 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"剩余流量：83.41 GB","type":"vmess","server":"south.zzzzzl.me","port":51101,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"套餐到期：长期有效","type":"vmess","server":"south.zzzzzl.me","port":51101,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港V 1","type":"vmess","server":"south.zzzzzl.me","port":51101,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港V 2","type":"vmess","server":"south.zzzzzl.me","port":51102,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港V 3","type":"vmess","server":"south.zzzzzl.me","port":51103,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港V 4","type":"vmess","server":"south.zzzzzl.me","port":51104,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本V 1","type":"vmess","server":"east.zzzzzl.me","port":51201,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本V 2","type":"vmess","server":"east.zzzzzl.me","port":51202,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本V 3","type":"vmess","server":"east.zzzzzl.me","port":51203,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本V 4","type":"vmess","server":"east.zzzzzl.me","port":51204,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡V 1","type":"vmess","server":"south.zzzzzl.me","port":51301,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡V 2","type":"vmess","server":"south.zzzzzl.me","port":51302,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡V 3","type":"vmess","server":"south.zzzzzl.me","port":51303,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡V 4","type":"vmess","server":"south.zzzzzl.me","port":51304,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国V 1","type":"vmess","server":"east.zzzzzl.me","port":51401,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国V 2","type":"vmess","server":"east.zzzzzl.me","port":51402,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国V 3","type":"vmess","server":"east.zzzzzl.me","port":51403,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国V 4","type":"vmess","server":"east.zzzzzl.me","port":51404,"cipher":"auto","uuid":"96a0405b-fdb5-47c1-86c5-35586d449dcd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 HK 03 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":15001,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇭🇰 HK 09 (胖虎频道@gitbig)\r","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 SG 01 (胖虎频道@gitbig)\r","type":"ss","server":"iepl2.forlive.live","port":50006,"password":"fb48497f-fd64-4ef8-b434-00ef05f38a67","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬 SG 04 (胖虎频道@gitbig)\r","type":"ss","server":"dcl1.forlive.live","port":42028,"password":"8ca2d58e-9a1d-4756-842e-df4fd7a656a7","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳 TW 02 (胖虎频道@gitbig)\r","type":"ss","server":"03.forlive.live","port":22302,"password":"a4816dc5-152b-4f52-8ec5-c1fbf543ec10","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 TW 03 (胖虎频道@gitbig)\r","type":"ss","server":"04.forlive.live","port":22302,"password":"28fe58c4-9fe0-4ea6-b189-2f1b35dc0821","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 JP 01 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":15084,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇯🇵 JP 03 (胖虎频道@gitbig)\r","type":"ss","server":"03.forlive.live","port":22233,"password":"adc84fb7-8ed6-4d6b-bc55-f91895c43513","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 US 03 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":16058,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US 07 (胖虎频道@gitbig)","type":"trojan","server":"183.232.139.22","port":50611,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 06 (胖虎频道@gitbig)\r","type":"trojan","server":"223.113.54.160","port":23223,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -266,24 +217,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 剩余流量：83.41 GB
-      - 套餐到期：长期有效
-      - 香港V 1
-      - 香港V 2
-      - 香港V 3
-      - 香港V 4
-      - 日本V 1
-      - 日本V 2
-      - 日本V 3
-      - 日本V 4
-      - 新加坡V 1
-      - 新加坡V 2
-      - 新加坡V 3
-      - 新加坡V 4
-      - 美国V 1
-      - 美国V 2
-      - 美国V 3
-      - 美国V 4
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
 
 rules:
 # 本地/局域网地址
