@@ -466,46 +466,47 @@ proxy-groups:
       - REJECT
     type: select
 proxy-providers:
+#加入订阅链接
   Payment-Tbalck:
     interval: 86400
-    url: https://dy.hhyxt.top/api/v1/client/subscribe?token=1421069c6205d4a22fae4dd4d16c81b0
+    url: 
     benchmark-url: http://www.google.com/generate_204
     benchmark-timeout: 5
   Free-freenode:
     interval: 1440
-    url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+    url: 
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
   Payment-element:
     interval: 86400
-    url: https://cn.yuansu.app/v1/client/subscribe?token=220d960189e95961d03a4e09dfd83dc8&flag=clash
+    url: 
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
   'Payment-顶级机场':
     interval: 86400
-    url: https://gates.djjc.cfd/api/v1/client/subscribe?token=e2d67994f157a48ef86ec60e80a3f0d5
+    url: 
   Payment-pithecia:
     interval: 86400
-    url: https://oss.pithecia.com/api/v1/client/subscribe?token=854979b4c30d38234d0aad0caac92ad9
+    url: 
   Payment-超级机场:
     interval: 86400
-    url: https://api.zzzzzl.me/api/v1/client/subscribe?token=97b91df444afd8e91fe143412e41e5aa
+    url: 
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
   Free-未知-ss:
     interval: 86400
-    url: https://ss.wxgqlfx.top/wxgqlfx
+    url: 
     benchmark-timeout: 5
     benchmark-url: http://www.google.com/generate_204
   Payment-便宜机场:
     interval: 86400
-    url: https://xn--wtq35pfyd55o.co/pianyi/v0/client/subscribe?token=03abbcc037b92c80ad56c7562aeaf245
+    url: 
   Free-空想家-ss:
     interval: 86400
-    url: https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/ss
+    url: 
   Free-get_subscribe-clash:
     interval: 86400
-    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    url: 
 #远程规则集
 rule-providers:
 #下载网络
