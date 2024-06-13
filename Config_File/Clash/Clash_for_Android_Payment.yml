@@ -3,7 +3,7 @@ proxy-providers:
   机场1:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment1.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/Private/Sub-Test/Clash/Payment1.yaml"
     path: ./proxies/airport1.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -16,7 +16,7 @@ proxy-providers:
       interval: 600
   机场2:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment2.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/Private/Sub-Test/Clash/Payment2.yaml"
     path: ./proxies/airport2.yaml
     interval: 43200
     health-check:
@@ -26,7 +26,7 @@ proxy-providers:
       interval: 600
   机场3:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment3.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/Private/Sub-Test/Clash/Payment3.yaml"
     path: ./proxies/airport3.yaml
     interval: 43200
     health-check:
@@ -36,7 +36,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment4.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/Private/Sub-Test/Clash/Payment4.yaml"
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -46,7 +46,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/Sub-Test/Clash/Payment5.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/Private/Sub-Test/Clash/Payment5.yaml"
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
