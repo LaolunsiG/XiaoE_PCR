@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-06-06 10:41:04
+# 创建时间：2024-06-11 21:43:14
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：11
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,179 +85,116 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"香港 01\r","type":"ss","server":"south.ltltltltltltlt.top","port":20910,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"香港 02\r","type":"ss","server":"south.ltltltltltltlt.top","port":20911,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"香港 03\r","type":"ss","server":"south.ltltltltltltlt.top","port":20912,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"香港 04\r","type":"ss","server":"south.ltltltltltltlt.top","port":20913,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"香港 05\r","type":"ss","server":"south.ltltltltltltlt.top","port":20914,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"香港 06\r","type":"ss","server":"south.ltltltltltltlt.top","port":20915,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"台湾 01\r","type":"ss","server":"south.ltltltltltltlt.top","port":20920,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"台湾 02\r","type":"ss","server":"south.ltltltltltltlt.top","port":20921,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"日本 01\r","type":"ss","server":"east.ltltltltltltlt.top","port":20930,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"日本 02\r","type":"ss","server":"east.ltltltltltltlt.top","port":20931,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"日本 03\r","type":"ss","server":"east.ltltltltltltlt.top","port":20932,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"日本 04\r","type":"ss","server":"east.ltltltltltltlt.top","port":20933,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"新加坡 01\r","type":"ss","server":"south-2.ltltltltltltlt.top","port":20940,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"新加坡 02\r","type":"ss","server":"south-2.ltltltltltltlt.top","port":20941,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"新加坡 03\r","type":"ss","server":"south-2.ltltltltltltlt.top","port":20942,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"新加坡 04\r","type":"ss","server":"south-2.ltltltltltltlt.top","port":20943,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"美国 01\r","type":"ss","server":"east-2.ltltltltltltlt.top","port":20950,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"美国 02\r","type":"ss","server":"east-2.ltltltltltltlt.top","port":20951,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"美国 03\r","type":"ss","server":"east-2.ltltltltltltlt.top","port":20952,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
-  - {"name":"美国 04\r","type":"ss","server":"east-2.ltltltltltltlt.top","port":20953,"password":"ec4b2d4b-68e2-4f9e-bbb0-c919107c0500","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰 HK 03 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":15001,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇭🇰 HK 09 (胖虎频道@gitbig)\r","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 SG 01 (胖虎频道@gitbig)\r","type":"ss","server":"iepl2.forlive.live","port":50006,"password":"fb48497f-fd64-4ef8-b434-00ef05f38a67","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬 SG 04 (胖虎频道@gitbig)\r","type":"ss","server":"dcl1.forlive.live","port":42028,"password":"8ca2d58e-9a1d-4756-842e-df4fd7a656a7","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇳 TW 02 (胖虎频道@gitbig)\r","type":"ss","server":"03.forlive.live","port":22302,"password":"a4816dc5-152b-4f52-8ec5-c1fbf543ec10","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 TW 03 (胖虎频道@gitbig)\r","type":"ss","server":"04.forlive.live","port":22302,"password":"28fe58c4-9fe0-4ea6-b189-2f1b35dc0821","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 JP 01 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":15084,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇯🇵 JP 03 (胖虎频道@gitbig)\r","type":"ss","server":"03.forlive.live","port":22233,"password":"adc84fb7-8ed6-4d6b-bc55-f91895c43513","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 US 03 (胖虎频道@gitbig)\r","type":"ss","server":"59.56.77.178","port":16058,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸 US 07 (胖虎频道@gitbig)","type":"trojan","server":"183.232.139.22","port":50611,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 06 (胖虎频道@gitbig)\r","type":"trojan","server":"223.113.54.160","port":23223,"udp":true,"password":"gkviEOYc","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -280,26 +217,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "香港 01\r"
-      - "香港 02\r"
-      - "香港 03\r"
-      - "香港 04\r"
-      - "香港 05\r"
-      - "香港 06\r"
-      - "台湾 01\r"
-      - "台湾 02\r"
-      - "日本 01\r"
-      - "日本 02\r"
-      - "日本 03\r"
-      - "日本 04\r"
-      - "新加坡 01\r"
-      - "新加坡 02\r"
-      - "新加坡 03\r"
-      - "新加坡 04\r"
-      - "美国 01\r"
-      - "美国 02\r"
-      - "美国 03\r"
-      - "美国 04\r"
+      - "🇭🇰 HK 03 (胖虎频道@gitbig)\r"
+      - "🇭🇰 HK 09 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 01 (胖虎频道@gitbig)\r"
+      - "🇸🇬 SG 04 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 02 (胖虎频道@gitbig)\r"
+      - "🇨🇳 TW 03 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 01 (胖虎频道@gitbig)\r"
+      - "🇯🇵 JP 03 (胖虎频道@gitbig)\r"
+      - "🇺🇸 US 03 (胖虎频道@gitbig)\r"
+      - 🇺🇸 US 07 (胖虎频道@gitbig)
+      - "🇺🇸 US 06 (胖虎频道@gitbig)\r"
 
 rules:
 # 本地/局域网地址
