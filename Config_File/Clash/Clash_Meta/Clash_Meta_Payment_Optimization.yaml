@@ -72,7 +72,7 @@ proxy-providers:
       interval: 600
   机场7:
     type: http
-    url: "https://dash.djjc.cfd/api/v1/client/subscribe?token=e2d67994f157a48ef86ec60e80a3f0d5"
+    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/Private/Sub-Test/Clash/Payment4.yaml"
     path: ./proxies/airport7.yaml
     interval: 43200
     health-check:
