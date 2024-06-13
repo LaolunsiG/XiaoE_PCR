@@ -6,7 +6,7 @@ proxy-providers:
   机场1:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://gitlab.com/api/v4/projects/39360507/repository/files/data%2Fclash%2Fyaney.yaml/raw?ref=main&private_token=glpat-5rXzYM66vpxsm_TxKDc_"
+    url: ""
     path: ./proxies/airport1.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -18,7 +18,7 @@ proxy-providers:
       interval: 600
   机场2:
     type: http
-    url: "https://flynb.site/sub/?token=F9F9zZcllpdyN5TluF9F9zZF9F9zZ11EEfx0g&tag=clash"
+    url: ""
     path: ./proxies/airport2.yaml
     interval: 43200
     health-check:
@@ -28,7 +28,7 @@ proxy-providers:
       interval: 600
   机场3:
     type: http
-    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
+    url: ""
     path: ./proxies/airport3.yaml
     interval: 43200
     health-check:
@@ -38,7 +38,7 @@ proxy-providers:
       interval: 600
   机场4:
     type: http
-    url: "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
+    url: ""
     path: ./proxies/airport4.yaml
     interval: 43200
     health-check:
@@ -48,7 +48,7 @@ proxy-providers:
       interval: 600
   机场5:
     type: http
-    url: "https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary"
+    url: ""
     path: ./proxies/airport5.yaml
     interval: 43200
     health-check:
@@ -60,7 +60,7 @@ proxy-providers:
   机场6:
     type: http
     # 机场订阅链接，使用 Clash 链接
-    url: "https://dy.hhyxt.top/api/v1/client/subscribe?token=1421069c6205d4a22fae4dd4d16c81b0"
+    url: ""
     path: ./proxies/airport6.yaml
     interval: 43200
     # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
@@ -72,7 +72,7 @@ proxy-providers:
       interval: 600
   机场7:
     type: http
-    url: "https://dash.djjc.cfd/api/v1/client/subscribe?token=e2d67994f157a48ef86ec60e80a3f0d5"
+    url: ""
     path: ./proxies/airport7.yaml
     interval: 43200
     health-check:
@@ -82,7 +82,7 @@ proxy-providers:
       interval: 600
   机场8:
     type: http
-    url: "https://sub.tgzdyz2.xyz/sub"
+    url: ""
     path: ./proxies/airport8.yaml
     interval: 43200
     health-check:
@@ -92,7 +92,7 @@ proxy-providers:
       interval: 600
   机场9:
     type: http
-    url: "https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/vmess"
+    url: ""
     path: ./proxies/airport9.yaml
     interval: 43200
     health-check:
@@ -102,7 +102,7 @@ proxy-providers:
       interval: 600
   机场10:
     type: http
-    url: "https://api.yuansu.app/v1/client/subscribe?token=220d960189e95961d03a4e09dfd83dc8&flag=clash"
+    url: ""
     path: ./proxies/airport10.yaml
     interval: 43200
     health-check:
