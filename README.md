@@ -1,4 +1,4 @@
-# Proxy_configuration_resources 
+# 个人使用存储库XiaoE-PCR
 
 本存储库会将一些规则合在一起，以便于使用。
 
