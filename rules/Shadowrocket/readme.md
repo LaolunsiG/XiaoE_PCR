@@ -1,7 +1,7 @@
 # Shadowrocket
-规则支持Shadowrocket Loon Surge
+- 规则支持Shadowrocket Loon Surge
 ## Rules
-1.AI
+- AI
 
-2.China
+- China
 
