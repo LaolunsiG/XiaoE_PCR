@@ -22,7 +22,7 @@
 - 其他规则
   - USER-AGENT
 - 兜底规则（全匹配）
-  - final 
+  - FINAL
 ### 规则来源
 - [IOS-Rules](https://github.com/blackmatrix7/ios_rule_script)
 ### QX规则匹配顺序
