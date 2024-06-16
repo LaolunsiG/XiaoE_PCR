@@ -1,4 +1,4 @@
-## QX全局配置
+# QX全局配置
 - [Quantumult-X](https://github.com/rencuijian/Quantumult-X)
   - Quantumult X策略、规则、脚本使用教程
 # QX规则-规则来源：“IOS-Rules”
