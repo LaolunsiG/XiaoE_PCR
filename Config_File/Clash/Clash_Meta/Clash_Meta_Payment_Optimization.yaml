@@ -545,7 +545,7 @@ rule-providers:
   AI:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/rules/Clash_Meta/AI/AI_Global.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Clash_Meta/AI/AI_Global.yaml"
     interval: 86400
     path: ./ruleset/AI.yaml
 #游戏平台
