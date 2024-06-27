@@ -1,3 +1,7 @@
+# Clash XiaoE配置（由“Clash莫离配置和懒人配置”更改而来）
+# 此配置文件无加密DNS，优选节点
+# 莫离配置地址：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
+# 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 #代理集
 proxy-providers:
   机场1:
