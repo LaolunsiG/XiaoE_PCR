@@ -1,8 +1,6 @@
-# 由“Clash莫离配置和懒人配置”更改而来
+# Clash_Meta XiaoE配置（由“Clash莫离配置和懒人配置”更改而来）
+# 此配置文件无加密DNS，优选节点
 # 莫离配置地址：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
-# GitHub仓库地址：https://github.com/Moli-X  发现BUG请反馈: @GodMoliibot  
-# 相关频道: https://t.me/QuantX  
-# 相关群组：https://t.me/Skill_XX
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 #代理集
 proxy-providers:
