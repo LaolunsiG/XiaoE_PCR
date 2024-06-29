@@ -110,9 +110,8 @@ sniffer:
   parse-pure-ip: true #对所有未获取到域名的流量进行强制嗅探
   override-destination: true #访问嗅探后的地址
   sniff: {HTTP: {ports: [80, 8080-8880], override-destination: true}, TLS: {ports: [443, 8443]}, QUIC: {ports: [443, 8443]}}
-  force-domain: 
-    - +.v2ex.com
-  skip-domain: ['Mijia Cloud']
+  force-domain: [+.v2ex.com]
+  skip-domain: [Mijia Cloud]
   
 tun:
   enable: true
@@ -261,9 +260,6 @@ dns:
 #    'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
 #    'rule-set:proxy': ['https://dns.google/dns-query#🪜 代理域名', 'https://cloudflare-dns.com/dns-query#🪜 代理域名']
 
-#代理节点
-proxies: null
-
 # 锚点 - 节点筛选组
 ## 亚洲
 FilterHK: &FilterHK '^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
@@ -272,7 +268,7 @@ FilterJP: &FilterJP '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼�
 FilterKR: &FilterKR '^(?=.*((?i)🇰🇷|韩国|韓|首尔|(\b(KR|Korea)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 FilterSG: &FilterSG '^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 ## 美洲
-FilterCA: $FilterCA '(?i)🇨🇦|加拿大|CA|渥太华'
+FilterCA: &FilterCA '(?i)🇨🇦|加拿大|CA|渥太华'
 FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 ## 欧洲
 FilterUK: &FilterUK '^(?=.*((?i)🇬🇧|英国|伦敦|(\b(UK|United Kingdom)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
@@ -281,8 +277,8 @@ FilterDE: &FilterDE '^(?=.*((?i)🇩🇪|德国|(\b(DE|Germany)\b)))(?!.*((?i)�
 ## 非洲
 FilterIN: &FilterIN '(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India'
 ## 其他
-FilterGame: &FilterGame '^(?=.*((?i)游戏|🎮|(\b(GAME)\b)))(?!.*((?i)回国|校园)).*$'
-FilterAll: &FilterAll '^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$'
+# FilterGame: &FilterGame '^(?=.*((?i)游戏|🎮|(\b(GAME)\b)))(?!.*((?i)回国|校园)).*$'
+# FilterAll: &FilterAll '^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$'
 
 # 策略组参数锚点
 # 锚点 - 时延优选参数 [每 6 秒一次惰性健康检查，容差 20ms，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
@@ -296,7 +292,7 @@ LoadBalance: &LoadBalance {type: load-balance, interval: 6, lazy: true, url: 'ht
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
-  - {name: ♻️ 自动选择, type: url-test,, interval: 6, tolerance: 50, lazy: true, include-all-providers: true, url: 'https://www.gstatic.com/generate_204', timeout: 2000, max-failed-times: 3}
+  - {name: ♻️ 自动选择, type: url-test, interval: 6, tolerance: 50, lazy: true, include-all-providers: true, url: 'https://www.gstatic.com/generate_204', timeout: 2000, max-failed-times: 3}
   - {name: 🤣 手动选择, type: select, use: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]} 
   #机场测试
@@ -391,7 +387,7 @@ proxy-groups:
   - {name: 🚥韩国故障转移策略组, <<: *FallBack, filter: *FilterKR}
   - {name: 🚥新加坡故障转移策略组, <<: *FallBack, filter: *FilterSG}
 # 美洲
-  - {name: 🚥加拿大故障转移策略组, <<: *FallBack, filter: *FilterCA}}
+  - {name: 🚥加拿大故障转移策略组, <<: *FallBack, filter: *FilterCA}
   - {name: 🚥美国故障转移策略组, <<: *FallBack, filter: *FilterUS}
 ## 欧洲
   - {name: 🚥英国故障转移策略组, <<: *FallBack, filter: *FilterUK}
