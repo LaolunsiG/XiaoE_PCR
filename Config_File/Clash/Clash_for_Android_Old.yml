@@ -1,7 +1,8 @@
-# Clash XiaoE配置（由“Clash莫离配置和懒人配置”更改而来）
-# 此配置文件无加密DNS，优选节点
+# Clash XiaoE配置，此配置文件无加密DNS，优选节点
+# 感谢Clash莫离配置和懒人配置
 # 莫离配置地址：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
+
 #代理集
 proxy-providers:
   机场1:
@@ -65,12 +66,15 @@ mode: rule
 log-level: info
 ipv6: false
 find-process-mode: strict
+
 external-controller: 127.0.0.1:9090 #只允许本地访问
 secret: "xiaoe" #访问密码
+
 unified-delay: false #统一延迟
 tcp-concurrent: true #TCP并发
 global-client-fingerprint: chrome
 profile: {store-selected: true, store-fake-ip: true}
+
 tun:
   enable: true
   stack: system
@@ -78,6 +82,7 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
+
 dns:
   enable: true
   prefer-h3: true
@@ -216,12 +221,13 @@ dns:
 #    'rule-set:microsoft-cn,apple,icloud,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
 #    'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
 #    'rule-set:proxy': ['https://dns.google/dns-query#🪜 代理域名', 'https://cloudflare-dns.com/dns-query#🪜 代理域名']
+
 #代理节点
 proxies: null
 #代理组
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
-  - {name: ♻️ 自动选择, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], url: http://www.google.com/generate_204, interval: 600}
+  - {name: ♻️ 自动选择, type: url-test, tolerance: 50, lazy: true, include-all-providers: true, url: http://www.google.com/generate_204, interval: 600}
   - {name: 🤣 手动选择, type: select, use: [机场1, 机场2, 机场3, 机场4, 机场5]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
 #  - {name: 🍃 应用净化, type: select, proxies: [🛑 全球拦截, 🎯 全球直连]}
@@ -270,6 +276,17 @@ proxy-groups:
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
    #地区节点选择
   # 自动选择节点，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 100ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
+  - {name: 机场1, type: url-test, interval: 6, tolerance: 50, lazy: true, use: [机场1], url: 'https://www.gstatic.com/generate_204', timeout: 2000, max-failed-times: 3}
+  - {name: 香港, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)港|hk|hongkong|hong kong"}
+  # 节点负载均衡，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
+  - {name: 台湾, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)台|tw|taiwan"}
+  - {name: 日本, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)日本|jp|japan"}
+  - {name: 新加坡, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)新|sg|singapore"}
+  - {name: 美国, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)美|us|unitedstates|united states"}
+  - {name: 英国, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)英|uk|unitedstates|united kingdom"}
+  - {name: 德国, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany"}
+  - {name: 加拿大, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "🇨🇦|加拿大|CA|渥太华"}
+  - {name: 印度, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India"}
   - {name: 香港, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)港|hk|hongkong|hong kong"}
   # 节点负载均衡，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
   - {name: 台湾, type: load-balance, strategy: consistent-hashing, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)台|tw|taiwan"}
