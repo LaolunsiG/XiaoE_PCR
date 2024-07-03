@@ -1,4 +1,12 @@
-#用代理的AI规则
+# name: AI
+# UPDATED: 2024-07-3
+# 感谢项目：
+# DOMAIN
+# DOMAIN-SUFFIX
+# DOMAIN-KEYWORD
+# IP-CIDR
+# IP-ASN
+
 #OpenAI
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,static.cloudflareinsights.com
