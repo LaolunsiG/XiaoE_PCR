@@ -7,7 +7,7 @@ Clash因许久未更新，不支持新规则和新的加密,所以创建此存�
 Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
 ## 命名规则
-- 字母，数字，下划线
+- **字母，数字，下划线**
 
 ## 配置文件
 
