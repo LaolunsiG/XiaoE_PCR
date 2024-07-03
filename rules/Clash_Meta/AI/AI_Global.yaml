@@ -1,4 +1,10 @@
-#用代理的AI
+# name: AI
+# 感谢项目：
+# DOMAIN
+# DOMAIN-SUFFIX
+# DOMAIN-KEYWORD
+# IP-CIDR
+# IP-ASN
 payload:
 #OpenAI
   - DOMAIN,browser-intake-datadoghq.com
