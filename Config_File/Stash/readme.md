@@ -3,3 +3,6 @@
 
 **那些小错误太难找了**
 - 自行配置订阅链接
+## 配置文件
+- [XiaoE_Stash](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml)
+  - 自行配置订阅链接
