@@ -84,7 +84,7 @@ proxy-providers:
     override:
       additional-prefix: "[机场名称1]"
   机场9:
-     url: ""
+    url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
