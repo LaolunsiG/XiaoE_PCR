@@ -40,61 +40,61 @@ proxy-providers:
     !!merge <<: *NodeParam #使用上述订阅配置
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]" # 为订阅节点添加机场名称前缀
+      additional-prefix: "[机场0]" # 为订阅节点添加机场名称前缀
   机场2:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场1]"
   机场3:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场2]"
   机场4:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场3]"
   机场5:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场4]"
   机场6:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场5]"
   机场7:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场6]"
   机场8:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场7]"
   机场9:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场8]"
   机场10:
     url: ""
     !!merge <<: *NodeParam
     path: ./proxies/airport1.yaml
     override:
-      additional-prefix: "[机场名称1]"
+      additional-prefix: "[机场9]"
 
 # 全局配置
 # 代理端口
@@ -409,7 +409,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Discord.rule
-##国内
+  ## 国内
   新浪微博:
     behavior: classical
     interval: 86400
