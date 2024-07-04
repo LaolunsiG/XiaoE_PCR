@@ -6,6 +6,7 @@
 ## 配置文件
 - [XiaoE_Stash](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml)
   - 自行配置订阅链接
+- [Fei配置文件.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/Fei%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.yaml)
 ## 功能预览
 - ![功能](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Stash/Picture/photo_2024-07-04_20-21-42.jpg)
 - ![2](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Stash/Picture/photo_2024-07-04_20-21-39.jpg)
