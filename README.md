@@ -16,7 +16,7 @@ Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 2. [Clash_Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
 ### LanceX
 此软件还未完善，不推荐使用
-1. [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
+1. [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 ### Loon
 1. [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
 ### Shadowrocket
