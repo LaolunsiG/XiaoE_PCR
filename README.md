@@ -2,7 +2,7 @@
 
 本存储库会将一些规则合在一起，以便于使用。
 
-Clash因许久未更新，不支持新规则和新的加密,所以创建此存储库。
+Clash因不在未更新，不支持新规则和新的加密,所以创建此存储库。
 
 Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
