@@ -2,7 +2,7 @@
 **痛苦！花了我一下午的时间才配置好！/(ㄒoㄒ)/~~**
 **那些小错误太难找了**
 - 自行配置订阅链接
-- 主要配置了地区优选，故障转移，负载均衡，并为每个策略组加上了图标，图标来[icon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/icons)
+- 主要配置了地区优选，故障转移，负载均衡，并为每个策略组加上了图标，图标来源**[icon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/icons)**
 ## 配置文件
 - [XiaoE_Stash](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml)
   - 自行配置订阅链接
