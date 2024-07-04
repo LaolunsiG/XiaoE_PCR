@@ -5,8 +5,8 @@
 # 3.“[Copyright配置](https://quan-shado-conf.mojy.xyz/conf/loon.conf)”
 # 4."[Loon 精简配置](https://raw.githubusercontent.com/HoCooo/Loon/main/LoonLite.conf)"
 # updata：2024-07-04
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PR/main/Personal/Config_File/Loon/XiaoE_Loon.conf
-
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
+# 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 # tiles部分仅作为本地磁贴的格式模板 可删除
 tiles:
@@ -23,14 +23,117 @@ script-providers:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/hotoday.js
   Billboard Hot 100:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/bb100.js
-allow-lan: false
-bind-address: '*'
+
+# 锚点-节点订阅的参数 [每12小时更新一次订阅节点，每 600 秒一次健康检查]
+# url:机场订阅链接，使用 Clash 链接
+# filter:初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
+# health-check:未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
+NodeParam: &NodeParam {type: http, interval: 43200, health-check: {enable: true, lazy: true, url: 'http://www.google.com/generate_204', interval: 600}}
+
+# 本地节点
+proxies: null
+
+# 订阅节点(远程节点)
+proxy-providers:
+  机场1:
+    url: ""
+    <<: *NodeParam #使用上述订阅配置
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]" # 为订阅节点添加机场名称前缀
+  机场2:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场3:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场4:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场5:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场6:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场7:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场8:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场9:
+     url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+  机场10:
+    url: ""
+    <<: *NodeParam
+    path: ./proxies/airport1.yaml
+    override:
+      additional-prefix: "[机场名称1]"
+
+# 全局配置
+# 代理端口
+port: 7890 # HTTP(S) 代理服务器端口
+socks-port: 7891 # SOCKS5 代理端口
+mixed-port: 7892 # 混合端口，HTTP和SOCKS5用一个端口
+
+mode: rule # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+log-level: info # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
+# Stash获取机场流量信息并在主页显示
+subscribe-url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
+
+allow-lan: true # 允许局域网的连接（共享代理）
+bind-address: "*"  # 监听IP白名单，可绑定单个IPv4和v6地址，"*" 为绑定所有IP地址，仅在将allow-lan设置为true时适用
+
+ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+udp: true # 是否允许 UDP 通过代理，默认为 false
+unified-delay: false # 开启统一延迟时，会进行两次延迟测试，以消除连接握手等带来的不同类型节点的延迟差异，可选值 true/false
+tcp-concurrent: true  # TCP 并发，可选值 true/false
+find-process-mode: strict # 控制是否让 Clash 去匹配进程，always 开启，强制匹配所有进程，strict 默认，由 Clash 判断是否开启，off 不匹配进程，推荐在路由器上使用此模式
+global-client-fingerprint: chrome  # 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint，目前支持开启 TLS 传输的 TCP/grpc/WS/HTTP , 支持协议有 VLESS,Vmess 和 trojan
+
+#外部控制器
+external-controller: 127.0.0.1:9090  # 外部控制器，可以使用 RESTful API 来控制你的 Clash 内核，API 监听地址，你可以将 127.0.0.1 修改为 0.0.0.0 来监听所有 IP
+secret: "xiaoe" # 自定义 API 的访问密钥
+external-ui: ui  # 可以将静态网页资源 (比如 Clash-dashboard) 运行在 Clash API, 路径为 API 地址/ui，可以为绝对路径，或者 Clash 工作目录的相对路径
+# 自定义外部用户界面下载地址
+external-ui-url: 'https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip'
+
+# 配置DNS
 dns:
-  default-nameserver:
+  enable: true # 关闭将使用系统 DNS
+  listen: 0.0.0.0:1053 # 开启 DNS 服务器监听
+  default-nameserver: # 默认 DNS, 用于解析"nameserver"将域名解析为IP地址
     - 119.29.29.29
     - 119.28.28.28
-  enable: true
+    - system #系统DNs
   enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
@@ -45,487 +148,193 @@ dns:
     - '*.battlenet.com'
     - '*.blzstatic.cn'
     - '*.battle.net'
-  fake-ip-range: 198.18.0.1/16
-  listen: 0.0.0.0:1053
   nameserver:
     - 114.114.114.114
     - 223.5.5.5
     - 1.1.1.1
     - 8.8.8.8
-#外部控制器
-external-controller: 127.0.0.1:9090
-log-level: info
-mixed-port: 7890
-mode: rule
-proxies:
+  # nameserver-policy: # 对部分域名使用单独的 DNS 服务器
+    # 'www.baidu.com': 114.114.114.114
+    # '+.internal.crop.com': system
+
+
+# 锚点 - 节点筛选组
+## 亚洲
+FilterHK: &FilterHK '^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterTW: &FilterTW '^(?=.*((?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterJP: &FilterJP '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterKR: &FilterKR '^(?=.*((?i)🇰🇷|韩国|韓|首尔|(\b(KR|Korea)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterSG: &FilterSG '^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+## 美洲
+FilterCA: &FilterCA '^(?=.(🇨🇦|加拿大|多伦多|温哥华|蒙特利尔|卡尔加里|渥太华|魁北克|埃德蒙顿|温尼伯|哈利法克斯|萨斯卡通|维多利亚|哈密尔顿|canada|can))(?!(.(回国|校园|游戏|🎮|game))).*$'
+FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+## 欧洲
+FilterUK: &FilterUK '^(?=.*((?i)🇬🇧|英国|伦敦|(\b(UK|United Kingdom)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterFR: &FilterFR '^(?=.*((?i)🇫🇷|法国|(\b(FR|France)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+FilterDE: &FilterDE '^(?=.*((?i)🇩🇪|德国|(\b(DE|Germany)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
+## 非洲
+FilterIN: &FilterIN '(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India'
+## 其他
+# FilterGame: &FilterGame '^(?=.*((?i)游戏|🎮|(\b(GAME)\b)))(?!.*((?i)回国|校园)).*$'
+# FilterAll: &FilterAll '^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$'
+
+# 策略组参数锚点
+# 锚点 - 时延优选参数 [每 6 秒一次惰性健康检查，容差 20ms，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
+UrlTest: &UrlTest {type: url-test, interval: 600, tolerance: 20, lazy: true, url: 'http://www.google.com/generate_204',hidden: true, include-all: true}
+# 锚点 - 故障转移参数 [每 6 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
+FallBack: &FallBack {type: fallback, interval: 600, lazy: true, url: 'http://www.google.com/generate_204',hidden: true, include-alls: true}
+# 锚点 - 负载均衡参数 [每 6 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
+LoadBalance: &LoadBalance {type: load-balance, interval: 600, lazy: true, url: 'http://www.google.com/generate_204',strategy: consistent-hashing, hidden: true, include-all: true}
+
+# 包括的代理和策略组设置
+# include-all: true # 包括所有的代理和远程代理集
+# use: [] # 使用远程代理集
+# proxies: [] # 使用策略组
+# use-url: [] # 使用远程订阅节点
+
+# 测速链接: 代理测速：https://www.gstatic.com/generate_204；http://www.google.com/generate_204
+
 proxy-groups:
-  - name: "🚀 策略选择"
-    proxies:
-      - ♻️Payment Fast 1
-      - ♻️Payment Speed limit
-      - ♻️Free Fast 2
-      - ♻️Free Fast 1
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇷🇺 俄罗斯节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇮🇳 印度
-      - 🇩🇪 德国
-      - 🇨🇦 加拿大
-      - 🌐 全球直连
-    type: select
-    use: null
-    lazy: true
-  - name: ♻️Free Fast 1
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use:
-      - Free-freenode
-      - Free-get_subscribe-clash
-      - Free-空想家-ss
-    interval: 600
-    lazy: true
-  - name: ♻️Free Fast 2
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    interval: 600
-    use:
-      - Free-未知-ss
-    include-all: null
-    lazy: true
-  - lazy: true
-    name: ♻️Payment Speed limit
-    type: url-test
-    use:
-      - Payment-便宜机场
-      - Payment-超级机场
-  - name: ♻️Payment Fast 1
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    interval: 600
-    use:
-      - Payment-pithecia
-      - Payment-顶级机场
-      - Payment-Tbalck
-    include-all: null
-    lazy: true
-  - icon: null
-    name: 🐟 漏网之鱼
-    proxies:
-      - 🚀 策略选择
-      - 🌐 全球直连
-    type: select
-  - name: 🍃 应用净化
-    proxies:
-      - 🌐 全球直连
-      - 🚫 全球拦截
-    type: select
-    #——————代理组\策略组——————
-  - name: 📈 网络测试
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🤖️ 人工智能
-    proxies:
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇩🇪 德国
-      - 🇯🇵 日本节点
-    type: select
-    use: null
-  - name: 🪙 Paypal
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: Ⓜ️ 微软服务
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🍎 苹果服务
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use:
-  - name: 📹 YouTube
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🎥 Netflix
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🎬 Disney+
-    proxies:
-      - 🚀 策略选择
-      - ♻️Payment Fast 1
-      - ♻️Free Fast 2
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🎻 Spotify
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 📽 哔哩哔哩
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🍿 国外媒体
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🍔 国内媒体
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 📲 Telegram
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 📄 Twitter
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇮🇳 印度
-      - 🇩🇪 德国
-      - 🇨🇦 加拿大
-    type: select
-    use: null
-  - name: 👤 Facebook
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 📖 Reddit
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🐦 Discord
-    proxies:
-      - 🚀 策略选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🍟 新浪微博
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - name: 🎮 游戏平台
-    proxies:
-      - 🌐 全球直连
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇺🇸 美国节点
-      - 🇰🇷 韩国节点
-      - 🇬🇧 英国节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-    type: select
-    use: null
-  - icon: null
-    interval: 600
-    name: "🇭🇰 香港节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: (?=.*(港|HK|(?i)Hong))^((?!(台湾|日本|新加坡|美国|韩国|狮城|南朝鲜|US|SG|JP|KR|TW|台灣|美國|韓國|獅城)).)*$
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇨🇳 台湾节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: (?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇺🇸 美国节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: (?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!(香港|台湾|日本|新加坡|韩国|狮城|南朝鲜|SG|JP|KR|HK|TW|台灣|韓國|獅城)).)*$
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇰🇷 韩国节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: (?=.*(KR|Korea|KOR|首尔|韩|韓|(?i)Korea))^((?!(香港|台湾|新加坡|美国|狮城|南朝鲜|US|SG|HK|TW|台灣|美國|獅城)).)*$
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇷🇺 俄罗斯节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: 🇷🇺|俄罗斯|RU|莫斯科|圣彼得堡|喀山|哈尔科夫|乌法|新西伯利亚|下诺夫哥罗德|沃罗涅什
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇬🇧 英国节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: 🇬🇧|英国|UK|伦敦|英格兰|伯明翰|泰恩河畔纽卡斯尔|利兹|爱丁堡|格拉斯哥|苏格兰
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇯🇵 日本节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: (?=.*(日本|JP|(?i)Japan))^((?!(香港|台湾|新加坡|美国|韩国|狮城|南朝鲜|US|SG|KR|HK|TW|台灣|美國|韓國|獅城)).)*$
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇸🇬 新加坡节点"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: (?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!(香港|台湾|日本|美国|韩国|南朝鲜|US|JP|KR|HK|TW|台灣|美國|韓國)).)*$
-    include-all: true
-  - icon: null
-    interval: 600
-    name: "🇮🇳 印度"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: 🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇩🇪 德国"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: 🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany
-    include-all: true
-    lazy: true
-  - icon: null
-    interval: 600
-    name: "🇨🇦 加拿大"
-    proxies: null
-    type: url-test
-    url: "http://www.google.com/generate_204"
-    use: null
-    filter: 🇨🇦|加拿大|CA|渥太华
-    include-all: true
-    lazy: true
-  - icon:
-    #全球直连
-    name: "🌐 全球直连"
-    proxies:
-      - DIRECT
-    type: select
-  - # 拦截广告
-    name: 🚫 全球拦截
-    proxies:
-      - REJECT
-    type: select
-proxy-providers:
-#加入订阅链接
-  Payment-Tbalck:
-    interval: 86400
-    url: 
-    benchmark-url: http://www.google.com/generate_204
-    benchmark-timeout: 5
-  Free-freenode:
-    interval: 1440
-    url: 
-    benchmark-timeout: 5
-    benchmark-url: http://www.google.com/generate_204
-  Payment-element:
-    interval: 86400
-    url: 
-    benchmark-timeout: 5
-    benchmark-url: http://www.google.com/generate_204
-  'Payment-顶级机场':
-    interval: 86400
-    url: 
-  Payment-pithecia:
-    interval: 86400
-    url: 
-  Payment-超级机场:
-    interval: 86400
-    url: 
-    benchmark-timeout: 5
-    benchmark-url: http://www.google.com/generate_204
-  Free-未知-ss:
-    interval: 86400
-    url: 
-    benchmark-timeout: 5
-    benchmark-url: http://www.google.com/generate_204
-  Payment-便宜机场:
-    interval: 86400
-    url: 
-  Free-空想家-ss:
-    interval: 86400
-    url: 
-  Free-get_subscribe-clash:
-    interval: 86400
-    url: 
-#远程规则集
+  # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
+  - {name: 🚀 节点选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [♻️ ALL, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: ♻️ ALL, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
+  - {name: 🤣 手动选择, type: select, interval: 600, lazy: true, hidden: false, include-all: true}
+  - {name: 🐟 漏网之鱼, type: select, interval: 600, lazy: true, hidden: false, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]} 
+  # 机场测试
+  - {name: 机场1, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场1]}
+  - {name: 机场2, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场2]}
+  - {name: 机场3, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场3]}
+  - {name: 机场4, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场4]}
+  - {name: 机场5, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场5]}
+  - {name: 机场6, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场6]}
+  - {name: 机场7, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场7]}
+  - {name: 机场8, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场8]}
+  - {name: 机场9, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场9]}
+  - {name: 机场10, type: url-test, interval: 600, tolerance: 20, lazy: true, hidden: false, use: [机场10]}
+  # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
+  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  #人工智能
+  - {name: 🤖 人工智能, type: select, proxies: [台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度, 🚀 节点选择]}
+  #下载网络
+  - {name: 🌐 Download,type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  #服务平台
+  - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 📢 谷歌服务, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  #聊天平台
+  - {name: 💬 Facebook, type: select, proxies: [香港, 🚀 节点选择, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]} 
+  - {name: 💬 Twitter, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 📲 电报消息, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🐦 Discord, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]} 
+  # 流媒体
+  ## w小分流
+  - {name: 🎥 奈飞视频, type: select, proxies: [美国, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 英国, 法国, 德国, 印度]}
+  - {name: 📽️ 迪士尼+, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🎞️ Max, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🎬 Prime Video, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🍎 Apple TV+, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 📹 YouTube, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🎵 TikTok, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  ##大分流
+  - {name: 📺 国内媒体, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+  - {name: 🙈 国外媒体, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  # 支付平台
+  - {name: 💴 PayPal, type: select, proxies: [美国, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度, 🚀 节点选择]}
+  # 游戏
+  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+  # 大分流
+  - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
+  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
+  - {name: 🛑 全球拦截, type: select, proxies: [REJECT]}
+  - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
+  # ----------------国家或地区策略组--------------------
+  # 地区节点选择
+  # 节点负载均衡(load-balance)，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
+  # 自动选择节点(url-test)，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 50ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
+  # 亚洲
+  - {name: 香港, type: select, proxies: [⏱香港时延优选策略组, 🚥香港故障转移策略组, 🎛香港负载均衡策略组]}
+  - {name: 台湾, type: select, proxies: [⏱台湾时延优选策略组, 🚥台湾故障转移策略组, 🎛台湾负载均衡策略组]}
+  - {name: 日本, type: select, proxies: [⏱日本时延优选策略组, 🚥日本故障转移策略组, 🎛日本负载均衡策略组]}
+  - {name: 韩国, type: select, proxies: [⏱韩国时延优选策略组, 🚥韩国故障转移策略组, 🎛韩国负载均衡策略组]}
+  - {name: 新加坡, type: select, proxies: [⏱新加坡时延优选策略组, 🚥新加坡故障转移策略组, 🎛新加坡负载均衡策略组]}
+  # 美洲
+  - {name: 加拿大, type: select, proxies: [⏱加拿大时延优选策略组, 🚥加拿大故障转移策略组, 🎛加拿大负载均衡策略组]}
+  - {name: 美国, type: select, proxies: [⏱美国时延优选策略组, 🚥美国故障转移策略组, 🎛美国负载均衡策略组]}
+  # 欧洲  
+  - {name: 英国, type: select, proxies: [⏱英国时延优选策略组, 🚥英国故障转移策略组, 🎛英国负载均衡策略组]}
+  - {name: 法国, type: select, proxies: [⏱法国时延优选策略组, 🚥法国故障转移策略组, 🎛法国负载均衡策略组]}
+  - {name: 德国, type: select, proxies: [⏱德国时延优选策略组, 🚥德国故障转移策略组, 🎛德国负载均衡策略组]}
+  # 非洲
+  - {name: 印度, type: select, proxies: [⏱印度时延优选策略组, 🚥印度故障转移策略组, 🎛印度负载均衡策略组]}
+  # 时延优选策略组
+  ## 亚洲
+  - {name: ⏱香港时延优选策略组, <<: *UrlTest, filter: *FilterHK}
+  - {name: ⏱台湾时延优选策略组, <<: *UrlTest, filter: *FilterTW}
+  - {name: ⏱日本时延优选策略组, <<: *UrlTest, filter: *FilterJP}
+  - {name: ⏱韩国时延优选策略组, <<: *UrlTest, filter: *FilterKR}
+  - {name: ⏱新加坡时延优选策略组, <<: *UrlTest, filter: *FilterSG}
+  # 美洲
+  - {name: ⏱加拿大时延优选策略组, <<: *UrlTest, filter: *FilterCA}
+  - {name: ⏱美国时延优选策略组, <<: *UrlTest, filter: *FilterUS}
+  ## 欧洲
+  - {name: ⏱英国时延优选策略组, <<: *UrlTest, filter: *FilterUK}
+  - {name: ⏱法国时延优选策略组, <<: *UrlTest, filter: *FilterFR}
+  - {name: ⏱德国时延优选策略组, <<: *UrlTest, filter: *FilterDE}
+  ## 非洲
+  - {name: ⏱印度时延优选策略组, <<: *UrlTest, filter: *FilterIN}
+  # 故障转移策略组
+  ## 亚洲
+  - {name: 🚥香港故障转移策略组, <<: *FallBack, filter: *FilterHK}
+  - {name: 🚥台湾故障转移策略组, <<: *FallBack, filter: *FilterTW}
+  - {name: 🚥日本故障转移策略组, <<: *FallBack, filter: *FilterJP}
+  - {name: 🚥韩国故障转移策略组, <<: *FallBack, filter: *FilterKR}
+  - {name: 🚥新加坡故障转移策略组, <<: *FallBack, filter: *FilterSG}
+  # 美洲
+  - {name: 🚥加拿大故障转移策略组, <<: *FallBack, filter: *FilterCA}
+  - {name: 🚥美国故障转移策略组, <<: *FallBack, filter: *FilterUS}
+  ## 欧洲
+  - {name: 🚥英国故障转移策略组, <<: *FallBack, filter: *FilterUK}
+  - {name: 🚥法国故障转移策略组, <<: *FallBack, filter: *FilterFR}
+  - {name: 🚥德国故障转移策略组, <<: *FallBack, filter: *FilterIN}
+  ## 非洲
+  - {name: 🚥印度故障转移策略组, <<: *FallBack, filter: *FilterDE}
+  # 负载均衡策略组
+  ## 亚洲
+  - {name: 🎛香港负载均衡策略组, <<: *LoadBalance, filter: *FilterHK}
+  - {name: 🎛台湾负载均衡策略组, <<: *LoadBalance, filter: *FilterTW}
+  - {name: 🎛日本负载均衡策略组, <<: *LoadBalance, filter: *FilterJP}
+  - {name: 🎛韩国负载均衡策略组, <<: *LoadBalance, filter: *FilterKR}
+  - {name: 🎛新加坡负载均衡策略组, <<: *LoadBalance, filter: *FilterSG}
+  ## 美洲
+  - {name: 🎛加拿大负载均衡策略组, <<: *LoadBalance, filter: *FilterCA}
+  - {name: 🎛美国负载均衡策略组, <<: *LoadBalance, filter: *FilterUS}
+  ## 欧洲
+  - {name: 🎛英国负载均衡策略组, <<: *LoadBalance, filter: *FilterUK}
+  - {name: 🎛法国负载均衡策略组, <<: *LoadBalance, filter: *FilterFR}
+  - {name: 🎛德国负载均衡策略组, <<: *LoadBalance, filter: *FilterDE}
+  ## 非洲
+  - {name: 🎛印度负载均衡策略组, <<: *LoadBalance, filter: *FilterIN}
+
+# 锚点 - 规则参数 [每小时更新一次订阅规则，更新规则时使用直连策略],默认格式为yaml，可以更改为text。
+# bahavior：有ipcidr(IP集)、domain(域名集)、classical。
+# proxy：经过指定代理进行下载/更新，使用DIRECT（直连）更新，还是代理（PROXY）更新，默认为代理（PROXY）
+# rule-anchor:
+    # format: text(文本)或yaml
+    # ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: text}
+    # domain: &domain {type: http, interval: 86400, behavior: domain, format: text}
+    # classical: &classical {type: http, behavior: classical, interval: 86400, format: yaml, proxy: DIRECT}
+
+# 规则集（yaml 文件每天自动更新）
 rule-providers:
-#下载网络
+  # 下载网络
   Download:
     behavior: classical
     format: yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download_No_Resolve.yaml
     interval: 86400
-#网络测试
+  # 网络测试
   networktest:
     behavior: classical
     format: yaml
@@ -610,7 +419,7 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
     format: yaml
-#游戏平台
+  # 游戏平台
   PlayStation:
     behavior: classical
     interval: 86400
@@ -644,7 +453,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/PayPal.rule
-#音乐
+ # 音乐
   SPOTIFY:
     behavior: classical
     interval: 86400
@@ -653,8 +462,8 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/YouTubeMusic.rule
-#流媒体
-##国外网络
+  # 流媒体
+  ## 国外网络
   YOUTUBE1:
     behavior: classical
     interval: 86400
@@ -671,12 +480,12 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Twitch.rule
-###大分流
+  ### 大分流
   国外媒体:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/ProxyMedia.rule
-##国内媒体
+  ## 国内媒体
   斗鱼:
     behavior: classical
     interval: 86400
@@ -685,18 +494,18 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/BiliBili.rule
-###大分流
+  ### 大分流
   国内媒体:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/ChinaMedia.rule
-#代理和直连网络大分流
-##代理网络
+  # 代理和直连网络大分流
+  ## 代理网络
   代理域名:
     behavior: classical
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
-#直连网络
+  # 直连网络
   国内直连1:
     behavior: classical
     interval: 86400
@@ -707,54 +516,54 @@ rule-providers:
     format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_Resolve.yaml
-#规则
+# 规则
 rules:
-#网络测试
+  # 网络测试
   - RULE-SET,networktest,📈 网络测试
   - DOMAIN-KEYWORD,mubu,🌐 全球直连
-#本地网络
+  # 本地网络
   - RULE-SET,lan,🌐 全球直连,no-resolve
-#广告拦截
+  # 广告拦截
 #  - RULE-SET,UnBan,🌐 全球直连
 #  - RULE-SET,BanProgramAD,🍃 应用净化
-   #隐私保护
+   # 隐私保护
 #  - RULE-SET,privacy,🚫 全球拦截
-#人工智能
+  # 人工智能
   - RULE-SET,人工智能,🤖️ 人工智能
-#服务平台
-##微软服务
+  # 服务平台
+  ## 微软服务
   - RULE-SET,微软服务,Ⓜ️ 微软服务
-##苹果服务
+  ## 苹果服务
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,AppStore,🍎 苹果服务
   - RULE-SET,AppleProxy,🚀 策略选择
   - RULE-SET,Google服务,🚀 策略选择
-#支付平台
+  # 支付平台
   - RULE-SET,PAYPAL,🪙 Paypal
-#社交媒体
-##国外
+  # 社交媒体
+  ## 国外
   - RULE-SET,TWITTER,📄 Twitter
   - RULE-SET,SPOTIFY,🎻 Spotify
   - RULE-SET,FACEBOOK,👤 Facebook
   - RULE-SET,REDDIT,📖 Reddit
   - RULE-SET,DISCORD,🐦 Discord
   - RULE-SET,TELEGRAM,📲 Telegram
-##国内
+  ## 国内
   - RULE-SET,Wechat,🌐 全球直连
   - RULE-SET,新浪微博,🍟 新浪微博
-#流媒体
-##国外媒体
+  # 流媒体
+  ## 国外媒体
   - RULE-SET,YOUTUBE1,📹 YouTube
   - RULE-SET,YOUTUBE2,📹 YouTube
   - RULE-SET,NETFLIX,🎥 Netflix
   - RULE-SET,DISNEY+,🎬 Disney+
   - RULE-SET,Twitch,🚀 策略选择
   - RULE-SET,国外媒体,🍿 国外媒体
-##国内媒体
+  ## 国内媒体
   - RULE-SET,哔哩哔哩,📽 哔哩哔哩
   - RULE-SET,斗鱼,🍔 国内媒体、
   - RULE-SET,国内媒体,🍔 国内媒体
-#游戏平台
+  # 游戏平台
   - RULE-SET,PlayStation,🎮 游戏平台
   - RULE-SET,Epic,🎮 游戏平台
   - RULE-SET,Sony,🎮 游戏平台
@@ -762,14 +571,14 @@ rules:
   - RULE-SET,Nintendo,🎮 游戏平台
   - RULE-SET,WanMeiShiJie,🎮 游戏平台
   - RULE-SET,Blizzard,🎮 游戏平台
-#代理和直连网络大分流
-##代理网络
+  # 代理和直连网络大分流
+  ## 代理网络
   - RULE-SET,代理域名,🚀 策略选择
-##直连网络
+  ## 直连网络
   - RULE-SET,国内直连1,🌐 全球直连
 #  - RULE-SET,国内直连2,🌐 全球直连
-###直连IP规则
+  ## 直连IP规则
   - GEOIP,CN,🌐 全球直连
-#兜底规则
+  # 兜底规则
   - MATCH,🐟 漏网之鱼
-subscribe-url: null
+
