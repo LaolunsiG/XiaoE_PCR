@@ -1,11 +1,11 @@
-# Clash_Meta XiaoE配置,此配置文件无加密DNS，优选节点
+# XiaoE_Clash_Meta配置,此配置文件无加密DNS，优选节点
 # 感谢以下配置
 # 1.Clash莫离配置：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
 # 2.懒人配置
 # 3.可莉配置
 # updata：2024/07/05
 # 更新日志：修复了GEODATA文件；修改了测速链接；添加了策略组图标
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/Clash_Meta_New.yaml
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 # 锚点-节点订阅的参数 [每12小时更新一次订阅节点，每 600 秒一次健康检查]
