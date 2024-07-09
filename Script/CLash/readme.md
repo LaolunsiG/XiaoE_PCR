@@ -1,2 +1,3 @@
 # Clash_Script
-- CLash脚本
+- 使用的JavaScript语言
+
