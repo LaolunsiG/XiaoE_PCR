@@ -5,8 +5,8 @@
   - yaml
   - json
 ## Clash
-- [Clash_for_Android_Manual](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash/Clash_for_Android_Manual.yml)
-- [Clash_for_Android_Old](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash/Clash_for_Android_Old.yml)
+- [Clash_for_Android_Manual](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash/Clash_for_Android_New.yml)
+- [Clash_for_Android_Old](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash/Clash_for_Android_Old.yml)
 ## Clash_Meta
 - [Clash_Meta_Old](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash_Meta/Clash_Meta_Old.yaml)
 - [Clash_Meta_New](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash_Meta/Clash_Meta_New.yaml)
