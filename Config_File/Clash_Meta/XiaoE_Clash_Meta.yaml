@@ -1,10 +1,11 @@
-# XiaoE_Clash_Meta配置,此配置文件无加密DNS，优选节点
+# XiaoE_Clash_Meta
+# content: 此配置文件无加密DNS，优选节点, 使用IP规则，可能存在DNS泄露问题.Clash_verge更新后编辑配置文件变得更加容易了。
 # 感谢以下配置
 # 1.Clash莫离配置：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
 # 2.懒人配置
 # 3.可莉配置
-# updata：2024/07/05
-# 更新日志：修复了GEODATA文件；修改了测速链接；添加了策略组图标
+# updata：2024/07/10
+# 更新日志：修改了CN规则和Proxy规则
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
@@ -442,13 +443,18 @@ proxy-groups:
 # 锚点 - 规则参数 [每小时更新一次订阅规则，更新规则时使用直连策略],默认格式为yaml，可以更改为text。
 # bahavior：有ipcidr(IP集)、domain(域名集)、classical。
 # proxy：经过指定代理进行下载/更新，使用DIRECT（直连）更新，还是代理（PROXY）更新，默认为代理（PROXY）
-# rule-anchor:
-    # ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: text}
-    # domain: &domain {type: http, interval: 86400, behavior: domain, format: text}
-    # RuleProviders: &RuleProviders {type: http, behavior: classical, interval: 86400, format: yaml, proxy: DIRECT}
+rule-anchor:
+    ip: &ip {type: http, behavior: ipcidr,interval: 86400, format: yaml}
+    domain: &domain {type: http, behavior: domain, interval: 86400, format: yaml}
+    classical: &classical {type: http, behavior: classical, interval: 86400, format: yaml, proxy: DIRECT}
 
 # 规则集（yaml 文件每天自动更新）
 rule-providers:
+  # 广告拦截
+  ad_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AD/AD_Domain.yaml"
+    path: ./ruleset/ad_domain.yaml
   # 网络测试
   networktest:
     type: http
@@ -646,7 +652,7 @@ rule-providers:
   AI:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Clash_Meta/AI/AI_Global.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml"
     interval: 86400
     path: ./ruleset/AI.yaml
   # 游戏平台
@@ -659,29 +665,23 @@ rule-providers:
   games-global:
     type: http
     behavior: classical
+    interval: 86400
     url: "https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/classical/GamesPlatform.yaml"
     path: ./ruleset/games-global.yaml
-    interval: 86400
   # 大分流
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/proxy.yaml"
-    path: ./ruleset/proxy.yaml
-    interval: 86400
+  proxy_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml"
+    path: ./ruleset/proxy_domain.yaml
   # 大分流
   cn1:
-    type: http
-    behavior: classical
+    <<: *classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
     path: ./ruleset/cn1.yaml
-    interval: 86400
-  cn2:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_Resolve.yaml"
-    path: ./ruleset/cn2.yaml
-    interval: 86400
+  cn_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml"
+    path: ./ruleset/cn_domain.yaml
 rules:
   # 网络测试
   - RULE-SET,networktest,📈 网络测试
@@ -693,9 +693,7 @@ rules:
   # 本地网络
   - RULE-SET,lan,🎯 全球直连,no-resolve
   # 广告拦截
-  # - RULE-SET,ads,🛑 全球拦截
-  # 隐私保护
-  # - RULE-SET,privacy,🛑 全球拦截
+  - RULE-SET,ad_domain,🛑 全球拦截
   # 服务平台
   - RULE-SET,microsoft,Ⓜ️ 微软服务
   ## 苹果服务
@@ -740,7 +738,7 @@ rules:
   - RULE-SET,proxy,🪜 代理域名
   # 大分流
   - RULE-SET,cn1,🔗 直连域名
-  # - RULE-SET,cn2,🔗 直连域名
+#  - RULE-SET,cn2,🔗 直连域名
   ## IP规则
   - GEOIP,CN,DIRECT
   # 兜底规则
