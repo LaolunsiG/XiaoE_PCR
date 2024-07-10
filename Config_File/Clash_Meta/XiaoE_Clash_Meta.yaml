@@ -682,6 +682,8 @@ rule-providers:
     <<: *domain
     url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml"
     path: ./ruleset/cn_domain.yaml
+
+# 类型-规则-策略组
 rules:
   # 网络测试
   - RULE-SET,networktest,📈 网络测试
@@ -738,8 +740,8 @@ rules:
   - RULE-SET,proxy_domain,🪜 代理域名
   # 大分流
   - RULE-SET,cn1,🔗 直连域名
-#  - RULE-SET,cn2,🔗 直连域名
+#  - RULE-SET,cn_domain,🔗 直连域名
   ## IP规则
-  - GEOIP,CN,DIRECT
+  - GEOIP,CN,🔗 直连域名
   # 兜底规则
   - MATCH,🐟 漏网之鱼
