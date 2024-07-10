@@ -671,7 +671,7 @@ rule-providers:
   # 大分流
   proxy_domain:
     <<: *domain
-    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml"
     path: ./ruleset/proxy_domain.yaml
   # 大分流
   cn1:
@@ -735,7 +735,7 @@ rules:
   - RULE-SET,games-cn,🎮 游戏平台(cn)
   - RULE-SET,games-global,🎮 游戏平台(global)
   # 大分流
-  - RULE-SET,proxy,🪜 代理域名
+  - RULE-SET,proxy_domain,🪜 代理域名
   # 大分流
   - RULE-SET,cn1,🔗 直连域名
 #  - RULE-SET,cn2,🔗 直连域名
