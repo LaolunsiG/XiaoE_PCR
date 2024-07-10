@@ -32,7 +32,7 @@ Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
 ## Rules（规则）
 
-- [XiaoE-PCR-Rules](https://github.com/LaolunsiG/XiaoE-PCR/blob/main/rules/%E8%A7%84%E5%88%99%E8%B5%84%E6%BA%90.md)
+- [XiaoE_PCR-Rules](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/%E8%A7%84%E5%88%99%E8%B5%84%E6%BA%90.md)
 
 
 
