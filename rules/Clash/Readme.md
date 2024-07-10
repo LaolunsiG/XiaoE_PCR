@@ -10,9 +10,9 @@
 ## Twitter
 
 # **感谢**
-- [ios_rule_script/tree/master/rule/Clash ](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
+- [ios_rule_script-Clash](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 
-- [ProxyTools ](https://github.com/mphin/ProxyTools)
+- [ProxyTools](https://github.com/mphin/ProxyTools)
 
 - [strule](https://whatshub.top/strule)
 
