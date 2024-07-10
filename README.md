@@ -6,8 +6,9 @@ Clash因不在未更新，不支持新规则和新的加密,所以创建此存�
 
 Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
-## 命名规则
-- **字母，数字，下划线**
+## 其他教程
+- 命名规则
+  - **字母，数字，下划线**
 - [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
 
 ## 配置文件
@@ -31,7 +32,7 @@ Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
 ## Rules（规则）
 
-- [Rules](https://github.com/LaolunsiG/XiaoE-PCR/blob/main/rules/%E8%A7%84%E5%88%99%E8%B5%84%E6%BA%90.md)
+- [XiaoE-PCR-Rules](https://github.com/LaolunsiG/XiaoE-PCR/blob/main/rules/%E8%A7%84%E5%88%99%E8%B5%84%E6%BA%90.md)
 
 
 
