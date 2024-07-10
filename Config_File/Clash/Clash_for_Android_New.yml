@@ -1,8 +1,9 @@
-# Clash XiaoE配置，此配置文件无加密DNS，优选节点
-# 感谢
-# Clash莫离配置: https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
-# 懒人配置
-# updata: 2024/07/04
+# Clash_Old_XiaoE
+# content: 此配置文件无加密DNS，优选节点
+# 感谢以下配置
+# 1.Clash莫离配置: https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
+# 2.懒人配置
+# updata: 2024/07/10
 # updata_url: 
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
@@ -241,7 +242,7 @@ dns:
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 香港, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
   - {name: ♻️ 自动选择, type: url-test, tolerance: 50, lazy: true, use: [机场1], url: http://www.google.com/generate_204, interval: 600}
-  - {name: 🤣 手动选择, type: select, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
+  - {name: 🤣 手动选择, type: select, use: [机场1, 机场2, 机场3, 机场4, 机场4], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连]}
 #  - {name: 🍃 应用净化, type: select, proxies: [🛑 全球拦截, 🎯 全球直连]}
   # 机场测试
@@ -308,14 +309,14 @@ proxy-groups:
   ### 亚洲
   - {name: ⏱香港节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)港|hk|hongkong|hong kong", url: 'http://www.gstatic.com/generate_204', interval: 300}
   - {name: ⏱台湾节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)台|tw|taiwan", url: 'http://www.gstatic.com/generate_204', interval: 300}
-  - {name: ⏱日本节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "^(?=.((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$", url: 'http://www.gstatic.com/generate_204', interval: 300}
-  - {name: ⏱新加坡节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "^(?=.((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$", url: 'http://www.gstatic.com/generate_204', interval: 300}
+  - {name: ⏱日本节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)日本|jp|japan", url: 'http://www.gstatic.com/generate_204', interval: 300}
+  - {name: ⏱新加坡节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)新|sg|singapore", url: 'http://www.gstatic.com/generate_204', interval: 300}
   ### 美洲
-  - {name: ⏱加拿大节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "^(?=.((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$", url: 'http://www.gstatic.com/generate_204', interval: 300}
-  - {name: ⏱美国节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)🇨🇦|加拿大|CA|渥太华", url: 'http://www.gstatic.com/generate_204', interval: 300}
+  - {name: ⏱加拿大节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)美|us|unitedstates|united states", url: 'http://www.gstatic.com/generate_204', interval: 300}
+  - {name: ⏱美国节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?!)🇨🇦|加拿大|CA|渥太华", url: 'http://www.gstatic.com/generate_204', interval: 300}
   ### 欧洲
-  - {name: ⏱英国节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "^(?=.((?i)🇬🇧|英国|伦敦|(\b(UK|United Kingdom)\b)))(?!.((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$", url: 'http://www.gstatic.com/generate_204', interval: 300}
-  - {name: ⏱德国节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "^(?=.((?i)🇩🇪|德国|(\b(DE|Germany)\b)))(?!.((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$", url: 'http://www.gstatic.com/generate_204', interval: 300}
+  - {name: ⏱英国节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?!)🇬🇧|英国|UK|伦敦|英格兰|伯明翰|泰恩河畔纽卡斯尔|利兹|爱丁堡|格拉斯哥|苏格兰", url: 'http://www.gstatic.com/generate_204', interval: 300}
+  - {name: ⏱德国节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?!)🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany", url: 'http://www.gstatic.com/generate_204', interval: 300}
   ### 非洲
   - {name: ⏱印度节点优选, type: url-test, tolerance: 50, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India", url: 'http://www.gstatic.com/generate_204', interval: 300}
 
@@ -525,7 +526,7 @@ rule-providers:
   AI:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Clash/AI/AI_Global.yaml"
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash/AI/AI_Global.yaml"
     interval: 86400
     path: ./ruleset/AI.yaml
   # 游戏平台
@@ -542,11 +543,11 @@ rule-providers:
     path: ./ruleset/games-cn.yaml
     interval: 86400
   # 代理网络
-  proxy:
+  proxy_domain:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml"
+    path: ./ruleset/proxy_domain.yaml
     interval: 86400
   # 国内网络
   cn1:
@@ -555,11 +556,11 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
     path: ./ruleset/cn1.yaml
     interval: 86400
-  cn2:
+  cn_domain:
     type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/LaolunsiG/Proxy-configuration-resources/main/rules/Clash/ChinaMax/ChinaMax_Classical_No_Resolve_Old.yaml"
-    path: ./ruleset/cn2.yaml
+    behavior: domain
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml"
+    path: ./ruleset/cn_domain.yaml
     interval: 86400
 
 # 规则
@@ -615,10 +616,10 @@ rules:
   - RULE-SET,games-global,🎮 游戏平台(global)
   # 代理和直连网络大分流规则
   ## 代理网络
-  - RULE-SET,proxy,🪜 代理域名
+  - RULE-SET,proxy_domain,🪜 代理域名
   ## 直连网络
   - RULE-SET,cn1,🔗 直连域名
   - GEOIP,CN,🔗 直连域名
-#  - RULE-SET,cn2,🔗 直连域名
+#  - RULE-SET,cn_domain,🔗 直连域名
   # 兜底规则
   - MATCH,🐟 漏网之鱼
