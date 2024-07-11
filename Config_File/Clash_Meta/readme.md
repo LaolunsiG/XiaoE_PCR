@@ -5,5 +5,6 @@
 - [XiaoE_CLash_Meta](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml)
 
 ## Clash_Meta_Wiki(知识库)
-- [Clash_Meta_Old](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash_Meta/Clash_Meta_Old.yaml)
-- [Clash_Meta_New](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash_Meta/Clash_Meta_New.yaml)
+- [Clash_Meta](https://wiki.metacubex.one/)
+- [Clash_Meta_Old](https://clash-meta.gitbook.io/clash.meta-wiki-older)
+
