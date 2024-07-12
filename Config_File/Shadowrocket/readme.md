@@ -9,3 +9,5 @@
 - [懒人配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Shadowrocket/%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE.conf)
 
 ## 功能预览
+
+## 感谢
