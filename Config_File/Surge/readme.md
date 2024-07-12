@@ -1,5 +1,6 @@
 # XiaoE_Surge
 - 这个软件是订阅制的，很好用就是很贵。
+- 需自行配置订阅链接
 ## APP_Tutorial(使用教程)
 - [Surge_wiki](https://wiki.surge.community/)-官方
 - [Surge_Guidelines](https://surge.mitsea.com/)
