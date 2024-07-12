@@ -5,9 +5,9 @@
 - AI
   - [AI_Globle.list](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Shadowrocket/AI/AI_Globle.list)
     - 综合了国外的AI平台
-
-- [China](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Shadowrocket/China/GEOIP.list)
-  - 国内IP规则，配合GEODATA使用
+- China
+  - [GEOIP_CN.list](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Shadowrocket/China/GEOIP.list)
+    - 国内IP规则，配合GEODATA使用
 
 ## 感谢
 - [ios_rule_script-rule-Shadowrocket](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)
