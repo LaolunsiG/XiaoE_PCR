@@ -1,5 +1,15 @@
 # 各种代理软件适用规则，不同软件之间大同小异
 - **规则解释**
+
+## 规则来源
+- [ios_rule_script-rule-Shadowrocket](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)
+
+- [ProxyTools ](https://github.com/mphin/ProxyTools)
+
+- [strule](https://whatshub.top/strule)
+
+- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
+
 ## 规则集
 - RULE-SET
   - 引用规则集合，需配置rule-providers
