@@ -372,7 +372,7 @@ proxy-groups:
   # 大分流
   - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 🎯 全球直连], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
   - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
-  - {name: 🛑 全球拦截, type: select, proxies: [REJECT], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png}
+  - {name: 🛑 全球拦截, type: select, proxies: [REJECT, REJECT-DROP, PASS], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
   # ----------------国家或地区策略组--------------------
   # 地区节点选择
