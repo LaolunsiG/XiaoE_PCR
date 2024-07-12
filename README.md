@@ -11,8 +11,13 @@ Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 - 命名规则
   - **字母，数字，下划线**
 - [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
-## 配置文件
+- 注释规则
+  - //
+  - '#'
+  - ;
+  - !
 
+## 配置文件
 - **[配置文件](https://github.com/LaolunsiG/XiaoE-PCR/tree/main/Config_File)**
 ### Clash
 1. [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
