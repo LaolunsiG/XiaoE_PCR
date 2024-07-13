@@ -1,8 +1,10 @@
 # name: Apple_Direct_Domain(代理域名集)
-# content: 
-# updata: 2024/07/13
 # origin_url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
+# updata: 2024/07/13
+# updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Apple/Apple_Direct_Domain.yaml
+# content: 
+# DOMAIN: ?
 payload:
   - '+.a1.mzstatic.com'
   - '+.a2.mzstatic.com'
