@@ -1,12 +1,12 @@
 # name：XiaoE_Stash
 # content: 优选节点，无加密DNS，存在IP规则，可能存在DNS泄露问题。
 # 感谢以下配置
-# 1.“[懒人配置]”
-# 2."[可莉配置]"
-# 3.“[https://github.com/Repcz](https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml)”
-# 4."[https://github.com/Repcz](https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml)"
-# updata：2024-07-11
-# updata_log: 更新了策略组和规则
+# 1.懒人配置
+# 2.可莉配置
+# 3.https://github.com/Repcz: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml
+# 4.https://github.com/Repcz: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml
+# updata：2024-07-13
+# updata_log: 更新了广告规则，这个软件太容易奔溃了，增加了全球拦截的选择项
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
@@ -112,7 +112,7 @@ subscribe-url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config
 allow-lan: true # 允许局域网的连接（共享代理）
 bind-address: "*"  # 监听IP白名单，可绑定单个IPv4和v6地址，"*" 为绑定所有IP地址，仅在将allow-lan设置为true时适用
 
-ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+# ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 udp: true # 是否允许 UDP 通过代理，默认为 false
 unified-delay: false # 开启统一延迟时，会进行两次延迟测试，以消除连接握手等带来的不同类型节点的延迟差异，可选值 true/false
 tcp-concurrent: true  # TCP 并发，可选值 true/false
@@ -150,7 +150,7 @@ dns:
     - '*.battlenet.com'
     - '*.blzstatic.cn'
     - '*.battle.net'
-  nameserver:
+  nameserver: #遇到IP规则和使用DIRECT时会用到
     - 114.114.114.114
     - 223.5.5.5
     - 1.1.1.1
@@ -485,9 +485,9 @@ rule-providers:
     url: 'https://whatshub.top/rule/ChinaMedia.rule'
   # 代理和直连网络大分流
   ## 代理网络
-  代理域名:
-    !!merge <<: *classical
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml'
+  Proxy_Domain:
+    !!merge <<: *domain
+    url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml'
   # 直连网络
   国内直连1:
     !!merge <<: *classical
@@ -554,7 +554,7 @@ rules:
   - RULE-SET,Blizzard,🎮 游戏平台(Global)
   # 代理和直连网络大分流
   ## 代理网络
-  - RULE-SET,代理域名,🪜 代理域名 # 策略选择
+  - RULE-SET,Proxy_Domain,🪜 代理域名 # 策略选择
   ## 直连网络
   - RULE-SET,国内直连1,🔗 直连域名
 #  - RULE-SET,国内直连2,🔗 直连域名
