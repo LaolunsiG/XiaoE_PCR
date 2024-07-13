@@ -11,6 +11,9 @@
 - [CN_Domain.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml)
 - [Geoip_CN.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/Geoip_CN.yaml)
 
+## Proxy
+- [Proxy_Domain.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml)
+
 # **感谢**
 - [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 
