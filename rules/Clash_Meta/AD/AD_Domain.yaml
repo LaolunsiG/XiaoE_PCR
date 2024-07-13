@@ -1,8 +1,10 @@
 # name: AD_Domain(广告域名集)
-# content: 
-# updata: 2024/07/09
 # origin_url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
+# updata: 2024/07/09
+# updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AD/AD_Domain.yaml
+# content: 
+# DOMAIN: ？
 payload:
   - '+.0.code.cotsta.ru'
   - '+.0.nextyourcontent.com'
