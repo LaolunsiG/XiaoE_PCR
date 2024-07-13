@@ -1,8 +1,10 @@
 # name: Proxy_Domain(代理域名集)
-# content: 
-# updata: 2024/07/10
 # origin_url: https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/proxy.yaml
+# updata: 2024/07/10
+# updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml
+# content: 
+# DOMAIN: ?
 payload:
   - '+.000webhost.com'
   - '+.01.org'
