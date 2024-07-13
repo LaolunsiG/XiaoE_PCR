@@ -20,3 +20,4 @@
 - [Fei配置文件.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/Fei%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.yaml)
 - [Lucky配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/Lucky%E9%85%8D%E7%BD%AE.yaml)
 - [Repcz配置.yaml](https://github.com/Repcz)
+- [Stash可莉配置.yaml](https://t.me/iKeLee)
