@@ -1,13 +1,15 @@
 # 个人使用存储库XiaoE-PCR
-
 本存储库会将一些规则合在一起，以便于使用。
 
 Clash因不在未更新，不支持新规则和新的加密,所以创建此存储库。
 
 Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 
-## 其他教程
+## Updata_Log(更新日志)
+- 修改了CFA和Stash配置文件
+- 增加了apple_domain规则
 
+## 其他教程
 - 命名规则
   - **字母，数字，下划线**
 - [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
@@ -33,7 +35,6 @@ Clash_Rules(规则)可用于旧版Clash for Android and Clash for Windows。
 1. [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
 
 ## 代理扩展教程（代理工具额外教程）
-
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
 ## Rules（规则）
