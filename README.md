@@ -1,7 +1,7 @@
 # 个人使用存储库XiaoE-PCR
 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密,所以创建此存储库。
 
-**Clash_Rules(规则)**可用于旧版Clash for Android and Clash for Windows。
+**Clash_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
 
 ## Updata_Log(更新日志)-time
 - 修改了CFA和Stash配置文件
