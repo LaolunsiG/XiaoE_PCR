@@ -22,13 +22,13 @@
   - ;
   - !
 
-## 配置文件
-- **[配置文件](https://github.com/LaolunsiG/XiaoE-PCR/tree/main/Config_File)**
+## Config(配置文件)
+- **[配置文件](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)**
 ### Clash
 1. [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
 2. [Clash_Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
 ### LanceX
-此软件还未完善，不推荐使用
+> 此软件还未完善，不推荐使用
 1. [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 ### Loon
 1. [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
@@ -37,12 +37,14 @@
 ### Stash
 1. [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
 
-## 代理扩展教程（代理工具额外教程）
+## 代理扩展教程(代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
-## Rules（规则）
-
+## Rules(规则)
 - [XiaoE_PCR-Rules](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/%E8%A7%84%E5%88%99%E8%B5%84%E6%BA%90.md)
 
-
+## 感谢以下人员
+|仓库名|仓库链接|
+|--|--|
+|ios_rule_script|https://github.com/blackmatrix7/ios_rule_script|
 
