@@ -40,7 +40,9 @@
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
 ## Rules(规则)
-- [XiaoE_PCR-Rules](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/%E8%A7%84%E5%88%99%E8%B5%84%E6%BA%90.md)
+- [XiaoE_PCR-Rules-All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
+- [XiaoE_PCR-Rules-Clash/Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta)
+- [XiaoE_PCR-Rules-Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket)
 
 ## 感谢以下项目/人员
 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢。
