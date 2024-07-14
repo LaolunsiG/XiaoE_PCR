@@ -1,12 +1,12 @@
 # name：XiaoE_Stash
 # content: 优选节点，无加密DNS，存在IP规则，可能存在DNS泄露问题。
 # 感谢以下配置
-# 1.懒人配置
-# 2.可莉配置: https://t.me/iKeLee
-# 3.https://github.com/Repcz: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml
-# 4.https://github.com/Repcz: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml
-# updata：2024-07-13
-# updata_log: 更新了广告规则，这个软件太容易奔溃了，增加了全球拦截的选择项
+# 1.懒人配置: https://whatshub.top/config/stash-auto.yaml
+# 2.可莉配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
+# 3.Lucky配置1: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml;
+# 4.Lucky配置2: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml
+# updata：2024-07-14
+# updata_log: 修改了感谢配置的链接, 增加了测速策略组的图标
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
 # 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
@@ -213,7 +213,7 @@ proxy-groups:
   - {name: 机场9, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场10, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
-  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度]}
+  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
   #人工智能
   - {name: 🤖 人工智能, type: select, proxies: [台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png}
   #下载网络
