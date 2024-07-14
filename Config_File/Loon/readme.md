@@ -11,7 +11,8 @@
 ## Function_Preview(功能预览)
 
 ## 感谢
-- [Copyright配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/Copyright%E9%85%8D%E7%BD%AE.conf)
-- [Loon 精简配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/Loon%E7%B2%BE%E7%AE%80%E9%85%8D%E7%BD%AE.conf)
-- [其他配置文件](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.conf)
-- [可莉配置-进阶配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/%E5%8F%AF%E8%8E%89%E9%85%8D%E7%BD%AE.conf)
+- [Copyright配置](https://github.com/SANYIMOE/Quan_Shado_Conf)
+- [Loon 精简配置](https://raw.githubusercontent.com/HoCooo/Loon/main/LoonLite.conf)
+- [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
+- 其他配置文件
+- [可莉配置-进阶配置](https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/zh-CN/Loon_Sample_Configuration_By_iKeLee.conf)
