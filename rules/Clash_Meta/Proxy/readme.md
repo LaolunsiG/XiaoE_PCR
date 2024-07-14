@@ -3,6 +3,7 @@
 ## IP_Set(IP集)
 ## Domain_Set(域名集)
 - [Proxy_Domain.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml)
+  - https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml
 ## Classical(混合集)
 
 ## 感谢以下规则集
