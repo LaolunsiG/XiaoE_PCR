@@ -4,20 +4,18 @@
 
 ## Clash_Old_Rules
 
-## Clash_Meta_Rules
-
+## [Clash_Meta_Rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta)
+- https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta
 ## Shadowrocket_Rules
 
 ## Geodata
 
-
-
-
 ## 感谢以下项目/人员
 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢
-- [ios_rule_script-rule-Shadowrocket](https://github.com/blackmatrix7/ios_rule_script/)
+- [meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
+- [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/)
 - [ProxyTools](https://github.com/mphin/ProxyTools)
-- [whatshub.top](https://whatshub.top/strule)
+- [whatshub.top](https://whatshub.top/)
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 
 
