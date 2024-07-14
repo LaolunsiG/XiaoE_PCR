@@ -137,7 +137,7 @@ static=🇭🇰 香港,⏱ 香港时延优选,🚥 香港故障转移,🎛 香�
 static=🇰🇷 韩国,⏱ 韩国时延优选,🚥 韩国故障转移,🎛 韩国负载均衡,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png
 static=🇯🇵 日本,⏱ 日本时延优选,🚥 日本故障转移,🎛 日本负载均衡,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png
 static=🇨🇳 台湾,⏱ 台湾时延优选,🚥 台湾故障转移,🎛 台湾负载均衡,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png
-static=🇸🇬 新加坡,⏱ 新加坡时延优选,🚥 新加坡故障转移,🎛 新加坡负载均衡,mg-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png
+static=🇸🇬 新加坡,⏱ 新加坡时延优选,🚥 新加坡故障转移,🎛 新加坡负载均衡,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png
 static=🇷🇺 俄罗斯,⏱ 俄罗斯时延优选,🚥 俄罗斯故障转移,🎛 俄罗斯负载均衡,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/RU.png
 # 美洲
 static=🇺🇸 美国,⏱ 美国时延优选,🚥 美国故障转移,🎛 美国负载均衡,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png
