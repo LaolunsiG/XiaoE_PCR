@@ -10,7 +10,7 @@
 ## Surge_Config(配置文件)
 - [XiaoE_Surge](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Surge/XiaoE_Surge.conf)
 
-## 功能预览
+## Function_Preview(功能预览)
 
 ## 感谢
 - [深巷有喵的Surge配置](https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Surge.conf)
