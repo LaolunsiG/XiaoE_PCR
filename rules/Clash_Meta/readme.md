@@ -12,7 +12,8 @@
 ## Proxy
 - [Proxy_Domain.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml)
 
-## **感谢**
+## **感谢以下项目/人员**
+感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢
 - [MetaCubeX-meta_rules_dat](https://github.com/MetaCubeX/meta-rules-dat)
 - [ios_rule_script-Clash_Meta](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 - [ProxyTools](https://github.com/mphin/ProxyTools)
