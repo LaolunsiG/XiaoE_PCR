@@ -5,7 +5,7 @@
 ## Plan&Change_Log(更新日志)-2024/07/14
 - [ ] 配置surfboard配置文件
 - [ ] 为qx添加特殊配置文件
-- [ ] 添加qx配置文件
+- [x] 添加qx配置文件
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
