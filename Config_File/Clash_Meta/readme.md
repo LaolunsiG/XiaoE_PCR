@@ -13,6 +13,6 @@
 ## 功能预览
 
 ## 感谢
-- [Lucky配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/Lucky%E9%85%8D%E7%BD%AE.yaml)
-- [可莉示例配置](https://github.com/LaolunsiG/XiaoE_PCR/raw/main/Config_File/Clash_Meta/可莉示例配置.yaml)
-- [莫离配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/%E8%8E%AB%E7%A6%BB%E9%85%8D%E7%BD%AE.yaml)
+- [Lucky配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
+- [可莉示例配置](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)
+- [Clash莫离配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
