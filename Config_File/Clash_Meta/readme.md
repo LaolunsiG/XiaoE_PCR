@@ -1,4 +1,4 @@
-# Clash_Meta_Config
+# Clash_Meta
 - 需要自己配置订阅链接
 
 ## APP_Tutorial(使用教程) 
