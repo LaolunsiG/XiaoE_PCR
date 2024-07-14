@@ -238,7 +238,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge
 ## 下载平台
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Download/Download.list, tag=下载网络, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
 ## 人工智能
-https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Shadowrocket/AI/AI_Globle.list, tag=人工智能, force-policy=🤖️ 人工智能, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/AI/AI_Globle.list, tag=人工智能, force-policy=🤖️ 人工智能, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list, tag=微软服务, force-policy=Ⓜ️ 微软服务, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list, tag=苹果服务1, force-policy=🍎 苹果服务, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list, tag=苹果服务2, force-policy=🍎 苹果服务, update-interval=172800, opt-parser=true, enabled=true
