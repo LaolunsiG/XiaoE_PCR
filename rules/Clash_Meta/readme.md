@@ -18,3 +18,5 @@
 - [ProxyTools](https://github.com/mphin/ProxyTools)
 - [whatshub-Stash/Clash](https://whatshub.top/strule)
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
+- [DustinWin-ruleset_geodata](https://github.com/DustinWin/ruleset_geodata?tab=readme-ov-file)
+  - 定制适合 Clash 内核和 sing-box 内核的 ruleset&geodata 规则集文件
