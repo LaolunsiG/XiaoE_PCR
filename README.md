@@ -46,9 +46,10 @@
 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢。
 > 我决定将每个我使用/Copy的资源都换为仓库链接，而不是资源链接
 
-|仓库名|仓库链接|Telegram频道|
+|仓库名|仓库链接/其他链接|Telegram频道|
 |--|--|--|
 |ios_rule_script|https://github.com/blackmatrix7/ios_rule_script||
 |iKeLee|https://gitlab.com/lodepuly/vpn_tool/|https://t.me/iKeLee|
 |Moli-X|https://github.com/Moli-X|https://t.me/QuantX|
+|whatshub.top|https://whatshub.top/||
 
