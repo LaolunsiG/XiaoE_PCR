@@ -1,11 +1,10 @@
 # NAME: BiliBili
 # 感谢项目：
-# 1.origin_repo: https://github.com/blackmatrix7/ios_rule_script
 # origin_url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili_Classical.list
-# updata_log: 增加了DOMAIN-SUFFIX,api.bilibili.com
 # UPDATED: 2024/07/12
-
+# updata_log: 增加了DOMAIN-SUFFIX,api.bilibili.com
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili_Classical.list
+# contentt:
 # DOMAIN: 53
 # DOMAIN-SUFFIX: 62
 # IP-CIDR: 8
