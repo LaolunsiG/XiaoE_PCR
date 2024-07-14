@@ -58,16 +58,17 @@ server=1.1.1.1
   
 # 本地节点
 [server_local]
+
 # 订阅节点(远程节点)  
 [server_remote]
-https://flynb.site/sub?token=F9F9zZcllpdyN5TluF9F9zZF9F9zZ11EEfx0g&tag=mixed, tag=机场分享, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml, tag=Free-get_subscribe, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml, tag=Free-passcro, update-interval=172800, opt-parser=true, enabled=true
-https://sub.tgzdyz2.xyz/sub, tag=Free-白嫖的家, update-interval=172800, opt-parser=true, enabled=true
-https://api.zzzzzl.me/api/v1/client/subscribe?token=97b91df444afd8e91fe143412e41e5aa, tag=Payment-超级机场, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/ssr, tag=Free-ssr, update-interval=172800, opt-parser=true, enabled=true
-https://api.yuansu.app/v1/client/subscribe?token=220d960189e95961d03a4e09dfd83dc8, tag=Payment-element, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
-https://dy.hhyxt.top/api/v1/client/subscribe?token=1421069c6205d4a22fae4dd4d16c81b0, tag=Payment-Tblack, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+机场链接, tag=, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 
 # 以下为策略组[policy]部分
 # stati 手动选择策略组中，你需要手动选择想要的节点/策略组。
