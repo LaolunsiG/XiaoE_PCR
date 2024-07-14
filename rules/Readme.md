@@ -1,5 +1,5 @@
-# 各种代理软件适用规则，不同软件之间大同小异
-- **规则解释**
+# Rules
+- 各种代理软件适用规则，不同软件之间大同小异
 > [**规则类型**](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/%E8%A7%84%E5%88%99%E7%B1%BB%E5%9E%8B.md)
 
 ## [Clash_Old_Rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old)
