@@ -2,9 +2,10 @@
 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密,所以创建此存储库。
 > **Clash_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
 
-## Updata_Log(更新日志)-2024/07/14
-- 修改了CFA和Stash配置文件
-- 增加了apple_domain规则
+## Plan&Change_Log(更新日志)-2024/07/14
+- [ ] 配置surfboard配置文件
+- [ ] 为qx添加特殊配置文件
+- [ ] 添加qx配置文件
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
