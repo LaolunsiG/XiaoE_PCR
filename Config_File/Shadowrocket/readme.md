@@ -2,7 +2,7 @@
 - 在IOS支持加密协议最多的代理软件，适合小白使用
 
 ## APP_Tutorial(使用教程) 
-= [Shadowrocket](https://github.com/wlxuf/Shadowrocket)
+- [Shadowrocket](https://github.com/wlxuf/Shadowrocket)
 
 ## Shadowrocket_Config(配置文件)
 - [XiaoE_Shadowrocket](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Shadowrocket/XiaoE_Shadowrocket.conf)
