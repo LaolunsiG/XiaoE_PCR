@@ -6,4 +6,5 @@
 
 ## 功能预览
 
-## 感谢
+## 感谢以下配置
+- [whatshub-qx](https://whatshub.top/config/qx.conf)
