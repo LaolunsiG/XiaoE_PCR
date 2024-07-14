@@ -34,6 +34,14 @@
 ### Loon_Config(配置文件)
 - [XiaoE_Loon](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/XiaoE_Loon.conf)
 
+## Shadowrocket
+### Stash_Wiki(知识库)
+- [Shadowrocket](https://github.com/wlxuf/Shadowrocket)
+### Shadowrocket(配置文件)
+- [XiaoE_Shadowrocket](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Shadowrocket/XiaoE_Shadowrocket.conf)
+  - **此配置文件需要自己配置订阅节点**
+
+
 ## Stash
 ### Stash_Wiki(知识库)
 - [Stash_Wiki](https://stash.wiki/)
@@ -51,6 +59,9 @@
   - [Loon 精简配置](https://raw.githubusercontent.com/HoCooo/Loon/main/LoonLite.conf)
   - [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
   - [可莉配置-进阶配置](https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/zh-CN/Loon_Sample_Configuration_By_iKeLee.conf)
+- Shadowrocket
+  - [Lucky-Shadowrocket配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-Shadowrocket.conf)
+  - [whatshub.top-懒人配置](https://whatshub.top/config/shadowrocket_basic.conf) 
 - Stash
   - [Infatuation-Fei配置](https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Stash/%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF/Config%20for%20Stash.yaml)
   - Lucky/Repcz配置
@@ -60,4 +71,5 @@
   - [懒人配置](https://whatshub.top/config/stash-auto.yaml)
   - [Coldvvater配置](https://raw.githubusercontent.com/Coldvvater/Mononoke/master/Stash/Config/Evolve.yaml)
   - [jnlaoshu配置](https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Stash/Config.yaml)
+
 
