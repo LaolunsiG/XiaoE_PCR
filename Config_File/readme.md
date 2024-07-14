@@ -39,4 +39,12 @@
   - [Clash莫离配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
   - [whatshub.top](https://whatshub.top/config/stash-auto.yaml)
 - Stash
+  - [Infatuation-Fei配置](https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Stash/%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF/Config%20for%20Stash.yaml)
+  - Lucky/Repcz配置
+    - [Stash_lite](https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml)
+    - [Stash](https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml)
+  - [Stash可莉配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
+  - [懒人配置](https://whatshub.top/config/stash-auto.yaml)
+  - [Coldvvater配置](https://raw.githubusercontent.com/Coldvvater/Mononoke/master/Stash/Config/Evolve.yaml)
+  - [jnlaoshu配置](https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Stash/Config.yaml)
 
