@@ -7,18 +7,21 @@
 ## APP_Tutorial(使用教程)
 - [Stash_Wiki](https://stash.wiki/)
 
-## 配置文件
+## Stash_Config(配置文件)
 - [XiaoE_Stash](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml)
   - 自行配置订阅链接
 
-## 功能预览
+## Function_Preview(功能预览)
 - ![功能](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Stash/Picture/photo_2024-07-04_20-21-42.jpg)
 - ![2](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Stash/Picture/photo_2024-07-04_20-21-39.jpg)
 - ![3](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Stash/Picture/photo_2024-07-04_20-21-33.jpg)
 
-## 感谢
-- [Fei配置文件.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/Fei%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.yaml)
-- [Lucky配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/Lucky%E9%85%8D%E7%BD%AE.yaml)
-- [Repcz配置.yaml](https://github.com/Repcz)
-- [Stash可莉配置.yaml](https://t.me/iKeLee)
-- [懒人配置]
+## 感谢以下配置
+- [Infatuation-Fei配置](https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Stash/%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF/Config%20for%20Stash.yaml)
+- Lucky/Repcz配置
+  - [Stash_lite](https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml)
+  - [Stash](https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml)
+- [Stash可莉配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
+- [懒人配置](https://whatshub.top/config/stash-auto.yaml)
+- [Coldvvater配置](https://raw.githubusercontent.com/Coldvvater/Mononoke/master/Stash/Config/Evolve.yaml)
+- [jnlaoshu配置](https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Stash/Config.yaml)
