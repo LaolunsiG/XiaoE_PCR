@@ -13,4 +13,7 @@
 ## 功能预览
 
 ## 感谢以下配置
-1. [Clash莫离配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
+- [Lucky配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
+- [可莉示例配置](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)
+- [Clash莫离配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
+- [whatshub.top](https://whatshub.top/config/stash-auto.yaml)
