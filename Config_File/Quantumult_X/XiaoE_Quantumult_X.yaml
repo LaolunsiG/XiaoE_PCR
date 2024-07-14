@@ -1,13 +1,10 @@
 # name：XiaoE_Quantumult_X
 # content: 
 # 感谢以下配置
-# 1.懒人配置: https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf
-# 2.可莉配置: https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/zh-CN/Loon_Sample_Configuration_By_iKeLee.conf
-# 3.Copyright配置: https://quan-shado-conf.mojy.xyz/conf/loon.conf
-# 4.Loon 精简配置: https://raw.githubusercontent.com/HoCooo/Loon/main/LoonLite.conf
+# 1.whatshub-懒人配置: https://whatshub.top/config/qx.conf
 # updata：2024/07/14
 # updata_log(更新日志): 
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PR/main/Personal/Config_File/Loon/XiaoE_Loon.conf
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Quantumult_X/XiaoE_Quantumult_X.yaml
 
 # 全局配置
 [general]
@@ -232,17 +229,23 @@ final,🐟 漏网之鱼
 # 参数设置
 # update-interval= [为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时]
 [filter_remote]
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list, tag=应用净化, force-policy=🍃 应用净化, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list, tag=Lan, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
+# 广告拦截
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list, tag=广告拦截, force-policy=🚫 全球拦截, update-interval=172800, opt-parser=true, enabled=false
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list, tag=隐私保护, force-policy=🚫 全球拦截, update-interval=172800, opt-parser=true, enabled=false
+# 服务平台
+## 下载平台
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Download/Download.list, tag=下载网络, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
+## 人工智能
 https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/Shadowrocket/AI/AI_Globle.list, tag=人工智能, force-policy=🤖️ 人工智能, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list, tag=微软服务, force-policy=Ⓜ️ 微软服务, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list, tag=苹果服务1, force-policy=🍎 苹果服务, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list, tag=苹果服务2, force-policy=🍎 苹果服务, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list, tag=AppleProxy, force-policy=🚀 策略选择, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list, tag=Google服务, force-policy=🚀 策略选择, update-interval=172800, opt-parser=true, enabled=true
+## 支付平台
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list, tag=Paypal, force-policy=🪙 Paypal, update-interval=172800, opt-parser=true, enabled=true
+# 社交通讯平台
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list, tag=Telegram, force-policy=📲 Telegram, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Discord/Discord.list, tag=Discord, force-policy=🐦 Discord, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list, tag=Twitter, force-policy=📄 Twitter, update-interval=172800, opt-parser=true, enabled=true
@@ -250,9 +253,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shado
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Reddit/Reddit.list, tag=Reddit, force-policy=📖 Reddit, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Weibo/Weibo.list, tag=Weibo, force-policy=🍟 新浪微博, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list, tag=WeChat, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
-
-# 支付平台
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list, tag=Paypal, force-policy=🪙 Paypal, update-interval=172800, opt-parser=true, enabled=true
 # 娱乐平台
 ## 游戏平台
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list, tag=PlayStation, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
@@ -286,11 +286,11 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge
 # 订阅重写规则(远程重写规则)
 [rewrite_remote]
 https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=true, enabled=true
-https://whatshub.top/rewrite/4in1.conf, tag=重写, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=substore, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://whatshub.top/rewrite/4in1.conf, tag=4in1重写, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=QX_substore, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/Html/Q-Search.conf, tag=safari超级搜索, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=false
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify会员, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=false
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨鱼去广告, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨鱼去开屏, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 https://github.com/Moli-X/Resources/raw/main/Rewrite/ADBlock.conf, tag=墨离去广告, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js, tag=pixiv去广告, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/Function/BaiduCloud.conf, tag=百度云盘倍速, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=true
