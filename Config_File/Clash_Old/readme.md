@@ -5,13 +5,13 @@
     - [FlClash](https://github.com/chen08209/FlClash)-界面类似surfboard，有bug
     - [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)-推荐
   - Windows_APP
-    - [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg)
     - [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)-推荐
     - [v2rayN](https://github.com/2dust/v2rayN)
     - [clash-nyanpasu](https://github.com/LibNyanpasu/clash-nyanpasu)-集成了多内核，但使用体验较差，不推荐
-- 请自行添加订阅节点
+- 需要自己配置订阅链接
 - 正则表达式
   - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
+- [锚点配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash_Meta/%E9%94%9A%E7%82%B9%E9%85%8D%E7%BD%AE.md)
 
 ## APP_Tutorial(使用教程)
 - [Clash_wiki](https://clash.wiki/)-官方
