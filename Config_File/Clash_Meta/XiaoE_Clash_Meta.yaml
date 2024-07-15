@@ -600,7 +600,7 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/max.yaml"
     path: ./ruleset/max.yaml
     interval: 86400
-  Rrimevideo:
+  Primevideo:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/primevideo.yaml"
@@ -726,7 +726,7 @@ rules:
   - RULE-SET,Telegram,📲 电报消息
   - RULE-SET,Discord,🐦 Discord
   - RULE-SET,Twitter,💬 Twitter
-  - RULE-SET,tiktok,🎵 TikTok
+  - RULE-SET,Tiktok,🎵 TikTok
   - RULE-SET,Facebook,💬 Facebook
   # 支付平台
   - RULE-SET,PayPal,💴 PayPal
