@@ -37,13 +37,19 @@
 ### Loon_Config(配置文件)
 - [XiaoE_Loon](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/XiaoE_Loon.conf)
 
+## Quantumult_X
+### Quantumult_X_Wiki(知识库)
+- [Quantumult X 不完全教程](https://www.notion.so/kopshawn/Quantumult-X-1d32ddc6e61c4892ad2ec5ea47f00917)-Quantumult X 不完全教程
+- [Quantumult X Wiki Book](https://qx.atlucky.me/)-Lucky,整点猫咪和INAISI
+### Quantumult_X_Config(配置文件)
+- [XiaoE_Quantumult_X](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Quantumult_X/XiaoE_Quantumult_X.yaml)
+
 ## Shadowrocket
 ### Stash_Wiki(知识库)
 - [Shadowrocket](https://github.com/wlxuf/Shadowrocket)
 ### Shadowrocket(配置文件)
 - [XiaoE_Shadowrocket](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Shadowrocket/XiaoE_Shadowrocket.conf)
   - **此配置文件需要自己配置订阅节点**
-
 
 ## Stash
 ### Stash_Wiki(知识库)
