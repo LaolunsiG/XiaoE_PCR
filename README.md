@@ -2,7 +2,7 @@
 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密,所以创建此存储库。
 > **Clash_Old_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
 
-## Plan&Change_Log(更新日志)-2024/07/14
+## Plan&Change_Log(更新日志)-2024/07/15
 - Plan
   - [ ] 配置surfboard配置文件
   - [ ] 配置sing-box配置文件
