@@ -6,7 +6,7 @@
 - Clash/Clash_Meta
   - yaml
   - json
-- Surge/Loon/Shadowrocket
+- Surge/Loon/Shadowrocket/LanceX/Quantumult_X
   - [类INI](https://blog.csdn.net/a123441/article/details/90668032)-CSDN
 
 ## Clash_Old
