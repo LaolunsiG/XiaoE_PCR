@@ -9,7 +9,7 @@
   - [ ] 为qx添加特殊配置文件
   - [x] 添加qx配置文件
 - Change_Log
-  - 修改了Stash和Clash的策略组
+  - 修改了Stash、Clash、surge and qx的策略组
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
@@ -29,17 +29,19 @@
 ## Config(配置文件)
 - **[All_Config](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)**
 ### Clash
-1. [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
-2. [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
+- [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
+- [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
 ### LanceX
 > 此软件还未完善，不推荐使用
-1. [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
+- [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 ### Loon
-1. [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
+- [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
 ### Shadowrocket
-1. [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
+- [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
 ### Stash
-1. [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
+- [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
+### Quantumult_X
+- [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
 
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
