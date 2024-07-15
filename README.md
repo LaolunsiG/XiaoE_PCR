@@ -36,12 +36,13 @@
 - [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 ### Loon
 - [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
+### Quantumult_X
+- [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
 ### Shadowrocket
 - [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
 ### Stash
 - [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
-### Quantumult_X
-- [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
+
 
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
