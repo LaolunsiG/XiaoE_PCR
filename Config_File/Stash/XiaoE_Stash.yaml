@@ -5,10 +5,10 @@
 # 2.可莉配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
 # 3.Lucky配置1: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml;
 # 4.Lucky配置2: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml
-# updata：2024-07-14
-# updata_log: 修改了感谢配置的链接, 增加了测速策略组的图标
+# updata：2024-07-15
+# updata_log: 增加了地区选择和机场选择策略组，修改了sub-store规则，修改了图标
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
-# 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
+# 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 # tiles部分仅作为本地磁贴的格式模板 可删除
 tiles:
@@ -39,7 +39,7 @@ proxies: null
 proxy-providers:
   机场1:
     url: ""
-    !!merge <<: *NodeParam #使用上述订阅配置
+    !!merge <<: *NodeParam #使用上述锚点配置
     path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场0]" # 为订阅节点添加机场名称前缀
@@ -193,14 +193,18 @@ LoadBalance: &LoadBalance {type: load-balance, strategy: consistent-hashing, int
 # proxies: [] # 使用策略组
 # use-url: [] # 使用远程订阅节点
 
-# 测速链接: 代理测速：https://www.gstatic.com/generate_204；http://www.google.com/generate_204
+# 测速链接:
+# 节点测速链接(代理测速)：http://www.gstatic.com/generate_204；http://www.google.com/generate_204; 
+# 直连测速链接：http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204
 
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
-  - {name: 🚀 节点选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [♻️ ALL, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
-  - {name: ♻️ ALL, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
-  - {name: 🤣 手动选择, type: select, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
-  - {name: 🐟 漏网之鱼, type: select, interval: 600, lazy: true, hidden: false, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
+  - {name: 🚀 节点选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, ♻️ All(自动选择), 🤣 手动选择], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  # 模块化选择
+  - {name: 🗺 地区选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
+  - {name: 🛫 机场选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  - {name: ♻️ All(自动选择), type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
+  - {name: 🤣 All(手动选择), type: select, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
   # 机场测试
   - {name: 机场1, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场2, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
@@ -212,6 +216,8 @@ proxy-groups:
   - {name: 机场8, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场9, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场10, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # 兜底策略组
+  - {name: 🐟 漏网之鱼, type: select, interval: 600, lazy: true, hidden: false, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
   - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
   #人工智能
@@ -253,8 +259,8 @@ proxy-groups:
   - {name: 🎮 游戏平台(Global), type: select, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
 #  - {name: 🎮 游戏平台(CN), type: select, proxies: [🎯 全球直连, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   # 大分流
-  - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 🎯 全球直连], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
-  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
+  - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
+  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
   - {name: 🛑 全球拦截, type: select, proxies: [REJECT], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
   # ----------------国家或地区策略组--------------------
@@ -336,6 +342,10 @@ rule-anchor:
 
 # 规则集（yaml 文件每天自动更新）
 rule-providers:
+  # Sub_Store订阅脚本
+  Sub_Store:
+    !!merge <<: *classical
+    url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Sub_Store/Sub_Store_Classical.yaml'
   # 下载网络
   Download:
     !!merge <<: *classical
@@ -348,14 +358,8 @@ rule-providers:
   lan:
     !!merge <<: *classical
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml'
-  # 人工智能
-  人工智能:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml'
   # 广告拦截
-  ad_domain:
+  Ad_Domain:
     !!merge <<: *domain
     url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AD/AD_Domain.yaml'
   # 隐私保护
@@ -378,7 +382,18 @@ rule-providers:
   Google服务:
     !!merge <<: *classical
     url: https://whatshub.top/rule/Google.rule
-  # 社交媒体
+  # 人工智能
+  人工智能:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml'
+  # 支付平台
+  PAYPAL:
+    behavior: classical
+    interval: 86400
+    url: https://whatshub.top/rule/PayPal.rule
+  # 社交通讯平台
   ## 国外
   TELEGRAM:
     !!merge <<: *classical
@@ -400,9 +415,7 @@ rule-providers:
     !!merge <<: *classical
     url: https://whatshub.top/rule/Weibo.rule
   Wechat:
-    behavior: classical
-    interval: 86400
-    format: yaml
+    !!merge <<: *classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
   # 游戏平台
   PlayStation:
@@ -433,11 +446,6 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/Blizzard.rule
-  # 支付平台
-  PAYPAL:
-    behavior: classical
-    interval: 86400
-    url: https://whatshub.top/rule/PayPal.rule
  # 音乐
   SPOTIFY:
     behavior: classical
@@ -447,7 +455,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     url: https://whatshub.top/rule/YouTubeMusic.rule
-  # 流媒体
+  # 流媒体(短视频&影视)
   ## 国外网络
   YOUTUBE1:
     behavior: classical
@@ -476,8 +484,7 @@ rule-providers:
     interval: 86400
     url: https://whatshub.top/rule/Douyu.rule
   哔哩哔哩:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/BiliBili.rule
   ### 大分流
   国内媒体:
@@ -496,15 +503,17 @@ rule-providers:
     !!merge <<: *classical
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_Resolve.yaml'
 
-# 规则类型-规则集-策略组(代理组)
+# 规则类型-规则集/值-策略组(代理组)
 rules:
+  # Sub-Store配置
+  - RULE-SET,Sub_Store,🚀 节点选择
   # 网络测试
   - RULE-SET,networktest,📈 网络测试
   - DOMAIN-KEYWORD,mubu,🎯 全球直连
   # 本地网络
   - RULE-SET,lan,🎯 全球直连,no-resolve
   # 广告拦截
-  - RULE-SET,ad_domain,🛑 全球拦截
+  - RULE-SET,Ad_Domain,🛑 全球拦截
    # 隐私保护
 #  - RULE-SET,privacy,🛑 全球拦截
   # 人工智能
