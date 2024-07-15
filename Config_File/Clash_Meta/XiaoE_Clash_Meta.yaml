@@ -5,10 +5,10 @@
 # 2.可莉示例配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
 # 2.懒人配置: https://whatshub.top/config/stash-auto.yaml
 # 4.Lucky配置: https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
-# updata：2024/07/14
-# updata_log(更新日志)：修改了感谢配置的链接
+# updata：2024/07/15
+# updata_log(更新日志)：增加了地区选择和机场选择策略组，修改了规则大小写
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
-# 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
+# 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 # 锚点-节点订阅的参数 [每12小时更新一次订阅节点，每 600 秒一次健康检查]
 # url:机场订阅链接，使用 Clash 链接
@@ -20,7 +20,7 @@ NodeParam: &NodeParam {type: http, interval: 43200, health-check: {enable: true,
 proxy-providers:
   机场1:
     url: ""
-    <<: *NodeParam #使用上述订阅配置
+    <<: *NodeParam # 使用上述锚点配置
     path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场名称1]" # 为订阅节点添加机场名称前缀
@@ -112,8 +112,7 @@ geox-url: # 自定义 geodata url（更新地址）
   mmdb: 'https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb'
   asn: 'https://gitlab.com/Loon0x00/loon_data/-/raw/main/geo/GeoLite2-ASN.mmdb'
 
-# 存储 select 选择记录
-# 持久化 fake-ip
+# 存储 select 选择记录，持久化 fake-ip
 profile: {store-selected: true, store-fake-ip: true}
 
 # 嗅探域名 可选配置
@@ -143,8 +142,9 @@ dns:
   prefer-h3: true # 是否开启 DoH 支持 HTTP/3，将并发尝试
   listen: 0.0.0.0:1053 # 开启 DNS 服务器监听
   ipv6: true
-  default-nameserver: # 默认 DNS, 用于解析"nameserver"将域名解析为IP地址
-    - 119.29.29.29
+  # 默认 DNS, 用于解析"nameserver"将域名解析为IP地址
+  default-nameserver: [223.5.5.5, 1.12.12.12, system]
+    #- 119.29.29.29
     #- https://223.5.5.5/dns-query
     #- https://1.12.12.12/dns-query
     #- https://1.1.1.1/dns-query
@@ -262,25 +262,27 @@ dns:
     - '+.3gppnetwork.org'
     - 'adguardteam.github.io'
     - 'anti-ad.net'
-  nameserver:
-    - 1.1.1.1
-    - 223.5.5.5
-    - 114.114.114.114
-    #- https://doh.apad.pro/dns-query
-    #- https://dns.alidns.com/dns-query
-    #- https://doh.pub/dns-query
+  # DNS服务器，直连或遇到IP规则时会进行DNS解析
+  nameserver: [114.114.114.114, 223.5.5.5, 1.1.1.1, system]
+    #- 'https://dns.cloudflare.com/dns-query', 
+    #- 'https://dns.google/dns-query'
+    #- 'https://doh.apad.pro/dns-query'
+    #- 'https://dns.alidns.com/dns-query'
+    #- 'https://doh.pub/dns-query'
     #- quic://dns.adguard.com:853
     #- doq://test.dns.nextdns.io:853
-# 专用于节点域名解析的 DNS 服务器，非必要配置项
+  # 专用于节点域名解析的 DNS 服务器，非必要配置项
   #proxy-server-nameserver:
       #- https://dns.google/dns-query
       #- tls://one.one.one.one
   #nameserver-policy: # 指定域名查询的解析服务器
-      #'rule-set:BanProgramAD': rcode://success
-      #'rule-set:microsoft-cn,apple-cn,google-cn,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
-      #'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
-      #'rule-set:proxy': ['https://dns.google/dns-query#🪜 代理域名', 'https://cloudflare-dns.com/dns-query#🪜 代理域名']
+     #'geosite:cn,private': ['https://223.6.6.6/dns-query', 'https://1.12.12.12/dns-query']
+     #'rule-set:BanProgramAD': rcode://success
+     #'rule-set:microsoft-cn,apple-cn,google-cn,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+     #'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+     #'rule-set:proxy': ['https://dns.google/dns-query#🪜 代理域名', 'https://cloudflare-dns.com/dns-query#🪜 代理域名']
 
+# 策略组(代理组)
 # 锚点 - 节点筛选组
 ## 亚洲
 FilterHK: &FilterHK '^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
@@ -312,13 +314,21 @@ LoadBalance: &LoadBalance {type: load-balance, strategy: consistent-hashing, int
 # 锚点 - 手动选择参数 [每 6 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
 Select: &Select {type: select, interval: 60, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 2000, max-failed-times: 3}
 
-# 策略组
+# 其他参数
+
+# 测速链接:
+# 节点测速链接(代理测速)：http://www.gstatic.com/generate_204；http://www.google.com/generate_204; 
+# 直连测速链接：http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204
+
+
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
-  - {name: 🚀 节点选择, <<: *Select, lazy: true, hidden: false, proxies: [♻️ ALL, 🤣 手动选择, 机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  - {name: 🚀 节点选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, ♻️ All(自动选择), 🤣 手动选择], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  # 模块化选择
+  - {name: 🗺 地区选择, <<: *Select, lazy: true, hidden: false, proxies: [香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
+  - {name: 🛫 机场选择, <<: *Select, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  - {name: ♻️ All(自动选择), <<: *UrlTest1, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}  
   - {name: ♻️ ALL, <<: *UrlTest1, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
-  - {name: 🤣 手动选择, <<: *Select, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
-  - {name: 🐟 漏网之鱼, type: select, lazy: true, hidden: false, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
   # 机场测试
   - {name: 机场1, <<: *UrlTest1, lazy: true, hidden: false, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场2, <<: *UrlTest1, lazy: true, hidden: false, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
@@ -330,6 +340,8 @@ proxy-groups:
   - {name: 机场8, <<: *UrlTest1, lazy: true, hidden: false, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场9, <<: *UrlTest1, lazy: true, hidden: false, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场10, <<: *UrlTest1, lazy: true, hidden: false, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # 兜底策略组
+  - {name: 🐟 漏网之鱼, type: select, lazy: true, hidden: false, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
   - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
   #人工智能
@@ -456,25 +468,10 @@ rule-anchor:
 # 规则集（yaml 文件每天自动更新）
 rule-providers:
   # 广告拦截
-  ad_domain:
+  Ad_Domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AD/AD_Domain.yaml"
     path: ./ruleset/ad_domain.yaml
-  # 网络测试
-  networktest:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/networktest.yaml"
-    path: ./ruleset/networktest.yaml
-    interval: 86400
-  # 下载网络
-  Download:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download_No_Resolve.yaml"
-    path: ./ruleset/Download.yaml
-    interval: 86400
-  # 广告拦截
   # ads: 
       # type: http
       # behavior: classical
@@ -489,28 +486,35 @@ rule-providers:
       # interval: 86400
       # path: ./ruleset/privacy.yaml
   # 本地网络
-  lan:
+  Lan:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 86400
+  # 网络测试
+  Networktest:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/networktest.yaml"
+    path: ./ruleset/networktest.yaml
+    interval: 86400
   # 服务平台
-  # 微软服务
-  microsoft:
+  ## 微软服务
+  Microsoft:
     type: http
     behavior: classical
     url: "https://whatshub.top/rule/Microsoft.rule"
     path: ./ruleset/microsoft.yaml
     interval: 86400
   ## 苹果服务
-  apple:
+  Apple:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml"
     path: ./ruleset/apple.yaml
     interval: 86400
-  applestore:
+  Applestore:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppStore/AppStore_No_Resolve.yaml"
@@ -522,14 +526,35 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy_No_Resolve.yaml"
     path: ./ruleset/AppleProxy.yaml
     interval: 86400
-  # Google服务
-  google:
+  ## Google服务
+  Google:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml"
     path: ./ruleset/google.yaml
     interval: 86400
-  # 聊天平台
+  ## 下载网络
+  Download:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download_No_Resolve.yaml"
+    path: ./ruleset/Download.yaml
+    interval: 86400
+  ## 支付平台
+  PayPal:
+    behavior: classical
+    type: http
+    url: "https://whatshub.top/rule/PayPal.rule"
+    interval: 86400
+    path: ./ruleset/PayPal.yaml
+  ## 人工智能
+  AI:
+    behavior: classical
+    type: http
+    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml"
+    interval: 86400
+    path: ./ruleset/AI.yaml
+  # 社交通讯平台
   Discord:
     type: http
     behavior: classical
@@ -555,52 +580,52 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
     path: ./ruleset/Telegram.yaml
     interval: 86400
-  ## 国外媒体
-  ### 小分流
-  netflix:
+  # 流媒体(短视频&影视)
+  ## 国外
+  Netflix:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml"
     path: ./ruleset/netflix.yaml
     interval: 86400
-  disney:
+  Disney:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/disney.yaml"
     path: ./ruleset/disney.yaml
     interval: 86400
-  max:
+  Max:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/max.yaml"
     path: ./ruleset/max.yaml
     interval: 86400
-  primevideo:
+  Rrimevideo:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/primevideo.yaml"
     path: ./ruleset/primevideo.yaml
     interval: 86400
-  appletv:
+  Appletv:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/appletv.yaml"
     path: ./ruleset/appletv.yaml
     interval: 86400
   ## YouTube
-  youtubemusic:
+  Youtubemusic:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic_No_Resolve.yaml"
     path: ./ruleset/youtubemusic.yaml
     interval: 86400
-  youtube:
+  Youtube:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube_No_Resolve.yaml"
     path: ./ruleset/youtube.yaml
     interval: 86400
-  tiktok:
+  Tiktok:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
@@ -613,21 +638,21 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"
     path: ./ruleset/GlobalMedia.yaml
     interval: 86400
-  # 国内媒体
-  ## 小分流
+  ## 国内媒体
+  ### 小分流
   DouYin:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin_No_Resolve.yaml"
     path: ./ruleset/DouYin.yaml
     interval: 86400
-  huya:
+  Huya:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa_No_Resolve.yaml"
     path: ./ruleset/huya.yaml
     interval: 86400
-  bilibili:
+  Bilibili:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/bilibili.yaml"
@@ -639,51 +664,37 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu_No_Resolve.yaml"
     path: ./ruleset/Douyu.yaml
     interval: 86400
-  ## 大分流
+  ### 大分流
   ChinaMedia:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia_No_Resolve.yaml"
     path: ./ruleset/ChinaMediayaml
     interval: 86400
-  # 支付平台
-  PayPal:
-    behavior: classical
-    type: http
-    url: "https://whatshub.top/rule/PayPal.rule"
-    interval: 86400
-    path: ./ruleset/PayPal.yaml
-  # 人工智能
-  AI:
-    behavior: classical
-    type: http
-    url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml"
-    interval: 86400
-    path: ./ruleset/AI.yaml
   # 游戏平台
-  games-cn:
+  Games_CN:
     type: http
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/games-cn.yaml"
     path: ./ruleset/games-cn.yaml
     interval: 86400
-  games-global:
+  Games_Global:
     type: http
     behavior: classical
     interval: 86400
     url: "https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/classical/GamesPlatform.yaml"
     path: ./ruleset/games-global.yaml
   # 大分流
-  proxy_domain:
+  Proxy_Domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml"
     path: ./ruleset/proxy_domain.yaml
   # 大分流
-  cn1:
+  CN1:
     <<: *classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
     path: ./ruleset/cn1.yaml
-  cn_domain:
+  CN_Domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN_Domain.yaml"
     path: ./ruleset/cn_domain.yaml
@@ -691,23 +702,23 @@ rule-providers:
 # 类型-规则-策略组
 rules:
   # 网络测试
-  - RULE-SET,networktest,📈 网络测试
+  - RULE-SET,Networktest,📈 网络测试
   # 外部控制
   - DOMAIN,clash.razord.top,🎯 全球直连
   - DOMAIN,yacd.haishan.me,🎯 全球直连
   # 下载网络
   - RULE-SET,Download,🌐 Download
   # 本地网络
-  - RULE-SET,lan,🎯 全球直连,no-resolve
+  - RULE-SET,Lan,🎯 全球直连,no-resolve
   # 广告拦截
-  - RULE-SET,ad_domain,🛑 全球拦截
+  - RULE-SET,Ad_Domain,🛑 全球拦截
   # 服务平台
-  - RULE-SET,microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
   ## 苹果服务
-  - RULE-SET,apple,🍎 苹果服务
-  - RULE-SET,applestore,🍎 苹果服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Applestore,🍎 苹果服务
   - RULE-SET,AppleProxy,🚀 节点选择
-  - RULE-SET,google,📢 谷歌服务
+  - RULE-SET,Google,📢 谷歌服务
   # 人工智能
   - RULE-SET,AI,🤖 人工智能
   # 聊天平台
@@ -719,33 +730,33 @@ rules:
   - RULE-SET,Facebook,💬 Facebook
   # 支付平台
   - RULE-SET,PayPal,💴 PayPal
-  # 流媒体
+  # 流媒体(短视频&影视)
   ## 国外媒体
-  - RULE-SET,netflix,🎥 奈飞视频
-  - RULE-SET,disney,📽️ 迪士尼+
-  - RULE-SET,max,🎞️ Max
-  - RULE-SET,primevideo,🎬 Prime Video
-  - RULE-SET,appletv,🍎 Apple TV+
+  - RULE-SET,Netflix,🎥 奈飞视频
+  - RULE-SET,Disney,📽️ 迪士尼+
+  - RULE-SET,Max,🎞️ Max
+  - RULE-SET,Primevideo,🎬 Prime Video
+  - RULE-SET,Appletv,🍎 Apple TV+
   ### YOUTUBE
-  - RULE-SET,youtubemusic,📹 YouTube
-  - RULE-SET,youtube,📹 YouTube
+  - RULE-SET,Youtubemusic,📹 YouTube
+  - RULE-SET,Youtube,📹 YouTube
   ### 大分流
   - RULE-SET,GlobalMedia,🙈 国外媒体
   ## 国内媒体
-  - RULE-SET,bilibili,📺 哔哩哔哩
-  - RULE-SET,huya,📺 国内媒体
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,Huya,📺 国内媒体
   - RULE-SET,DouYin,📺 国内媒体
   - RULE-SET,Douyu,📺 国内媒体
   ### 大分流
   - RULE-SET,ChinaMedia,📺 国内媒体
   # 游戏
-  - RULE-SET,games-cn,🎮 游戏平台(cn)
-  - RULE-SET,games-global,🎮 游戏平台(global)
-  # 大分流
-  - RULE-SET,proxy_domain,🪜 代理域名
-  # 大分流
-  - RULE-SET,cn1,🔗 直连域名
-#  - RULE-SET,cn_domain,🔗 直连域名
+  - RULE-SET,Games_CN,🎮 游戏平台(cn)
+  - RULE-SET,Games_Global,🎮 游戏平台(global)
+  # 代理大分流
+  - RULE-SET,Proxy_Domain,🪜 代理域名
+  # 直连大分流
+  - RULE-SET,CN1,🔗 直连域名
+#  - RULE-SET,CN_Domain,🔗 直连域名
   ## IP规则
   - GEOIP,CN,🔗 直连域名
   # 兜底规则
