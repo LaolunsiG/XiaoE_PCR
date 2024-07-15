@@ -1,10 +1,11 @@
-# name：XiaoE_Quantumult_X
+# name: XiaoE_Quantumult_X
 # content: 
 # 感谢以下配置
 # 1.whatshub-懒人配置: https://whatshub.top/config/qx.conf
-# updata：2024/07/14
-# updata_log(更新日志): 
+# updata: 2024/07/15
+# updata_log(更新日志): 更新了策略组
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Quantumult_X/XiaoE_Quantumult_X.yaml
+# 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 # 全局配置
 [general]
@@ -25,8 +26,8 @@ network_check_url = http://wifi.vivo.com.cn/generate_20
 server_check_url = http://www.google.com/generate_204
 server_check_timeout=5000 # 测速超时时间(ms/毫秒)
 
-# 节点测速链接：http://www.gstatic.com/generate_204；http://www.google.com/generate_204; http://cp.cloudflare.com/generate_204
-# 直连测速链接：http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204; http://www.baidu.com
+# 节点测速链接: http://www.gstatic.com/generate_204；http://www.google.com/generate_204; http://cp.cloudflare.com/generate_204
+# 直连测速链接: http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204; http://www.baidu.com
 
 profile_img_url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
 
@@ -54,14 +55,13 @@ server=1.1.1.1
 # prefer-doh3
 # doh-server = https://dns.alidns.com/dns-query
 # doq-server = quic://dns.adguard.com
-  
-  
+
 # 本地节点
 [server_local]
 
 # 订阅节点(远程节点)  
 [server_remote]
-机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
+机场链接, tag=机场的名字, update-interval=172800, opt-parser=true, enabled=true
 机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
 机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
 机场链接, tag=, update-interval=172800, opt-parser=true, enabled=true
@@ -70,66 +70,78 @@ server=1.1.1.1
 机场链接, tag=, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 机场链接, tag=, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 
-# 以下为策略组[policy]部分
-# stati 手动选择策略组中，你需要手动选择想要的节点/策略组。
-  # static=Netflix,  节点1, 节点2 , 策略组1 , 策略组2 ,img-url=图标链接
-# available 故障转移策略组将按顺序选择你列表中第一个可用的节点。
-  # available=policy-name-2, Sample-A, Sample-B, Sample-C,img-url=https://example.com/icon.png
+
+# 策略组(代理组), 以下为策略组[policy]部分
+# stati (手动选择)策略组中，你需要手动选择想要的节点/策略组。
+  # 示例: static=Netflix,  节点1, 节点2 , 策略组1 , 策略组2 ,img-url=图标链接
+# available (故障转移)策略组将按顺序选择你列表中第一个可用的节点。
+  # 示例: available=policy-name-2, Sample-A, Sample-B, Sample-C,img-url=https://example.com/icon.png
 # round-robin 策略组，将按列表的顺序轮流使用其中的节点。
-  # round-robin=policy-name-3, Sample-A, Sample-B, Sample-C,img-url=https://example.com/icon.png
+  # 示例: round-robin=policy-name-3, Sample-A, Sample-B, Sample-C,img-url=https://example.com/icon.png
 # url-latency-benchmark 延迟策略组，选取延迟最优节点。
-  # url-latency-benchmark=policy-name-4, Sample-A, Sample-B, Sample-C
-  # check-interval=600 表示每600秒检查一次节点延迟，如果此策略已由任何请求激活，则将重新计算该间隔。
-  # alive-checking=false 如果被设置为true，那么即使该策略处于空闲状态，也会重新计算间隔时间，并启动基准测试。
-  # tolerance=0 表示上一次节点的最低延迟数值与本次节点最低延迟数值的差值，当超过这个差值时切换至最低延迟的节点
+  # 示例: url-latency-benchmark=policy-name-4, Sample-A, Sample-B, Sample-C
+    # check-interval=600 表示每600秒检查一次节点延迟，如果此策略已由任何请求激活，则将重新计算该间隔。
+    # alive-checking=false 如果被设置为true，那么即使该策略处于空闲状态，也会重新计算间隔时间，并启动基准测试。
+    # tolerance=0 表示上一次节点的最低延迟数值与本次节点最低延迟数值的差值，当超过这个差值时切换至最低延迟的节点
 # dest-hash 负载均衡策略组，随机负载均衡，但相同域名走固定节点。
-  # dest-hash=policy-name-5, Sample-A, Sample-B, Sample-C
+  # 示例: dest-hash=policy-name-5, Sample-A, Sample-B, Sample-C
 # ssid 策略组，将根据你所设定的网络来自动切换节点/策略组
-  # ssid= 组名,4g下默认策略/节点, Wi-Fi下默认策略/节点, wifi-A:策略/节点 A, wifi-B:策略/节点 B, wifi-C: 策略/节点 C
+  # 示例: ssid= 组名,4g下默认策略/节点, Wi-Fi下默认策略/节点, wifi-A:策略/节点 A, wifi-B:策略/节点 B, wifi-C: 策略/节点 C
+
+# Quantumult_X内置策略
+  # Direct：直接连接，不使用代理。
+  # Reject：拒绝连接，常用于广告拦截或阻止某些域名。
+  # Proxy：使用指定的代理服务器进行连接。
 
 # 其他参数
-# direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
-# img-url= 参数用于指定策略组图标，可远程，也可本地/iCloud(Quantumult X/Images路径下) （108*108 大小）
+# 图标 (108*108 大小)
+  # img-url= [参数用于指定策略组图标，可远程，也可本地/iCloud(Quantumult X/Images路径下)]
+  # direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
 # 正则表达式
   # resource-tag-regex= [根据订阅名(tag)来筛选节点]
   # server-tag-regex= [根据节点名来筛选节点]
 
-# 策略组(代理组)
 [policy]
-static=🚀 策略选择, ♻️ ALL,,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png
-url-latency-benchmark=♻️ ALL,server-tag-regex=.*,check-interval=600,tolerance=20,alive-checking=false,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-static=🐟 漏网之鱼,🚀 策略选择,🌐 全球直连,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-static=📈 网络测试,🚀 策略选择,🌐 全球直连,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
+static=🚀 策略选择, 🛫 机场选择, 🗺 地区选择, 🌐 全球直连, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png
+# 模块化选择
+static=🛫 机场选择, ♻️ Free1, ♻️ Free2, ♻️ All, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png
+static=🗺 地区选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png
+# 机场筛选
+url-latency-benchmark=♻️ Free1, resource-tag-regex=.*, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+url-latency-benchmark=♻️ Free2, resource-tag-regex=.*, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+url-latency-benchmark=♻️ All, server-tag-regex=.*, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+static=🐟 漏网之鱼 ,🚀 策略选择,🌐 全球直连, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+static=📈 网络测试, 🚀 策略选择,🌐 全球直连, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
 # 服务平台
-static=Ⓜ️ 微软服务,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
-static=🍎 苹果服务,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=Ⓜ️ 微软服务, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+static=🍎 苹果服务, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
 ## 下载服务
-static=🌐 Download,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Download.png
+static=🌐 Download, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Download.png
 ## 支付平台
-static=🪙 Paypal,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
+static=🪙 Paypal, 🇺🇸 美国, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, 🚀 策略选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
 # 人工智能
-static=🤖️ 人工智能,🇺🇸 美国,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
+static=🤖️ 人工智能, 🇺🇸 美国, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
 # 社交通讯平台
-static=📲 Telegram,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Telegram.png
-static=📄 Twitter,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Twitter.png
-static=👤 Facebook,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png
-static=📖 Reddit,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://clash-verge-rev.github.io/assets/icons/reddit.svg
-static=🐦 Discord,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png
-static=🍟 新浪微博,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
+static=📲 Telegram, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Telegram.png
+static=📄 Twitter, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Twitter.png
+static=👤 Facebook, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png
+static=📖 Reddit, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://clash-verge-rev.github.io/assets/icons/reddit.svg
+static=🐦 Discord, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png
+static=🍟 新浪微博, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
 # 娱乐平台
 ## 短视频&影视
-static=📹 YouTube,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-static=🎥 Netflix,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
-static=🎬 Disney+,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
-static=🍿 国外媒体,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png
-static=📽 哔哩哔哩,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
-static=🍔 国内媒体,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
+static=📹 YouTube, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+static=🎥 Netflix, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+static=🎬 Disney+, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
+static=🍿 国外媒体, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png
+static=📽 哔哩哔哩, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+static=🍔 国内媒体, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
 ## 音乐
-static=🎻 Spotify,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
+static=🎻 Spotify, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
 ## 游戏平台
-static=🎮 游戏平台,🌐 全球直连,🚀 策略选择,🇭🇰 香港,🇰🇷 韩国,🇯🇵 日本,🇨🇳 台湾,🇸🇬 新加坡,🇷🇺 俄罗斯,🇺🇸 美国,🇨🇦 加拿大,🇬🇧 英国,🇩🇪 德国,🇦🇺 澳大利亚,🇮🇳 印度,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
-static=🚫 全球拦截,reject,img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png
-static=🌐 全球直连,DIRECT,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
+static=🎮 游戏平台, 🌐 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
+static=🚫 全球拦截, Reject, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png
+static=🌐 全球直连, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
 # 地区策略  
 # static 手动选择策略组
 # 亚洲
@@ -204,8 +216,6 @@ dest-hash=🎛 澳大利亚负载均衡,server-tag-regex=^(?=.((?i)🇦🇺|澳�
 # 非洲
 dest-hash=🎛 印度负载均衡,server-tag-regex=🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png
 
-
-
 # 规则类型
   # HOST
   # HOST-SUFFIX
@@ -224,16 +234,18 @@ dest-hash=🎛 印度负载均衡,server-tag-regex=🇮🇳|印度|IN|IND|孟买
 
 # 本地规则
 [filter_local]
-final,🐟 漏网之鱼
+final, 🐟 漏网之鱼
 
 # 订阅规则(远程规则)
 # 参数设置
 # update-interval= [为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时]
 [filter_remote]
+# Sub-Store
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Sub_Store/Sub_Store_Classical.list, tag=Sub_Store, force-policy=🚀 策略选择, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list, tag=Lan, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
 # 广告拦截
-#https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list, tag=广告拦截, force-policy=🚫 全球拦截, update-interval=172800, opt-parser=true, enabled=false
-#https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list, tag=隐私保护, force-policy=🚫 全球拦截, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list, tag=广告拦截, force-policy=🚫 全球拦截, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list, tag=隐私保护, force-policy=🚫 全球拦截, update-interval=172800, opt-parser=true, enabled=false
 # 服务平台
 ## 下载平台
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Download/Download.list, tag=下载网络, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
@@ -259,27 +271,28 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list, tag=PlayStation, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list, tag=Epic, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Sony/Sony.list, tag=Sony, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list, tag=Steam, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Steam/Steam_Classical.list, tag=Steam, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list, tag=Nintendo, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WanMeiShiJie/WanMeiShiJie.list, tag=WanMeiShiJie, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Blizzard/Blizzard.list, tag=Blizzard, force-policy=🎮 游戏平台, update-interval=172800, opt-parser=true, enabled=true
 ## 短视频&影视
-### 国外
+### 国外媒体
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Spotify/Spotify.list, tag=Spotify, force-policy=🎻 Spotify, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list, tag=YouTube, force-policy=📹 YouTube, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTubeMusic/YouTubeMusic.list, tag=YouTubeMusic, force-policy=📹 YouTube, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list, tag=Netflix, force-policy=🎥 Netflix, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list, tag=Disney, force-policy=🎬 Disney+, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list, tag=Twitch, force-policy=🚀 策略选择, update-interval=172800, opt-parser=true, enabled=true
-### 国内
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Douyu/Douyu.list, tag=斗鱼, force-policy=🍔 国内媒体, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list, tag=哔哩哔哩, force-policy=📽 哔哩哔哩, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list, tag=国内媒体, force-policy=🍔 国内媒体, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, tag=国外媒体, force-policy=🍿 国外媒体, update-interval=172800, opt-parser=true, enabled=true
+### 国内媒体
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Douyu/Douyu.list, tag=斗鱼, force-policy=🍔 国内媒体, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili_Classical.list, tag=哔哩哔哩, force-policy=📽 哔哩哔哩, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list, tag=国内媒体, force-policy=🍔 国内媒体, update-interval=172800, opt-parser=true, enabled=true
+# 国外代理
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_All_No_Resolve.list, tag=代理域名, force-policy=🚀 策略选择, update-interval=172800, opt-parser=true, enabled=true
 # 国内直连
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China_All_No_Resolve.list, tag=国内直连1, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/rules/QX/China/GEOIP.list, tag=GEOIP-CN, update-interval=172800, opt-parser=true, enabled=true
+hhttps://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/China/GEOIP_CN.list, tag=GEOIP-CN, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_All_No_Resolve.list, tag=国内直连2, force-policy=🌐 全球直连, update-interval=172800, opt-parser=true, enabled=false
 
 # 重写规则
