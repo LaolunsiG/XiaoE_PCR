@@ -1,6 +1,6 @@
 # Clash_Meta
 > 配置的是mihomo内核
-- Agent_Software代理软件
+- Agent_Software(代理软件)
   - Android_APP
     - [FlClash](https://github.com/chen08209/FlClash)-界面类似surfboard，有bug
     - [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)-推荐
