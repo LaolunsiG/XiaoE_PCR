@@ -1,4 +1,14 @@
 # Clash_Old
+> 配置的是Clash_Premium内核(非开源已删库)
+- Agent_Software代理软件
+  - Android_APP
+    - [FlClash](https://github.com/chen08209/FlClash)-界面类似surfboard，有bug
+    - [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)-推荐
+  - Windows_APP
+    - [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg)
+    - [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)-推荐
+    - [v2rayN](https://github.com/2dust/v2rayN)
+    - [clash-nyanpasu](https://github.com/LibNyanpasu/clash-nyanpasu)-集成了多内核，但使用体验较差，不推荐
 - 请自行添加订阅节点
 - 正则表达式
   - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
