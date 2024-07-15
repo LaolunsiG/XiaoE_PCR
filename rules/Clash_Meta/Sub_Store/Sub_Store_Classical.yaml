@@ -1,0 +1,13 @@
+# NAME: Sub_Store
+# 感谢项目：
+# 1.getsomecat: https://github.com/getsomecat/GetSomeCats
+# updata_log: 
+# UPDATED: 2024/07/14
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Sub_Store/Sub_Store_Classical.yaml
+# content: 
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 1
+# TOTAL: 2
+payload: 
+  - DOMAIN,sub-store.vercel.app
+  - DOMAIN-SUFFIX,vercel.app
