@@ -23,7 +23,7 @@
 ## Other_Config(其他配置)
 - [Rule-Set](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash/%E8%A7%84%E5%88%99%E9%9B%86.yaml)
 
-## 功能预览
+## Function_Preview(功能预览)
 
 ## 感谢以下配置
 - [Lucky配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
