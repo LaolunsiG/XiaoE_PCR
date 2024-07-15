@@ -7,7 +7,7 @@
 
 ## LanceX_Config(配置文件)
 
-## 功能预览
+## Function_Preview(功能预览)
 
 ## 感谢
 
