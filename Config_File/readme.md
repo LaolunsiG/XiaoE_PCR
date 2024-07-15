@@ -3,7 +3,9 @@
 > !! 注意不要将 **"[MITM]"配置** 的证书分享给他人
 
 ## 各个软件配置文件所用的语法
-- Clash/Clash_Meta/Stash
+- Sing-Box-较难配置
+  - json
+- Clash/Clash_Meta/Stash/Surfboard
   - yaml
   - json
 - Surge/Loon/Shadowrocket/LanceX/Quantumult_X
