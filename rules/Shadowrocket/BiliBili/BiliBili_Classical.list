@@ -5,12 +5,12 @@
 # updata_log: 增加了DOMAIN-SUFFIX,api.bilibili.com
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili_Classical.list
 # contentt:
-# DOMAIN: 53
+# DOMAIN: 54
 # DOMAIN-SUFFIX: 62
 # IP-CIDR: 8
 # PROCESS-NAME: 6
 # USER-AGENT: 4
-# TOTAL: 133
+# TOTAL: 134
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
