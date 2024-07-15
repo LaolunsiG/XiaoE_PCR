@@ -20,7 +20,7 @@
 ## Config(配置文件)
 - [XiaoE_CLash_Meta](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml)
 
-## 功能预览
+## Function_Preview(功能预览)
 
 ## 感谢
 - [Lucky配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
