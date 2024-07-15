@@ -5,3 +5,7 @@
 - **[Sub_Store](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Module_or_Plugin/Sub-Store)**
   - [For-Own-Use](https://github.com/ProxyStorage/For-Own-Use)-ProxyStorage
   - [sub-store-org](https://github.com/sub-store-org/Sub-Store/tree/master/config)-官方
+ 
+## 感谢以下项目/人员
+感谢下面这些无私奉献的大佬
+- [sub-store-org](https://github.com/sub-store-org/Sub-Store)
