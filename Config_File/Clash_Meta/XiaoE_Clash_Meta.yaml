@@ -291,7 +291,7 @@ FilterJP: &FilterJP '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼�
 FilterKR: &FilterKR '^(?=.*((?i)🇰🇷|韩国|韓|首尔|(\b(KR|Korea)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 FilterSG: &FilterSG '^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 ## 美洲
-FilterCA: &FilterCA '(?i)🇨🇦|加拿大|CA|渥太华'
+FilterCA: &FilterCA '^(?=.(🇨🇦|加拿大|多伦多|温哥华|蒙特利尔|卡尔加里|渥太华|魁北克|埃德蒙顿|温尼伯|哈利法克斯|萨斯卡通|维多利亚|哈密尔顿|canada|can))(?!(.(回国|校园|游戏|🎮|game))).*$'
 FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
 ## 欧洲
 FilterUK: &FilterUK '^(?=.*((?i)🇬🇧|英国|伦敦|(\b(UK|United Kingdom)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
@@ -322,9 +322,9 @@ Select: &Select {type: select, interval: 60, url: 'http://www.google.com/generat
 
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
-  - {name: 🚀 节点选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, ♻️ All, 🤣 手动选择], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  - {name: 🚀 节点选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, ♻️ All, 🤣 手动选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
   # 模块化选择
-  - {name: 🗺 地区选择, <<: *Select, lazy: true, hidden: false, proxies: [香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
+  - {name: 🗺 地区选择, <<: *Select, lazy: true, hidden: false, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
   - {name: 🛫 机场选择, <<: *Select, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
   - {name: ♻️ All, <<: *UrlTest1, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}  
   - {name: 🤣 手动选择, <<: *Select, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
@@ -341,50 +341,50 @@ proxy-groups:
   - {name: 机场9, <<: *UrlTest1, lazy: true, hidden: false, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   - {name: 机场10, <<: *UrlTest1, lazy: true, hidden: false, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   # 兜底策略组
-  - {name: 🐟 漏网之鱼, type: select, lazy: true, hidden: false, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
+  - {name: 🐟 漏网之鱼, type: select, lazy: true, hidden: false, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
-  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
+  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
   #人工智能
-  - {name: 🤖 人工智能, type: select, proxies: [台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png}
+  - {name: 🤖 人工智能, type: select, proxies: [🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png}
   #下载网络
-  - {name: 🌐 Download, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Download.png}
+  - {name: 🌐 Download, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Download.png}
   #服务平台
-  - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
-  - {name: 📢 谷歌服务, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Google_Search.png}
-  - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
+  - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
+  - {name: 📢 谷歌服务, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Google_Search.png}
+  - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
   #社交聊天平台
-  - {name: 💬 Facebook, type: select, proxies: [香港, 🚀 节点选择, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png} 
-  - {name: 💬 Twitter, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Twitter.png}
-  - {name: 📲 电报消息, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Telegram.png}
-  - {name: 🐦 Discord, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png} 
+  - {name: 💬 Facebook, type: select, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🚀 策略选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png} 
+  - {name: 💬 Twitter, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Twitter.png}
+  - {name: 📲 电报消息, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Telegram.png}
+  - {name: 🐦 Discord, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Discord.png} 
   # 国外社交聊天平台
-#  - {name: 💬 社交平台(Global), type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Area.png} 
+#  - {name: 💬 社交平台(Global), type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Area.png} 
   ## 国内社交聊天平台
-#  - {name: 💬 社交平台(CN), type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Area.png}
+#  - {name: 💬 社交平台(CN), type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Area.png}
   # 流媒体
   ## 小分流
-  - {name: 🎥 奈飞视频, type: select, proxies: [美国, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png}
-  - {name: 📽️ 迪士尼+, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png}
-  - {name: 🎞️ Max, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/HBO_Max.png}
-  - {name: 🎬 Prime Video, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video_2.png}
-  - {name: 🍎 Apple TV+, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_TV_Plus.png}
-  - {name: 📹 YouTube, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
-  - {name: 🎵 TikTok, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/TikTok_2.png}
-  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png}
+  - {name: 🎥 奈飞视频, type: select, proxies: [🇺🇸 美国, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png}
+  - {name: 📽️ 迪士尼+, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png}
+  - {name: 🎞️ Max, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/HBO_Max.png}
+  - {name: 🎬 Prime Video, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Prime_Video_2.png}
+  - {name: 🍎 Apple TV+, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_TV_Plus.png}
+  - {name: 📹 YouTube, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
+  - {name: 🎵 TikTok, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/TikTok_2.png}
+  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png}
   ##大分流
-  - {name: 📺 国内媒体, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingCN.png}
-  - {name: 🙈 国外媒体, type: select, proxies: [🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png}
+  - {name: 📺 国内媒体, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingCN.png}
+  - {name: 🙈 国外媒体, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png}
   # 支付平台
-  - {name: 💴 PayPal, type: select, proxies: [美国, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png}
+  - {name: 💴 PayPal, type: select, proxies: [🇺🇸 美国, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png}
   # 娱乐
   ## 音乐
- # - {name: 🎻 Spotify, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png}
+ # - {name: 🎻 Spotify, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png}
   ## 游戏
-  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 节点选择, 🎯 全球直连, 香港, 台湾, 日本, 韩国, 新加坡, 加拿大, 美国, 英国, 法国, 德国, 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
-  - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   # 大分流
-  - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 🎯 全球直连], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
-  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
+  - {name: 🪜 代理域名, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
+  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
   - {name: 🛑 全球拦截, type: select, proxies: [REJECT, REJECT-DROP, PASS], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
   # ----------------国家或地区策略组--------------------
@@ -392,20 +392,20 @@ proxy-groups:
   # 节点负载均衡(load-balance)，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
   # 自动选择节点(url-test)，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 50ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
   # 亚洲
-  - {name: 香港, type: select, proxies: [⏱香港时延优选策略组, 🚥香港故障转移策略组, 🎛香港负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
-  - {name: 台湾, type: select, proxies: [⏱台湾时延优选策略组, 🚥台湾故障转移策略组, 🎛台湾负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
-  - {name: 日本, type: select, proxies: [⏱日本时延优选策略组, 🚥日本故障转移策略组, 🎛日本负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
-  - {name: 韩国, type: select, proxies: [⏱韩国时延优选策略组, 🚥韩国故障转移策略组, 🎛韩国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
-  - {name: 新加坡, type: select, proxies: [⏱新加坡时延优选策略组, 🚥新加坡故障转移策略组, 🎛新加坡负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
+  - {name: 🇭🇰 香港, type: select, proxies: [⏱香港时延优选策略组, 🚥香港故障转移策略组, 🎛香港负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: 🇨🇳 台湾, type: select, proxies: [⏱台湾时延优选策略组, 🚥台湾故障转移策略组, 🎛台湾负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
+  - {name: 🇯🇵 日本, type: select, proxies: [⏱日本时延优选策略组, 🚥日本故障转移策略组, 🎛日本负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
+  - {name: 🇰🇷 韩国, type: select, proxies: [⏱韩国时延优选策略组, 🚥韩国故障转移策略组, 🎛韩国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
+  - {name: 🇸🇬 新加坡, type: select, proxies: [⏱新加坡时延优选策略组, 🚥新加坡故障转移策略组, 🎛新加坡负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
   # 美洲
-  - {name: 加拿大, type: select, proxies: [⏱加拿大时延优选策略组, 🚥加拿大故障转移策略组, 🎛加拿大负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
-  - {name: 美国, type: select, proxies: [⏱美国时延优选策略组, 🚥美国故障转移策略组, 🎛美国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
+  - {name: 🇨🇦 加拿大, type: select, proxies: [⏱加拿大时延优选策略组, 🚥加拿大故障转移策略组, 🎛加拿大负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
+  - {name: 🇺🇸 美国, type: select, proxies: [⏱美国时延优选策略组, 🚥美国故障转移策略组, 🎛美国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
   # 欧洲  
-  - {name: 英国, type: select, proxies: [⏱英国时延优选策略组, 🚥英国故障转移策略组, 🎛英国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
-  - {name: 法国, type: select, proxies: [⏱法国时延优选策略组, 🚥法国故障转移策略组, 🎛法国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
-  - {name: 德国, type: select, proxies: [⏱德国时延优选策略组, 🚥德国故障转移策略组, 🎛德国负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png}
+  - {name: 🇬🇧 英国, type: select, proxies: [⏱英国时延优选策略组, 🚥英国故障转移策略组, 🎛英国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
+  - {name: 🇫🇷 法国, type: select, proxies: [⏱法国时延优选策略组, 🚥法国故障转移策略组, 🎛法国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
+  - {name: 🇩🇪 德国, type: select, proxies: [⏱德国时延优选策略组, 🚥德国故障转移策略组, 🎛德国负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png}
   # 非洲
-  - {name: 印度, type: select, proxies: [⏱印度时延优选策略组, 🚥印度故障转移策略组, 🎛印度负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  - {name: 🇮🇳 印度, type: select, proxies: [⏱印度时延优选策略组, 🚥印度故障转移策略组, 🎛印度负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
   # 时延优选策略组
   ## 亚洲
   - {name: ⏱香港时延优选策略组, <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
