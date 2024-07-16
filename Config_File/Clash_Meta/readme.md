@@ -1,6 +1,8 @@
 # Clash_Meta
 > 配置的是mihomo内核, Clash_For_Windows可能可以使用(~~我没用过😀~~)
 - Agent_Software(代理软件)
+  - [hiddify-next](https://github.com/hiddify/hiddify-next)-多平台
+  - [Sing_Box](https://github.com/SagerNet/sing-box)
   - Android_APP
     - [FlClash](https://github.com/chen08209/FlClash)-界面类似surfboard，有bug
     - [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)-推荐
