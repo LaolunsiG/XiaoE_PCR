@@ -2,6 +2,7 @@
 - **主要是为了合并各个图标集**
 
 ## Icon_Resources
+### [clash_verge_rev-icon_hub](https://github.com/clash-verge-rev/icon-hub)
 ### [flag](https://github.com/lipis/flag-icons)-标准 3:2 国旗图标
 - https://github.com/lipis/flag-icons
 ### [Hand-Painted](https://github.com/Semporia/Hand-Painted-icon)-手绘彩色图标
