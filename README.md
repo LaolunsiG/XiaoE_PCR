@@ -11,6 +11,7 @@
   - [ ] 上传代理工具
   - [ ] 修改clash_js
   - [ ] QX配置文件在配置？
+  - [ ] 修改Clash_Old配置文件
 - Change_Log
   - 修改了Stash、Clash、surge and qx的策略组
 
