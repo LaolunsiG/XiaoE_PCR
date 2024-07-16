@@ -408,7 +408,7 @@ proxy-groups:
   - {name: 🇮🇳 印度, type: select, proxies: [⏱ 印度时延优选策略组, 🚥 印度故障转移策略组, 🎛 印度负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
   # 时延优选策略组
   ## 亚洲
-  - {name: ⏱  香港时延优选策略组, <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: ⏱ 香港时延优选策略组, <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
   - {name: ⏱ 台湾时延优选策略组, <<: *UrlTest, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
   - {name: ⏱ 日本时延优选策略组, <<: *UrlTest, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
   - {name: ⏱ 韩国时延优选策略组, <<: *UrlTest, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
