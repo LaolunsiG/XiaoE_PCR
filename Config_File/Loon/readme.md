@@ -13,6 +13,11 @@
 - [XiaoE_Loon](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/XiaoE_Loon.conf)
 
 ## Function_Preview(功能预览)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_1_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_2_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_3_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_5_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_4_2024-07-16_20-46-54.jpg?raw=true)
 
 ## 感谢
 - [Copyright配置](https://github.com/SANYIMOE/Quan_Shado_Conf)
