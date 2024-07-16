@@ -13,6 +13,13 @@
 - [XiaoE_Quantumult_X](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Quantumult_X/XiaoE_Quantumult_X.yaml)
 
 ## Function_Preview(功能预览)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_1_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_2_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_3_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_5_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_4_2024-07-16_20-46-54.jpg?raw=true)
+
 
 ## 感谢以下配置
 - [whatshub-qx](https://whatshub.top/config/qx.conf)
+- [Theo-Messi-QuantumultX](https://github.com/Theo-Messi/dotfiles/blob/1e92adaf4c13afe9f62c95d8340092d6ca1dea65/QuantumultX/T-Config.conf)
