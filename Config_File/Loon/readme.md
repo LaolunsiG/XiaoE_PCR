@@ -5,6 +5,7 @@
   - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
 
 ## APP_Tutorial(使用教程)
+> 如果需要自行修改配置文件的，请自己阅读官方文档，了解专用
 - [KeLee8-Loon_tutorial](https://github.com/KeLee8/Loon-tutorial)-KeLee8
 - [Loon0x00](https://github.com/Loon0x00/LoonManual/tree/master)-官方
 
