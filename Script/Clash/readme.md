@@ -4,3 +4,4 @@
 
 ## 感谢以下配置
 - [Repcz-Verge_Rev_Script](https://github.com/Repcz/Tool/blob/X/Clash/Meta/Verge_Rev_Script.js)
+- [Kiritocyz-Clash](https://github.com/Kiritocyz/Clash/)
