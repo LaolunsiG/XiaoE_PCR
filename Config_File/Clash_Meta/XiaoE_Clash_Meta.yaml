@@ -102,7 +102,7 @@ external-controller: 127.0.0.1:9090 # 只允许本地访问
   # external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip' # UI界面
 secret: "xiaoe" # 访问密码
 
-geodata-mode: false #false，使用mmdb文件，默认为false，使用dat文件
+geodata-mode: false #true为 dat，此项有默认值 false, 使用mmdb
 geodata-loader: standard # 标准加载器
 geo-auto-update: true # 是否自动更新
 geo-update-interval: 24 # 单位h（时），每24小时更新一次
