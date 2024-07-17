@@ -6,12 +6,26 @@
 - [sub-store-org](https://github.com/sub-store-org/Sub-Store/tree/master/config)-官方
 
 ## Sub_Store插件/模组下载
-  - [Shadowrocket(小火箭).sgmodule](https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule)
-  - [Loon.plugin](https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon.plugin)
-  - [Surge.sgmodule](https://raw.githubusercontent.com/sub-store-org/Sub-Store/e93332048e0678ba0f85d8a42430a87d8bbdf5fc/config/Surge.sgmodule)
-  - [Stash.stoverride](https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Stash.stoverride)
-  - [QX.snippet](https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet)
-    - 规则资源导入
+- Shadowrocket
+  ```
+  https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule
+  ```
+- Loon
+  ```
+   https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon.plugin
+  ```
+- Surge
+  ```
+  https://raw.githubusercontent.com/sub-store-org/Sub-Store/e93332048e0678ba0f85d8a42430a87d8bbdf5fc/config/Surge.sgmodule
+  ```
+- Stash
+  ```
+  https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Stash.stoverride
+  ```
+- QX-规则资源导入
+  ```
+  https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet
+  ```
 
 ## Sub-Store使用的脚本
 > 直接将脚本导入就好了
