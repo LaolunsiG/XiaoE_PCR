@@ -19,3 +19,5 @@
 ## Function_Preview(功能预览)
 
 ## 感谢以下配置
+- [chika0801/sing-box-examples](https://github.com/chika0801/sing-box-examples/blob/main/Tun/self-use/sing-box_client_windows.json)
+- 
