@@ -5,8 +5,8 @@
 # 2.可莉示例配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
 # 2.懒人配置: https://whatshub.top/config/stash-auto.yaml
 # 4.Lucky配置: https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
-# updata：2024/07/16
-# updata_log(更新日志)：增加了地区策略的国旗
+# updata：2024/07/17
+# updata_log(更新日志)：增加了钓鱼机场策略组，修改了geoip,cn规则
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 # 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
@@ -315,16 +315,16 @@ LoadBalance: &LoadBalance {type: load-balance, strategy: consistent-hashing, int
 Select: &Select {type: select, interval: 60, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 2000, max-failed-times: 3}
 
 # 其他参数
-
 # 测速链接:
 # 节点测速链接(代理测速)：http://www.gstatic.com/generate_204；http://www.google.com/generate_204; 
 # 直连测速链接：http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204
 
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
-  - {name: 🚀 策略选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, ♻️ All, 🤣 手动选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  - {name: 🚀 策略选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, 🎣 钓鱼机场, ♻️ All, 🤣 手动选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
   # 模块化选择
   - {name: 🗺 地区选择, <<: *Select, lazy: true, hidden: false, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
+  - {name: 🎣 钓鱼机场, <<: *Select, lazy: true, hidden: false, proxies: [机场1], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
   - {name: 🛫 机场选择, <<: *Select, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
   - {name: ♻️ All, <<: *UrlTest1, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}  
   - {name: 🤣 手动选择, <<: *Select, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
@@ -757,6 +757,6 @@ rules:
   - RULE-SET,CN1,🔗 直连域名
 #  - RULE-SET,CN_Domain,🔗 直连域名
   ## IP规则
-  - GEOIP,CN,🔗 直连域名
+  - GEOIP,cn,🔗 直连域名
   # 兜底规则
   - MATCH,🐟 漏网之鱼
