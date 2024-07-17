@@ -15,6 +15,7 @@
 - [sing-box](https://sing-box.sagernet.org/zh/configuration/)-官方？
 
 ## Sing_Box_Config(配置文件)
+- 还未配置完成，配置不可用！！！
 
 ## Function_Preview(功能预览)
 
