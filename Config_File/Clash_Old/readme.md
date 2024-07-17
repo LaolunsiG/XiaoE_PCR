@@ -23,7 +23,7 @@
 - [XiaoE_CFA_Test.yml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Old/XiaoE_CFA_Test.yml)
 
 ## Other_Config(其他配置)
-- [Rule-Set](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash/%E8%A7%84%E5%88%99%E9%9B%86.yaml)
+- [路由规则配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash_Old/%E8%B7%AF%E7%94%B1%E8%A7%84%E5%88%99%E9%85%8D%E7%BD%AE.md)
 
 ## Function_Preview(功能预览)
 
