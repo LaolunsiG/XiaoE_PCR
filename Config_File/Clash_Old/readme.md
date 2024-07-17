@@ -1,6 +1,8 @@
 # Clash_Old
 > 配置的是Clash_Premium内核(非开源已删库)
-- Agent_Software代理软件
+- Agent_Software(代理软件)
+  - [hiddify-next](https://github.com/hiddify/hiddify-next)-多平台
+  - [Sing_Box](https://github.com/SagerNet/sing-box)
   - Android_APP
     - [FlClash](https://github.com/chen08209/FlClash)-界面类似surfboard，有bug
     - [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)-推荐
