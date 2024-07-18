@@ -2,15 +2,23 @@
 - 这些是示例配置文件，请不要直接使用，自己修改配置文件后使用
 > !! 注意不要将 **"[MITM]"配置** 的证书分享给他人
 
-## 各个软件配置文件所用的语法
-- Sing-Box-较难配置
-  - json
-- Clash/Clash_Meta/Stash/Surfboard
-  - yaml
-  - json
-- Surge/Loon/Shadowrocket/LanceX/Quantumult_X
-  - [类INI](https://blog.csdn.net/a123441/article/details/90668032)-CSDN
+## 各个软件的配置文件所用的配置文件格式
+- [INI](https://blog.csdn.net/a123441/article/details/90668032)-CSDN
 
+| 软件 | 配置文件格式 | {单行}注释符号 |
+| -- | :--: | :--: |
+| Sing-Box | json  |  |
+| Clash_Old  | yaml & json | # |
+| Clash_Meta  | yaml & json | # |
+| Stash | yaml | # |
+| Surfboard | yaml | |
+| Surge | INI | # |  
+| Loon | INI | # | 
+| Shadowrocket | INI | # | 
+| LanceX | INI | # | 
+| Quantumult_X | INI | # | 
+
+ 
 ## Clash_Old
 ### Clash_Wiki(知识库)
 - [Clash_Old](https://clash.wiki/)
