@@ -24,7 +24,7 @@
 - [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
 - Naming_Rules(命名规则)
   - **字母，数字，下划线**
-- Notes_Rules(注释规则)
+- Noting_Rules(注释规则)
   | 编程语言 | (单行)注释符号 | Wiki |
   | -- | :--: | -- |
   | JavaScript | // | |
