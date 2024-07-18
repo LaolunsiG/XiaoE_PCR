@@ -1,6 +1,6 @@
 # [Sing_Box](https://github.com/SagerNet/sing-box)
 > 更clash差不多，但可读性太差，且较难配置，花费时间较长，暂时不去配置了。不适合机场用户使用。
-- 建议仔细阅读官方文档
+- 建议仔细阅读官方文档，这个软件不适合一键配置，它不能实时筛选节点。
 - 语法
   - json
 > [json语法检查工具](https://www.jyshare.com/front-end/53/)
