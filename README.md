@@ -51,6 +51,8 @@
 
 ### [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
 
+### [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)
+
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
