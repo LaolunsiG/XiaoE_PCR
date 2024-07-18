@@ -2,6 +2,20 @@
 - 此软件遵循Surge的配置方式......注意：使用示例配置文件时，因规则过多，导入时间不够，请到软件内修改获取配置文件的时间。
 - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
 
+<table>
+    <tr>
+        <th>配置文件格式</th><th>注释符号</th>
+    </tr>
+    <tr>
+        <td rowspan="3">INI</td><td>//</td>
+    </tr>
+    <tr>
+        <td>;</td>
+    </tr>
+    <tr>
+        <td>#</td>
+    </tr>
+
 ## APP_Tutorial(使用教程) 
 - [surfboard](https://getsurfboard.com/)-官方
 
