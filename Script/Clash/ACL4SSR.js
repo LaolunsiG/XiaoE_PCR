@@ -1,6 +1,7 @@
 // name: ACL4SSR.js
 // author: ACL4SSR
 // content: unknown
+// origin_url: https://github.com/tnnevol/ACL4SSR/blob/master/ClashVerge/dist/ACL4SSR_Online_Full.js
 // updata_url: https://raw.githubusercontent.com/tnnevol/ACL4SSR/master/ClashVerge/dist/ACL4SSR_Online_Full.js
 // 定义 main 函数
   function main(config) {
