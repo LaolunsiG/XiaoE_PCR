@@ -78,6 +78,7 @@
 |--|--|--|
 |ios_rule_script|https://github.com/blackmatrix7/ios_rule_script||
 |iKeLee|https://gitlab.com/lodepuly/vpn_tool/|https://t.me/iKeLee|
+|ProxyResource|https://github.com/luestr/ProxyResource/tree/main||
 |Moli-X|https://github.com/Moli-X|https://t.me/QuantX|
 |whatshub.top|https://whatshub.top/||
 
