@@ -1,11 +1,14 @@
 # NAME: Facebook
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-04-29 13:34:29
+# 感谢项目：
+# 1.blackmatrix7: https://github.com/blackmatrix7/ios_rule_script
+# updata: 2024/07/19
+# updata_log(更新日志): 
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old/Facebook/Facebook_Classical.yaml
+# content:
 # DOMAIN-KEYWORD: 2
 # DOMAIN-SUFFIX: 544
 # IP-CIDR: 23
-# TOTAL: 570
+# TOTAL: 569
 payload:
   - DOMAIN-SUFFIX,aboutfacebook.com
   - DOMAIN-SUFFIX,accessfacebookfromschool.com
