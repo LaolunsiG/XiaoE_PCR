@@ -1,4 +1,4 @@
-# XiaoE_Clash_Old
+# name: XiaoE_Clash_Old
 # content: 此配置文件无加密DNS，优选节点
 # 感谢以下配置
 # 1.Clash莫离配置：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
@@ -8,7 +8,7 @@
 # updata：2024/07/17
 # updata_log(更新日志)：修改了规则和策略组
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Old/XiaoE_CFA_Test.yml
-# 图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥 🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱ 
+# 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥 🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱ 
 
 # 本地节点
 proxies: null
@@ -238,6 +238,7 @@ dns:
 #    'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
 #    'rule-set:proxy': ['https://dns.google/dns-query#🪜 代理域名', 'https://cloudflare-dns.com/dns-query#🪜 代理域名']
 
+# 出站
 # 策略组(代理组)
 proxy-groups:
   - {name: 🚀 策略选择, type: select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, 🎣 钓鱼机场, ♻️ All, 🤣 手动选择, 🎯 全球直连]}
@@ -254,42 +255,42 @@ proxy-groups:
   - {name: 机场4, type: url-test, tolerance: 50, interval: 600, lazy: true, use: [机场4], url: http://www.google.com/generate_204}
   - {name: 机场5, type: url-test, tolerance: 50, interval: 600, lazy: true, use: [机场5], url: http://www.google.com/generate_204}
   # 兜底策略
-  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
-  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   # 人工智能
   - {name: 🤖 人工智能, type: select, proxies: [🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国]}
   # 服务平台
-  - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   # 下载网络
-  - {name: 🌐 Download,type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🌐 Download,type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   # 社交平台
-  - {name: 💬 Twitter, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 💬 Facebook, type: select, proxies: [香港, 🚀 节点选择, 台湾, 日本, 新加坡, 美国, 加拿大, 德国, 英国]}
-  - {name: 📲 电报消息, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🐦 Discord, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]} 
+  - {name: 💬 Twitter, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 💬 Facebook, type: select, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度, 🚀 策略选择]}
+  - {name: 📲 电报消息, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🐦 Discord, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]} 
   # 流媒体
   ## 国外媒体
-  - {name: 📽️ 迪士尼+, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🎞️ Max, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🎬 Prime Video, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🍎 Apple TV+, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 📹 YouTube, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🎵 TikTok, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🎥 奈飞视频, type: select, proxies: [🇺🇸 美国, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度, 🚀 节点选择]}
-  - {name: 🙈 国外媒体, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]} 
+  - {name: 📽️ 迪士尼+, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🎞️ Max, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🎬 Prime Video, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🍎 Apple TV+, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 📹 YouTube, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🎵 TikTok, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🎥 奈飞视频, type: select, proxies: [🇺🇸 美国, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度, 🚀 策略选择]}
+  - {name: 🙈 国外媒体, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]} 
   ##国内媒体
-  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 📺 国内媒体, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 📺 哔哩哔哩, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 📺 国内媒体, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   #支付平台
-  - {name: 💴 PayPal, type: select, proxies: [🇺🇸 美国, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度, 🚀 节点选择]} 
+  - {name: 💴 PayPal, type: select, proxies: [🇺🇸 美国, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度, 🚀 策略选择]} 
   #游戏
-  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   #代理和直连网络大分流策略
-  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
-  - {name: 🪜 代理域名, type: select, proxies: [🚀 节点选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
+  - {name: 🪜 代理域名, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇩🇪 德国, 🇮🇳 印度]}
   - {name: 🛑 全球拦截, type: select, proxies: [REJECT]}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
   #地区节点选择
@@ -350,6 +351,7 @@ proxy-groups:
   - {name: 🚥 德国故障转移, type: fallback, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany", url: 'http://www.gstatic.com/generate_204', interval: 300}
   - {name: 🚥 印度故障转移, type: fallback, lazy: true, use: [机场1, 机场2, 机场3, 机场4, 机场5], filter: "(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India", url: 'http://www.gstatic.com/generate_204', interval: 300}
 
+# 路由规则
 # 规则集
 rule-providers:
   # 网络测试
@@ -567,7 +569,7 @@ rule-providers:
     path: ./ruleset/cn_domain.yaml
     interval: 86400
 
-# 规则
+# 规则类型-规则集/值-策略组
 rules:
   # 网络测试
   - RULE-SET,Networktest,📈 网络测试
