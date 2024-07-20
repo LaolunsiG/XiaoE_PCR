@@ -47,7 +47,7 @@
 ### [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
 
 ### [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
-> 支持加密规则
+> 支持加密协议最多的代理软件
 ### [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
 
 ### [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)
