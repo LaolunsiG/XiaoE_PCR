@@ -3,15 +3,14 @@
 - 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此存储库。
 > **Clash_Old_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
 
-## Plan&Change_Log(更新日志)-2024/07/18
+## Plan&Change_Log(更新日志)-2024/07/20
 - Plan
-  - [ ] 配置surfboard配置文件
   - [ ] 为qx添加特殊配置文件
-  - [ ] 上传代理工具
   - [ ] 修改clash_js
   - [ ] QX配置文件在配置？
 - Change_Log
   - [x] 修改Clash_Old配置文件
+  - [x] 配置surfboard配置文件
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
 - [Markdown 语法&快捷键](https://blog.csdn.net/github_38336924/article/details/82183088)-CSDN
@@ -36,23 +35,25 @@
   | XML | <! > |  |
 
 ## [Config(配置文件)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)
+**我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。**
 > 所有的配置文件
 ### Clash
 - [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
 - [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
 ### [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 > 此软件还未完善，不推荐使用
-
 ### [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
 
 ### [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
 
 ### [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
-
+> 支持加密规则
 ### [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
 
 ### [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)
 
+### [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)
+> IOS上最贵的代理工具，也是功能最全的代理工具。
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
