@@ -6,7 +6,8 @@
 1. [DNS配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/DNS%E9%85%8D%E7%BD%AE.md)
 2. 节点配置
    - [节点的正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
-   - 节点的测速链接
+   - [节点的测速链接](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
+
 ## 各个软件的配置文件所用的配置文件格式
 - [INI](https://blog.csdn.net/a123441/article/details/90668032)-CSDN
 
