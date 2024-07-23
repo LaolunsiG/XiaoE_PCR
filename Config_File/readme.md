@@ -3,7 +3,7 @@
 - 这些是示例配置文件，请不要直接使用，自己修改配置文件后使用，我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。
 
 ## 模块化部分配置
-1. DNS配置
+1. [DNS配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/DNS%E9%85%8D%E7%BD%AE.md)
 2. 节点配置
    - [节点的正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
    - 节点的测速链接
