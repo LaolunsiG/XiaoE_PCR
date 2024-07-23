@@ -1,16 +1,16 @@
 # 个人使用存储库-XiaoE_PCR
-- ⚠: **本项目只是资源的搬运工，非专业项目**
-- 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此存储库。
-> **Clash_Old_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
+> ⚠: **本项目只是资源的搬运工，非专业项目**
+> 
+> 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此存储库。
+- **Clash_Old_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
 
-## Plan&Change_Log(更新日志)-2024/07/20
+## Plan&Change_Log(更新日志)-2024/07/23
 - Plan
   - [ ] 为qx添加特殊配置文件
   - [ ] 修改clash_js
-  - [ ] QX配置文件在配置？
 - Change_Log
-  - [x] 修改Clash_Old配置文件
-  - [x] 配置surfboard配置文件
+  - [X] QX配置文件在配置？
+  - [X] 修改了测速链接表示 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
 - [Markdown 语法&快捷键](https://blog.csdn.net/github_38336924/article/details/82183088)-CSDN
