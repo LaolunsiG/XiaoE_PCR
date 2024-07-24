@@ -1,7 +1,5 @@
-# 个人使用存储库-XiaoE_PCR
-> ⚠: **本项目只是资源的搬运工，非专业项目**
-> 
-> 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此存储库。
+# 自用代理资源存储库-XiaoE_PCR
+> 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此自用存储库。
 - **Clash_Old_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
 
 ## Plan&Change_Log(更新日志)-2024/07/23
@@ -35,7 +33,6 @@
   | XML | <! > |  |
 
 ## [Config(配置文件)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)
-**我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。**
 > 所有的配置文件
 ### Clash
 - [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
@@ -73,7 +70,6 @@
 
 ## 感谢以下项目/人员
 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢。
-> 我决定将每个我使用/Copy的资源都换为仓库链接，而不是资源链接
 
 |仓库名|仓库链接/其他链接|Telegram频道|
 |--|--|--|
