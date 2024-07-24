@@ -13,6 +13,7 @@
 | 阿里(Ali)DNS | 223.5.5.5 |
 | 腾讯DNS |  119.29.29.29 |
 |  字节跳动(火山引擎)DNS|  180.184.1.1 |
+| 360DNS | 101.226.4.6 |
 
 - 加密DNS [服务提供商-加密协议-DNS服务器地址]
   - 阿里(Ali)DNS
@@ -27,3 +28,4 @@
 
 ## 感谢
 - [dns.iui.im](https://dns.iui.im/#LOG)
+- [国内好用的DNS](https://blog.lindexi.com/post/%E5%9B%BD%E5%86%85%E5%A5%BD%E7%94%A8%E7%9A%84-DNS-%E5%88%97%E8%A1%A8.html)
