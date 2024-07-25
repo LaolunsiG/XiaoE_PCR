@@ -25,6 +25,7 @@
 ## Function_Preview(功能预览)
 
 ## 感谢
+- [mihomo官方配置文档](https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml)
 - [Lucky配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
 - [可莉示例配置](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)
 - [Clash莫离配置](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
