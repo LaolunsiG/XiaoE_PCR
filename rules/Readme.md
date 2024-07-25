@@ -16,6 +16,7 @@
 
 ## 感谢以下项目/人员
 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢
+- [rules_and_scripts](https://github.com/zhiqiang02/rules_and_scripts)
 - [meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
 - [ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/)
 - [ProxyTools](https://github.com/mphin/ProxyTools)
