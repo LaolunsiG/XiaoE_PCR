@@ -1,4 +1,4 @@
-# Clash_Meta
+# Clash_Meta(mihomo)
 > 配置的是mihomo内核, Clash_For_Windows可能可以使用(~~我没用过😀~~)
 - Agent_Software(代理软件)
   - [hiddify-next](https://github.com/hiddify/hiddify-next)-多平台
