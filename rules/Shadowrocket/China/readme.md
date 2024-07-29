@@ -2,8 +2,12 @@
 
 ## IP_Set(IP集)
 - [GROIP_CN.list](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/China/GEOIP_CN.list)
-  - https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/China/GEOIP_CN.list
+```
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/China/GEOIP_CN.list
+```
+
 ## Domain_Set(域名集)
+
 ## Classical(混合集)
 
 ## 感谢以下规则集
