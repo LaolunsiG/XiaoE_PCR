@@ -1,5 +1,6 @@
 # Clash_Meta(mihomo)
 > 配置的是mihomo内核, Clash_For_Windows可能可以使用(~~我没用过😀~~)
+- [关于代理的一些问题](https://blog.revincx.icu/posts/proxy-summary/)
 
 **需要自己配置订阅链接**
 
