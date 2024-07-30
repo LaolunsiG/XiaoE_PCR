@@ -2,6 +2,8 @@
 > !! 注意不要将 **"[MITM]"配置** 的证书分享给他人-[什么是 MITM](https://zh.m.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)
 - 这些是示例配置文件，请不要直接使用，自己修改配置文件后使用，我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。
 
+！！在配置之前先了解代理工具的工作流程，以防出现，配置之后，还不如不配置的情况发生。
+
 ## 模块化部分配置
 1. [DNS配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/DNS%E9%85%8D%E7%BD%AE.md)
 2. 节点配置
