@@ -83,6 +83,135 @@ proxy-providers:
     override:
       additional-prefix: "[机场名称1]"
 
+# XiaoE_Clash_Meta
+# content: 此配置文件无加密DNS，优选节点, 使用IP规则，可能存在DNS泄露问题.Clash_verge更新后编辑配置文件变得更加容易了。
+# 感谢以下配置
+# 1.Clash莫离配置：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
+# 2.可莉示例配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
+# 2.懒人配置: https://whatshub.top/config/stash-auto.yaml
+# 4.Lucky配置: https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
+# updata：2024/07/17
+# updata_log(更新日志)：增加了钓鱼机场策略组，修改了geoip,cn规则
+# updata_url: https://gist.githubusercontent.com/LaolunsiG/e39419316bd5dece13346e84e2ee745a/raw/Clash_Meta_Sub-Store.yaml
+# 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
+
+# 锚点-节点订阅的参数 [每12小时更新一次订阅节点，每 600 秒一次健康检查]
+# url:机场订阅链接，使用 Clash 链接
+# filter:初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
+# health-check:未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
+NodeParam: &NodeParam {type: http, interval: 43200, health-check: {enable: true, lazy: true, url: 'http://www.google.com/generate_204', interval: 600}}
+
+# 代理节点
+proxies: null
+
+# 代理集
+proxy-providers:
+  机场1:
+    type: http
+    # 使用上述锚点配置
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free1"
+    path: ./proxies2/airport1.yaml
+    interval: 172800
+    # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
+    health-check:
+      enable: true
+      # 未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场2:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free2"
+    path: ./proxies2/airport2.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场3:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free3"
+    path: ./proxies2/airport3.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场4:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free4"
+    path: ./proxies2/airport4.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场5:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free5"
+    path: ./proxies2/airport5.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场6:
+    type: http
+    # 机场订阅链接，使用 Clash 链接
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free6"
+    path: ./proxies2/airport6.yaml
+    interval: 172800
+    # 初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
+    health-check:
+      enable: true
+      # 未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场7:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free7"
+    path: ./proxies2/airport7.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场8:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free8"
+    path: ./proxies2/airport8.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场9:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free9"
+    path: ./proxies2/airport9.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+      interval: 600
+  机场10:
+    type: http
+    url: "https://gist.githubusercontent.com/LaolunsiG/24c46058083d500d43342378ed8bc7d0/raw/Free10"
+    path: ./proxies2/airport10.yaml
+    interval: 172800
+    health-check:
+      enable: true
+      lazy: true
+      url: "http://www.google.com/generate_204"
+
 # 全局配置
 allow-lan: true # 允许局域网连接
 bind-address: "*" # 绑定 IP 地址，仅作用于 allow-lan 为 true，'*'表示所有地址
@@ -95,7 +224,7 @@ ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DN
 # 控制是否让 Clash 去匹配进程，always 开启，强制匹配所有进程；strict(默认)由 Clash 判断是否开启；off 不匹配进程，推荐在路由器上使用此模式
 find-process-mode: strict
 
-unified-delay: true # 统一延迟，进行两次延迟测试，以消除连接握手等带来的不同类型节点的延迟差异
+unified-delay: false # 统一延迟，进行两次延迟测试，以消除连接握手等带来的不同类型节点的延迟差异
 tcp-concurrent: true # TCP并发
 
 # 外部控制
@@ -130,6 +259,7 @@ mixed-port: 7893 # 混合端口，同时支持 HTTP(S) 和 SOCKS5 协议。您�
 #tproxy-port: 7894 # tproxy 端口仅限 linux(Android) 适用
 
 # 配置虚拟网卡
+# 在 tun 模式下必须获得 IP 地址。
 tun:
   enable: true
   stack: mixed
@@ -160,10 +290,14 @@ dns:
   enable: true # 关闭将使用系统 DNS
   prefer-h3: false # 优先使用 DOH 的 http/3
   listen: 0.0.0.0:1053 # 开启 DNS 服务器监听
-  ipv6: true
-  enhanced-mode: fake-ip # 减少一次本地的DNS解析
+  #ipv6: true
+  # fake IP 是为了让终端第一时间发起连接，进入分流阶段，后续和系统代理相同。
+  # 来源：1. https://www.pupboss.com/post/2024/clash-tun-fake-ip-best-practice/
+  # 2. https://blog.skk.moe/post/what-happend-to-dns-in-proxy/#Ru-Guo-Cao-Zuo-Xi-Tong-Huo-Zhe-Liu-Lan-Qi-Huan-Cun-Liao-DNS-Jie-Xi-Jie-Guo
+  enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter: # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
+  # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接，回到 redir-host 模式。
+  fake-ip-filter:
     - '*.lan'
     - '*.localdomain'
     - '*.example'
@@ -280,10 +414,10 @@ dns:
   default-nameserver: ['223.5.5.5', '223.6.6.6']
     #- https://1.12.12.12/dns-query
     #- https://1.1.1.1/dns-query
-  # 专用于节点域名解析的 DNS 服务器，非必要配置项
+  # 专用于节点域名解析的 DNS 服务器，非必要配置项，因为大部分的代理服务器都是 IP 地址。
   #proxy-server-nameserver:
-    #- '1.1.1.1#🇭🇰 香港'
-    #- '223.5.5.5#DIRECT'
+  #  - '1.1.1.1'
+  #  - '114.114.114.114'
   # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询。
   #nameserver-policy: 
      #'geosite:cn,private': ['https://223.6.6.6/dns-query', 'https://1.12.12.12/dns-query']
@@ -291,29 +425,36 @@ dns:
      #'rule-set:microsoft-cn,apple-cn,google-cn,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
      #'rule-set:cn1,cn2': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
      #'rule-set:proxy': ['https://dns.google/dns-query#🚀 策略选择', 'https://cloudflare-dns.com/dns-query#🚀 策略选择']
-  # 默认的域名解析服务器，直连或遇到IP规则时会进行DNS解析，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析。
+  # 尽量不要使用国外的 DNS 服务器，因为它只会获取最先响应的。最好配置无污染的 DNS 服务器和响应速度快的境外 DNS 服务器，或者自己搭建一个。
+  # 默认的域名解析服务器，解析代理服务器的 IP 地址；匹配直连策略或遇到 IP 规则时会进行本地（直连） DNS 解析，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析。
   # 支持 UDP，TCP，DoT，DoH，DoQ
   nameserver:
-    - dhcp://en0
     - 114.114.114.114
-    - 119.29.29.29
+    #- 119.29.29.29
+    - 223.5.5.5
     #- 'https://1.1.1.1/dns-query#🇭🇰 香港&h3=false' # 指定策略组和使用 HTTP/3
     #- 'https://8.8.8.8/dns-query#🇭🇰 香港&h3=false' # 指定策略组和使用 HTTP/3
+  # 在 fake-ip 模式下不建议配置 fallback，来源 https://www.pupboss.com/post/2024/clash-tun-fake-ip-best-practice/
   # 当 `fallback` 存在时, DNS 服务器将向此部分中的服务器与 `nameservers` 中的服务器发送并发请求
   fallback: # 配置 fallback后默认启用 fallback-filter,geoip-code为 cn
     # 一般情况下使用境外 DNS, 保证结果可信
     - 'https://8.8.8.8/dns-query#🚀 策略选择&h3=false' # 指定策略组和使用 HTTP/3
     - 'https://1.1.1.1/dns-query#🚀 策略选择&h3=false' # 指定策略组和使用 HTTP/3
-  # 后备域名解析服务器筛选，满足条件的将使用 fallback结果或只使用 fallback解析
-  fallback-filter: # 这是对抗 DNS 污染攻击的一种措施.
+  # 后备域名解析服务器筛选，满足条件的将使用 fallback结果或只使用 fallback解析，这是对抗 DNS 污染攻击的一种措施。
+  fallback-filter:
      geoip: true # 是否启用 fallback filter
-     geoip-code: CN # 除了 geoip-code 配置的国家 IP, 其他的 IP 结果会被视为污染，将采用 fallback结果。
-     ipcidr: # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果。
+     # 除了 geoip-code 配置的国家 IP, 其他的 IP 结果会被视为污染，将采用 fallback结果。
+     geoip-code: CN 
+     # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果。
+     ipcidr:
        - 240.0.0.0/4
-  #   domain: # 这些域名被视为已污染，匹配到这些域名，会直接使用 fallback解析，不去使用 nameserver。
-  #     - '+.google.com'
-  #     - '+.facebook.com'
-  #     - '+.youtube.com'
+     # geosite 列表的内容被视为已污染，匹配到 geosite 的域名，将只使用 fallback 解析，不去使用 nameserver.
+     geosite: [gfw]
+     # 这些域名被视为已污染，匹配到这些域名，会直接使用 fallback解析，不去使用 nameserver。
+     #domain:
+       #- '+.google.com'
+       #- '+.facebook.com'
+       #- '+.youtube.com'
 
 # 策略组(代理组)
 # 锚点 - 节点筛选组
@@ -796,5 +937,4 @@ rules:
   ## IP规则
   - GEOIP,CN,🔗 直连域名
   # 兜底规则
-  - MATCH,🐟 漏网之鱼
   - MATCH,🐟 漏网之鱼
