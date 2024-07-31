@@ -46,8 +46,8 @@
 > 支持加密协议最多的代理软件
 ### [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
 ### [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)
-- [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)
-### IOS上最贵的代理工具，也是功能最全的代理工具。
+### [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)
+> IOS上最贵的代理工具，也是功能最全的代理工具。
 
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
