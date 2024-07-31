@@ -11,29 +11,6 @@
   - [x] 优化了 Stash 的DNS配置
   - [x] 优化了 Surge、surfboard、loon 的配置，并修复了surfboard 的规则错误。
 
-## Other_Tutorials(其他教程)
-- [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
-- [Markdown 语法&快捷键](https://blog.csdn.net/github_38336924/article/details/82183088)-CSDN
-  - 示例
-    - https://github.com/Loyalsoldier/clash-rules/tree/master
-    -  https://github.com/deezertidal/Surge_Module/blob/master/README.md
-- [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
-- Naming_Rules(命名规则)
-  - **字母，数字，下划线**
-- Noting_Rules(注释规则)
-  | 编程语言 | (单行)注释符号 | Wiki |
-  | -- | :--: | -- |
-  | JavaScript | // | |
-  | Java | // | [java和JavaScript的区别](https://blog.csdn.net/qq_44273429/article/details/117409345)-CSDN |
-  | C++ | // | |
-  
-  | 配置文件格式 | (单行)注释符号 | Wiki |
-  | -- | :--: | -- |
-  | JSON | 无 | [JavaScript和Json的区别](https://blog.csdn.net/qq_44273429/article/details/117409345)-CSDN |
-  | INI | ; | [programming-note](https://programming-note-sylarliu.readthedocs.io/zh-cn/latest/index.html) |
-  | YAML | # | [菜鸟教程](https://www.runoob.com/w3cnote/yaml-intro.html) |
-  | XML | <! > |  |
-
 ## [Config(配置文件)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)
 > 所有的配置文件
 ### Clash
@@ -57,6 +34,29 @@
 - [XiaoE_PCR-Rules-All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 - [XiaoE_PCR-Rules-Clash/Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta)
 - [XiaoE_PCR-Rules-Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket)
+
+## Other_Tutorials(其他教程)
+- [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
+- [Markdown 语法&快捷键](https://blog.csdn.net/github_38336924/article/details/82183088)-CSDN
+  - 示例
+    - https://github.com/Loyalsoldier/clash-rules/tree/master
+    -  https://github.com/deezertidal/Surge_Module/blob/master/README.md
+- [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
+- Naming_Rules(命名规则)
+  - **字母，数字，下划线**
+- Noting_Rules(注释规则)
+  | 编程语言 | (单行)注释符号 | Wiki |
+  | -- | :--: | -- |
+  | JavaScript | // | |
+  | Java | // | [java和JavaScript的区别](https://blog.csdn.net/qq_44273429/article/details/117409345)-CSDN |
+  | C++ | // | |
+  
+  | 配置文件格式 | (单行)注释符号 | Wiki |
+  | -- | :--: | -- |
+  | JSON | 无 | [JavaScript和Json的区别](https://blog.csdn.net/qq_44273429/article/details/117409345)-CSDN |
+  | INI | ; | [programming-note](https://programming-note-sylarliu.readthedocs.io/zh-cn/latest/index.html) |
+  | YAML | # | [菜鸟教程](https://www.runoob.com/w3cnote/yaml-intro.html) |
+  | XML | <! > |  |
 
 ## 免责申明
 - 本项目涉及的脚本仅用于资源共享和学习研究，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
