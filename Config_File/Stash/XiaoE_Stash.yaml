@@ -5,137 +5,100 @@
 # 2.可莉配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
 # 3.Lucky配置1: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml;
 # 4.Lucky配置2: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml
-# updata：2024-07-17
-# updata_log: 增加了地区策略的国旗
+# updata：2024-07-31
+# updata_log: 优化部分配置
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
 # 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
-# tiles部分仅作为本地磁贴的格式模板 可删除
-tiles:
-  - name: Billboard Hot 100
-    icon: 'music.note.list'
-    backgroundColor: '#fc5656'
-    argument: 'songCount=20'
-  - name: jinripingtairebang
-    icon: 'text.badge.star'
-    backgroundColor: '#FFD700'
-    argument: 'platform=微博&count=20'
-script-providers:
-  jinripingtairebang:
-    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/hotoday.js
-  Billboard Hot 100:
-    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/bb100.js
+# 出站代理
+# 本地节点，你的自建节点
+proxies: null
 
+# 代理集(订阅节点/远程节点)，你的机场订阅节点
 # 锚点-节点订阅的参数 [每12小时更新一次订阅节点，每 600 秒一次健康检查]
 # url:机场订阅链接，使用 Clash 链接
 # filter:初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
 # health-check:未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
-NodeParam: &NodeParam {type: http, interval: 43200, health-check: {enable: true, lazy: true, url: 'http://www.google.com/generate_204', interval: 600}}
-
-# 本地节点
-proxies: null
+# 延迟测试
+# benchmark-url: http://www.apple.com # 建议只使用HTTP协议
+# benchmark-timeout: 5 # 延迟测试超时，单位：秒
+NodeParam: &NodeParam {type: http, interval: 43200, health-check: {enable: true, benchmark-url: 'http://www.google.com/generate_204', benchmark-timeout: 60, lazy: true}}
 
 # 订阅节点(远程节点)
 proxy-providers:
   机场1:
     url: ""
     !!merge <<: *NodeParam #使用上述锚点配置
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场0]" # 为订阅节点添加机场名称前缀
   机场2:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场1]"
   机场3:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场2]"
   机场4:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场3]"
   机场5:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场4]"
   机场6:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场5]"
   机场7:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场6]"
   机场8:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场7]"
   机场9:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场8]"
   机场10:
     url: ""
     !!merge <<: *NodeParam
-    path: ./proxies/airport1.yaml
     override:
       additional-prefix: "[机场9]"
 
 # 全局配置
-# 代理端口
-port: 7890 # HTTP(S) 代理服务器端口
-socks-port: 7891 # SOCKS5 代理端口
-mixed-port: 7892 # 混合端口，HTTP和SOCKS5用一个端口
+log-level: info # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
 
 mode: rule # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
-log-level: info # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
+
 # Stash获取机场流量信息并在主页显示
-subscribe-url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
+# subscribe-url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml'
 
-allow-lan: true # 允许局域网的连接（共享代理）
-bind-address: "*"  # 监听IP白名单，可绑定单个IPv4和v6地址，"*" 为绑定所有IP地址，仅在将allow-lan设置为true时适用
-
-# ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
-udp: true # 是否允许 UDP 通过代理，默认为 false
-unified-delay: false # 开启统一延迟时，会进行两次延迟测试，以消除连接握手等带来的不同类型节点的延迟差异，可选值 true/false
-tcp-concurrent: true  # TCP 并发，可选值 true/false
-find-process-mode: strict # 控制是否让 Clash 去匹配进程，always 开启，强制匹配所有进程，strict 默认，由 Clash 判断是否开启，off 不匹配进程，推荐在路由器上使用此模式
-global-client-fingerprint: chrome  # 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint，目前支持开启 TLS 传输的 TCP/grpc/WS/HTTP , 支持协议有 VLESS,Vmess 和 trojan
-
-#外部控制器
-external-controller: 127.0.0.1:9090  # 外部控制器，可以使用 RESTful API 来控制你的 Clash 内核，API 监听地址，你可以将 127.0.0.1 修改为 0.0.0.0 来监听所有 IP
-secret: "xiaoe" # 自定义 API 的访问密钥
-# external-ui: ui  # 可以将静态网页资源 (比如 Clash-dashboard) 运行在 Clash API, 路径为 API 地址/ui，可以为绝对路径，或者 Clash 工作目录的相对路径
-# 自定义外部用户界面下载地址
-# external-ui-url: 'https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip'
 
 # 配置DNS
+hosts:
+  '*.clash.dev': 127.0.0.1
+  '.dev': 127.0.0.1
+  'alpha.clash.dev': '::1'
+
 dns:
-  enable: true # 关闭将使用系统 DNS
-  listen: 0.0.0.0:1053 # 开启 DNS 服务器监听, 劫持DNS
-  default-nameserver: # 默认 DNS, 用于解析"nameserver"将域名解析为IP地址
-    - 119.29.29.29
-    - 119.28.28.28
-    - system #系统DNs
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+#   enable: true # 关闭将使用系统 DNS
+#   prefer-h3: false # 优先使用 DOH 的 http/3
+#   listen: 0.0.0.0:1053 # 开启 DNS 服务器监听
+#   ipv6: true
+#   enhanced-mode: fake-ip # 减少一次本地的DNS解析
+#   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
@@ -150,15 +113,20 @@ dns:
     - '*.battlenet.com'
     - '*.blzstatic.cn'
     - '*.battle.net'
-  nameserver: #遇到IP规则和使用DIRECT时会用到
-    - 114.114.114.114
-    - 223.5.5.5
-    - 1.1.1.1
-    - 8.8.8.8
-  # nameserver-policy: # 对部分域名使用单独的 DNS 服务器
-    # 'www.baidu.com': 114.114.114.114
-    # '+.internal.crop.com': system
-    
+  # 默认 DNS, 用于解析"nameserver"将域名解析为IP地址
+  default-nameserver: [119.29.29.29, 223.5.5.5]
+  # 可以对指定域名使用特定的 DNS 服务器。
+  nameserver-policy: 
+  # 默认 DNS 服务器，用于解析节点服务器，遇到 IP 规则和匹配 DIRECT 策略时。
+  nameserver: 
+    - system
+    - 'https://223.5.5.5/dns-query#h3=true'
+    - 'https://1.12.12.12/dns-query#h3=true'  # 119.29.29.29
+  # 跳过证书验证，解决部分兼容性问题 https://help.nextdns.io/t/g9hdkjz
+  #skip-cert-verify: true
+  # DNS 查询跟随代理规则
+  #follow-rule: false
+
 # 锚点 - 节点筛选组
 ## 亚洲
 FilterHK: &FilterHK '^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$'
@@ -181,47 +149,50 @@ FilterIN: &FilterIN '(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic
 
 # 策略组参数锚点
 # 锚点 - 时延优选参数 [每 600 秒一次惰性健康检查，容差 20ms，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
-UrlTest: &UrlTest {type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: true, include-all: true, url: 'http://www.google.com/generate_204'}
+UrlTest: &urltest {type: url-test, url: 'http://www.google.com/generate_204', tolerance: 20, interval: 60, lazy: true, hidden: true, include-all: true}
+# 锚点 - [用于机场测试]
+UrlTest1: &urltest1 {type: url-test, url: 'http://www.google.com/generate_204', tolerance: 20, interval: 60, lazy: true, hidden: false}
 # 锚点 - 故障转移参数 [每 600 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
-FallBack: &FallBack {type: fallback, interval: 600, lazy: true, hidden: true, include-alls: true, url: 'http://www.google.com/generate_204'}
+FallBack: &fallback {type: fallback, url: 'http://www.google.com/generate_204', interval: 60, lazy: true, hidden: true, include-alls: true}
 # 锚点 - 负载均衡参数 [每 600 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
-LoadBalance: &LoadBalance {type: load-balance, strategy: consistent-hashing, interval: 600, lazy: true, hidden: true, include-all: true, url: 'http://www.google.com/generate_204'}
+LoadBalance: &loadbalance {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 60, lazy: true, hidden: true, include-all: true}
+Select: &select {type: select, url: 'http://www.google.com/generate_204', interval: 60, lazy: true, hidden: true, include-all: true}
+
 
 # 包括的代理和策略组设置
-# include-all: true # 包括所有的代理和远程代理集
-# use: [] # 使用远程代理集
-# proxies: [] # 使用策略组
-# use-url: [] # 使用远程订阅节点
+  # include-all: true # 包括所有的代理和远程代理集
+  # use: [] # 使用远程代理集
+  # proxies: [] # 使用策略组
+  # use-url: [] # 使用远程订阅节点
 
 # 测速链接:
 # 节点测速链接(代理测速)：http://www.gstatic.com/generate_204；http://www.google.com/generate_204; 
 # 直连测速链接：http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204
 
-# 出站
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
-  - {name: 🚀 策略选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, 🎣 钓鱼机场, ♻️ All, 🤣 手动选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  - {name: 🚀 策略选择, type: select, interval: 60, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, 🎣 钓鱼机场, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
   # 模块化选择
-  - {name: 🗺 地区选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
-  - {name: 🎣 钓鱼机场, type: select, interval: 600, lazy: true, hidden: false, proxies: [机场1], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
-  - {name: 🛫 机场选择, type: select, interval: 600, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
-  - {name: ♻️ All, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
-  - {name: 🤣 手动选择, type: select, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
+  - {name: 🗺 地区选择, type: select, interval: 60, lazy: true, hidden: false, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
+  - {name: 🎣 钓鱼机场, type: select, interval: 60, lazy: true, hidden: false, proxies: [机场1], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  - {name: 🛫 机场选择, type: select, interval: 60, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  #- {name: ♻️ All, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
+  #- {name: 🤣 手动选择, type: select, interval: 60, lazy: true, hidden: false, include-all: true, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png}
   # 机场测试
-  - {name: 机场1, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场2, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场3, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场3], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场4, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场4], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场5, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场5], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场6, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场6], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场7, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场7], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场8, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场9, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场10, type: url-test, tolerance: 20, interval: 600, lazy: true, hidden: false, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场1, type: url-test, !!merge <<: *urltest1, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场2, type: url-test, !!merge <<: *urltest1, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场3, type: url-test, !!merge <<: *urltest1, use: [机场3], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场4, type: url-test, !!merge <<: *urltest1, use: [机场4], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场5, type: url-test, !!merge <<: *urltest1, use: [机场5], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场6, type: url-test, !!merge <<: *urltest1, use: [机场6], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场7, type: url-test, !!merge <<: *urltest1, use: [机场7], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场8, type: url-test, !!merge <<: *urltest1, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场9, type: url-test, !!merge <<: *urltest1, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场10, type: url-test, !!merge <<: *urltest1, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
   # 兜底策略组
-  - {name: 🐟 漏网之鱼, type: select, interval: 600, lazy: true, hidden: false, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
+  - {name: 🐟 漏网之鱼, type: select, lazy: true, hidden: false, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
-  - {name: 📈 网络测试, type: select, proxies: [🤣 手动选择, 🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
+  - {name: 📈 网络测试, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png}
   #人工智能
   - {name: 🤖 人工智能, type: select, proxies: [🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🚀 策略选择], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png}
   #下载网络
@@ -258,8 +229,8 @@ proxy-groups:
   ## 音乐
   - {name: 🎻 Spotify, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png}
   ## 游戏
-  - {name: 🎮 游戏平台(global), type: select, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
-  # - {name: 🎮 游戏平台(cn), type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  - {name: 🎮 游戏平台(Global), type: select, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  # - {name: 🎮 游戏平台(CN), type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   # 大分流
   - {name: 🪜 代理域名, type: select, proxies: [🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png}
   - {name: 🔗 直连域名, type: select, proxies: [🎯 全球直连, 🚀 策略选择, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
@@ -269,77 +240,78 @@ proxy-groups:
   # 地区节点选择
   # 节点负载均衡(load-balance)，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
   # 自动选择节点(url-test)，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 50ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
- # 亚洲
+  # 手动选择策略组
+  ## 亚洲
   - {name: 🇭🇰 香港, type: select, proxies: [⏱ 香港时延优选策略组, 🚥 香港故障转移策略组, 🎛 香港负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
   - {name: 🇨🇳 台湾, type: select, proxies: [⏱ 台湾时延优选策略组, 🚥 台湾故障转移策略组, 🎛 台湾负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
   - {name: 🇯🇵 日本, type: select, proxies: [⏱ 日本时延优选策略组, 🚥 日本故障转移策略组, 🎛 日本负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
   - {name: 🇰🇷 韩国, type: select, proxies: [⏱ 韩国时延优选策略组, 🚥 韩国故障转移策略组, 🎛 韩国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
   - {name: 🇸🇬 新加坡, type: select, proxies: [⏱ 新加坡时延优选策略组, 🚥 新加坡故障转移策略组, 🎛 新加坡负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
-  # 美洲
+  ## 美洲
   - {name: 🇨🇦 加拿大, type: select, proxies: [⏱ 加拿大时延优选策略组, 🚥 加拿大故障转移策略组, 🎛 加拿大负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
   - {name: 🇺🇸 美国, type: select, proxies: [⏱ 美国时延优选策略组, 🚥 美国故障转移策略组, 🎛 美国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
-  # 欧洲  
+  ## 欧洲  
   - {name: 🇬🇧 英国, type: select, proxies: [⏱ 英国时延优选策略组, 🚥 英国故障转移策略组, 🎛 英国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
   - {name: 🇫🇷 法国, type: select, proxies: [⏱ 法国时延优选策略组, 🚥 法国故障转移策略组, 🎛 法国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
   - {name: 🇩🇪 德国, type: select, proxies: [⏱ 德国时延优选策略组, 🚥 德国故障转移策略组, 🎛 德国负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png}
-  # 非洲
-  - {name: 🇮🇳 印度, type: select, proxies: [⏱ 印度时延优选策略组, 🚥 印度故障转移策略组, 🎛 印度负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
-  # 时延优选策略组
-  ## 亚洲
-  - {name: ⏱ 香港时延优选策略组, !!merge <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
-  - {name: ⏱ 台湾时延优选策略组, !!merge <<: *UrlTest, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
-  - {name: ⏱ 日本时延优选策略组, !!merge <<: *UrlTest, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
-  - {name: ⏱ 韩国时延优选策略组, !!merge <<: *UrlTest, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
-  - {name: ⏱ 新加坡时延优选策略组, !!merge <<: *UrlTest, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
-  # 美洲
-  - {name: ⏱ 加拿大时延优选策略组, !!merge <<: *UrlTest, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
-  - {name: ⏱ 美国时延优选策略组, !!merge <<: *UrlTest, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
-  ## 欧洲
-  - {name: ⏱ 英国时延优选策略组, !!merge <<: *UrlTest, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
-  - {name: ⏱ 法国时延优选策略组, !!merge <<: *UrlTest, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
-  - {name: ⏱ 德国时延优选策略组, !!merge <<: *UrlTest, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
   ## 非洲
-  - {name: ⏱ 印度时延优选策略组, !!merge <<: *UrlTest, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  - {name: 🇮🇳 印度, type: select, proxies: [⏱ 印度时延优选策略组, 🚥 印度故障转移策略组, 🎛 印度负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  
+# 时延优选策略组
+  ## 亚洲
+  - {name: ⏱ 香港时延优选策略组, !!merge <<: *urltest, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: ⏱ 台湾时延优选策略组, !!merge <<: *urltest, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
+  - {name: ⏱ 日本时延优选策略组, !!merge <<: *urltest, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
+  - {name: ⏱ 韩国时延优选策略组, !!merge <<: *urltest, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
+  - {name: ⏱ 新加坡时延优选策略组, !!merge <<: *urltest, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
+  # 美洲
+  - {name: ⏱ 加拿大时延优选策略组, !!merge <<: *urltest, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
+  - {name: ⏱ 美国时延优选策略组, !!merge <<: *urltest, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
+  ## 欧洲
+  - {name: ⏱ 英国时延优选策略组, !!merge <<: *urltest, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
+  - {name: ⏱ 法国时延优选策略组, !!merge <<: *urltest, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
+  - {name: ⏱ 德国时延优选策略组, !!merge <<: *urltest, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
+  ## 非洲
+  - {name: ⏱ 印度时延优选策略组, !!merge <<: *urltest, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
   # 故障转移策略组
   ## 亚洲
-  - {name: 🚥 香港故障转移策略组, !!merge <<: *FallBack, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
-  - {name: 🚥 台湾故障转移策略组, !!merge <<: *FallBack, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
-  - {name: 🚥 日本故障转移策略组, !!merge <<: *FallBack, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
-  - {name: 🚥 韩国故障转移策略组, !!merge <<: *FallBack, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
-  - {name: 🚥 新加坡故障转移策略组, !!merge <<: *FallBack, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
+  - {name: 🚥 香港故障转移策略组, !!merge <<: *fallback, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: 🚥 台湾故障转移策略组, !!merge <<: *fallback, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
+  - {name: 🚥 日本故障转移策略组, !!merge <<: *fallback, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
+  - {name: 🚥 韩国故障转移策略组, !!merge <<: *fallback, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
+  - {name: 🚥 新加坡故障转移策略组, !!merge <<: *fallback, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
   # 美洲
-  - {name: 🚥 加拿大故障转移策略组, !!merge <<: *FallBack, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
-  - {name: 🚥 美国故障转移策略组, !!merge <<: *FallBack, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
+  - {name: 🚥 加拿大故障转移策略组, !!merge <<: *fallback, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
+  - {name: 🚥 美国故障转移策略组, !!merge <<: *fallback, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
   ## 欧洲
-  - {name: 🚥 英国故障转移策略组, !!merge <<: *FallBack, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
-  - {name: 🚥 法国故障转移策略组, !!merge <<: *FallBack, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
-  - {name: 🚥 德国故障转移策略组, !!merge <<: *FallBack, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
+  - {name: 🚥 英国故障转移策略组, !!merge <<: *fallback, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
+  - {name: 🚥 法国故障转移策略组, !!merge <<: *fallback, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
+  - {name: 🚥 德国故障转移策略组, !!merge <<: *fallback, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
   ## 非洲
-  - {name: 🚥 印度故障转移策略组, !!merge <<: *FallBack, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  - {name: 🚥 印度故障转移策略组, !!merge <<: *fallback, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
   # 负载均衡策略组
   ## 亚洲
-  - {name: 🎛 香港负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
-  - {name: 🎛 台湾负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
-  - {name: 🎛 日本负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
-  - {name: 🎛 韩国负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
-  - {name: 🎛 新加坡负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
+  - {name: 🎛 香港负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: 🎛 台湾负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
+  - {name: 🎛 日本负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
+  - {name: 🎛 韩国负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
+  - {name: 🎛 新加坡负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
   ## 美洲
-  - {name: 🎛 加拿大负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
-  - {name: 🎛 美国负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
+  - {name: 🎛 加拿大负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
+  - {name: 🎛 美国负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
   ## 欧洲
-  - {name: 🎛 英国负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
-  - {name: 🎛 法国负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
-  - {name: 🎛 德国负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
+  - {name: 🎛 英国负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
+  - {name: 🎛 法国负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
+  - {name: 🎛 德国负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
   ## 非洲
-  - {name: 🎛 印度负载均衡策略组, !!merge <<: *LoadBalance, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  - {name: 🎛 印度负载均衡策略组, !!merge <<: *loadbalance, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
 
-# 路由
 # 锚点 - 规则参数 [每小时更新一次订阅规则，更新规则时使用直连策略],默认格式为yaml，可以更改为text。
 # bahavior：有ipcidr(IP集)、domain(域名集)、classical。
 # proxy：经过指定代理进行下载/更新，使用DIRECT（直连）更新，还是代理（PROXY）更新，默认为代理（PROXY）
 rule-anchor:
     # format: text(文本)或yaml
-    ip: &ip {behavior: ipcidr, interval: 86400, format: yaml}
+    ipcidr: &ipcidr {behavior: ipcidr, interval: 86400, format: yaml}
     domain: &domain {behavior: domain, interval: 86400, format: yaml}
     classical: &classical {behavior: classical, interval: 86400, format: yaml}
 
@@ -373,6 +345,7 @@ rule-providers:
   微软服务:
     !!merge <<: *classical
     url: https://whatshub.top/rule/Microsoft.rule
+  # 苹果服务
   Apple:
     !!merge <<: *classical
     url: https://whatshub.top/rule/Apple.rule
@@ -393,8 +366,7 @@ rule-providers:
     url: 'https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml'
   # 支付平台
   PAYPAL:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/PayPal.rule
   # 社交通讯平台
   ## 国外
@@ -422,69 +394,54 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
   # 游戏平台
   PlayStation:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/PlayStation.rule
   Epic:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Epic.rule
   Sony:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Sony.rule
   Steam:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Steam.rule
   Nintendo:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Nintendo.rule
   WanMeiShiJie:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/WanMeiShiJie.rule
   Blizzard:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Blizzard.rule
  # 音乐
   SPOTIFY:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Spotify.rule
   YOUTUBE2:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/YouTubeMusic.rule
   # 流媒体(短视频&影视)
   ## 国外网络
   YOUTUBE1:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/YouTube.rule
   NETFLIX:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Netflix.rule
   DISNEY+:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Disney.rule
   Twitch:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Twitch.rule
   ### 大分流
   国外媒体:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/ProxyMedia.rule
   ## 国内媒体
   斗鱼:
-    behavior: classical
-    interval: 86400
+    !!merge <<: *classical
     url: https://whatshub.top/rule/Douyu.rule
   哔哩哔哩:
     !!merge <<: *classical
@@ -516,9 +473,9 @@ rules:
   # 本地网络
   - RULE-SET,lan,🎯 全球直连,no-resolve
   # 广告拦截
-  - RULE-SET,Ad_Domain,🛑 全球拦截
-   # 隐私保护
-#  - RULE-SET,privacy,🛑 全球拦截
+  #- RULE-SET,Ad_Domain,🛑 全球拦截
+  # 隐私保护
+  #- RULE-SET,privacy,🛑 全球拦截
   # 人工智能
   - RULE-SET,人工智能,🤖️ 人工智能
   # 服务平台
@@ -574,4 +531,3 @@ rules:
   - GEOIP,CN,🎯 全球直连
   # 兜底规则
   - MATCH,🐟 漏网之鱼
-
