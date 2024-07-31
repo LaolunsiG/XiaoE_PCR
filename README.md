@@ -1,13 +1,14 @@
 # 自用代理资源存储库-XiaoE_PCR
 > 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此自用存储库。
-- **Clash_Old_Rules(规则)** 可用于旧版Clash for Android and Clash for Windows。
+- **Clash_Old_Rules(规则)** 可用于旧版 Clash for Android and Clash for Windows。
 
 ## Plan&Change_Log(更新日志)-2024/07/30
 - Plan
   - [ ] 为qx添加特殊配置文件
   - [ ] 修改clash_js
 - Change_Log
-  - [X] 优化了CLashMeta 的 DNS 配置
+  - [X] 优化了 CLashMeta 配置
+  - [x] 优化了 Stash 的配置
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
 - [Markdown 语法&快捷键](https://blog.csdn.net/github_38336924/article/details/82183088)-CSDN
