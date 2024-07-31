@@ -1,5 +1,6 @@
 # [Surfboard](https://github.com/getsurfboard/surfboard)
 - 此软件遵循Surge的配置方式......注意：使用示例配置文件时，因规则过多，导入时间不够，请到软件内修改获取配置文件的时间。
+- ！！此软件的节点筛选再没有对应节点的情况下会出错，所以确保你的服务有对应的节点
 
 <table>
     <tr>
