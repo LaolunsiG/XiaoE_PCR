@@ -35,22 +35,19 @@
 
 ## [Config(配置文件)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)
 > 所有的配置文件
-### 全平台
-- Clash
-  - [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
-  - [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
-### Android
-- [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)
-### IOS
-- [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
+### Clash
+- [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
+- [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
+### [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 > 此软件还未完善，不推荐使用
-- [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
-- [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
-- [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
+### [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)
+### [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)
+### [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)
 > 支持加密协议最多的代理软件
-- [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
+### [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)
+### [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)
 - [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)
-> IOS上最贵的代理工具，也是功能最全的代理工具。
+### IOS上最贵的代理工具，也是功能最全的代理工具。
 
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
