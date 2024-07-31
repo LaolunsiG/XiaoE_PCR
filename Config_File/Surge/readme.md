@@ -1,5 +1,5 @@
 # XiaoE_Surge
-- 这个软件是订阅制的，很好用就是很贵。
+> 这个软件是订阅制的，很好用就是很贵。这个软件的官方文档也好奇怪。
 
 ## APP_Tutorial(使用教程)
 - [官方教程](https://manual.nssurge.com/)
