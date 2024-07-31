@@ -7,8 +7,9 @@
   - [ ] 为qx添加特殊配置文件
   - [ ] 修改clash_js
 - Change_Log
-  - [X] 优化了 CLashMeta 配置
-  - [x] 优化了 Stash 的配置
+  - [X] 优化了 CLashMeta DNS配置
+  - [x] 优化了 Stash 的DNS配置
+  - [x] 优化了 Surge、surfboard、loon 的配置，并修复了surfboard 的规则错误。
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
