@@ -1,7 +1,7 @@
 # DNS配置
-- 如果你不想折腾（DNS 分流），用默认配置就可以了
+> 如果你不想折腾（DNS 分流），用默认配置就可以了，使用运营商的 DNS 服务最快，如果 DNS 污染非常严重时再换公共 DNS。
 
-**DNS(Domain Name System/域名系统)**-将人们易于记忆的域名（如 www.example.com）转换为计算机能够理解的IP地址（如 192.0.2.1）。这就像是互联网的“电话簿”，帮助浏览器找到你要访问的网站。
+- **DNS(Domain Name System/域名系统)**-将人们易于记忆的域名（如 www.example.com）转换为计算机能够理解的IP地址（如 192.0.2.1）。这就像是互联网的“电话簿”，帮助浏览器找到你要访问的网站。
   - [Cloudflare](https://www.cloudflare-cn.com/learning/dns/what-is-a-dns-server/)
   - [百度百科](https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F/2251573)
 
@@ -23,8 +23,8 @@
    - 优点：与 DoT 一样提供加密，防止中间人攻击和窥探；通过使用 HTTPS 端口，可以绕过一些网络过滤和审查机制；利用现有的 HTTP/2 和 HTTP/3 连接优化，可能提供更高的性能。
    - 缺点：实现和配置相对复杂，可能增加客户端和服务器的处理负担。
   
-## 推荐的DNS服务器
-> 非加密 DNS(传统 DNS)
+## 推荐的公共DNS服务器
+- 非加密 DNS(传统 DNS)
 
 | 服务提供商 | IP地址 |
 | -- | -- |
