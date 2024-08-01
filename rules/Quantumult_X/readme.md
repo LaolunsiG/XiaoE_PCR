@@ -1,5 +1,4 @@
 # Quantumult_X_Rules
-> 去掉了IP规则，只在最后加入"GEOIP,CN,DIRECT",防止DNS泄露（？），减少不必要的DNS解析
 - [Quantumult_X规则类型](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Quantumult_X/Quantumult_X%E8%A7%84%E5%88%99%E7%B1%BB%E5%9E%8B.md)
 - Quantumult_X规则匹配顺序
   - 本地>远程>final
