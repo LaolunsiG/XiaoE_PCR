@@ -18,7 +18,7 @@
   IP-ASN,714
   ```
 ## 域名规则-可以用 “DOMAIN”
-- HOST（域名 ）
+- HOST(域名)
   ```
   HOST,www.google.com,policy
   ```
