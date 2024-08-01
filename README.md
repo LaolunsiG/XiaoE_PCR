@@ -2,14 +2,13 @@
 > 本存储库会将一些规则合在一起，以便于使用。Clash因不在未更新，不支持新规则和新的加密，所以创建此自用存储库。
 - **Clash_Old_Rules(规则)** 可用于旧版 Clash for Android and Clash for Windows。
 
-## Plan&Change_Log(更新日志)-2024/07/31
+## Plan&Change_Log(更新日志)-2024/08/01
 - Plan
   - [ ] 为qx添加特殊配置文件
   - [ ] 修改clash_js
 - Change_Log
-  - [X] 优化了 CLashMeta DNS配置
-  - [x] 优化了 Stash 的DNS配置
-  - [x] 优化了 Surge、surfboard、loon 的配置，并修复了surfboard 的规则错误。
+  - [X] 优化了 CFA DNS 和策略组配置。
+
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
