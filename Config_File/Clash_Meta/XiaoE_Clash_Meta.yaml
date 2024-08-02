@@ -1,5 +1,5 @@
 # XiaoE_Clash_Meta
-# ps: 此配置文件无加密DNS，优选节点, 使用IP规则，可能存在DNS泄露问题.Clash_verge更新后编辑配置文件变得更加容易了。
+# ps: Clash_verge更新后编辑配置文件变得更加容易了。
 # 配置来源
 # 1. https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
 # 2. https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
