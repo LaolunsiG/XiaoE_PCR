@@ -1,6 +1,5 @@
 # ClashMeta 配置教程
-- [ClashMeta示例配置文件](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta/ClashMeta%E7%A4%BA%E4%BE%8B%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
-- [官方配置文件](https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml)
+- 在配置之前，去 [官方文档](https://wiki.metacubex.one/) 了解一些参数，跟着 [ClashMeta示例配置文件](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta/ClashMeta%E7%A4%BA%E4%BE%8B%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6) 或 [官方配置文件](https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml) 来编写自己的配置文件。
 
 ## 全局配置
 ```yaml
