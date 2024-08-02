@@ -1,11 +1,10 @@
 # Steam(蒸汽平台规则)
 
-## IP_Set(IP集)
+## Steam IP_Set(IP集)
 
-## Domain_Set(域名集)
+## Steam Domain_Set(域名集)
 
-## Classical(混合集)
-- [Steam_Classical.list](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Steam/Steam_Classical.list)
+## Steam Classical(混合集)
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Steam/Steam_Classical.list
 ```
