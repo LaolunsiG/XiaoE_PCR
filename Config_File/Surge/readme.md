@@ -16,7 +16,7 @@
 
 ## Function_Preview(功能预览)
 
-## 感谢
+## 配置来源
 - [Rabbit-Spec(深巷有喵)-Surge](https://github.com/Rabbit-Spec/Surge/tree/Master/Conf/Spec)
 - [getsomecat(整点薯条)-surge](https://github.com/getsomecat/GetSomeCats/blob/Surge/FishChips.conf)
 - [Lucky-Surge](https://github.com/As-Lucky/Lucky/blob/main/Lucky-Surge.conf)
