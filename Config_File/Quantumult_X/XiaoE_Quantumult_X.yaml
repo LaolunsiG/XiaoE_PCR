@@ -1,61 +1,73 @@
 # name: XiaoE_Quantumult_X
-# content: 
-# 感谢以下配置
-# 1.whatshub-懒人配置: https://whatshub.top/config/qx.conf
-# updata: 2024/07/15
-# updata_log(更新日志): 更新了策略组
+# ps: 
+# 1. whatshub-qx： https://whatshub.top/config/qx.conf
+# 2. Theo-Messi-QuantumultX： https://github.com/Theo-Messi/dotfiles/blob/1e92adaf4c13afe9f62c95d8340092d6ca1dea65/QuantumultX/T-Config.conf
+# updata: 2024/08/02
+# updata_log(更新日志): 更新了策略组.
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Quantumult_X/XiaoE_Quantumult_X.yaml
 # 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 # 全局配置
 [general]
-excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 127.0.0.0/8, 224.0.0.0/24, 239.255.255.250/32
+
+# UDP回退策略
+fallback_udp_policy=direct
+# UDP丢弃列表
+udp_drop_list = 443
+
 # 用于节点页面的节点信息展示，可完整自定义展示内容与方式
 geo_location_checker=http://ip-api.com/json/?fields=8450015&lang=zh-CN,https://raw.githubusercontent.com/deezertidal/QuantumultX-Rewrite/master/rewrite/ip-api.js
 
 # 资源解析器，可用于自定义各类远程资源的转换，如节点，规则filter，复写rewrite等，url地址可远程，可本地/iCloud(QuantumultX/Scripts目录)
 resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+# 配置文件图标
+profile_img_url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
 
 # 网络健康检查
+# 节点测速链接: http://www.gstatic.com/generate_204；http://www.google.com/generate_204; http://cp.cloudflare.com/generate_204
+# 直连测速链接: http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204; http://www.baidu.com
 # 本地测试
 network_check_url = http://wifi.vivo.com.cn/generate_20
 # 代理测试
-# Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
-# 你同样可以在 server_local/remote 中，为节点、订阅单独指定server_check_url参数
-# 如您为节点单独指定了 url，则所有相关延迟测试中，均会采用此 url 地址
+  # Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
+  # 你同样可以在 server_local/remote 中，为节点、订阅单独指定server_check_url参数
+  # 如您为节点单独指定了 url，则所有相关延迟测试中，均会采用此 url 地址
 server_check_url = http://www.google.com/generate_204
 server_check_timeout=5000 # 测速超时时间(ms/毫秒)
 
-# 节点测速链接: http://www.gstatic.com/generate_204；http://www.google.com/generate_204; http://cp.cloudflare.com/generate_204
-# 直连测速链接: http://www.v2ex.com/generate_204；http://wifi.vivo.com.cn/generate_204; http://www.baidu.com
-
-profile_img_url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
+# 入站配置
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 127.0.0.0/8, 224.0.0.0/24, 239.255.255.250/32
 
 # DNS配置
 # DNS排除列表
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+
 [dns]
+# circumvent-ipv4-answer, circumvent-ipv6-answer 参数，规避DNS结果
+  # 1、当并发向多个上游 DNS 进行查询时，如响应最快的上游 DNS 抢答的结果命中了该条目，则 Quantumult X Tunnel DNS 模块会等待其他 DNS 服务器的响应结果（如抢答的结果中至少有一个不属于该条目，则不会等待其他 DNS 的响应，此时有效结果采用不属于该条目的所有记录）
+  # 2、如所有上游 DNS 返回的所有结果均命中该条目，则判定为 DNS 查询失败
+  # 3、如配置的上游 DNS 包含有去广告功能的 DNS 服务器，请勿使用该参数
+circumvent-ipv4-answer = 127.0.0.1, 0.0.0.0
+# circumvent-ipv6-answer = ::
+
+# 非加密DNS
 # 禁用系统 DNS（no-system） 以及 ipv6
 no-system
 no-ipv6
-# circumvent-ipv4-answer, circumvent-ipv6-answer 参数，规避DNS结果
-# 1、当并发向多个上游 DNS 进行查询时，如响应最快的上游 DNS 抢答的结果命中了该条目，则 Quantumult X Tunnel DNS 模块会等待其他 DNS 服务器的响应结果（如抢答的结果中至少有一个不属于该条目，则不会等待其他 DNS 的响应，此时有效结果采用不属于该条目的所有记录）
-# 2、如所有上游 DNS 返回的所有结果均命中该条目，则判定为 DNS 查询失败
-# 3、如配置的上游 DNS 包含有去广告功能的 DNS 服务器，请勿使用该参数
-circumvent-ipv4-answer = 127.0.0.1, 0.0.0.0
-# circumvent-ipv6-answer = ::
 # 指定 dns 服务器，并发响应选取最优结果
 server=119.29.29.29
 server=114.114.114.114
 server=223.5.5.5
-server=8.8.8.8
-server=1.1.1.1
+#server=8.8.8.8
+#server=1.1.1.1
+
 # 加密DNS
-# DNS over HTTPS，当 prefer-doh3 被设置时，DoH 将尝试通过 HTTP/3 的查询，如果失败，查询连接将退回到 HTTP/2。
+# 1.DNS over HTTPS，当 prefer-doh3 被设置时，DoH 将尝试通过 HTTP/3 的查询，如果失败，查询连接将退回到 HTTP/2。
 # prefer-doh3
 # doh-server = https://dns.alidns.com/dns-query
 # doq-server = quic://dns.adguard.com
 
+# 出站配置
 # 本地节点
 [server_local]
 
@@ -110,6 +122,7 @@ static=🗺 地区选择, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, �
 url-latency-benchmark=♻️ Free1, resource-tag-regex=.*, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
 url-latency-benchmark=♻️ Free2, resource-tag-regex=.*, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
 url-latency-benchmark=♻️ All, server-tag-regex=.*, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+
 static=🐟 漏网之鱼 ,🚀 策略选择,🌐 全球直连, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 static=📈 网络测试, 🚀 策略选择,🌐 全球直连, 🇭🇰 香港, 🇰🇷 韩国, 🇯🇵 日本, 🇨🇳 台湾, 🇸🇬 新加坡, 🇷🇺 俄罗斯, 🇺🇸 美国, 🇨🇦 加拿大, 🇬🇧 英国, 🇩🇪 德国, 🇦🇺 澳大利亚, 🇮🇳 印度, img-url=https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
 # 服务平台
