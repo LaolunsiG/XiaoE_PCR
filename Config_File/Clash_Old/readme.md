@@ -1,5 +1,5 @@
 # Clash_Old
-> 配置的是Clash_Premium内核(非开源已删库)，需要自己配置订阅链接。
+> 配置的是 Clash_Premium 内核(非开源已删库)，需要自己配置订阅链接。适合 CFA (Clash For Android) 使用。
 - Agent_Software(代理软件)
   - [hiddify-next](https://github.com/hiddify/hiddify-next)-多平台
   - [Sing_Box](https://github.com/SagerNet/sing-box)
