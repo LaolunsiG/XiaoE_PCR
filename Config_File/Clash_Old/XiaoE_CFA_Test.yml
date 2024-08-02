@@ -1,10 +1,10 @@
-# name: XiaoE_Clash_Old
-# content: 此配置文件无加密DNS，优选节点
-# 感谢以下配置
-# 1.Clash莫离配置：https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
-# 2.可莉示例配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
-# 2.懒人配置: https://whatshub.top/config/stash-auto.yaml
-# 4.Lucky配置: https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
+# XiaoE_Clash_Meta
+# ps: Clash_verge更新后编辑配置文件变得更加容易了。
+# 配置来源
+# 1. https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
+# 2. https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
+# 3. https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
+# 4. https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
 # updata：2024/08/01
 # updata_log(更新日志)：修改了 DNS 规则。
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Old/XiaoE_CFA_Test.yml
