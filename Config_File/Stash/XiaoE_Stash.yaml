@@ -1,12 +1,13 @@
 # name：XiaoE_Stash
-# content: 优选节点，无加密DNS，存在IP规则，可能存在DNS泄露问题。
+# ps: 优选节点，无加密DNS，存在IP规则，可能存在DNS泄露问题。
 # 感谢以下配置
-# 1.懒人配置: https://whatshub.top/config/stash-auto.yaml
-# 2.可莉配置: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
-# 3.Lucky配置1: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash.yaml;
-# 4.Lucky配置2: https://raw.githubusercontent.com/Repcz/Tool/X/Stash/Stash_lite.yaml
-# updata：2024-07-31
-# updata_log: 优化部分配置
+# 1. Infatuation-Fei-stash： https://github.com/Infatuation-Fei/rule/blob/main/Stash/%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF/Config%20for%20Stash.yaml
+# 2. Lucky/Repcz-stash： https://github.com/Repcz/Tool/tree/X/Stash
+# 3. moli-stash： https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
+# 4. whatshub-stash： https://whatshub.top/config/stash-auto.yaml
+# 5. jnlaoshu-stash： https://github.com/jnlaoshu/MySelf/blob/main/Stash/Config.yaml
+# updata：2024-08-02
+# updata_log: 优化部分配置.
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml
 # 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
