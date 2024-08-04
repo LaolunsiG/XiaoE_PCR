@@ -1,6 +1,6 @@
 # Clash_Script
 > 看不懂正在学
-- 使用的JavaScript语言
+- 使用的 JavaScript 语言
 
 ## 脚本来源
 - [Kiritocyz-Clash](https://github.com/Kiritocyz/Clash)
