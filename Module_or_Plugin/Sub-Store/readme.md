@@ -1,31 +1,11 @@
 # [Sub-Store](https://github.com/sub-store-org/Sub-Store)
-- IOS极其重要的订阅转化脚本
+- IOS极其重要的订阅转化工具。
+
+## 部署（使用）
+- [SaintWe - Sub-Store-Docker](https://github.com/SaintWe/Sub-Store-Docker)
 
 ## Tutorials(使用教程)
-- [For-Own-Use](https://github.com/ProxyStorage/For-Own-Use)-ProxyStorage
-- [sub-store-org](https://github.com/sub-store-org/Sub-Store/tree/master/config)-官方
-
-## Sub_Store插件/模组下载
-- Shadowrocket
-  ```
-  https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule
-  ```
-- Loon
-  ```
-   https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon.plugin
-  ```
-- Surge
-  ```
-  https://raw.githubusercontent.com/sub-store-org/Sub-Store/e93332048e0678ba0f85d8a42430a87d8bbdf5fc/config/Surge.sgmodule
-  ```
-- Stash
-  ```
-  https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Stash.stoverride
-  ```
-- QX-规则资源导入
-  ```
-  https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet
-  ```
+- [sub-store-org (官方)](https://github.com/sub-store-org/Sub-Store/tree/master/config)
 
 ## Sub-Store使用的脚本
 > 直接将脚本导入就好了
