@@ -1,5 +1,5 @@
 # [Sub-Store](https://github.com/sub-store-org/Sub-Store)
-- IOS极其重要的订阅转化工具。
+> IOS极其重要的订阅转化工具。
 
 ## 部署（使用）
 - [SaintWe - Sub-Store-Docker](https://github.com/SaintWe/Sub-Store-Docker)
