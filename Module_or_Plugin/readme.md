@@ -1,11 +1,8 @@
 # 模块或插件
 - 大多只在IOS上使用
 
-## 推荐的模块或插件
-- **[Sub_Store](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Module_or_Plugin/Sub-Store)**
-  - [For-Own-Use](https://github.com/ProxyStorage/For-Own-Use)-ProxyStorage
-  - [sub-store-org](https://github.com/sub-store-org/Sub-Store/tree/master/config)-官方
+## 推荐的模块（插件）
+- [Sub-Store (官方)](https://github.com/sub-store-org/Sub-Store) - 使用教程：
+## 模块（插件）资源整理
+- [For-Own-Use](https://github.com/ProxyStorage/For-Own-Use)
  
-## 感谢以下项目/人员
-感谢下面这些无私奉献的大佬
-- [sub-store-org](https://github.com/sub-store-org/Sub-Store)
