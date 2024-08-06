@@ -1,23 +1,27 @@
 # 代理软件配置文件示例
-> !! 注意不要将 **"[MITM]"配置** 的证书分享给他人-[什么是 MITM](https://zh.m.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)
-- 这些是示例配置文件，请不要直接使用，自己修改配置文件后使用，我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。
-- 如果你需要配置 DNS 分流建议使用 Sing-Box 和 V2ray。
 
-！！在配置之前先了解代理工具的工作流程，以防出现，配置之后，还不如不配置的情况发生。
+这些是示例配置文件，请不要直接使用，自己修改配置文件后使用，我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。
+
+在配置之前先了解代理工具的工作流程，以防出现，配置之后，还不如不配置的情况发生。
+
+## 关于代理的一些问题
+[关于代理的一些问题](https://blog.revincx.icu/posts/proxy-summary/)，
+[关于代理的不完全指南](https://blog.revincx.icu/posts/proxy-summary/)
+[什么是 MITM](https://zh.m.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)
+
 ## 了解代理工具的工作流程
 > AI 工具好用但又没那么好用。
 - [v2ex](https://fast.v2ex.com/)
 - [关于代理的不完全指南](https://blog.revincx.icu/posts/proxy-summary/)
 
-
 ## 模块化部分配置
 1. [DNS配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/DNS%E9%85%8D%E7%BD%AE.md)
 2. 节点配置
-   - [节点的正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
+   - [节点的正则表达式（节点筛选）](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
    - [节点的测速链接](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
 
 ## 各个软件的配置文件所用的配置文件格式
-- [INI](https://blog.csdn.net/a123441/article/details/90668032)-CSDN
+- [什么是 “INI” 配置文件格式](https://blog.csdn.net/a123441/article/details/90668032)-CSDN
 
 | 软件 | 配置文件格式 | {单行}注释符号 |
 | -- | :--: | :--: |
@@ -34,52 +38,20 @@
 
  
 ## Clash_Old
-### Clash_Wiki(知识库)
-- [Clash_Old](https://clash.wiki/)
-### Clash_Config(配置文件)
-- [Clash_for_Android_Sub-Test.yml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Old/Clash_for_Android_Sub-Test.yml)
-- [XiaoE_CFA_Test.yml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Old/XiaoE_CFA_Test.yml)
 
 ## Clash_Meta
-### Clash_Meta_Wiki(知识库)
-- [Clash_Meta](https://wiki.metacubex.one/)
-### Clash_Meta_Config(配置文件)
-- [Clash_Meta_Old](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/Clash_Meta/Clash_Meta_Old.yaml)
-- [Clash_Meta_New](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml)
 
 ## LanceX
-### LanceX_Wiki(知识库)
-### LanceX_Config(配置文件)
-- [XiaoE_LanceX](https://raw.githubusercontent.com/LaolunsiG/XiaoE-PCR/main/Config_File/LanceX/XiaoE%E7%9A%84LanceX%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.conf)
 
 ## Loon
-### Loon_Wiki(知识库)
-- [KeLee8-Loon_tutorial](https://github.com/KeLee8/Loon-tutorial)-KeLee8
-- [Loon0x00](https://github.com/Loon0x00/LoonManual/tree/master)-官方
-### Loon_Config(配置文件)
-- [XiaoE_Loon](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/XiaoE_Loon.conf)
 
 ## Quantumult_X
-### Quantumult_X_Wiki(知识库)
-- [Quantumult X 不完全教程](https://www.notion.so/kopshawn/Quantumult-X-1d32ddc6e61c4892ad2ec5ea47f00917)-Quantumult X 不完全教程
-- [Quantumult X Wiki Book](https://qx.atlucky.me/)-Lucky,整点猫咪和INAISI
-### Quantumult_X_Config(配置文件)
-- [XiaoE_Quantumult_X](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Quantumult_X/XiaoE_Quantumult_X.yaml)
 
 ## Shadowrocket
-### Stash_Wiki(知识库)
-- [Shadowrocket](https://github.com/wlxuf/Shadowrocket)
-### Shadowrocket(配置文件)
-- [XiaoE_Shadowrocket](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Shadowrocket/XiaoE_Shadowrocket.conf)
-  - **此配置文件需要自己配置订阅节点**
 
 ## Stash
-### Stash_Wiki(知识库)
-- [Stash_Wiki](https://stash.wiki/)
-### Stash_Config(配置文件)
-- [XiaoE_Stash](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Stash/XiaoE_Stash.yaml)
 
-## 感谢以下配置
+## 感谢以下无私献出自己配置的大佬
 - Clash/Clash_Meta
   - [Lucky配置](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
   - [可莉示例配置](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)
