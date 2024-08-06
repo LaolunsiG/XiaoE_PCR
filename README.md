@@ -7,8 +7,6 @@
   - [ ] 为qx添加特殊配置文件
   - [ ] 修改clash_js
 - Change_Log
-  - [X] 优化了 CFA DNS 和策略组配置。
-
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
