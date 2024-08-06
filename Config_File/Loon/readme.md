@@ -1,5 +1,5 @@
 # XiaoE_Loon
-> 推荐使用，简单易上手，**此配置文件需要自己配置订阅节点**。
+> 推荐使用，简单易上手，此配置文件需要自己配置订阅节点。
 
 ## APP_Tutorial(使用教程)
 > 如果需要自行修改配置文件的，请自己阅读官方文档，了解专用
@@ -12,6 +12,10 @@
 
 ## Loon_Config(配置文件)
 - [XiaoE_Loon](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/XiaoE_Loon.conf)
+## 大佬的示例配置
+- [Copyright配置](https://github.com/SANYIMOE/Quan_Shado_Conf/blob/master/conf/loon.conf)
+- [HoCooo-loon](https://github.com/HoCooo/Loon/blob/main/LoonLite.conf)
+- [可莉-loon](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Config/zh-CN?ref_type=heads)
 
 ## Function_Preview(功能预览)
 - ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_1_2024-07-16_20-46-54.jpg?raw=true)
@@ -20,7 +24,4 @@
 - ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_5_2024-07-16_20-46-54.jpg?raw=true)
 - ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_4_2024-07-16_20-46-54.jpg?raw=true)
 
-## 配置来源
-- [Copyright配置](https://github.com/SANYIMOE/Quan_Shado_Conf/blob/master/conf/loon.conf)
-- [HoCooo-loon](https://github.com/HoCooo/Loon/blob/main/LoonLite.conf)
-- [可莉-loon](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Config/zh-CN?ref_type=heads)
+
