@@ -8,7 +8,8 @@ https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/A
 ```
 
 ## 规则来源
-
-1. https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml
-
-2. https://whatshub.top/strule
+https://whatshub.top/strule
+### OpenAI
+https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml
+### Copilot
+https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Copilot/Copilot_No_Resolve.yaml
