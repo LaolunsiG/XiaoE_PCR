@@ -10,9 +10,7 @@
 - [Quantumult-X](https://github.com/rencuijian/Quantumult-X)
   - Quantumult X策略、规则、脚本使用教程
 
-
-
 ## 规则来源
-- [ios_rule_scripts-QuantumultX](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX)
+- [ios_rule_scripts](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX)
 
 
