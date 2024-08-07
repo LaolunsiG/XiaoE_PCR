@@ -1,6 +1,7 @@
 # AI
 
 ## 使用规则
+### AI_Globle
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/AI/AI_Globle.list
 ```
