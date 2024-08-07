@@ -1,9 +1,8 @@
-# name: AI
-# 感谢项目：
-# ios_rule_script: https://github.com/blackmatrix7/ios_rule_script
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/AI/AI_Globle.list
+# name: AI_Globle
+# UPDATED: 2024/08/07
 # updata_log: 
-# UPDATED: 2024/07/14
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/AI/AI_Globle.list
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket/AI
 # content: 
 # DOMAIN
 # DOMAIN-SUFFIX
