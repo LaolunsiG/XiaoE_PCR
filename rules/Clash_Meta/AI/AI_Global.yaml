@@ -31,6 +31,7 @@ payload:
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,observeit.net
+  - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,segment.io
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,stripe.com
@@ -38,7 +39,6 @@ payload:
   - DOMAIN-KEYWORD,openai
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
-  - IP-ASN,20473,no-resolve
 #BardAI
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
