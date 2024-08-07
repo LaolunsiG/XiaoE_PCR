@@ -1,16 +1,16 @@
 # NAME: Telegram
-# updata: 2024/07/13
+# updata: 2024-08-07
 # updata_log(更新日志): 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old/Telegram/Telegram_Classical.yaml
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old/Telegram
 # content:
-# DOMAIN: 2
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 22
-# IP-CIDR: 4
-# IP-CIDR6: 4
-# PROCESS-NAME: 4
-# TOTAL: 37
+# DOMAIN: 
+# DOMAIN-KEYWORD: 
+# DOMAIN-SUFFIX: 
+# IP-CIDR: 
+# IP-CIDR6: 
+# PROCESS-NAME: 
+# TOTAL: 
 payload:
   - DOMAIN,api.imem.app
   - DOMAIN,api.swiftgram.app
@@ -49,3 +49,4 @@ payload:
   - PROCESS-NAME,nekox.messenger
   - PROCESS-NAME,org.telegram.messenger
   - PROCESS-NAME,telegram-desktop
+  - PROCESS-NAME,tw.nekomimi.nekogram
