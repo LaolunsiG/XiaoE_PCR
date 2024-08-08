@@ -13,3 +13,4 @@ https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Clash/main/adblock_r
 
 ## 广告拦截规则来源
 - [REIJI007 - AdBlock_Rule_For_Clash](https://github.com/REIJI007/AdBlock_Rule_For_Clash)
+- https://github.com/Loyalsoldier/clash-rules
