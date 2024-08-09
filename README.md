@@ -3,7 +3,7 @@
 - **Clash_Old_Rules(规则)** 可用于旧版 Clash for Android and Clash for Windows。
 
 ## updata log(更新日志)-2024/08/09
-1. 优化了 mihomo 和 Clash old 的配置，去除了不必要的策略组，修改部分 DNS 配置。
+- 优化了 mihomo 和 Clash old 的配置，去除了不必要的策略组，修改部分 DNS 配置。
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
