@@ -1,11 +1,9 @@
-# [Sub-Store](https://github.com/sub-store-org/Sub-Store)
-> IOS极其重要的订阅转化工具。
-
-## 部署（使用）
-- [SaintWe - Sub-Store-Docker](https://github.com/SaintWe/Sub-Store-Docker)
+# [Sub-Store](https://github.com/sub-store-org/Sub-Store) - 订阅转化工具
 
 ## Tutorials(使用教程)
-- [sub-store-org (官方)](https://github.com/sub-store-org/Sub-Store/tree/master/config)
+- [官方 - sub-store-org](https://github.com/sub-store-org/Sub-Store/tree/master/config)
+### Docker 部署（使用）
+- [SaintWe - Sub-Store-Docker](https://github.com/SaintWe/Sub-Store-Docker)
 
 ## Sub-Store使用的脚本
 > 直接将脚本导入就好了
