@@ -12,3 +12,4 @@ https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/We
 
 ## 规则来源
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Weibo/Weibo.list
+https://whatshub.top/rule/Weibo.list
