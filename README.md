@@ -2,7 +2,7 @@
 > 本存储库会将一些规则合在一起，以便于使用。Clash 因不在未更新，不支持新规则和新的加密，所以创建此自用存储库。
 - [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-## updata log(更新日志)-2024/08/09
+## updata log(更新日志)-2024/08/11
 - 修改了 shadowrocket 的配置文件。
 
 ## Other_Tutorials(其他教程)
