@@ -3,7 +3,7 @@
 - [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
 ## updata log(更新日志)-2024/08/11
-- 修改了 shadowrocket 的配置文件。
+- 修改 loon 的策略组和移动了部分配置区域。
 
 ## Other_Tutorials(其他教程)
 - [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
