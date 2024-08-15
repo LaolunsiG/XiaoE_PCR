@@ -388,9 +388,9 @@ proxy-groups:
   - {name: 🚀 策略选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场节点优选, 🛫 机场负载均衡, 🗺 地区选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
   # 模块化选择
   - {name: 🗺 地区选择, <<: *Select, lazy: true, hidden: false, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
-  - {name: 🛫 机场节点优选, <<: *Select, lazy: true, hidden: false, proxies: [机场1节点优选, 机场2节点优选, 机场3节点优选. 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
-  - {name: 🛫 机场负载均衡, <<: *Select, lazy: true, hidden: false, proxies: [机场1负载均衡, 机场2负载均衡, 机场3负载均衡. 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
   # 机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10
+  - {name: 🛫 机场节点优选, <<: *Select, lazy: true, hidden: false, proxies: [机场1节点优选, 机场2节点优选, 机场3节点优选, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  - {name: 🛫 机场负载均衡, <<: *Select, lazy: true, hidden: false, proxies: [机场1负载均衡, 机场2负载均衡, 机场3负载均衡, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
   # 机场测试
   ## 优选节点
   - {name: 机场1节点优选, <<: *UrlTest1, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
