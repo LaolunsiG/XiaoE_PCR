@@ -374,7 +374,7 @@ Select: &Select {type: select, url: 'http://www.google.com/generate_204', disabl
 ## 机场专用锚点
 Select1: &Select1 {type: select, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true}
 UrlTest1: &UrlTest1 {type: url-test, tolerance: 20, url: 'http://www.google.com/generate_204', interval: 60, disable-udp: false, timeout: 5000, max-failed-times: 3,lazy: true, hidden: false}
-LoadBalance1: &LoadBalance1 {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 180, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: false}
+LoadBalance1: &LoadBalance1 {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 180, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true}
 ## 地区节点筛选锚点
 Region: &Region {type: select, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true}
 
