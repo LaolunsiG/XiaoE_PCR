@@ -1,26 +1,26 @@
 # XiaoE_Clash_Meta
-# 配置来源
+# 参考的配置
 # 1. https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
 # 2. https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
 # 3. https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
 # 4. https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
-# updata：2024/08/08
+# updata：2024/08/15
 # updata_log(更新日志)：策略组修改，DNS配置修改。
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 # 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 
 
-
-# 出站代理
+# 出站配置
 # 锚点-节点订阅的参数 [每12小时更新一次订阅节点，每 600 秒一次健康检查]
 # url:机场订阅链接，使用 Clash 链接
 # filter:初步筛选需要的节点，可有效减轻路由器压力，支持正则表达式，不筛选可删除此配置项
 # health-check:未选择到当前代理集合时，不会进行测试，有多个代理集合时可使用
 NodeParam: &NodeParam {type: http, interval: 43200, health-check: {enable: true, lazy: true, url: 'http://www.google.com/generate_204', interval: 600}}
 
-# 本地节点，你的自建节点
+# 出站-本地节点，你的自建节点
 proxies: null
 
+# 出站代理集
 proxy-providers:
   机场1:
     url: ""
@@ -43,54 +43,55 @@ proxy-providers:
     override:
       additional-prefix: "[机场3]"
   
-  机场4:
-    url: ""
-    <<: *NodeParam
-    path: ./proxies/airport4.yaml
-    override:
-      additional-prefix: "[机场4]"
+  # 机场4:
+  #   url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport4.yaml
+  #   override:
+  #     additional-prefix: "[机场4]"
   
-  机场5:
-    url: ""
-    <<: *NodeParam
-    path: ./proxies/airport5.yaml
-    override:
-      additional-prefix: "[机场5]"
+  # 机场5:
+  #   url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport5.yaml
+  #   override:
+  #     additional-prefix: "[机场5]"
   
-  机场6:
-    url: ""
-    <<: *NodeParam
-    path: ./proxies/airport6.yaml
-    override:
-      additional-prefix: "[机场6]"
+  # 机场6:
+  #   url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport6.yaml
+  #   override:
+  #     additional-prefix: "[机场6]"
   
-  机场7:
-    url: ""
-    <<: *NodeParam
-    path: ./proxies/airport7.yaml
-    override:
-      additional-prefix: "[机场7]"
+  # 机场7:
+  #   url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport7.yaml
+  #   override:
+  #     additional-prefix: "[机场7]"
   
-  机场8:
-    url: ""
-    <<: *NodeParam
-    path: ./proxies/airport8.yaml
-    override:
-      additional-prefix: "[机场8]"
+  # 机场8:
+  #   url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport8.yaml
+  #   override:
+  #     additional-prefix: "[机场8]"
   
-  机场9:
-     url: ""
-    <<: *NodeParam
-    path: ./proxies/airport9.yaml
-    override:
-      additional-prefix: "[机场9]"
+  # 机场9:
+  #    url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport9.yaml
+  #   override:
+  #     additional-prefix: "[机场9]"
   
-  机场10:
-    url: ""
-    <<: *NodeParam
-    path: ./proxies/airport10.yaml
-    override:
-      additional-prefix: "[机场10]"
+  # 机场10:
+  #   url: ""
+  #   <<: *NodeParam
+  #   path: ./proxies/airport10.yaml
+  #   override:
+  #     additional-prefix: "[机场10]"
+
 
 # 全局配置
 allow-lan: true # 允许局域网连接
@@ -131,8 +132,7 @@ geox-url: # 自定义 geodata url（更新地址）
   asn: 'https://gitlab.com/Loon0x00/loon_data/-/raw/main/geo/GeoLite2-ASN.mmdb'
 
 
-
-# 入站配置
+# 入站
 # 代理端口配置
 port: 7890 # http 代理端口
 socks-port: 7891 # SOCKS5 代理服务端口
@@ -153,7 +153,7 @@ tun:
 # 嗅探域名 可选配置
 sniffer:
   enable: true  
-  force-dns-mapping: true # 对 redir-host 类型识别的流量进行强制嗅探
+  force-dns-mapping: true # 对redir-host类型识别的流量进行强制嗅探
   parse-pure-ip: true # 对所有未获取到域名的流量进行强制嗅探
   override-destination: true # 访问嗅探后的地址
   sniff: {HTTP: {ports: [80, 8080-8880], override-destination: true}, TLS: {ports: [443, 8443]}, QUIC: {ports: [443, 8443]}}
@@ -171,7 +171,7 @@ dns:
   enable: true # 关闭将使用系统 DNS
   prefer-h3: false # 优先使用 DOH 的 http/3
   listen: 0.0.0.0:1053 # 开启 DNS 服务器监听
-  #ipv6: true # 要启用时，全局配置的 ipv6 也要启用。
+  #ipv6: true
   # fake IP 是为了让终端第一时间发起连接，进入分流阶段，后续和系统代理相同。
   # 来源：1. https://www.pupboss.com/post/2024/clash-tun-fake-ip-best-practice/
   # 2. https://blog.skk.moe/post/what-happend-to-dns-in-proxy/#Ru-Guo-Cao-Zuo-Xi-Tong-Huo-Zhe-Liu-Lan-Qi-Huan-Cun-Liao-DNS-Jie-Xi-Jie-Guo
@@ -296,48 +296,48 @@ dns:
     #- https://1.12.12.12/dns-query
     #- https://1.1.1.1/dns-query
   # 专用于节点域名解析的 DNS 服务器，非必要配置项，因为大部分的代理服务器都是 IP 地址。
-  #proxy-server-nameserver:
-  #  - '1.1.1.1'
-  #  - 'tls://8.8.8.8'
+  proxy-server-nameserver:
+    - 'https://223.5.5.5/dns-query#DIRECT&h3=true'
+    - 'https://1.12.12.12/dns-query#DIRECT' # 119.29.29.29
   #  DNS 分流，指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询。
   nameserver-policy: 
     # 广告拦截
     'geosite:ads': rcode://success
     'rule-set:Ad_Domain': rcode://success
     # 国内分流
-    'geosite:cn,private': ['1.2.4.8', 'system']
-    'rule-set:CN1': ['1.2.4.8', 'system']
+    'geosite:cn,private': ['1.2.4.8', 'dhcp://system']
+    'rule-set:CN1': ['1.2.4.8', 'dhcp://system']
     #'rule-set:microsoft-cn,apple-cn,google-cn,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
     #'rule-set:proxy': ['https://dns.google/dns-query#🚀 策略选择', 'https://cloudflare-dns.com/dns-query#🚀 策略选择']
   # 最好配置无污染的 DNS 服务器和响应速度快的境外 DNS 服务器，或者自己搭建一个。一般公司 DNS 只会污染重点关照的服务器，例如 GFW 里的服务。
   # 默认的域名解析服务器，解析代理服务器的 IP 地址；匹配直连策略或遇到 IP 规则时会进行本地（直连） DNS 解析，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析。
   # 支持 UDP，TCP，DoT，DoH，DoQ
   nameserver:
-    - 'https://223.5.5.5/dns-query#DIRECT&h3=true'
+    - 'https://223.5.5.5/dns-query#DIRECT&h3=true' # 指定策略组和使用 HTTP/3（并发查询 h2 和 h3）
     - 'https://1.12.12.12/dns-query#DIRECT' # 119.29.29.29
-    #- 'https://1.1.1.1/dns-query#🇭🇰 香港&h3=true' # 指定策略组和使用 HTTP/3
+    #- 'https://1.1.1.1/dns-query#🇭🇰 香港&h3=true' # 指定策略组和使用 HTTP/3（并发查询 h2 和 h3）
     #- 'https://8.8.8.8/dns-query#🇭🇰 香港&h3=true' # 指定策略组和使用 HTTP/3
   # 在 fake-ip 模式下不建议配置 fallback，来源 https://www.pupboss.com/post/2024/clash-tun-fake-ip-best-practice/
   # 当 `fallback` 存在时, DNS 服务器将向此部分中的服务器与 `nameservers` 中的服务器发送并发请求
   fallback: # 配置 fallback后默认启用 fallback-filter,geoip-code为 cn
     # 一般情况下使用境外 DNS, 保证结果可信
-    - 'https://8.8.8.8/dns-query#DIRECT&h3=true' # 指定策略组和使用 HTTP/3
-    - 'https://1.1.1.1/dns-query#DIRECT&h3=true' # 指定策略组和使用 HTTP/3
+    - 'https://8.8.8.8/dns-query#🇭🇰 香港&h3=true' # 指定策略组和使用 HTTP/3（并发查询 h2 和 h3）
+    - 'https://1.1.1.1/dns-query#🇭🇰 香港&h3=true' 
   # 后备域名解析服务器筛选，满足条件的将使用 fallback结果或只使用 fallback解析，这是对抗 DNS 污染攻击的一种措施。
   fallback-filter:
-    geoip: true # 是否启用 fallback filter
+    geoip: false # 是否启用 geoip 检测
     # 除了 geoip-code 配置的国家 IP, 其他的 IP 结果会被视为污染，将采用 fallback结果。
-    geoip-code: CN 
+    geoip-code: CN
     # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果。
-    ipcidr:
-      - 240.0.0.0/4
+    ipcidr: [240.0.0.0/4, 0.0.0.0/32, 127.0.0.1/32]
     # geosite 列表的内容被视为已污染，匹配到 geosite 的域名，将只使用 fallback 解析，不去使用 nameserver.
     #geosite: [gfw]
     # 这些域名被视为已污染，匹配到这些域名，会直接使用 fallback解析，不去使用 nameserver。
-    #domain:
-      #- '+.google.com'
-      #- '+.facebook.com'
-      #- '+.youtube.com'
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+
 
 # 策略组(代理组)
 # 锚点 - 节点筛选组
@@ -363,18 +363,20 @@ FilterIN: &FilterIN '(?i)🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic
 # 策略组参数锚点
 # 锚点 - 时延优选参数 [每 6 秒一次惰性健康检查，容差 20ms，时延超过 5 秒判定为失败，失败 3 次则自动触发健康检查]
 UrlTest: &UrlTest {type: url-test, tolerance: 20, url: 'http://www.google.com/generate_204', interval: 60, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: false, include-all-providers: true}
-## 机场测试
-UrlTest1: &UrlTest1 {type: url-test, tolerance: 20, url: 'http://www.google.com/generate_204', interval: 60, disable-udp: false, timeout: 5000, max-failed-times: 3,lazy: true, hidden: false}
 # 锚点 - 故障转移参数 [每 6 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
 FallBack: &FallBack {type: fallback, url: 'http://www.google.com/generate_204', interval: 60, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true, include-all-providers: true}
 # 锚点 - 负载均衡参数 [每 6 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
-LoadBalance: &LoadBalance {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 300, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true, include-all-providers: true}
-## 机场专用
-LoadBalance1: &LoadBalance1 {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 300, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: false}
-## 机场专用
+LoadBalance: &LoadBalance {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 180, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true, include-all-providers: true}
 # 锚点 - 手动选择参数 [每 6 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
 Select: &Select {type: select, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3}
+
+## 机场专用锚点
 Select1: &Select1 {type: select, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true}
+UrlTest1: &UrlTest1 {type: url-test, tolerance: 20, url: 'http://www.google.com/generate_204', interval: 60, disable-udp: false, timeout: 5000, max-failed-times: 3,lazy: true, hidden: false}
+LoadBalance1: &LoadBalance1 {type: load-balance, strategy: consistent-hashing, url: 'http://www.google.com/generate_204', interval: 180, disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: false}
+## 地区节点筛选锚点
+Region: &Region {type: select, url: 'http://www.google.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3, lazy: true, hidden: true}
+
 # 其他参数
 # 测速链接:
 # 节点测速链接(代理测速)：http://www.gstatic.com/generate_204；http://www.google.com/generate_204; 
@@ -382,21 +384,36 @@ Select1: &Select1 {type: select, url: 'http://www.google.com/generate_204', disa
 
 proxy-groups:
   # 手动选择(select)国家或地区节点；根据“国家或地区策略组”名称对 `proxies` 值进行增删改，须一一对应
-  - {name: 🚀 策略选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场选择, 🗺 地区选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
+  - {name: 🚀 策略选择, <<: *Select, lazy: true, hidden: false, proxies: [🛫 机场节点优选, 🛫 机场负载均衡, 🗺 地区选择, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Rocket.png}
   # 模块化选择
   - {name: 🗺 地区选择, <<: *Select, lazy: true, hidden: false, proxies: [🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Accommodation/Map.png}
-  - {name: 🛫 机场选择, <<: *Select, lazy: true, hidden: false, proxies: [机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10, 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  - {name: 🛫 机场节点优选, <<: *Select, lazy: true, hidden: false, proxies: [机场1节点优选, 机场2节点优选, 机场3节点优选. 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  - {name: 🛫 机场负载均衡, <<: *Select, lazy: true, hidden: false, proxies: [机场1负载均衡, 机场2负载均衡, 机场3负载均衡. 🎯 全球直连], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Airport.png}
+  # 机场1, 机场2, 机场3, 机场4, 机场5, 机场6, 机场7, 机场8, 机场9, 机场10
   # 机场测试
-  - {name: 机场1, <<: *LoadBalance1, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场2, <<: *LoadBalance1, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场3, <<: *LoadBalance1, use: [机场3], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场4, <<: *LoadBalance1, use: [机场4], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场5, <<: *LoadBalance1, use: [机场5], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场6, <<: *LoadBalance1, use: [机场6], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场7, <<: *LoadBalance1, use: [机场7], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场8, <<: *LoadBalance1, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场9, <<: *LoadBalance1, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
-  - {name: 机场10, <<: *LoadBalance1, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  ## 优选节点
+  - {name: 机场1节点优选, <<: *UrlTest1, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场2节点优选, <<: *UrlTest1, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场3节点优选, <<: *UrlTest1, use: [机场3], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场4节点优选, <<: *UrlTest1, use: [机场4], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场5节点优选, <<: *UrlTest1, use: [机场5], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场6节点优选, <<: *UrlTest1, use: [机场6], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场7节点优选, <<: *UrlTest1, use: [机场7], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场8节点优选, <<: *UrlTest1, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场9节点优选, <<: *UrlTest1, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场10节点优选, <<: *UrlTest1, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  ## 负载均衡
+  - {name: 机场1负载均衡, <<: *LoadBalance1, use: [机场1], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场2负载均衡, <<: *LoadBalance1, use: [机场2], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  - {name: 机场3负载均衡, <<: *LoadBalance1, use: [机场3], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场4, <<: *LoadBalance1, use: [机场4], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场5, <<: *LoadBalance1, use: [机场5], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场6, <<: *LoadBalance1, use: [机场6], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场7, <<: *LoadBalance1, use: [机场7], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场8, <<: *LoadBalance1, use: [机场8], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场9, <<: *LoadBalance1, use: [机场9], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  # - {name: 机场10, <<: *LoadBalance1, use: [机场10], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png}
+  
   # 兜底策略组
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 策略选择, 🎯 全球直连, 🇭🇰 香港, 🇨🇳 台湾, 🇯🇵 日本, 🇰🇷 韩国, 🇸🇬 新加坡, 🇨🇦 加拿大, 🇺🇸 美国, 🇬🇧 英国, 🇫🇷 法国, 🇩🇪 德国, 🇮🇳 印度], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png} 
   # 选择`🎯 全球直连`为测试本地网络（运营商网络速度和 IPv6 支持情况），可选择其它节点用于测试机场节点速度和 IPv6 支持情况
@@ -445,26 +462,24 @@ proxy-groups:
   - {name: 🛑 全球拦截, type: select, proxies: [REJECT, REJECT-DROP, PASS], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Reject.png}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
   # ----------------国家或地区策略组--------------------
-  # 地区节点选择
-  # 节点负载均衡(load-balance)，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
-  # 自动选择节点(url-test)，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 50ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
+  # 手动选择策略组（Select）
   # 亚洲
-  - {name: 🇭🇰 香港, <<: *Select1, proxies: [⏱ 香港时延优选策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
-  - {name: 🇨🇳 台湾, <<: *Select1, proxies: [⏱ 台湾时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
-  - {name: 🇯🇵 日本, <<: *Select1, proxies: [⏱ 日本时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
-  - {name: 🇰🇷 韩国, <<: *Select1, proxies: [⏱ 韩国时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
-  - {name: 🇸🇬 新加坡, <<: *Select1, proxies: [⏱ 新加坡时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
+  - {name: 🇭🇰 香港, <<: *Select1, proxies: [⏱ 香港时延优选策略组, 🎛 香港负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: 🇨🇳 台湾, <<: *Select1, proxies: [⏱ 台湾时延优选策略组, 🎛 台湾负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
+  - {name: 🇯🇵 日本, <<: *Select1, proxies: [⏱ 日本时延优选策略组, 🎛 日本负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
+  - {name: 🇰🇷 韩国, <<: *Select1, proxies: [⏱ 韩国时延优选策略组, 🎛 韩国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
+  - {name: 🇸🇬 新加坡, <<: *Select1, proxies: [⏱ 新加坡时延优选策略组, 🎛 新加坡负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
   # 美洲
-  - {name: 🇨🇦 加拿大, <<: *Select1, proxies: [⏱ 加拿大时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
-  - {name: 🇺🇸 美国, <<: *Select1, proxies: [⏱ 美国时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
+  - {name: 🇨🇦 加拿大, <<: *Select1, proxies: [⏱ 加拿大时延优选策略组, 🎛 加拿大负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
+  - {name: 🇺🇸 美国, <<: *Select1, proxies: [⏱ 美国时延优选策略组, 🎛 美国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
   # 欧洲  
-  - {name: 🇬🇧 英国, <<: *Select1, proxies: [⏱ 英国时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
-  - {name: 🇫🇷 法国, <<: *Select1, proxies: [⏱ 法国时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
-  - {name: 🇩🇪 德国, <<: *Select1, proxies: [⏱ 德国时延优选策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png}
+  - {name: 🇬🇧 英国, <<: *Select1, proxies: [⏱ 英国时延优选策略组, 🎛 英国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
+  - {name: 🇫🇷 法国, <<: *Select1, proxies: [⏱ 法国时延优选策略组, 🎛 法国负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
+  - {name: 🇩🇪 德国, <<: *Select1, proxies: [⏱ 德国时延优选策略组, 🎛 德国负载均衡策略组], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png}
   # 非洲
-  - {name: 🇮🇳 印度, <<: *Select1, proxies: [⏱ 印度时延优选策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  - {name: 🇮🇳 印度, <<: *Select1, proxies: [⏱ 印度时延优选策略组, 🎛 印度负载均衡策略组], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
 
-  # 时延优选策略组
+  # 时延优选策略组(url-test)，即按照 url 测试结果使用延迟最低的节点；测试后容差大于 50ms 才会切换到延迟低的那个节点；未选择到当前策略组时不会进行延迟测试；筛选出“香港”节点，支持正则表达式
   ## 亚洲
   - {name: ⏱ 香港时延优选策略组, <<: *UrlTest, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
   - {name: ⏱ 台湾时延优选策略组, <<: *UrlTest, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
@@ -480,6 +495,24 @@ proxy-groups:
   - {name: ⏱ 德国时延优选策略组, <<: *UrlTest, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
   ## 非洲
   - {name: ⏱ 印度时延优选策略组, <<: *UrlTest, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+  
+  # 负载均衡策略组(load-balance)，即将请求均匀分配到多个节点上，优点是更稳定，速度可能有提升；将相同顶级域名的请求分配给策略组内的同一个代理节点；推荐在节点复用比较多的情况下使用
+  ## 亚洲
+  - {name: 🎛 香港负载均衡策略组, <<: *LoadBalance, filter: *FilterHK, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: 🎛 台湾负载均衡策略组, <<: *LoadBalance, filter: *FilterTW, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
+  - {name: 🎛 日本负载均衡策略组, <<: *LoadBalance, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png}
+  - {name: 🎛 韩国负载均衡策略组, <<: *LoadBalance, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png}
+  - {name: 🎛 新加坡负载均衡策略组, <<: *LoadBalance, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png}
+  ## 美洲
+  - {name: 🎛 加拿大负载均衡策略组, <<: *LoadBalance, filter: *FilterCA, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CA.png}
+  - {name: 🎛 美国负载均衡策略组, <<: *LoadBalance, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png}
+  ## 欧洲
+  - {name: 🎛 英国负载均衡策略组, <<: *LoadBalance, filter: *FilterUK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png}
+  - {name: 🎛 法国负载均衡策略组, <<: *LoadBalance, filter: *FilterFR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/FR.png}
+  - {name: 🎛 德国负载均衡策略组, <<: *LoadBalance, filter: *FilterDE, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DE.png}
+  ## 非洲
+  - {name: 🎛 印度负载均衡策略组, <<: *LoadBalance, filter: *FilterIN, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IN.png}
+
 
 # 路由规则
 # 锚点 - 规则参数 [每小时更新一次订阅规则，更新规则时使用直连策略],默认格式为yaml，可以更改为text。
