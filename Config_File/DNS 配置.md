@@ -27,14 +27,18 @@
    - 缺点：实现和配置相对复杂，可能增加客户端和服务器的处理负担。
 
 ## 推荐的公共DNS服务器
-- [dns.iui.im](https://dns.iui.im/#LOG)
-- [国内好用的DNS](https://blog.lindexi.com/post/%E5%9B%BD%E5%86%85%E5%A5%BD%E7%94%A8%E7%9A%84-DNS-%E5%88%97%E8%A1%A8.html)
-- [免费公共 DNS 服务器大全](https://dns.icoa.cn/) - 需要代理
-- [2024选择适合的公共DNS](https://www.zyha.cn/select-a-good-public-dns-in-2024/)
-- [公共DNS服务器地址(Ipv4/Ipv6)大全](https://config.net.cn/tools/Dns.html)
-- 非加密 DNS(传统 DNS)
+**非加密 DNS(传统 DNS)**
 
 | 服务提供商 | IP地址 |
 | -- | -- |
 | 阿里(Ali)DNS | 223.5.5.5 |
 | 腾讯DNS |  119.29.29.29 |
+
+### 参考来源
+- [dns.iui.im](https://dns.iui.im/#LOG)
+- [国内好用的DNS](https://blog.lindexi.com/post/%E5%9B%BD%E5%86%85%E5%A5%BD%E7%94%A8%E7%9A%84-DNS-%E5%88%97%E8%A1%A8.html)
+- [免费公共 DNS 服务器大全](https://dns.icoa.cn/) - 需要代理
+- [2024选择适合的公共DNS](https://www.zyha.cn/select-a-good-public-dns-in-2024/)
+- [公共DNS服务器地址(Ipv4/Ipv6)大全](https://config.net.cn/tools/Dns.html)
+
+
