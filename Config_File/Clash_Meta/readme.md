@@ -22,9 +22,10 @@
 - [Clash_Meta](https://wiki.metacubex.one/)
 - [Clash_Meta_Old](https://clash-meta.gitbook.io/clash.meta-wiki-older)
 ### Clash.Meta 其他配置
-- [锚点配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash_Meta/%E9%94%9A%E7%82%B9%E9%85%8D%E7%BD%AE.md)
-- 节点筛选-正则表达式
-  - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
+\# [锚点配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash_Meta/%E9%94%9A%E7%82%B9%E9%85%8D%E7%BD%AE.md)
+
+\# 节点筛选-正则表达式
+- [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
 
 ## Clas.hMeta Config(配置文件)
 - [XiaoE_CLash_Meta](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml)
