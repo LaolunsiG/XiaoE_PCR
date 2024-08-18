@@ -1,0 +1,12 @@
+# NAME: Sub-Store_
+# updata_log: 
+# UPDATED: 2024/07/14
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Sub-Store/Sub-Store_Classical.yaml
+# repo: 
+# content: 
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 1
+# TOTAL: 2
+payload: 
+  - DOMAIN,sub-store.vercel.app
+  - DOMAIN-SUFFIX,vercel.app
