@@ -30,7 +30,7 @@
 | Clash_Old  | yaml & json | # |
 | Clash_Meta  | yaml & json | # |
 | Stash | yaml | # |
-| Surfboard | yaml | |
+| Surfboard | INI | # |
 | Surge | INI | # |  
 | Loon | INI | # | 
 | Shadowrocket | INI | # | 
