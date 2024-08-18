@@ -1,8 +1,13 @@
 # XiaoE_Stash
+\# 观前提示
+- IOS 巨魔用户下载的破解 Stash 可能无法使用覆写，正常的分流可以使用，不推荐入手正版30￥，自行配置订阅链接。
+\## 目前发现的问题 
+- 不推荐使用此软件来使用 Sub-soter 容易触发内存限制（必定触发），而且平时使用（只使用分流规则）也会触发，shadowrocket 这个软件也差不多，loon 和 surge 就好很多了。
+- Stash 的 Wiki 好奇怪，感觉少了很多东西，无法合理的进行配置。完全兼容 Clash Premium 的配置
 
-IOS 巨魔用户可能无法使用覆写，正常的分流可以使用，推荐入手正版30￥，自行配置订阅链接。Stash 的 Wiki 好奇怪，感觉少了很多东西，无法合理的进行配置。完全兼容 Clash Premium 的配置
-
+\## 其他
 - 主要配置了地区优选，故障转移，负载均衡，并为每个策略组加上了图标，图标来源**[icon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/icons)**
+
 
 ## APP_Tutorial(使用教程)
 - [Stash_Wiki](https://stash.wiki/) - 官方
