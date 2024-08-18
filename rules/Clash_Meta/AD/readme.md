@@ -1,12 +1,14 @@
 # AD(广告规则)
 
 ## 使用规则
-### domain
+### XiaoE
+\# domain
 ```
 https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
 ```
 
-### classical
+### REIJI007
+\# classical
 ```
 https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Clash/main/adblock_reject.yaml
 ```
