@@ -2,12 +2,20 @@
 
 ## 使用规则
 ### XiaoE
-\# doamin
+\# GFW-lite
+\# Classical
+```
+https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash_Meta/Proxy/GFW-lite_Classical.yaml
+```
+
+\# Proxy
+
+\## doamin
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml
 ```
 
-\# ip
+\## ip
 
 ## 规则来源
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
