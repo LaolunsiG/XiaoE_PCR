@@ -17,7 +17,7 @@
 ## [Geodata](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/GEODATA)
 - https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/GEODATA
 
-## 参考的规则来源
+## 规则来源（参考的规则）
 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢
 - [rules_and_scripts](https://github.com/zhiqiang02/rules_and_scripts)
 - [meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
