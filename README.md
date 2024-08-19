@@ -5,8 +5,7 @@
 ## updata log(更新日志)-2024/08/15
 - 修改 loon 的策略组和移动了部分配置区域。
 
-## [Config(配置文件)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File)
-> 所有的配置文件
+## 不同代理软件的配置文件及其教程
 ### Clash
 - [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
 - [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
@@ -31,7 +30,7 @@
 ## Extension_Tutorial(代理扩展教程/代理工具额外教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
-## Rules(规则)
+## Rules(分流规则)
 - [XiaoE_PCR-Rules-All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 - [XiaoE_PCR-Rules-Clash/Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta)
 - [XiaoE_PCR-Rules-Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket)
