@@ -1,6 +1,7 @@
 # Agency_Wiki(代理知识)
 
 ## 代理链
+- 代理链适合选择机场作为落地节点，免费节点作为中转。
 ### [什么是代理链](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Agency_Wiki/%E4%B8%AD%E8%BD%AC-%E4%BB%A3%E7%90%86%E9%93%BE.pdf)
 
 ### 不同软件如何设置代理链
