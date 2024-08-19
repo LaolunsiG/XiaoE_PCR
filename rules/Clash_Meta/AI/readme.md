@@ -2,7 +2,7 @@
 
 ## 使用规则
 ### XiaoE
-\# AI_Global_Classical
+\# Classical
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/AI/AI_Global.yaml
 ```
