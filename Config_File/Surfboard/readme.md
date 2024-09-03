@@ -30,7 +30,6 @@
 ## Surfboard_Config(配置文件)
 - [XiaoE_Surfboard](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Surfboard/XiaoE_Surfboard.conf)
 ### 大佬的示例配置
-## 配置来源
 - [Rabbit-Spec(深巷有喵)-Surge](https://github.com/Rabbit-Spec/Surge/tree/Master/Conf/Spec)
 - [getsomecat(整点薯条)-surge](https://github.com/getsomecat/GetSomeCats/blob/Surge/FishChips.conf)
 - [Lucky-Surge](https://github.com/As-Lucky/Lucky/blob/main/Lucky-Surge.conf)
