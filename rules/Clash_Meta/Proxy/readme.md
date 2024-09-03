@@ -18,6 +18,11 @@ https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Prox
 
 \## ip
 
+## 包含的规则
+### GFW-lite
+- sub-store
+- GitHub
+
 ## 规则来源
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
 - https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/proxy.yaml
