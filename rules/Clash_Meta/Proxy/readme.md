@@ -20,3 +20,6 @@ https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Prox
 ## 规则来源
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml
 - https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/proxy.yaml
+
+\# Github
+- https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/GitHub/GitHub_No_Resolve.yaml
