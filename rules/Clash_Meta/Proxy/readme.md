@@ -3,7 +3,8 @@
 ## 使用规则
 ### XiaoE
 \# GFW-lite
-\# Classical
+
+\## Classical
 ```
 https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash_Meta/Proxy/GFW-lite_Classical.yaml
 ```
