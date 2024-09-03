@@ -4,8 +4,8 @@
 # 2. https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
 # 3. https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
 # 4. https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
-# updata：2024/08/15
-# updata_log(更新日志)：策略组修改，DNS配置修改。
+# updata：2024/09/03
+# updata_log(更新日志)：修改 geodata 的错误配置。
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 # 图标备用: 📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
@@ -127,10 +127,10 @@ geodata-loader: standard # standard：标准加载器；memconservative：专为
 geo-auto-update: true # 是否自动更新
 geo-update-interval: 24 # 单位h（时），每24小时更新一次
 geox-url: # 自定义 geodata url（更新地址）
-  geoip: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat'
-  geosite: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat'
-  mmdb: 'https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb'
-  asn: 'https://gitlab.com/Loon0x00/loon_data/-/raw/main/geo/GeoLite2-ASN.mmdb'
+  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
 
 
 # 入站
@@ -303,10 +303,10 @@ dns:
   #  DNS 分流，指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询。
   nameserver-policy: 
     # 广告拦截
-    'geosite:ads': rcode://success
+    'geosite:category-ads-all': rcode://success
     'rule-set:Ad_Domain': rcode://success
     # 国内分流
-    'geosite:cn,private': ['1.2.4.8', 'dhcp://system']
+    'geosite:cn,private': ['1.2.4.8', 'dhcp://system'] # dhcp://system 这个 DNS 是安卓专用的，可以删去。
     'rule-set:CN1': ['1.2.4.8', 'dhcp://system']
     #'rule-set:microsoft-cn,apple-cn,google-cn,games-cn': [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
     #'rule-set:proxy': ['https://dns.google/dns-query#🚀 策略选择', 'https://cloudflare-dns.com/dns-query#🚀 策略选择']
