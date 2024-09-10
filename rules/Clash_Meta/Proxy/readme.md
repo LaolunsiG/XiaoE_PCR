@@ -16,7 +16,13 @@ https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash_Meta/Proxy/GFW-lite
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml
 ```
 
-\## ip
+### DustinWin
+\# Proxy
+
+\## domain
+```
+https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/proxy.yaml
+```
 
 ## 包含的规则
 ### GFW-lite
