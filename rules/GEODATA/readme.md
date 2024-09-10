@@ -1,11 +1,13 @@
 # GEODATA
-地理位置相关的数据，通常用于根据地理位置管理网络流量。
+- 地理位置相关的数据，通常用于根据地理位置管理网络流量。
 > 比较重要吧,不懂事什么东西
 
 \# DAT 和 MMDB 文件
 - 是存储 IP 地址和地理位置信息的数据文件，其中 MMDB 是一种更高效的格式，广泛应用于需要快速查询和精确地理位置信息的场景中。
 
 ## 第三方 Geodata 数据库 - 数据类型-文件格式
+\# mohomo - 内核
+- [meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)
 ### GEOIP-基于 IP 地址的地理位置数据库。主要用于根据 IP 地址的地理位置来路由或限制流量。
 \# mmdb
 - [Hackl0us](https://github.com/Hackl0us/GeoIP2-CN/) - 🇨🇳 小巧精悍、准确、实用 GeoIP2 数据库 🇨🇳
