@@ -5,9 +5,10 @@ Clash 因不在未更新，不支持新规则和新的加密，所以创建此�
 \# 观前注意
 - [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-## updata log(更新日志)-2024-9-03
-- 修改 Clash.Meta 配置文件中 geodata 的配置错误，和 dns 分流中的 geosite 的值错误。
-- 为在 clash rules 中的 gfw-lite 添加 GitHub 规则。（之前一直走的是兜底规则，国外代理和国内直连规则都没有匹配。）
+## updata log(更新日志)-2024-9-17
+- 修改 Clash.Meta 的配置文件
+- 增加了部分规则
+- 修改了 loon 的配置文件
 
 ## 不同代理软件的配置文件及其教程
 ### Clash
