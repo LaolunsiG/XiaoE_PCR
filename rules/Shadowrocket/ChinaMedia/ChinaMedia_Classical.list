@@ -1,15 +1,17 @@
 # name: ChinaMedia_Classical
-# updata: 2024/08/06
+# updata: 2024-09-17
 # updata_log: 
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/GFW-lite.yaml
-# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/GFW-lite_Classical.yaml
+# updata_url: https://github.com/LaolunsiG/XiaoE_PCR/raw/main/rules/Shadowrocket/ChinaMedia/ChinaMedia_Classical.list
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/ChinaMedia/ChinaMedia_Classical.list
 # content: 
 # DOMAIN
 # DOMAIN-KEYWORD
 # DOMAIN-SUFFIX
 # 类别分类
 # Bilibili 哔哩哔哩
-# Iqiyi 爱奇艺
+# douying
+# huya
+# douyu
 
 # Bilibili 哔哩哔哩
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
@@ -154,3 +156,24 @@ DOMAIN-SUFFIX,ixiguavideo.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiao.com
+
+# huya
+DOMAIN-SUFFIX,huya.com
+DOMAIN-SUFFIX,huyagame.cn
+DOMAIN-SUFFIX,peiwanlu.com
+DOMAIN-SUFFIX,snapplay.com
+
+# douyu
+DOMAIN-SUFFIX,bytefcdnrd.com
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,douyu.tv
+DOMAIN-SUFFIX,douyuba.cn
+DOMAIN-SUFFIX,douyucdn.cn
+DOMAIN-SUFFIX,douyucdn2.cn
+DOMAIN-SUFFIX,douyupcdn.cn
+DOMAIN-SUFFIX,douyuscdn.com
+DOMAIN-SUFFIX,douyutv.com
+DOMAIN-SUFFIX,doyonoc.com
+DOMAIN-SUFFIX,edgesrv.com
+DOMAIN-SUFFIX,guguyuyin.com
+DOMAIN-SUFFIX,oywtv.com
