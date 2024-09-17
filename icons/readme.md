@@ -1,5 +1,5 @@
 # ICONS(图标集)
-- **主要是为了合并各个图标集**
+> 主要是为了合并各个图标集
 
 ## Icon_Resources
 ### [clash_verge_rev-icon_hub](https://github.com/clash-verge-rev/icon-hub)
@@ -12,7 +12,8 @@
 ### [Clash_Verge_Icons](https://clash-verge-rev.github.io/guide/group_icon/group_icon.html#ua)-图标集合
 - https://clash-verge-rev.github.io/guide/group_icon/group_icon.html#ua
 
-## 文件来源 [感谢以下项目]
+## 图标来源 
+> 感谢以下项目
 - [flag-icons](https://github.com/lipis/flag-icons)
 - [Hand-Painted-icon](https://github.com/Semporia/Hand-Painted-icon)
 - [Qure](https://github.com/Koolson/Qure)
