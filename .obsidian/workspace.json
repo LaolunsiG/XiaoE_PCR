@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rules/Clash_Meta/AI/readme.md",
+                "file": "Agency_Tools/readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "82ac58647b9454d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Config_File/readme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rules/Clash_Meta/AI/readme.md",
+                "file": "Config_File/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rules/Clash_Meta/AI/readme.md",
+                "file": "Config_File/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rules/Clash_Meta/AI/readme.md"
+                "file": "Config_File/readme.md"
               }
             }
           }
@@ -146,8 +159,39 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a3b6ea39ee6f75d6",
+  "active": "82ac58647b9454d2",
   "lastOpenFiles": [
+    "Config_File/DNS 配置.md",
+    "Config_File/节点的正则表达式.md",
+    "测速链接地址.md",
+    "README.md",
+    "文档写作教程.md",
+    "icons/readme.md",
+    "icons/Stash_icons.md",
+    "Picture/测试.png",
+    "Agency_Tools/readme.md",
+    "Agency_Tools/Windows 代理工具.md",
+    "Agency_Tools",
+    "Agency_Wiki/中转-代理链.pdf",
+    "Agency_Wiki/什么是代理链以及如何使用.md",
+    "Agency_Wiki/readme.md",
+    "Extensions/Loon/readme.md",
+    "Extensions/readme.md",
+    "Extensions/Sub-Store/readme.md",
+    "rules/Clash_Meta/AI/readme.md",
+    "rules/规则类型/规则类型.md",
+    "rules/规则类型/Loon 规则类型和规则策略.md",
+    "rules/规则类型",
+    "rules/Shadowrocket/Proxy/readme.md",
+    "rules/Shadowrocket/Proxy/GFW-lite.list",
+    "rules/Shadowrocket/Proxy",
+    "rules/Shadowrocket/GlobalMedia/readme.md",
+    "rules/Shadowrocket/GlobalMedia/GlobalMedia-lite_Classical.list",
+    "rules/Shadowrocket/GlobalMedia",
+    "rules/Shadowrocket/ChinaMedia/readme.md",
+    "rules/Shadowrocket/ChinaMedia/ChinaMedia_Classical.list",
+    "rules/Shadowrocket/ChinaMedia",
+    "rules/Shadowrocket/China/CN-IP.list",
     "rules/Clash_Meta/AD/readme.md",
     "Script/Stash/Tile/磁贴模板.md",
     "Script/Stash/Tile/readme.md"

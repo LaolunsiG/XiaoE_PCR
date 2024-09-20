@@ -2,7 +2,7 @@
 
 \## 多平台
 - [hiddify-next](https://github.com/hiddify/hiddify-next)
-- [Sing_Box](https://github.com/SagerNet/sing-box)
+- [Sing-Box](https://github.com/SagerNet/sing-box)
 
 \## Android
   - [FlClash](https://github.com/chen08209/FlClash)-界面类似surfboard，有bug
