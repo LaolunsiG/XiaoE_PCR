@@ -1,9 +1,8 @@
 # 自用代理资源存储库-XiaoE_PCR
-Clash 因不在未更新，不支持新规则和新的加密，所以创建此自用存储库。
-> 本存储库会将一些规则合在一起，以便于使用。
+Clash 因不再更新，不支持新规则和新的加密，所以创建此自用存储库。本存储库会将一些规则合在一起，以便于使用。
 
 \# 观前注意
-- [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
+- [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
 ## updata log(更新日志)-2024-9-17
 - 修改 Clash.Meta 的配置文件
@@ -40,21 +39,8 @@ Clash 因不在未更新，不支持新规则和新的加密，所以创建此�
 - [XiaoE_PCR-Rules-Clash/Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta)
 - [XiaoE_PCR-Rules-Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket)
 
-## Other_Tutorials(其他教程)
-\# Markdown 语法使用教程
-- [Markdown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)-Github
-- [Markdown 语法&快捷键](https://blog.csdn.net/github_38336924/article/details/82183088)-CSDN
-
-\## 示例
-- https://github.com/Loyalsoldier/clash-rules/tree/master
-- https://github.com/deezertidal/Surge_Module/blob/master/README.md
-
-\# [如何上传图片教程](https://blog.csdn.net/Cassie_zkq/article/details/79968598)-CSDN
-
-\# Naming_Rules(命名规则)
-- **字母，数字，下划线**
-
-\# Noting_Rules(注释规则)
+## Other Wiki
+### Noting_Rules(注释规则)
 
 | 配置文件格式 | (单行)注释符号 | Wiki |
 | -- | :--: | -- |
@@ -73,7 +59,7 @@ Clash 因不在未更新，不支持新规则和新的加密，所以创建此�
 - 任何以任何方式查看此项目的人或直接或间接使用该项目的使用者都应仔细阅读此声明。保留随时更改或补充此免责声明的权利。一旦使用并复制了该项目的任何文件，则视为您已接受此免责声明.
 
 ## 感谢以下项目/人员
-感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢。
+> 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢。
 
 |仓库名|仓库链接/其他链接|Telegram频道|
 |--|--|--|
