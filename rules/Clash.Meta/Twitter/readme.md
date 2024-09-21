@@ -1,6 +1,10 @@
 # Twitter
 
 ## 使用规则
+### Clash 专用
+\# classical
+- https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Twitter/Clash-Twitter-Classical.yaml
+
 ### XiaoE
 \# Classical
 ```
