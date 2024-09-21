@@ -2,11 +2,12 @@
 # updata: 2024-09-21
 # updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml
-# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFWlite_Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml
 # content: 
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 29
+
 payload:
   - DOMAIN,dns.icoa.cn
 # Github
