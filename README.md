@@ -4,15 +4,15 @@ Clash 因不再更新，不支持新规则和新的加密，所以创建此自�
 \# 观前注意
 - [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-## updata log(更新日志)-2024-9-17
-- 修改 Clash.Meta 的配置文件
-- 增加了部分规则
-- 修改了 loon 的配置文件
+## updata log(更新日志)-2024-9-21
+- 合并 clash 和 clash.meta 的规则库
+- 修改并优化 clash 的配置文件
+
 
 ## 不同代理软件的配置文件及其教程
 ### Clash
-- [Clash_Old](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
-- [Clash_Meta/Clash_New](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
+- [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash)
+- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta)
 
 ### [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)
 > 此软件还未完善，不推荐使用
@@ -31,13 +31,17 @@ Clash 因不再更新，不支持新规则和新的加密，所以创建此自�
 ### [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)
 > IOS上最贵的代理工具，也是功能最全的代理工具。
 
-## Extension_Tutorial(代理扩展教程/代理工具额外教程)
+## Other_Tutorials(其他教程)
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
 ## Rules(分流规则)
-- [XiaoE_PCR-Rules-All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
-- [XiaoE_PCR-Rules-Clash/Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Meta)
-- [XiaoE_PCR-Rules-Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket)
+- [All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
+### 规则分类
+
+| 软件/内核 | 规则 |
+| -- | -- |
+| Clash/Stash | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta |
+| Shadowrocket | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket |
 
 ## Other Wiki
 ### Noting_Rules(注释规则)
