@@ -1,13 +1,14 @@
 # NAME: Twitter
-# updata: 2024/07/19
+# updata: 2024-09-21
 # updata_log(更新日志): 
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old/Twitter/Twitter_Classical.yaml
-# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old/Twitter
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Twitter/Twitter-Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Twitter
 # content:
 # DOMAIN-KEYWORD: 
 # DOMAIN-SUFFIX: 
 # IP-CIDR: 
 # TOTAL: 
+
 payload:
   - DOMAIN-SUFFIX,ads-twitter.com
   - DOMAIN-SUFFIX,cms-twdigitalassets.com
