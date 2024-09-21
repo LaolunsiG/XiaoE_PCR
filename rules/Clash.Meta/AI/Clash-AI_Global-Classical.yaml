@@ -1,13 +1,19 @@
-# name: AI
-# updata: 2024/08/18
-# updata_log(更新日志): 增加规则
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old/AI/AI_Global_Classical.yaml
-# repo: https://github.com/LaolunsiG/XiaoE_PCR/edit/main/rules/Clash_Old/AI/AI_Global_Classical.yaml
-# content: 
+# name: AI_Global
+# updata: 2024-09-21
+# updata_log(更新日志): 
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/AI/Clash-AI_Global-Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/AI/Clash-AI_Global-Classical.yaml
+# content(规则类型): 
 # DOMAIN
 # DOMAIN-SUFFIX
 # DOMAIN-KEYWORD
 # IP-CIDR
+
+# 包含的规则：
+# OpenAI
+# BardAI
+# 微软AI(Copilot)
+
 payload:
 # OpenAI
   - DOMAIN,browser-intake-datadoghq.com
