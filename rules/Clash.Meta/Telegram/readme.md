@@ -4,7 +4,7 @@
 ### Clash 专用
 \#  Classical
 ```
-https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old/Telegram/Telegram_Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml
 ```
 
 ### XiaoE
