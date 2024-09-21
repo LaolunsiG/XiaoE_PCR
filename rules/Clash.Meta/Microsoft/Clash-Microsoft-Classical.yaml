@@ -1,13 +1,13 @@
 # name: /Microsoft
-# 感谢项目：
-# origin_url-only_one: 
-# updata: 2024/07/25
+# updata: 2024-09-21
 # updata_log(更新日志): 
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old//Microsoft/Microsoft_Classical.yaml
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta//Microsoft/Clash-Microsoft-Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/Microsoft
 # content: 
 # DOMAIN
 # DOMAIN-SUFFIX
 # DOMAIN-KEYWORD
+
 payload:
   - DOMAIN,vsmarketplacebadge.apphb.com
   - DOMAIN-SUFFIX,1drv.ms
