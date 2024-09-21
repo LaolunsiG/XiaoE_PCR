@@ -4,7 +4,7 @@
 ### XiaoE
 \# Classical
 ```
-https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Old/Twitter/Twitter_Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Twitter/Twitter-Classical.yaml
 ```
 
 ## 规则来源
