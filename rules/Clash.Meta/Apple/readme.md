@@ -1,11 +1,12 @@
-# Apple(苹果服务)
+# Apple
+- Apple 服务
 ## 使用规则
 ### XiaoE
 \# domain
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Apple/Apple_Domain.yaml
 ```
-
+\# Classical
 
 
 

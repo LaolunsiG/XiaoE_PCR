@@ -1,5 +1,5 @@
-# Proxy(代理规则)
-
+# Proxy
+- 国外代理规则
 ## 使用规则
 ### XiaoE
 \# GFW-lite

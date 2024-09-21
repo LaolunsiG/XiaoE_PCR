@@ -1,4 +1,4 @@
-# AD(广告规则)
+# Advertising(广告规则)
 
 ## 使用规则
 ### XiaoE
