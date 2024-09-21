@@ -4,16 +4,17 @@
 ### XiaoE
 \# GFW-lite
 
-\## Classical
+\## classical
 ```
-https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash_Meta/Proxy/GFW-lite_Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFW-lite_Classical.yaml
 ```
 
+### DustinWin
 \# Proxy
 
 \## doamin
 ```
-https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Proxy/Proxy_Domain.yaml
+https://fastly.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/proxy.yaml
 ```
 
 \## ip
