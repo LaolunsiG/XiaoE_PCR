@@ -5,7 +5,7 @@
 \# Agent_Software(代理软件)
 
 \## 多平台
-- [hiddify-next](https://github.com/hiddify/hiddify-next)-
+- [hiddify-next](https://github.com/hiddify/hiddify-next)
 - [Sing-Box](https://github.com/SagerNet/sing-box)
 
 \## Android_APP
