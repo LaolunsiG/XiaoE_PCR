@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Agency_Tools/readme.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "82ac58647b9454d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Config_File/readme.md",
+                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Config_File/readme.md",
+                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Config_File/readme.md",
+                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Config_File/readme.md"
+                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md"
               }
             }
           }
@@ -159,41 +146,44 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "82ac58647b9454d2",
+  "active": "d5152f1ca185b235",
   "lastOpenFiles": [
-    "Config_File/DNS 配置.md",
-    "Config_File/节点的正则表达式.md",
-    "测速链接地址.md",
-    "README.md",
-    "文档写作教程.md",
-    "icons/readme.md",
-    "icons/Stash_icons.md",
-    "Picture/测试.png",
+    "Config_File/Clash.Meta/锚点配置.md",
+    "Config_File/Clash.Meta/代理组图标配置.md",
+    "Config_File/Clash.Meta/readme.md",
+    "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
+    "Config_File/Clash/2.路由规则配置.md",
+    "Config_File/Clash/1.全局配置及入站.md",
+    "Config_File/Clash/3.出站配置.md",
+    "Config_File/Clash/4.DNS配置.md",
+    "Config_File/Clash/readme.md",
+    "rules/Clash.Meta/AI/readme.md",
     "Agency_Tools/readme.md",
-    "Agency_Tools/Windows 代理工具.md",
-    "Agency_Tools",
-    "Agency_Wiki/中转-代理链.pdf",
-    "Agency_Wiki/什么是代理链以及如何使用.md",
-    "Agency_Wiki/readme.md",
-    "Extensions/Loon/readme.md",
-    "Extensions/readme.md",
-    "Extensions/Sub-Store/readme.md",
-    "rules/Clash_Meta/AI/readme.md",
-    "rules/规则类型/规则类型.md",
-    "rules/规则类型/Loon 规则类型和规则策略.md",
-    "rules/规则类型",
-    "rules/Shadowrocket/Proxy/readme.md",
-    "rules/Shadowrocket/Proxy/GFW-lite.list",
-    "rules/Shadowrocket/Proxy",
-    "rules/Shadowrocket/GlobalMedia/readme.md",
-    "rules/Shadowrocket/GlobalMedia/GlobalMedia-lite_Classical.list",
-    "rules/Shadowrocket/GlobalMedia",
-    "rules/Shadowrocket/ChinaMedia/readme.md",
-    "rules/Shadowrocket/ChinaMedia/ChinaMedia_Classical.list",
-    "rules/Shadowrocket/ChinaMedia",
-    "rules/Shadowrocket/China/CN-IP.list",
-    "rules/Clash_Meta/AD/readme.md",
-    "Script/Stash/Tile/磁贴模板.md",
-    "Script/Stash/Tile/readme.md"
+    "rules/Clash.Meta/Twitter/Clash-Twitter-Classical.yaml",
+    "rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml",
+    "rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml",
+    "rules/Clash.Meta/PayPal/Clash-PayPal-Classical.yaml",
+    "rules/Clash.Meta/Microsoft/Clash-Microsoft-Classical.yaml",
+    "rules/Clash.Meta/Facebook/Clash-Facebook-Classical.yaml",
+    "rules/Clash.Meta/Telegram/readme.md",
+    "rules/Clash.Meta/Proxy/readme.md",
+    "rules/Clash.Meta/Advertising/readme.md",
+    "rules/Clash.Meta/Apple/readme.md",
+    "rules/Clash.Meta/CN/readme.md",
+    "rules/Clash.Meta/Facebook/readme.md",
+    "rules/Clash.Meta/Microsoft/readme.md",
+    "rules/Clash.Meta/PayPal/readme.md",
+    "rules/Clash.Meta/Sub-Store/readme.md",
+    "rules/Clash.Meta/Twitter/readme.md",
+    "Config_File/readme.md",
+    "rules/Clash.Meta/AI/AI_Global-Classical.yaml",
+    "rules/Clash.Meta/Advertising/AD_Domain.yaml",
+    "rules/Clash.Meta/Advertising",
+    "rules/Clash.Meta/Twitter/Twitter_Classical.yaml",
+    "rules/Clash.Meta/AD/readme.md",
+    "rules/Clash.Meta/readme.md",
+    "rules/Clash_Meta/Twitter/readme.md",
+    "rules/Clash_Meta/Telegram/readme.md",
+    "Picture/测试.png"
   ]
 }
