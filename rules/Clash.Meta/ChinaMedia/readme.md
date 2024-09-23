@@ -1,0 +1,10 @@
+# ChinaMedia
+
+## 使用规则
+
+## 规则来源
+### 虎牙
+- https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa_No_Resolve.yaml
+
+### 斗鱼
+- https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu_No_Resolve.yaml
