@@ -1,0 +1,33 @@
+# name: ChinaMedia
+# updata: 2024-09-23
+# updata_log(更新日志): 
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/AI/AI_Global-Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/ChinaMedia
+# content(规则类型): 
+# DOMAIN-SUFFIX
+
+# 规则分类
+# 虎牙
+# 斗鱼
+
+payload:
+# 虎牙
+  - DOMAIN-SUFFIX,huya.com
+  - DOMAIN-SUFFIX,huyagame.cn
+  - DOMAIN-SUFFIX,peiwanlu.com
+  - DOMAIN-SUFFIX,snapplay.com
+
+# 斗鱼
+  - DOMAIN-SUFFIX,bytefcdnrd.com
+  - DOMAIN-SUFFIX,douyu.com
+  - DOMAIN-SUFFIX,douyu.tv
+  - DOMAIN-SUFFIX,douyuba.cn
+  - DOMAIN-SUFFIX,douyucdn.cn
+  - DOMAIN-SUFFIX,douyucdn2.cn
+  - DOMAIN-SUFFIX,douyupcdn.cn
+  - DOMAIN-SUFFIX,douyuscdn.com
+  - DOMAIN-SUFFIX,douyutv.com
+  - DOMAIN-SUFFIX,doyonoc.com
+  - DOMAIN-SUFFIX,edgesrv.com
+  - DOMAIN-SUFFIX,guguyuyin.com
+  - DOMAIN-SUFFIX,oywtv.com
