@@ -1,6 +1,6 @@
 # name: ChinaMedia
-# updata: 2024-09-23
-# updata_log(更新日志): 
+# updata: 2024-09-24
+# updata_log(更新日志): 增加了抖音规则
 # updata_url: https://github.com/LaolunsiG/XiaoE_PCR/raw/refs/heads/main/rules/Clash.Meta/ChinaMedia/ChinaMedia-Classical.yaml
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/ChinaMedia
 # content(规则类型): 
@@ -9,6 +9,7 @@
 # 规则分类
 # 虎牙
 # 斗鱼
+# 抖音
 
 payload:
 # 虎牙
@@ -31,3 +32,18 @@ payload:
   - DOMAIN-SUFFIX,edgesrv.com
   - DOMAIN-SUFFIX,guguyuyin.com
   - DOMAIN-SUFFIX,oywtv.com
+
+# 抖音
+  - DOMAIN,lf3-static.bytednsdoc.com
+  - DOMAIN,v5-dy-o-abtest.zjcdn.com
+  - DOMAIN-SUFFIX,amemv.com
+  - DOMAIN-SUFFIX,douyincdn.com
+  - DOMAIN-SUFFIX,douyinpic.com
+  - DOMAIN-SUFFIX,douyinstatic.com
+  - DOMAIN-SUFFIX,douyinvod.com
+  - DOMAIN-SUFFIX,idouyinvod.com
+  - DOMAIN-SUFFIX,ixigua.com
+  - DOMAIN-SUFFIX,ixiguavideo.com
+  - DOMAIN-SUFFIX,pstatp.com
+  - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,toutiao.com
