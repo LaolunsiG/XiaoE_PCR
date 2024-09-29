@@ -1,0 +1,12 @@
+# NAME: Sub-Store
+# updata_log: 
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Sub_Store/Sub_Store_Classical.list
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket/Sub_Store
+# UPDATED: 2024-09-29
+# content: 
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 1
+# TOTAL: 2
+
+DOMAIN,sub-store.vercel.app
+DOMAIN-SUFFIX,vercel.app
