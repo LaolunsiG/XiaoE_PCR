@@ -6,6 +6,7 @@
 - [Surge_wiki](https://wiki.surge.community/)
 - [Surge_Guidelines](https://surge.mitsea.com/)
 - [erdongchan-surge](https://erdongchan.cn/surgeconf.html)
+- [Surge 其他教程](https://wiki.surge.community/qi-ta-jiao-cheng) 
 ### Surge其他配置
 - [Surge 配置和使用技巧](https://blog.skk.moe/post/i-have-my-unique-surge-setup/)
 - 正则表达式
