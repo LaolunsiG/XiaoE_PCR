@@ -2,7 +2,7 @@
 > 这个软件是订阅制的，很好用就是很贵。这个软件的官方文档也好奇怪。需自行配置订阅链接。
 
 ## APP_Tutorial(使用教程)
-- [surge](https://manual.nssurge.com/)
+- [Surge 保姆级懒人配置 - 耳东橙的日常](https://manual.nssurge.com/)
 - [Surge_wiki](https://wiki.surge.community/)
 - [Surge_Guidelines](https://surge.mitsea.com/)
 - [erdongchan-surge](https://erdongchan.cn/surgeconf.html)
