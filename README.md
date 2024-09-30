@@ -4,10 +4,10 @@
 \# 观前注意
 - [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-## updata log(更新日志)-2024-9-21
-- 合并 clash 和 clash.meta 的规则库
-- 修改并优化 clash 的配置文件
-
+## updata log(更新日志)-2024-09-30
+- 优化了规则页的视觉效果
+- 修改 surge 的配置文件
+- 增加了新规则
 
 ## 不同代理软件的配置文件及其教程
 
