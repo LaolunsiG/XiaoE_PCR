@@ -5,8 +5,8 @@
 
 | 规则分类        |              |       |     |
 | ----------- | ------------ | ----- | --- |
-| Advertising | AI_Global    | Apple |     |
-| ChinaMedia  | ChinaService | CN    |     |
+| [Advertising](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/Advertising) | [AI_Global](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/AI_Global)    | [Apple](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/Apple) |     |
+| [ChinaMedia](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/ChinaMedia)  | [ChinaService ](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/ChinaService)| [CN](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta/CN)    |     |
 | Facebook    |              |       |     |
 | Microsoft   |              |       |     |
 | PayPal      | Proxy        |       |     |
