@@ -23,10 +23,6 @@
 | ^^ |  [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash) |
 | ^^ | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge) | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
-
-## Other_Tutorials(其他教程)
-- [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
-
 ## Rules(分流规则)
 - [All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 ### 规则分类
@@ -37,7 +33,9 @@
 | Shadowrocket | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket |
 | Quantumult_X | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Quantumult_X |
 
-## Other Wiki
+## Other_Tutorials(其他教程)
+- [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
+
 ### Noting_Rules(注释规则)
 
 | 配置文件格式 | (单行)注释符号 | Wiki |
