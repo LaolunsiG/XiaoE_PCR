@@ -18,8 +18,7 @@
 ### [clash_verge_rev-icon_hub](https://github.com/clash-verge-rev/icon-hub)
 
 ## 图标来源 
-> 感谢以下项目
-- [flag-icons](https://github.com/lipis/flag-icons)
-- [Hand-Painted-icon](https://github.com/Semporia/Hand-Painted-icon)
-- [Qure](https://github.com/Koolson/Qure)
+- https://github.com/lipis/flag-icons
+- https://github.com/Semporia/Hand-Painted-icon
+- https://github.com/Koolson/Qure
 

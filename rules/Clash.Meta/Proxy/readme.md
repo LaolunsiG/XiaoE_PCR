@@ -6,9 +6,15 @@
 
 \## classical
 ```
-https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFW-lite_Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFW-lite-Classical.yaml
 ```
 
+\# Proxy
+
+\## domain
+```
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/Proxy_Domain.yaml
+```
 ### DustinWin
 \# Proxy
 

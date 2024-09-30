@@ -2,7 +2,7 @@
 
 ## 使用规则
 ### XiaoE
-\# IP
+\# ip
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/CN/CN-IP.yaml
 ```

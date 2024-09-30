@@ -1,10 +1,11 @@
-# name: Apple_Domain(代理域名集)
-# updata: 2024/08/18
-# updata_log: 
+# name: Apple_Domain
+# updata: 2024-09-30
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Apple/Apple_Domain.yaml
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/edit/main/rules/Clash_Meta/Apple/Apple_Domain.yaml
+# updata_log: 
 # content: 
-# DOMAIN: ?
+# DOMAIN: 
+
 payload:
   - '+.a1.mzstatic.com'
   - '+.a2.mzstatic.com'

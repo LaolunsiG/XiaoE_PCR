@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Config_File/Clash.Meta/Clash.Meta 全配置教程.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,44 +146,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d5152f1ca185b235",
+  "active": "a3b6ea39ee6f75d6",
   "lastOpenFiles": [
-    "Config_File/Clash.Meta/锚点配置.md",
-    "Config_File/Clash.Meta/代理组图标配置.md",
-    "Config_File/Clash.Meta/readme.md",
-    "Config_File/Clash.Meta/Clash.Meta 全配置教程.md",
-    "Config_File/Clash/2.路由规则配置.md",
-    "Config_File/Clash/1.全局配置及入站.md",
-    "Config_File/Clash/3.出站配置.md",
-    "Config_File/Clash/4.DNS配置.md",
-    "Config_File/Clash/readme.md",
-    "rules/Clash.Meta/AI/readme.md",
+    "文档写作教程.md",
+    "README.md",
+    "测速链接地址.md",
     "Agency_Tools/readme.md",
-    "rules/Clash.Meta/Twitter/Clash-Twitter-Classical.yaml",
-    "rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml",
-    "rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml",
-    "rules/Clash.Meta/PayPal/Clash-PayPal-Classical.yaml",
-    "rules/Clash.Meta/Microsoft/Clash-Microsoft-Classical.yaml",
-    "rules/Clash.Meta/Facebook/Clash-Facebook-Classical.yaml",
-    "rules/Clash.Meta/Telegram/readme.md",
-    "rules/Clash.Meta/Proxy/readme.md",
+    "Agency_Tools/Android 代理工具.md",
+    "Agency_Tools/Windows 代理工具.md",
+    "Agency_Wiki/readme.md",
+    "Agency_Wiki/中转-代理链.pdf",
+    "Agency_Wiki/什么是代理链以及如何使用.md",
+    "icons/readme.md",
+    "icons/Stash_icons.md",
+    "Pictures/测试.png",
+    "rules/规则类型/通用规则类型.md",
+    "rules/规则类型/Loon 规则类型和规则策略.md",
+    "rules/Readme.md",
+    "rules/GEODATA/readme.md",
+    "rules/Clash.Meta/readme.md",
     "rules/Clash.Meta/Advertising/readme.md",
+    "rules/Clash.Meta/AI_Global/readme.md",
     "rules/Clash.Meta/Apple/readme.md",
-    "rules/Clash.Meta/CN/readme.md",
     "rules/Clash.Meta/Facebook/readme.md",
     "rules/Clash.Meta/Microsoft/readme.md",
+    "rules/Clash.Meta/ChinaMedia/readme.md",
+    "rules/Clash.Meta/ChinaService/readme.md",
+    "rules/Clash.Meta/CN/readme.md",
     "rules/Clash.Meta/PayPal/readme.md",
+    "rules/Clash.Meta/Proxy/readme.md",
+    "rules/Clash.Meta/Proxy/GFW-lite-Classical.yaml",
     "rules/Clash.Meta/Sub-Store/readme.md",
-    "rules/Clash.Meta/Twitter/readme.md",
-    "Config_File/readme.md",
-    "rules/Clash.Meta/AI/AI_Global-Classical.yaml",
-    "rules/Clash.Meta/Advertising/AD_Domain.yaml",
-    "rules/Clash.Meta/Advertising",
-    "rules/Clash.Meta/Twitter/Twitter_Classical.yaml",
-    "rules/Clash.Meta/AD/readme.md",
-    "rules/Clash.Meta/readme.md",
-    "rules/Clash_Meta/Twitter/readme.md",
-    "rules/Clash_Meta/Telegram/readme.md",
-    "Picture/测试.png"
+    "rules/Clash.Meta/Sub-Store/Sub-Store-Classical.yaml",
+    "rules/Clash.Meta/Sub-Store/Sub-StoreClassical.yaml",
+    "rules/Shadowrocket/Weibo/Weibo-Classical.list",
+    "rules/Shadowrocket/Proxy/GFW-lite-Classical.list",
+    "rules/Shadowrocket/Proxy/GFW-lite-Classical.yaml",
+    "rules/Shadowrocket/Steam/Steam-Classical.list",
+    "rules/Pictures/ceshi.png",
+    "rules/Clash.Meta/Twitter/Clash-Twitter-Classical.yaml",
+    "rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml"
   ]
 }

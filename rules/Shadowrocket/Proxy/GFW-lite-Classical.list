@@ -1,14 +1,20 @@
 # name: GFW-lite
-# updata: 2024-09-17
+# updata: 2024-09-30
 # updata_log: 
-# updata_url: https://github.com/LaolunsiG/XiaoE_PCR/raw/main/rules/Shadowrocket/Proxy/GFW-lite.list
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Proxy/GFW-lite-Classical.list
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Proxy/GFW-lite.list
 # content: 
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 29
-payload:
+
+# 规则分类
+# DNS & IP 地址查询
+# Github
+
+# DNS & IP 地址查询
 DOMAIN,dns.icoa.cn
+
 # Github
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com

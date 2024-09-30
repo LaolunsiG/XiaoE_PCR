@@ -6,9 +6,10 @@
 
 \## Classical
 ```
-https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash_Meta/Proxy/GFW-lite_Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/Proxy/GFW-lite-Classical.list
 ```
 
+### ios_rule_script
 \# Proxy
 
 \## classical
@@ -20,8 +21,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 ```
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy_Domain.list
 ```
-
-\## ip
 
 ## 包含的规则
 ### GFW-lite

@@ -6,9 +6,12 @@
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash_Meta/Apple/Apple_Domain.yaml
 ```
-\# Classical
 
-
+### Loyalsoldier
+\# domain
+```
+https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
+```
 
 ## 规则来源
 - https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt

@@ -12,24 +12,24 @@
 ## 不同代理软件的配置文件及其教程
 
 
-| 软件使用平台（操作系统） | 内核或软件 | 介绍 |
-| -- | -- | -- |
-| 多平台  | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta) |
-| Android | [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard) |  |
-| IOS or MacOS | [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX) | 此软件还未完善，不推荐使用 |
-| ^^ | [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon) |
-| ^^ | [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X) |
-| ^^ | [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket) | 支持加密协议最多的代理软件 |
-| ^^ |  [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash) |
-| ^^ | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge) | IOS上最贵的代理工具，也是功能最全的代理工具。 |
+| 软件使用平台（操作系统） | 内核或软件                                                                                                                                                                          | 介绍                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| 多平台          | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta) |                          |
+| Android      | [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)                                                                                            |                          |
+| IOS or MacOS | [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)                                                                                                  | 此软件还未完善，不推荐使用            |
+| ^^           | [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)                                                                                                      |                          |
+| ^^           | [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)                                                                                      |                          |
+| ^^           | [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)                                                                                      | 支持加密协议最多的代理软件            |
+| ^^           | [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)                                                                                                    |                          |
+| ^^           | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)                                                                                                    | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
 ## Rules(分流规则)
 - [All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 ### 规则分类
 
-| 软件/内核 | 规则 |
-| -- | -- |
-| Clash/Stash | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta |
+| 软件/内核        |                                 规则                                  |
+| ------------ | :-----------------------------------------------------------------: |
+| Clash/Stash  |  https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta  |
 | Shadowrocket | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket |
 | Quantumult_X | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Quantumult_X |
 

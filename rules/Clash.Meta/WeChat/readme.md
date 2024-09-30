@@ -1,10 +1,8 @@
 # WeChat
 
 ## 使用规则
-### blackmatrix7
-\# classical
 ```
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/WeChat/WeChat.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/WeChat/WeChat_No_Resolve.yaml
 ```
 
 ## 规则来源
