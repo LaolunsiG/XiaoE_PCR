@@ -1,11 +1,4 @@
-# [Sub-Store](https://github.com/sub-store-org/Sub-Store) - 订阅转化工具
-
-## Tutorials(使用教程)
-- [官方 - sub-store-org](https://github.com/sub-store-org/Sub-Store/tree/master/config)
-### Docker 部署（使用）
-- [SaintWe - Sub-Store-Docker](https://github.com/SaintWe/Sub-Store-Docker)
-
-## Sub-Store使用的脚本
+# Sub-Store 相关脚本
 > 直接将脚本导入就好了
 - [节点重命名](https://raw.githubusercontent.com/qwerzl/rename.js/main/rename.js#input=zh&output=zh&airport=%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%BA%E5%9C%BA%E5%90%8D)
 - [筛选80 443端口](https://raw.githubusercontent.com/deezertidal/private/main/port-filter.js)

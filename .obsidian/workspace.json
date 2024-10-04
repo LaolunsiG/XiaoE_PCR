@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "测速链接地址.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "测速链接地址.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "测速链接地址.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "测速链接地址.md"
               }
             }
           }
@@ -150,13 +150,20 @@
   "lastOpenFiles": [
     "文档写作教程.md",
     "README.md",
-    "测速链接地址.md",
     "Agency_Tools/readme.md",
     "Agency_Tools/Android 代理工具.md",
     "Agency_Tools/Windows 代理工具.md",
     "Agency_Wiki/readme.md",
-    "Agency_Wiki/中转-代理链.pdf",
-    "Agency_Wiki/什么是代理链以及如何使用.md",
+    "Extensions/readme.md",
+    "Extensions/Recommendation/Sub-Store/readme.md",
+    "Extensions/未命名.md",
+    "Extensions/Recommendation/Sub-Store/Sub-Store 相关脚本.md",
+    "Extensions/Loon/readme.md",
+    "Extensions/Recommendation",
+    "Agency_Wiki/中转和代理链/什么是代理链以及如何使用.md",
+    "Agency_Wiki/中转和代理链",
+    "测速链接地址.md",
+    "Agency_Wiki/中转和代理链/中转-代理链.pdf",
     "icons/readme.md",
     "icons/Stash_icons.md",
     "Pictures/测试.png",
@@ -170,21 +177,13 @@
     "rules/Clash.Meta/Apple/readme.md",
     "rules/Clash.Meta/Facebook/readme.md",
     "rules/Clash.Meta/Microsoft/readme.md",
-    "rules/Clash.Meta/ChinaMedia/readme.md",
-    "rules/Clash.Meta/ChinaService/readme.md",
-    "rules/Clash.Meta/CN/readme.md",
-    "rules/Clash.Meta/PayPal/readme.md",
-    "rules/Clash.Meta/Proxy/readme.md",
     "rules/Clash.Meta/Proxy/GFW-lite-Classical.yaml",
-    "rules/Clash.Meta/Sub-Store/readme.md",
     "rules/Clash.Meta/Sub-Store/Sub-Store-Classical.yaml",
     "rules/Clash.Meta/Sub-Store/Sub-StoreClassical.yaml",
     "rules/Shadowrocket/Weibo/Weibo-Classical.list",
     "rules/Shadowrocket/Proxy/GFW-lite-Classical.list",
     "rules/Shadowrocket/Proxy/GFW-lite-Classical.yaml",
     "rules/Shadowrocket/Steam/Steam-Classical.list",
-    "rules/Pictures/ceshi.png",
-    "rules/Clash.Meta/Twitter/Clash-Twitter-Classical.yaml",
-    "rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml"
+    "rules/Pictures/ceshi.png"
   ]
 }
