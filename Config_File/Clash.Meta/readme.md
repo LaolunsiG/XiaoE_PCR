@@ -14,13 +14,13 @@
 - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
 
 ## Clash.Meta Config(配置文件)
-- [XiaoE_Clash_Meta](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml)
+- https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash_Meta.yaml
 
 ### 大佬的示例配置
-- [mihomo](https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml)
-- [Lucky-clashverge](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)
-- [可莉-clash](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)
-- [moli-clash](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)
+- https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
+- https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml
+- https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config
+- https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml
 
 ## Function_Preview(功能预览)
 
