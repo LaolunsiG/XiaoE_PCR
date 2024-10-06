@@ -4,17 +4,16 @@
 \# 观前注意
 - [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-## updata log(更新日志)-2024-09-30
-- 优化了规则页的视觉效果
-- 修改 surge 的配置文件
-- 增加了新规则
+## updata log-2024-10-6
+- 修改并优化 shadowrocket、loon、clash.meta 的配置文件
+
 
 ## 不同代理软件的配置文件及其教程
 
 
 | 软件使用平台（操作系统） | 内核或软件                                                                                                                                                                          | 介绍                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| 多平台          | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta) |                          |
+| 多平台       | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta) |                          |
 | Android      | [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)                                                                                            |                          |
 | IOS or MacOS | [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)                                                                                                  | 此软件还未完善，不推荐使用            |
 | ^^           | [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)                                                                                                      |                          |
@@ -23,7 +22,7 @@
 | ^^           | [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)                                                                                                    |                          |
 | ^^           | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)                                                                                                    | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
-## Rules(分流规则)
+## Rules
 - [All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 ### 规则分类
 
@@ -33,10 +32,12 @@
 | Shadowrocket | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket |
 | Quantumult_X | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Quantumult_X |
 
-## Other_Tutorials(其他教程)
+## Other_Tutorials
+> 其他代理相关教程
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
-### Noting_Rules(注释规则)
+### Noting_Rules
+> 配置文件的注释符号
 
 | 配置文件格式 | (单行)注释符号 | Wiki |
 | -- | :--: | -- |
