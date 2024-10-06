@@ -1,4 +1,4 @@
-# China/CN(直连规则)
+# China/CN
 
 ## 使用规则
 ### XiaoE
@@ -8,3 +8,4 @@ https://github.com/LaolunsiG/XiaoE_PCR/raw/main/rules/Shadowrocket/China/CN-IP.l
 ```
 
 ## 包含的规则
+## 规则来源
