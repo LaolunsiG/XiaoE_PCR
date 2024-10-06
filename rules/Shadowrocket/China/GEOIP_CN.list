@@ -1,8 +1,0 @@
-# NAME: GEOIP_CN
-# UPDATED: 2024/07/29
-# updata_log: 
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/China/GEOIP_CN.list
-# content:
-# GEOIP: 1
-# TOTAL: 1
-GEOIP,CN
