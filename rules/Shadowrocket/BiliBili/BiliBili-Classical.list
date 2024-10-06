@@ -1,9 +1,8 @@
 # NAME: BiliBili
-# 感谢项目：
-# origin_url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list
-# UPDATED: 2024/07/12
+# UPDATED: 2024-10-06
 # updata_log: 增加了DOMAIN-SUFFIX,api.bilibili.com
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili_Classical.list
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili-Classical.list
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket/BiliBili
 # contentt:
 # DOMAIN: 54
 # DOMAIN-SUFFIX: 62
@@ -11,6 +10,7 @@
 # PROCESS-NAME: 6
 # USER-AGENT: 4
 # TOTAL: 134
+
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
