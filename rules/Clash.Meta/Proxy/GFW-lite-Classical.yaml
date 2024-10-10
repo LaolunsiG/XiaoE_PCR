@@ -1,5 +1,5 @@
 # name: GFW-lite
-# updata: 2024-09-21
+# updata: 2024-10-10
 # updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml
@@ -7,10 +7,16 @@
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 29
+# -IP-CIDR
+
+# 规则分类
+# DNS leak
+# Github
 
 payload:
+  # DNS leak
   - DOMAIN,dns.icoa.cn
-# Github
+  # Github
   - DOMAIN-SUFFIX,atom.io
   - DOMAIN-SUFFIX,dependabot.com
   - DOMAIN-SUFFIX,ghcr.io
@@ -41,3 +47,29 @@ payload:
   - DOMAIN-SUFFIX,repo.new
   - DOMAIN-SUFFIX,thegithubshop.com
   - DOMAIN-KEYWORD,github
+  - IP-CIDR,140.82.114.25,no-resolve
+  - IP-CIDR,140.82.114.26,no-resolve
+  - IP-CIDR,185.199.111.154,no-resolve
+  - IP-CIDR,140.82.114.21,no-resolve
+  - IP-CIDR,185.199.109.133,no-resolve
+  - IP-CIDR,185.199.108.153,no-resolve
+  - IP-CIDR,185.199.111.133,no-resolve
+  - IP-CIDR,146.75.121.194,no-resolve
+  - IP-CIDR,140.82.121.3,no-resolve
+  - IP-CIDR,185.199.111.153,no-resolve
+  - IP-CIDR,140.82.121.4,no-resolve
+  - IP-CIDR,192.0.66.2,no-resolve
+  - IP-CIDR,140.82.121.5,no-resolve
+  - IP-CIDR,185.199.108.133,no-resolve
+  - IP-CIDR,185.199.110.133,no-resolve
+  - IP-CIDR,140.82.121.9,no-resolve
+  - IP-CIDR,3.5.25.134,no-resolve
+  - IP-CIDR,52.216.209.137,no-resolve
+  - IP-CIDR,52.217.126.225,no-resolve
+  - IP-CIDR,52.216.61.1,no-resolve
+  - IP-CIDR,3.5.3.46,no-resolve
+  - IP-CIDR,185.199.109.153,no-resolve
+  - IP-CIDR,140.82.113.17,no-resolve
+  - IP-CIDR,51.137.3.17,no-resolve
+  - IP-CIDR,140.82.113.21,no-resolve
+  - IP-CIDR,13.107.42.16,no-resolve
