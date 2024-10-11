@@ -1,10 +1,8 @@
 # 自用代理资源存储库-XiaoE_PCR
 - Clash 因不再更新，不支持新规则和新的加密，所以创建此自用存储库。本存储库会将一些规则合在一起，以便于使用。
+- [Clash.Meta-rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-\# 观前注意
-- [Clash_Old_Rules(规则)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash_Old) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
-
-## updata log-2024-10-6
+## 更新日志-2024-10-10
 - 修改并优化 shadowrocket、loon、clash.meta 的配置文件
 
 
@@ -22,7 +20,7 @@
 | ^^           | [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)                                                                                                    |                          |
 | ^^           | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)                                                                                                    | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
-## Rules
+## 规则
 - [All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 ### 规则分类
 
@@ -32,11 +30,10 @@
 | Shadowrocket | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket |
 | Quantumult_X | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Quantumult_X |
 
-## Other_Tutorials
-> 其他代理相关教程
+## 其他代理教程
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
 
-### Noting_Rules
+### 注释规则
 > 配置文件的注释符号
 
 | 配置文件格式 | (单行)注释符号 | Wiki |
