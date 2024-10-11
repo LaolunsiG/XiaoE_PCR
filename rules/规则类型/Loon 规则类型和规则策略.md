@@ -2,7 +2,11 @@
 ## Loon 规则类型
 ### 规则集
 \# RULE-SET：匹配规则集内容。规则集的内容需包含规则类型。
-- 如"https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Apple/Apple.list"。（兼容仅包含IP地址且不带规则类型的规则集）
+- 如
+```
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Apple/Apple.list"。
+```
+（兼容仅包含 IP 地址且不带规则类型的规则集）
 
 \# DOMAIN-SET：匹配域名集内容。域名集的内容不包含规则类型。
 - 如"https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Apple/Apple_Domain.list"。

@@ -1,18 +1,17 @@
 # LanceX
-> 不推荐使用，规则无法修改顺序。
-界面类似 Shadowrocket；适配 Surge 的模块。
+> 不推荐使用，规则无法修改顺序。界面类似 Shadowrocket；适配 Surge 的模块。
 
-LanceX 适用 shadowrocket 的代理规则，且这个软件目前不支持过多规则，一下子导入会卡住，所以不推荐使用。（本人不会配置，只是在他人的配置上做出更改。）
+- LanceX 适用 shadowrocket 的代理规则，且这个软件目前不支持过多规则，一下子导入会卡住，所以不推荐使用。（本人不会配置，只是在他人的配置上做出更改。）
 
-## APP_Tutorial(使用教程)
-- [官方 - lancexapp](https://shadowboat.app/lancexapp/zh/)
+## 使用教程
+- https://shadowboat.app/lancexapp/zh/
 
-## LanceX_Config(配置文件)
-- [XiaoE_LanceX](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/LanceX/XiaoE_LanceX.conf)
+## 配置文件
+- https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/LanceX/XiaoE_LanceX.conf
 ### 配置来源（大佬的示例配置）
-- [懒人配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/LanceX/LanceX%20%E7%A4%BA%E4%BE%8B%E9%85%8D%E7%BD%AE/LanceX%20TG%20%E9%A2%91%E9%81%93.conf) - TG 频道懒人配置
+- [懒人配置](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/LanceX/LanceX%20%E7%A4%BA%E4%BE%8B%E9%85%8D%E7%BD%AE/LanceX%20TG%20%E9%A2%91%E9%81%93.conf)
 
-## Function_Preview(功能预览)
+## 功能预览
 
 
 
