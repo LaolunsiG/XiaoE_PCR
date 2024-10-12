@@ -1,4 +1,4 @@
-# Scrip(脚本)
+# Scrip
 
 [**MITM(中间人攻击)**](https://zh.m.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)-MITM 攻击是一种严重的网络安全威胁，攻击者通过插入通信双方之间窃取或篡改数据。
 - 通俗解释

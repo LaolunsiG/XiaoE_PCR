@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scripts/readme.md",
+                "file": "rules/Clash.Meta/GitHub/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scripts/readme.md",
+                "file": "rules/Clash.Meta/GitHub/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scripts/readme.md",
+                "file": "rules/Clash.Meta/GitHub/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scripts/readme.md"
+                "file": "rules/Clash.Meta/GitHub/readme.md"
               }
             }
           }
@@ -146,8 +146,28 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a3b6ea39ee6f75d6",
+  "active": "d5152f1ca185b235",
   "lastOpenFiles": [
+    "rules/Clash.Meta/GFW/readme.md",
+    "rules/Clash.Meta/GFW/新建文本文档.txt",
+    "rules/Clash.Meta/GFW/新建文件夹",
+    "rules/Clash.Meta/GFW/GFW-lite-Classical.yaml",
+    "rules/Clash.Meta/GFW",
+    "rules/Clash.Meta/新建文件夹",
+    "rules/Clash.Meta/Proxy/Proxy-Domain.yaml",
+    "rules/Clash.Meta/Apple/Apple-Domain.yaml",
+    "rules/Clash.Meta/GlobalAI/readme.md",
+    "rules/Clash.Meta/GlobalAI/Clash-AI-Global-Classical.yaml",
+    "rules/Clash.Meta/GlobalAI/AI-Global-Classical.yaml",
+    "rules/Clash.Meta/GlobalAI",
+    "rules/Clash.Meta/Proxy/readme.md",
+    "rules/Clash.Meta/GitHub/readme.md",
+    "rules/Clash.Meta/AI-Global/readme.md",
+    "rules/Clash.Meta/ChinaService/readme.md",
+    "Extensions/Recommendation/Sub-Store/Sub-Store 相关脚本.md",
+    "文档写作教程.md",
+    "README.md",
+    "Scripts/readme.md",
     "测速链接地址.md",
     "Scripts/Stash/Tile/磁贴模板.md",
     "Scripts/Stash/Tile/readme.md",
@@ -164,27 +184,7 @@
     "Config_File/Clash.Meta/readme.md",
     "Config_File/LanceX/Readme.md",
     "Config_File/Loon/readme.md",
-    "Config_File/Sing-Box/readme.md",
-    "Config_File/Stash/readme.md",
-    "Config_File/Surge/readme.md",
-    "Config_File/Surge/Surge 配置教程.md",
-    "Config_File/Surfboard/readme.md",
-    "README.md",
-    "Agency_Wiki/节点的正则表达式.md",
-    "Extensions/readme.md",
-    "icons/Stash_icons.md",
-    "icons/readme.md",
     "Pictures/测试.png",
-    "Extensions/Recommendation",
-    "Agency_Wiki/中转和代理链",
-    "Agency_Wiki/中转和代理链/中转-代理链.pdf",
-    "rules/Clash.Meta/Proxy/GFW-lite-Classical.yaml",
-    "rules/Clash.Meta/Sub-Store/Sub-Store-Classical.yaml",
-    "rules/Clash.Meta/Sub-Store/Sub-StoreClassical.yaml",
-    "rules/Shadowrocket/Weibo/Weibo-Classical.list",
-    "rules/Shadowrocket/Proxy/GFW-lite-Classical.list",
-    "rules/Shadowrocket/Proxy/GFW-lite-Classical.yaml",
-    "rules/Shadowrocket/Steam/Steam-Classical.list",
     "rules/Pictures/ceshi.png"
   ]
 }
