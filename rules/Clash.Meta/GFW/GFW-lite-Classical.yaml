@@ -1,8 +1,8 @@
 # name: GFW-lite
-# updata: 2024-10-10
+# updata: 2024-10-12
 # updata_log: 
-# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml
-# repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/Proxy/GFW_lite-Classical.yaml
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/GFW/GFW_lite-Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/GFW/GFW_lite-Classical.yaml
 # content: 
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 1
