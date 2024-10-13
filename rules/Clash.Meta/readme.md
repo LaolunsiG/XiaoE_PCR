@@ -1,4 +1,4 @@
-# Clash_Meta_Rules
+# Clash.Meta_Rules
 > 本规则集只是将一些分散的规则和在一起。
 
 ## 规则分类
