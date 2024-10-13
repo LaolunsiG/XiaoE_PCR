@@ -18,5 +18,5 @@
 | ^^                                        | [V2RayN-PRO](https://github.com/lowercase78/V2RayN-PRO)                                                                       |                                            |     |
 | Sing-Box                                  | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox)                                                           |                                            |     |
 | ^^                                        | [Gui for Core](https://gui-for-cores.github.io/)                                                                              |                                            |     |
-| ^^                                        | [piernya - sing-box](https://github.com/PuerNya/sing-box) - 支持订阅代理                                                            |                                            |     |
+| [piernya - sing-box](https://github.com/PuerNya/sing-box)                                  |                                                         |                                            |  支持订阅代理   |
 | Hiddify                                   | [Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager)                                                                 |                                            |     |
