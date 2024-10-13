@@ -18,10 +18,10 @@
 - [Theo-Messi-QuantumultX](https://github.com/Theo-Messi/dotfiles/blob/1e92adaf4c13afe9f62c95d8340092d6ca1dea65/QuantumultX/T-Config.conf)
 
 ## Function_Preview(功能预览)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_1_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_3_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_4_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_2_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Picture/photo_5_2024-07-16_21-00-29.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_1_2024-07-16_21-00-29.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_3_2024-07-16_21-00-29.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_4_2024-07-16_21-00-29.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_2_2024-07-16_21-00-29.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_5_2024-07-16_21-00-29.jpg?raw=true)
 
 

@@ -2,11 +2,11 @@
 > 这个软件是订阅制的，很好用就是很贵。这个软件的官方文档也好奇怪。需自行配置订阅链接。
 
 ## 使用教程
-- [Surge 保姆级懒人配置 - 耳东橙的日常](https://manual.nssurge.com/)
-- [Surge_wiki](https://wiki.surge.community/)
-- [Surge_Guidelines](https://surge.mitsea.com/)
-- [erdongchan-surge](https://erdongchan.cn/surgeconf.html)
-- [Surge 其他教程](https://wiki.surge.community/qi-ta-jiao-cheng) 
+- https://manual.nssurge.com/
+- https://wiki.surge.community/
+- https://surge.mitsea.com/
+- https://erdongchan.cn/surgeconf.html
+- https://wiki.surge.community/qi-ta-jiao-cheng
 ### Surge 其他教程
 - [Surge 配置和使用技巧](https://blog.skk.moe/post/i-have-my-unique-surge-setup/)
 - 正则表达式

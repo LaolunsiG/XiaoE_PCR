@@ -12,6 +12,7 @@
 ### 第三方教程
 - https://github.com/KeLee8/Loon-tutorial
 - https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/b6047d8b-621c-44af-bfa6-a28d35bcf928
+- [Lᴜᴄʏ's Tool - loon 教程](https://repcz.github.io/loon/authorize/#loon_2)
 
 ### Loon 其他教程
 \# 正则表达式
@@ -26,12 +27,11 @@
 - https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Config/zh-CN?ref_type=heads
 
 ## 功能预览
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_1_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_2_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_3_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_5_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Picture/photo_4_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_1_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_2_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_3_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_5_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_4_2024-07-16_20-46-54.jpg?raw=true)
 
-## 参考的文章
-- [Lᴜᴄʏ's Tool - loon 教程](https://repcz.github.io/loon/authorize/#loon_2)
+
 
