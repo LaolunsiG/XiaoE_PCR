@@ -14,12 +14,13 @@
 
 ## 配置文件
 - https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Surge/XiaoE_Surge.conf
-
-## 功能预览
-
-## 配置来源
+### 参考配置
 - https://github.com/Rabbit-Spec/Surge/tree/Master/Conf/Spec
 - https://github.com/getsomecat/GetSomeCats/blob/Surge/FishChips.conf
 - https://github.com/As-Lucky/Lucky/blob/main/Lucky-Surge.conf
 - https://gist.githubusercontent.com/Zeaphyou/864aebea248ca1bb8000e0e5623b65f3/raw/c36413c715f43f22772d3c2353358e1ff936b2e6/Surge.conf
+
+## 功能预览
+
+
 
