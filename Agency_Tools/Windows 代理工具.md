@@ -16,7 +16,7 @@
 |                            ^^                             | ^^          | [Clash_for_Windows](https://github.com/clashdownload/Clash_for_Windows)                                                       |     |
 |     [v2ray-core](https://github.com/v2fly/v2ray-core)     |             | [v2rayN](https://github.com/2dust/v2rayN)                                                                                     |     |
 |                            ^^                             |             | [V2RayN-PRO](https://github.com/lowercase78/V2RayN-PRO)                                                                       |     |
-|      [Xray-core](https://github.com/XTLS/Xray-core)       |             |                                                                                                                               |     |
+|      [Xray-core](https://github.com/XTLS/Xray-core)       |   教程：https://xtls.github.io/          |                                                                                                                               |     |
 |     [sing-box](https://github.com/SagerNet/sing-box)      | 自带软件        | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox)                                                           |     |
 | [piernya - sing-box](https://github.com/PuerNya/sing-box) | 修改内核，支持订阅代理 | [nekoray](https://github.com/MatsuriDayo/nekoray)                                                                             |     |
 |                            ^^                             |             | [Gui for Core](https://gui-for-cores.github.io/)                                                                              |     |
