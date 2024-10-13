@@ -14,7 +14,7 @@
 |                            ^^                             |             | [clashN](https://github.com/2dust/clashN)                                                                                     |     |
 |               [Clash](https://clash.wiki/)                | 已删库         | [Clash_for_Windows](https://github.com/Z-Siqi/Clash-for-Windows_Chinese "https://github.com/clashdownload/Clash_for_Windows") |     |
 |                            ^^                             | ^^          | [Clash_for_Windows](https://github.com/clashdownload/Clash_for_Windows)                                                       |     |
-|     [v2ray-core](https://github.com/v2fly/v2ray-core)     |             | [v2rayN](https://github.com/2dust/v2rayN)                                                                                     |     |
+|     [v2ray-core](https://github.com/v2fly/v2ray-core)     |     教程：https://www.v2fly.org/        | [v2rayN](https://github.com/2dust/v2rayN)                                                                                     |     |
 |                            ^^                             |             | [V2RayN-PRO](https://github.com/lowercase78/V2RayN-PRO)                                                                       |     |
 |      [Xray-core](https://github.com/XTLS/Xray-core)       |   教程：https://xtls.github.io/          |                                                                                                                               |     |
 |     [sing-box](https://github.com/SagerNet/sing-box)      | 自带软件        | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox)                                                           |     |
