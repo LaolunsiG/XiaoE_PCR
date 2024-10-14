@@ -2,9 +2,13 @@
 - Clash 因不再更新，不支持新规则和新的加密，所以创建此自用存储库。本存储库会将一些规则合在一起，以便于使用。
 - [Clash.Meta-rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
 
-## 更新日志-2024-10-11
-- clash.meta 优化，配置文件可读性增强，修复策略组错误，增加规则。排序优化。
+<details> 
+  <summary> 更新日志 </summary>
 
+   ### 2024-10-11
+   - clash.meta 优化，配置文件可读性增强，修复策略组错误，增加规则。排序优化。
+
+</details>
 
 ## 不同代理软件的配置文件及其教程
 
