@@ -4,7 +4,7 @@
 \# 前置知识
 - [关于代理的一些问题](https://blog.revincx.icu/posts/proxy-summary/)
 
-## [Clash.Meta 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Clash.Meta%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.md)
+## [Clash.Meta 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta/Clash.Meta%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)
 
 ## Clash.Meta 配置文件
 ### XiaoE
