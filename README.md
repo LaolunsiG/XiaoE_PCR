@@ -5,7 +5,11 @@
 <details> 
   <summary> 更新日志 </summary>
 
-> 只保留 5 次记录 
+> 只保留 5 次记录
+
+### 2024-10-27
+- 修复 [clash.meta](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-stable.yaml) 的一些错误配置
+
 ### 2024-10-14
 - 修改部分规则，增加部分规则
 \# 配置文件修改
