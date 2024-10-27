@@ -8,7 +8,8 @@
 
 ## Clash.Meta 配置文件
 ### XiaoE
-- [XiaoE_Clash.Meta.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Clash_Meta/XiaoE_Clash.Meta.yaml)
+- [XiaoE_Clash.Meta-stable.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/refs/heads/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-stable.yaml)
+- [XiaoE_Clash.Meta-test.yaml](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/refs/heads/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-test.yaml)
 
 ### 大佬的示例配置
 - https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
