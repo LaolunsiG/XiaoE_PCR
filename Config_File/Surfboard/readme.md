@@ -28,13 +28,14 @@
 - [节点正则表达式](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/%E8%8A%82%E7%82%B9%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md)
 
 ## 配置文件
+### XiaoE
 - https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Surfboard/XiaoE_Surfboard.conf
+
 ### 大佬的示例配置
 - https://github.com/Rabbit-Spec/Surge/tree/Master/Conf/Spec
 - https://github.com/getsomecat/GetSomeCats/blob/Surge/FishChips.conf
 - https://github.com/As-Lucky/Lucky/blob/main/Lucky-Surge.conf
-- https://gist.githubusercontent.com/Zeaphyou/864aebea248ca1bb8000e0e5623b65f3/raw/c36413c715f43f22772d3c2353358e1ff936b2e6/Surge.conf
-
+- Zeaphyou-Surge.conf](https://gist.githubusercontent.com/Zeaphyou/864aebea248ca1bb8000e0e5623b65f3/raw/c36413c715f43f22772d3c2353358e1ff936b2e6/Surge.conf)
 
 
 ## 功能预览

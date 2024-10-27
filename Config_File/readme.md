@@ -9,7 +9,7 @@
 
 | 软件使用平台（操作系统） | 内核或软件                                                                                                                                                                          | 介绍                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| 多平台       | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash_Meta) |                          |
+| 多平台          | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta) |                          |
 | Android      | [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)                                                                                            |                          |
 | IOS or MacOS | [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)                                                                                                  | 此软件还未完善，不推荐使用            |
 | ^^           | [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)                                                                                                      |                          |

@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Agency_Tools/readme.md",
+                "file": "Config_File/readme.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "readme"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Agency_Tools/readme.md",
+                "file": "Config_File/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "readme 的反向链接列表"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Agency_Tools/readme.md",
+                "file": "Config_File/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "readme 的出链列表"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Agency_Tools/readme.md"
-              }
+                "file": "Config_File/readme.md"
+              },
+              "icon": "lucide-list",
+              "title": "readme 的大纲"
             }
           }
         ]
@@ -148,51 +164,51 @@
   },
   "active": "a3b6ea39ee6f75d6",
   "lastOpenFiles": [
+    "README.md",
     "Agency_Tools/IOS 代理工具.md",
-    "Agency_Tools/Android 代理工具.md",
-    "Agency_Tools/Windows 代理工具.md",
-    "Agency_Tools/readme.md",
-    "icons/Stash_icons.md",
-    "icons/readme.md",
-    "icons/图标资源库.md",
-    "icons/图标集使用.md",
-    "Agency_Wiki/节点的正则表达式.md",
-    "rules/Shadowrocket/GlobalGame/readme.md",
-    "rules/Shadowrocket/Weibo/readme.md",
-    "rules/Shadowrocket/readme.md",
-    "rules/Shadowrocket/Sub-Store/readme.md",
-    "rules/Shadowrocket/Steam/readme.md",
-    "rules/Shadowrocket/GFW/readme.md",
-    "rules/Shadowrocket/ChinaSocialMedia/readme.md",
-    "rules/Shadowrocket/Proxy/readme.md",
-    "rules/Shadowrocket/GlobalMedia/readme.md",
-    "rules/Shadowrocket/Advertising/readme.md",
-    "rules/Shadowrocket/BiliBili/readme.md",
-    "rules/Shadowrocket/China/readme.md",
-    "rules/Shadowrocket/ChinaMedia/readme.md",
-    "rules/Shadowrocket/GitHub",
-    "rules/Shadowrocket/GFW/GFW-lite-Classical.list",
-    "文档写作教程.md",
-    "rules/Shadowrocket/GFW",
-    "rules/Shadowrocket/GlobalAI/GlobalAI-Classical.list",
-    "Agency_Wiki/中转和代理链/readme.md",
-    "测速链接地址.md",
-    "Pictures/测试.png",
+    "Config_File/readme.md",
+    "Config_File/Surfboard/readme.md",
+    "Config_File/Stash/Stash 配置和使用教程.md",
+    "Config_File/Stash/Picture/photo_2024-07-04_20-21-33.jpg",
+    "Config_File/Stash/readme.md",
+    "Config_File/Stash/Picture/photo_2024-07-04_20-21-39.jpg",
+    "Config_File/Sing-Box/未命名.md",
+    "Config_File/Stash/Config/XiaoE_Stash.yaml",
+    "Config_File/Stash/Config",
+    "Config_File/Stash/新建文件夹",
+    "Config_File/Stash/Picture/photo_2024-07-04_20-21-42.jpg",
     "Config_File/Sing-Box/readme.md",
-    "Config_File/Shadowrocket/Shadowrocket 示例配置/懒人配置.conf",
-    "Config_File/Shadowrocket/Shadowrocket 示例配置",
-    "Config_File/Quantumult_X/QX 示例配置/whatshub懒人配置.conf",
-    "Config_File/Quantumult_X/QX 示例配置/Theo-Messi_QX.conf",
-    "Config_File/Quantumult_X/QX 示例配置/QX懒人配置.conf",
-    "Config_File/Quantumult_X/QX 示例配置",
-    "Config_File/Loon/Pictures/测试.png",
-    "Config_File/Loon/Pictures/photo_5_2024-07-16_20-46-54.jpg",
-    "Config_File/Loon/Pictures/photo_4_2024-07-16_20-46-54.jpg",
-    "Config_File/Loon/Pictures/photo_3_2024-07-16_20-46-54.jpg",
-    "Config_File/Loon/Pictures/photo_1_2024-07-16_20-46-54.jpg",
-    "Config_File/Loon/Pictures/photo_2_2024-07-16_20-46-54.jpg",
+    "Config_File/Sing-Box/Sing-Box 使用和配置教程.md",
+    "Config_File/Sing-Box/未命名",
+    "Config_File/Shadowrocket/readme.md",
+    "Config_File/Shadowrocket/Shadowrocket 使用和配置教程.md",
+    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket-stable.conf",
+    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket-test.conf",
+    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket_1.conf",
+    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket.conf",
+    "Config_File/Shadowrocket/Config",
+    "Config_File/Shadowrocket/新建文件夹",
+    "Config_File/Quantumult_X/readme.md",
+    "Config_File/Quantumult_X/QX 配置和使用教程/readme.md",
+    "Config_File/Quantumult_X/Pictures/photo_4_2024-07-16_21-00-29.jpg",
+    "Config_File/Quantumult_X/Pictures/photo_2_2024-07-16_21-00-29.jpg",
+    "Config_File/Quantumult_X/Pictures/photo_1_2024-07-16_21-00-29.jpg",
     "Config_File/Quantumult_X/Pictures/测试.png",
-    "Config_File/Quantumult_X/Pictures/photo_5_2024-07-16_21-00-29.jpg",
-    "Config_File/Quantumult_X/Pictures/photo_1_2024-07-16_21-00-29.jpg"
+    "Config_File/Clash/readme.md",
+    "Config_File/Clash.Meta/readme.md",
+    "Config_File/Clash.Meta/Clash.Meta 配置教程/readme.md",
+    "Config_File/Clash.Meta/Clash.Meta 配置教程/锚点配置.md",
+    "Config_File/Clash.Meta/Clash.Meta 配置教程/代理组图标配置.md",
+    "Config_File/Clash/Clash 配置教程/Clash 配置教程.md",
+    "Agency_Wiki/节点的正则表达式.md",
+    "Agency_Wiki/DNS 配置/DNS 服务整理.md",
+    "Agency_Wiki/DNS 配置/DNS 服务推荐资源.md",
+    "Agency_Wiki/DNS 配置/了解什么是 DNS 以及相关的协议.md",
+    "Agency_Wiki/readme.md",
+    "Agency_Tools/readme.md",
+    "Agency_Tools/Android 代理工具.md",
+    "Pictures/测试.png",
+    "Config_File/Loon/Pictures/测试.png",
+    "Config_File/Loon/Pictures/photo_5_2024-07-16_20-46-54.jpg"
   ]
 }
