@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Config_File/readme.md",
+                "file": "Agency_Wiki/DNS 配置/DNS 服务整理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "DNS 服务整理"
             }
           }
         ]
@@ -164,9 +164,16 @@
   },
   "active": "a3b6ea39ee6f75d6",
   "lastOpenFiles": [
+    "Agency_Wiki/DNS 配置/DNS 服务推荐资源.md",
+    "Agency_Wiki/DNS 配置/未命名.md",
+    "Agency_Wiki/DNS 配置/DNS 服务整理.md",
+    "Agency_Wiki/DNS 配置/了解什么是 DNS 以及相关的协议.md",
+    "Extensions/Recommendation/Sub-Store/readme.md",
+    "Extensions/Recommendation/Sub-Store/Sub-Store 相关脚本.md",
+    "Extensions/readme.md",
+    "Config_File/readme.md",
     "README.md",
     "Agency_Tools/IOS 代理工具.md",
-    "Config_File/readme.md",
     "Config_File/Surfboard/readme.md",
     "Config_File/Stash/Stash 配置和使用教程.md",
     "Config_File/Stash/Picture/photo_2024-07-04_20-21-33.jpg",
@@ -200,13 +207,6 @@
     "Config_File/Clash.Meta/Clash.Meta 配置教程/锚点配置.md",
     "Config_File/Clash.Meta/Clash.Meta 配置教程/代理组图标配置.md",
     "Config_File/Clash/Clash 配置教程/Clash 配置教程.md",
-    "Agency_Wiki/节点的正则表达式.md",
-    "Agency_Wiki/DNS 配置/DNS 服务整理.md",
-    "Agency_Wiki/DNS 配置/DNS 服务推荐资源.md",
-    "Agency_Wiki/DNS 配置/了解什么是 DNS 以及相关的协议.md",
-    "Agency_Wiki/readme.md",
-    "Agency_Tools/readme.md",
-    "Agency_Tools/Android 代理工具.md",
     "Pictures/测试.png",
     "Config_File/Loon/Pictures/测试.png",
     "Config_File/Loon/Pictures/photo_5_2024-07-16_20-46-54.jpg"
