@@ -2,6 +2,8 @@
 - 推荐使用，简单易上手，此配置文件需要自己配置订阅节点。
 - 如果需要自行修改配置文件的，请自己阅读官方文档，了解专用
 
+## [Loon 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon/Loon%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)
+
 ## 示例配置文件
 
 | 作者       | 链接                                                                                                             | 介绍  |
