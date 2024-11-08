@@ -12,11 +12,11 @@
 | lodepuly |                                                                                                                |     |
 
 ## 功能预览
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/1?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_2_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_3_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_5_2024-07-16_20-46-54.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/photo_4_2024-07-16_20-46-54.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/1.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/2.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/3.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/4.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/Pictures/5.jpg?raw=true)
 
 
 
