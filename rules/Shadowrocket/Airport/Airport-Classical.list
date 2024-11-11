@@ -7,12 +7,24 @@
 # DOMAIN-SUFFIX
 
 # 规则分类
-# pithecia
-# 便宜机场
+# pithecia-11.11
+# Tblack-11.11
+# 超级机场-11.11
+# 马铃薯机场-11.11
+# 便宜机场-11.11
 
-# 便宜机场
-DOMAIN,pianyi.sub.sub.subsub123456789.com
-DOMAIN,便宜机场.co
+
 # pithecia
 DOMAIN,pithecia.com
 DOMAIN,subs.pithecia.com
+# Tblack
+DOMAIN,hhyxt.top
+DOMAIN,dy123.hhyjs.xyz
+# 超级机场
+DOMAIN,sub.cjcloud.cc
+# 马铃薯机场
+DOMAIN,mlshu.com
+DOMAIN,mlshu.xyz
+# 便宜机场
+DOMAIN,pianyi.sub.sub.subsub123456789.com
+DOMAIN,便宜机场.co
