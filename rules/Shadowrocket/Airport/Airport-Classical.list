@@ -1,0 +1,18 @@
+# NAME: Airport
+# UPDATED: 2024-11-11
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/BiliBili/BiliBili-Classical.list
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket/BiliBili
+# contentt:
+# DOMAIN
+# DOMAIN-SUFFIX
+
+# 规则分类
+# pithecia
+# 便宜机场
+
+# 便宜机场
+DOMAIN,pianyi.sub.sub.subsub123456789.com
+DOMAIN,便宜机场.co
+# pithecia
+DOMAIN,pithecia.com
+DOMAIN,subs.pithecia.com
