@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文档写作教程.md",
+                "file": "Agency_Tools/Windows 代理工具.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文档写作教程"
+              "title": "Windows 代理工具"
             }
           }
         ]
@@ -162,8 +162,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d5152f1ca185b235",
+  "active": "a3b6ea39ee6f75d6",
   "lastOpenFiles": [
+    "文档写作教程.md",
+    "rules/Shadowrocket/Airport/readme.md",
+    "rules/Shadowrocket/Airport/Airport-Classical.list",
+    "rules/Shadowrocket/Airport",
+    "icons/Stash 专用图标库.md",
+    "icons/APP 专用图标库.md",
     "README.md",
     "Config_File/Loon/readme.md",
     "Config_File/Loon/Pictures/4.jpg",
@@ -202,12 +208,7 @@
     "Config_File/Stash/Config/XiaoE_Stash.yaml",
     "Config_File/Stash/Config",
     "Config_File/Stash/新建文件夹",
-    "Config_File/Sing-Box/readme.md",
-    "Config_File/Sing-Box/Sing-Box 使用和配置教程.md",
     "Config_File/Sing-Box/未命名",
-    "Config_File/Shadowrocket/readme.md",
-    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket-stable.conf",
-    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket-test.conf",
-    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket_1.conf"
+    "Config_File/Shadowrocket/Config/XiaoE_Shadowrocket-stable.conf"
   ]
 }
