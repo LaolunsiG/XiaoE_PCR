@@ -1,0 +1,13 @@
+# name: ExternalControl
+# updata: 2024-11-23
+# updata_log: 
+# updata_url: https://github.com/LaolunsiG/XiaoE_PCR/raw/refs/heads/main/rules/Clash.Meta/ChinaMedia/ChinaMedia-Classical.yaml
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/ChinaMedia/ChinaMedia-Classical.yaml
+# content: 
+# DOMAIN: 2
+
+payload:
+  - DOMAIN,clash.razord.top
+  - DOMAIN,yacd.haishan.me
+
+
