@@ -4,13 +4,13 @@
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml
 
-# DOMAIN: 
-# DOMAIN-KEYWORD: 
-# DOMAIN-SUFFIX: 
-# IP-CIDR: 
-# IP-CIDR6: 
-# PROCESS-NAME: 
-# TOTAL: 
+# DOMAIN: 2
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 22
+# IP-CIDR: 4
+# IP-CIDR6: 4
+# PROCESS-NAME: 5
+# TOTAL: 43
 
 payload:
   - DOMAIN,api.imem.app
