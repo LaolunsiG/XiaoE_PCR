@@ -8,7 +8,7 @@
 
 | 作者       | 链接                                                                                                             | 介绍  |
 | -------- | -------------------------------------------------------------------------------------------------------------- | --- |
-| XiaoE    | [XiaoE_Loon.conf](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/XiaoE_Loon.conf) |     |
+| XiaoE    | [XiaoE_Loon.conf](https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/Config_File/Loon/Config/XiaoE_Loon.conf) |     |
 | SANYIMOE | [loon.conf](https://github.com/SANYIMOE/Quan_Shado_Conf/blob/master/conf/loon.conf)                            |     |
 | HoCooo   | [LoonLite.conf](https://github.com/HoCooo/Loon/blob/main/LoonLite.conf)                                        |     |
 | lodepuly |                                                                                                                |     |
