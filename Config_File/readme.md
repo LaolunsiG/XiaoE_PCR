@@ -1,9 +1,8 @@
 # Config_Files
-> 本人并不擅长配置，只是修改其他大佬的配置。
-
-这些是示例配置文件，请不要直接使用，自己修改配置文件后使用，我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。
-
-在配置之前先了解代理工具的工作流程，以防出现，配置之后，还不如不配置的情况发生。
+- 本人并不擅长配置，只是修改其他大佬的配置。
+- **注意事项**
+   - 这些是示例配置文件，请不要直接使用，自己修改配置文件后使用，我的配置不一定适合你，所以自己配置一个配置文件才是最好的选择。
+   - 在配置之前先了解代理工具的工作流程，以防出现，配置之后，还不如不配置的情况发生。
 
 ## 不同代理软件的配置文件及其教程
 
@@ -33,21 +32,21 @@
 | LanceX | INI | # | 
 | Quantumult_X | INI | # | 
 
-## 代理知识
+## 代理教程
 ### 部分配置教程
 - [DNS配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/DNS%E9%85%8D%E7%BD%AE.md)
 - 节点配置
    - [节点的正则表达式（节点筛选）](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
    - [节点的测速链接](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
 
-### 代理工具知识
+### 代理原理知识
 - [关于代理的一些问题](https://blog.revincx.icu/posts/proxy-summary/)
 - [关于代理的不完全指南](https://blog.revincx.icu/posts/proxy-summary/)
 - [什么是 MITM](https://zh.m.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)
 
-### 了解代理工具的工作流程
+### 科学上网社区
 - [v2ex](https://fast.v2ex.com/)
-- [关于代理的不完全指南](https://blog.revincx.icu/posts/proxy-summary/)
+
 
 
 ## 感谢以下配置
