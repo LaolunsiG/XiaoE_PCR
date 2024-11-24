@@ -1,16 +1,17 @@
 # NAME: Telegram
-# updata: 2024-09-21
-# updata_log(更新日志): 
+# updata: 2024-11-23
+# updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml
-# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Telegram
-# content:
-# DOMAIN: 
-# DOMAIN-KEYWORD: 
-# DOMAIN-SUFFIX: 
-# IP-CIDR: 
-# IP-CIDR6: 
-# PROCESS-NAME: 
-# TOTAL: 
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Clash.Meta/Telegram/Clash-Telegram-Classical.yaml
+
+# DOMAIN: 2
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 22
+# IP-CIDR: 4
+# IP-CIDR6: 4
+# PROCESS-NAME: 5
+# TOTAL: 43
+
 payload:
   - DOMAIN,api.imem.app
   - DOMAIN,api.swiftgram.app

@@ -7,8 +7,13 @@
 
 > 只保留 5 次记录
 
+<<<<<<< HEAD
 ### 2024-11-24
 - 优化了多个页面的可读性，并修复了配置的部分错误。
+=======
+### 2024-11-12
+- 修复 [loon 配置文件](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/XiaoE_Loon.conf) 的 DNS 服务，配置文件整体修改，去除了不必要的代码解释。
+>>>>>>> f7bca4dc534955892d615b2f386c6382851adb13
 
 ### 2024-10-27
 - 修复 [clash.meta](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-stable.yaml) 的一些错误配置
