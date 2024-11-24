@@ -9,6 +9,7 @@
 
 ### 2024-11-24
 - 优化了多个页面的可读性，并修复了配置的部分错误。
+- 修改了 shadowrocket 的配置文件，主要去除了不必要的配置。
 
 ### 2024-11-12
 - 修复 [loon 配置文件](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/XiaoE_Loon.conf) 的 DNS 服务，配置文件整体修改，去除了不必要的代码解释。
