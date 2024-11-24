@@ -1,5 +1,5 @@
 # NAME: Airport
-# UPDATED: 2024-11-11
+# UPDATED: 2024-11-24
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/refs/heads/main/rules/Shadowrocket/Airport/Airport-Classical.list
 # repo: https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket/Airport
 # contentt:
@@ -7,12 +7,11 @@
 # DOMAIN-SUFFIX
 
 # 规则分类
-# pithecia-11.11
-# Tblack-11.11
-# 超级机场-11.11
-# 马铃薯机场-11.11
-# 便宜机场-11.11
-
+# pithecia
+# Tblack
+# 超级机场
+# 马铃薯机场
+# 便宜机场
 
 # pithecia
 DOMAIN,pithecia.com
