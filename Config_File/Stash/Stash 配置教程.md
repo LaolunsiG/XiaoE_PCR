@@ -1,4 +1,4 @@
-# Stash 配置和使用教程
+# Stash 配置教程
 
 ## 全局配置教程
 - https://stash.wiki/

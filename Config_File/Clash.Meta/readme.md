@@ -6,7 +6,7 @@
 
 ## [Clash.Meta 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta/Clash.Meta%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)
 
-## 示例配置文件
+## Clash.Meta 配置模板
 
 | 作者        | 链接                                                                                                                                                               | 介绍  |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
@@ -16,6 +16,7 @@
 | As-Lucky  | [Lucky-ClashVerge.yaml](https://raw.githubusercontent.com/As-Lucky/Lucky/main/Lucky-ClashVerge.yaml)                                                             |     |
 | lodepuly  | [Config](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)                                                                                   |     |
 | Moli-X    | [Clash.yml](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)                                                                                        |     |
+|           |                                                                                                                                                                  |     |
 
 ## 功能预览
 

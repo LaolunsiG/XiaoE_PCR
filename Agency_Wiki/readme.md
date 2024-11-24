@@ -1,7 +1,7 @@
 # Agency_Wiki
 
 
-## DNS 配置
+## DNS 服务资源
 
 ## 节点的正则表达式
 

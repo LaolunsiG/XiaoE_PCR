@@ -1,4 +1,4 @@
-# Sing-Box 使用和配置教程
+# Sing-Box 配置教程
 \# 语法-json 
 - [json 语法检查工具](https://www.jyshare.com/front-end/53/)
 

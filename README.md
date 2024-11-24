@@ -7,6 +7,9 @@
 
 > 只保留 5 次记录
 
+### 2024-11-24
+- 优化了多个页面的可读性，并修复了配置的部分错误。
+
 ### 2024-10-27
 - 修复 [clash.meta](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-stable.yaml) 的一些错误配置
 
@@ -37,7 +40,7 @@
 | ^^           | [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)                                                                                                    |                          |
 | ^^           | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)                                                                                                    | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
-## 规则
+## 代理规则
 - [All](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules)
 ### 规则分类
 
@@ -46,6 +49,7 @@
 | Clash/Stash  |  https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta  |
 | Shadowrocket | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Shadowrocket |
 | Quantumult_X | https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Quantumult_X |
+|              |                                                                     |
 
 ## 其他代理教程
 - [GetSomeCats](https://github.com/getsomecat/GetSomeCats/tree/Surge)
@@ -71,11 +75,11 @@
 ## 感谢以下项目/人员
 > 感谢下面这些无私奉献的大佬，排名不分先后，在此表示感谢。
 
-|仓库名|仓库链接/其他链接|Telegram 频道|
-|--|--|--|
-|ios_rule_script|https://github.com/blackmatrix7/ios_rule_script||
-|iKeLee|https://gitlab.com/lodepuly/vpn_tool/|https://t.me/iKeLee|
-|ProxyResource|https://github.com/luestr/ProxyResource/tree/main||
-|Moli-X|https://github.com/Moli-X|https://t.me/QuantX|
-|whatshub.top|https://whatshub.top/||
+| 作者/项目名        | 仓库链接/其他链接                                         | Telegram 频道         |
+| ------------- | ------------------------------------------------- | ------------------- |
+| blackmatrix7  | https://github.com/blackmatrix7/ios_rule_script   |                     |
+| iKeLee        | https://gitlab.com/lodepuly/vpn_tool/             | https://t.me/iKeLee |
+| ProxyResource | https://github.com/luestr/ProxyResource/tree/main |                     |
+| Moli-X        | https://github.com/Moli-X                         | https://t.me/QuantX |
+| whatshub.top  | https://whatshub.top/                             |                     |
 
