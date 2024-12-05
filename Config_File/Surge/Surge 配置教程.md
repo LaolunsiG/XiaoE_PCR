@@ -1,13 +1,18 @@
 # Surge 配置教程
 ## 全局配置教程
 ### 官方
+- [Surge 使用手册](https://surge.mitsea.com/)
 - https://manual.nssurge.com/
-- https://wiki.surge.community/
-- https://surge.mitsea.com/
-- https://erdongchan.cn/surgeconf.html
+
 ### 第三方
+- https://wiki.surge.community/
+- [Surge 使用手册](https://surge.mitsea.com/)
+- [Surge Wiki](https://www.notion.so/maicoo/Surge-Wiki-6cf0f27da05348a9bca0de23904cdf55)
+- [Surge Knowledge Base](https://kb.nssurge.com/surge-knowledge-base/zh)
+- [Surge 保姆级懒人配置](https://erdongchan.cn/surgeconf.html)
+
+## Surge 其他教程
 - https://wiki.surge.community/qi-ta-jiao-cheng
-### Surge 其他教程
 - [Surge 配置和使用技巧](https://blog.skk.moe/post/i-have-my-unique-surge-setup/)
 
 ### 节点筛选
