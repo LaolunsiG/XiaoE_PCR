@@ -1,6 +1,7 @@
 # 自用代理资源存储库-XiaoE_PCR
-- Clash 因不再更新，不支持新规则和新的加密，所以创建此自用存储库。本存储库会将一些规则合在一起，以便于使用。
-- [Clash.Meta-rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta) 可用于旧版 Clash 内核的 Clash for Android(3.0.3 版的 Clash For Android) and Clash for Windows。
+- Clash 因不再更新，不支持新规则和新的加密，所以创建此自用存储库。
+- 本存储库会将一些规则合在一起，以便于使用。
+- [Clash.Meta-rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta) 可用于旧版 Clash 内核的 Clash for Android(3.0.3) and Clash for Windows。
 
 <details> 
   <summary> 更新日志 </summary>
