@@ -1,5 +1,9 @@
 # Surge
-> 这个软件是订阅制的，很好用就是很贵。这个软件的官方文档也好奇怪。需自行配置订阅链接。
+- 这个软件是订阅制的，很好用就是很贵。
+- 这个软件的官方文档也好奇怪。
+- 需自行配置订阅链接。
+
+## [Surge 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Surge/Surge%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.md)
 
 ## Surge 配置模板
 
