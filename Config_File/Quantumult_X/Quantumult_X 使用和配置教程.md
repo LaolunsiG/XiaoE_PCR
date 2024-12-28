@@ -1,4 +1,4 @@
-# QX 配置和使用教程
+# Quantumult_X 使用和配置教程
 ## 全局配置教程
 - [Quantumult X 不完全教程](https://www.notion.so/kopshawn/Quantumult-X-1d32ddc6e61c4892ad2ec5ea47f00917)
 - [Lucky-Quantumult X Wiki Book](https://qx.atlucky.me/)

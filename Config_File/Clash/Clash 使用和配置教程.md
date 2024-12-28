@@ -1,4 +1,4 @@
-# Clash 配置教程
+# Clash 使用和配置教程
 
 ## 全局配置教程
 - https://clash.wiki/

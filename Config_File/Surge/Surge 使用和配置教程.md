@@ -1,5 +1,7 @@
-# Surge 配置教程
+# Surge 使用和配置教程
+
 ## 全局配置教程
+
 ### 官方
 - [Surge 使用手册](https://surge.mitsea.com/)
 - https://manual.nssurge.com/

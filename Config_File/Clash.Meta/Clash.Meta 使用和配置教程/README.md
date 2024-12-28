@@ -1,4 +1,4 @@
-# Clash.Meta 配置教程
+# Clash.Meta 使用和配置教程
 
 ## 全局配置教程
 - https://wiki.metacubex.one/
