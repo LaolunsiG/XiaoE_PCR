@@ -7,5 +7,5 @@
 # DOMAIN: 2
 
 payload:
-  - cdn.jsdelivr.net
-  - fastly.jsdelivr.net
+  - DOMAIN,cdn.jsdelivr.net
+  - DOMAIN,fastly.jsdelivr.net
