@@ -1,0 +1,11 @@
+# name: CDN
+# updata: 2025-01-01
+# updata_log: 
+# updata_url: 
+# repo: 
+# content: 
+# DOMAIN: 2
+
+payload:
+  - cdn.jsdelivr.net
+  - fastly.jsdelivr.net
