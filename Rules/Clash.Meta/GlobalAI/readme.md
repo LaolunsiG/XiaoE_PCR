@@ -5,11 +5,11 @@
 ## 使用规则
 ### Classical
 ```
-https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/AI_Global/AI_Global-Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/PCR/refs/heads/main/Rules/Clash.Meta/GlobalAI/GlobalAI-Classical.yaml
 ```
 **Clash 专用**
 ```yaml
-https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/AI_Global/Clash-AI_Global-Classical.yaml
+https://raw.githubusercontent.com/LaolunsiG/PCR/refs/heads/main/Rules/Clash.Meta/GlobalAI/Clash-GlobalAI-Classical.yaml
 ```
 
 ## 规则来源
