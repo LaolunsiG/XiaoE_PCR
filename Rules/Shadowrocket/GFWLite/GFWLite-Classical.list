@@ -1,0 +1,15 @@
+# name: GFW-lite
+# updata: 2025-01-01
+# updata_log: 
+# updata_url: https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/GFW/GFW-lite-Classical.list
+# repo: https://github.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/GFW
+# content: 
+# DOMAIN: 1
+
+
+# 规则分类
+# DNS & IP 地址查询
+# Github
+
+# DNS & IP 地址查询
+DOMAIN,dns.icoa.cn
