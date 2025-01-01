@@ -1,39 +1,27 @@
 # 自用代理资源存储库-XiaoE_PCR
-
 - Clash 因不再更新，不支持新规则和新的加密，所以创建此自用存储库。
 - 本存储库会将一些规则合在一起，以便于使用。
 - [Clash.Meta-rules](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/rules/Clash.Meta) 可用于旧版 Clash 内核的 Clash for Android(3.0.3) and Clash for Windows。
 
 <details> 
-  <summary> 更新日志 </summary>
+  <summary> 更新日志和未来规划 </summary>
 
 > 只保留 5 次记录
+### 2025-01-01
+- 决定修改规则资源和部分笔记的呈现，之后再修改优化配置文件。
 
 ### 2024-11-25
-
 - loon 配置文件节点筛选错误修复
 
 ### 2024-11-24
-
 - 优化了多个页面的可读性，并修复了配置的部分错误。
 - 修改了 shadowrocket 的配置文件，主要去除了不必要的配置。
 
 ### 2024-11-12
-
 - 修复 [loon 配置文件](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Loon/XiaoE_Loon.conf) 的 DNS 服务，配置文件整体修改，去除了不必要的代码解释。
 
 ### 2024-10-27
-
 - 修复 [clash.meta](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-stable.yaml) 的一些错误配置
-
-### 2024-10-14
-
-- 修改部分规则，增加部分规则
-  \# 配置文件修改
-- clash.meta 错误修复
-- clash 配置文件优化
-- surge 配置文件优化
-- loon 配置文件优化
 
 </details>
 
