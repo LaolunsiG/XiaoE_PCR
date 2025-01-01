@@ -1,8 +1,7 @@
 # GlobalGame
 
 ## 使用规则
-### XiaoE
-\# Classical
+### Classical
 ```
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Shadowrocket/GlobalGame/GlobalGame-Classical.list
 ```

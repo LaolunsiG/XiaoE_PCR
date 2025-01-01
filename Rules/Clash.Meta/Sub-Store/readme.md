@@ -1,9 +1,8 @@
-# Sub-Soter
+# Sub-Store
 
 ## 使用规则
-### XiaoE
-\# classical
-```
+### classical
+```yaml
 https://raw.githubusercontent.com/LaolunsiG/XiaoE_PCR/main/rules/Clash.Meta/Sub-Store/Sub-Store-Classical.yaml
 ```
 

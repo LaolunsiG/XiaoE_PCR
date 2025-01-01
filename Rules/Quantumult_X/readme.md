@@ -6,9 +6,7 @@
   - 开分流匹配优化：host > host-suffix > host-keyword(wildcard) > geoip = ip-cidr (ip6-cidr)> user-agennt
   - 远程规则开插入资源：优先级会大于本地规则
 
-## Quantumult_X_Tutorials
-- [Quantumult-X](https://github.com/rencuijian/Quantumult-X)
-  - Quantumult X策略、规则、脚本使用教程
+## 规则分类
 
 ## 规则来源
 - [ios_rule_scripts](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX)

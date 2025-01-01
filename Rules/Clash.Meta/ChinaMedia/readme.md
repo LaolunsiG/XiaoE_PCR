@@ -1,12 +1,13 @@
 # ChinaMedia
 
 ## 使用规则
-### XiaoE
-```
+### classical
+```yaml
 https://github.com/LaolunsiG/XiaoE_PCR/raw/refs/heads/main/rules/Clash.Meta/ChinaMedia/ChinaMedia-Classical.yaml
 ```
 
 ## 规则来源
+
 ### 虎牙
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa_No_Resolve.yaml
 

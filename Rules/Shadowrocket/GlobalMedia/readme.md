@@ -1,7 +1,6 @@
 # GlobalMedia
 ## 使用规则
-### XiaoE
-\# GlobalMedia_Classical
+### Classical
 ```
 https://github.com/LaolunsiG/XiaoE_PCR/raw/main/rules/Shadowrocket/GlobalMedia/GlobalMedia_Classical.list
 ```
