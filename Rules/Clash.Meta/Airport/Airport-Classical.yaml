@@ -1,30 +1,37 @@
 # NAME: Airport
-# UPDATED: 2025-01-01
+# UPDATED: 2025-01-02
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/PCR/main/Rules/Clash.Meta/Airport/Airport-Classical.yaml
 # repo: https://github.com/LaolunsiG/PCR/tree/main/Rules/Clash.Meta/Airport
 # contentt:
 # DOMAIN: 9
-# DOMAIN-SUFFIX:
 
 # 规则分类
-# pithecia
-# Tblack
-# 超级机场
-# 马铃薯机场
-# 便宜机场
+## pithecia
+## Tblack
+## 超级机场
+## 马铃薯机场
+## 便宜机场
 
 payload:
     # pithecia
   - DOMAIN,pithecia.com
   - DOMAIN,subs.pithecia.com
+    # Helium Network
+  - DOMAIN,getinfo.bigwatermelon.org
+  - IP-CIDR,172.104.33.229/229,no-resolve
     # Tblack
   - DOMAIN,hhyxt.top
   - DOMAIN,dy123.hhyjs.xyz
     # 超级机场
   - DOMAIN,sub.cjcloud.cc
+  - DOMAIN,www.chaojijichang.com
+  - DOMAIN,newsub.cjcloud.cc
     # 马铃薯机场
   - DOMAIN,mlshu.com
   - DOMAIN,mlshu.xyz
     # 便宜机场
   - DOMAIN,pianyi.sub.sub.subsub123456789.com
   - DOMAIN,便宜机场.co
+    # 团子机场
+  - DOMAIN,sub.tuanzi.xyz
+  
