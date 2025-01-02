@@ -1,11 +1,13 @@
 # name: CDN
-# updata: 2025-01-01
+# updata: 2025-01-02
 # updata_log: 
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/PCR/refs/heads/main/Rules/Shadowrocket/CDN/CDN-Classical.list
 # repo: https://github.com/LaolunsiG/PCR/tree/main/Rules/Shadowrocket/CDN
 # content: 
+# DOMAIN: 3
 
 # 规则分类
 
 DOMAIN,cdn.jsdelivr.net
 DOMAIN,fastly.jsdelivr.net
+DOMAIN,ghproxy.com
