@@ -18,7 +18,7 @@ DOMAIN,pithecia.com
 DOMAIN,subs.pithecia.com
 # Helium Network
 DOMAIN,getinfo.bigwatermelon.org
-IP-CIDR,172.104.33.229/229,no-resolve
+#IP-CIDR,172.104.33.229/229,no-resolve
 # Tblack
 DOMAIN,hhyxt.top
 DOMAIN,dy123.hhyjs.xyz
