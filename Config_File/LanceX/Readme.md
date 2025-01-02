@@ -3,7 +3,7 @@
 
 - LanceX 适用 shadowrocket 的代理规则，且这个软件目前不支持过多规则，一下子导入会卡住，所以不推荐使用。（本人不会配置，只是在他人的配置上做出更改。）
 
-## LanceX 使用教程
+## LanceX 配置教程
 - https://shadowboat.app/lancexapp/zh/
 
 ## LanceX 配置模板

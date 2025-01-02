@@ -1,7 +1,7 @@
 # Quantumult_X
 - 类 INI 语法，注意！在配置文件中，带 “;” 和 “#” 的都是注释符号，去掉前面的符号，该行才有效。
 
-## Quantumult_X使用教程
+## Quantumult_X 配置教程
 
 ## Quantumult_X 配置模板
 
@@ -15,10 +15,10 @@
 
 
 ## 功能预览
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_1_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_3_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_4_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_2_2024-07-16_21-00-29.jpg?raw=true)
-- ![image](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Quantumult_X/Pictures/photo_5_2024-07-16_21-00-29.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Quantumult_X/Pictures/1.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Quantumult_X/Pictures/2.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Quantumult_X/Pictures/3.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Quantumult_X/Pictures/4.jpg?raw=true)
+- ![image](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Quantumult_X/Pictures/5.jpg?raw=true)
 
 

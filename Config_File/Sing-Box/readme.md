@@ -10,7 +10,7 @@
 | [PuerNya - sing-box](https://github.com/PuerNya/sing-box/tree/riolu?tab=readme-ov-file) | 支持代理集的内核 |
 |                                                                                         |          |
 
-## 配置文件
+## 配置模板
 ### XiaoE
 > 还未配置完成，配置不可用！！！
   

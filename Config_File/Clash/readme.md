@@ -1,6 +1,6 @@
 # Clash
 - 配置的是 Clash_Premium 内核(非开源已删库)，需要自己配置订阅链接。适合 CFA (Clash For Android) 使用。
-## 使用教程
+## Calsh 配置教程
 ## Calsh 配置模板
 
 | 作者                                         | 配置链接                                                                                                                                            | 介绍  |

@@ -5,7 +5,7 @@
 
 ## [Clash.Meta 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta/Clash.Meta%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)
 
-## [Clash.Meta 配置模板](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta/Config)
+## [Clash.Meta 配置模板](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Clash.Meta/Config)
 
 | 作者        | 链接                                                                                                                                                               | 介绍  |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
@@ -18,13 +18,14 @@
 |           |                                                                                                                                                                  |     |
 
 ## 功能预览
+- ![1](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/1.png?raw=true)
+- ![2](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/2.png?raw=true)
+- ![3](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/3.png?raw=true)
+- ![4](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/4.png?raw=true)
+- ![5](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/5.png?raw=true)
+- ![6](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/6.png?raw=true)
+- ![7](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Pictures/7.png?raw=true)
 
-![1](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/1.png?raw=true)
-![2](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/2.png?raw=true)
-![3](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/3.png?raw=true)
-![4](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/4.png?raw=true)
-![5](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/5.png?raw=true)
-![6](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/6.png?raw=true)
-![7](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/Pictures/7.png?raw=true)
+
 
 

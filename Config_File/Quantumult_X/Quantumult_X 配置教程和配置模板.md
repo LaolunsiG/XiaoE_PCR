@@ -1,4 +1,4 @@
-# Quantumult_X 使用和配置教程
+# Quantumult_X 配置教程和配置模板
 ## 全局配置教程
 - [rencuijian/Quantumult-X](https://github.com/rencuijian/Quantumult-X)
 - [Quantumult X 不完全教程](https://www.notion.so/kopshawn/Quantumult-X-1d32ddc6e61c4892ad2ec5ea47f00917)

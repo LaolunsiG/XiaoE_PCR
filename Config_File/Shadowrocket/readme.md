@@ -1,5 +1,5 @@
 # Shadowrocket
-> 在IOS支持加密协议最多的代理软件，适合小白使用，此配置文件需要自己配置订阅节点。
+- 在IOS支持加密协议最多的代理软件，适合小白使用，此配置文件需要自己配置订阅节点。
 
 ## [Shadowrocket 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Shadowrocket/Shadowrocket%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.md)
 

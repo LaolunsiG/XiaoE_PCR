@@ -1,4 +1,4 @@
-# Clash.Meta 使用和配置教程
+# Clash.Meta 配置教程和配置模板
 
 ## [Clash.Meta 配置模板](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta/Config)
 
@@ -11,14 +11,15 @@
 | lodepuly  | [Config](https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Clash/Config)                                                                                   |     |
 | Moli-X    | [Clash.yml](https://github.com/Moli-X/Resources/raw/main/Clash/Clash.yml)                                                                                        |     |
 
-## 全局配置教程
+## Clash.Meta 配置教程
+### 全局配置教程
 - https://wiki.metacubex.one/
 - https://hokoory.github.io/clash-mate-doc/
 - https://clash-meta.gitbook.io/clash.meta-wiki-older
 
-## [策略组图标配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/%E4%BB%A3%E7%90%86%E7%BB%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE.md)
-\# 策略组配置
+### 策略组配置
 - 可以嵌套延迟选择策略组
+- [策略组图标配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/%E4%BB%A3%E7%90%86%E7%BB%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE.md)
 
 ## [锚点配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Clash.Meta/%E9%94%9A%E7%82%B9%E9%85%8D%E7%BD%AE.md)
 
