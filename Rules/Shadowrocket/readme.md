@@ -3,15 +3,13 @@
 
 ## 规则分类
 
-| 规则分类        |            |                  |     |
-| ----------- | ---------- | ---------------- | --- |
-| AD          | AI         | Apple            |     |
-| BiliBili    |            |                  |     |
-| China       | ChinaMedia | ChinaSocialMedia |     |
-| GlobalMedia | GlobalGame |                  |     |
-| Proxy       |            |                  |     |
-| Steam       |            |                  |     |
-| Weibo       |            |                  |     |
+| 规则分类      |            |                  |            |
+| --------- | ---------- | ---------------- | ---------- |
+| Airport   |            |                  |            |
+|           | ChinaMedia | ChinaSocialMedia |            |
+| GFWLite   | GlobalAI   | GlobalMedia      | GlobalGame |
+| Sub-Store |            |                  |            |
+
 
 ## 规则来源
 - https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket

@@ -20,13 +20,6 @@
 ### Sing-Box 其他教程
 - https://github.com/fscarmen/sing-box
 
-### 使用 Sing-Box 内核相关 GUI 软件教程
-
-| 软件                 | 教程  |     |
-| ------------------ | --- | --- |
-| nekobox or nekoray |     |     |
-| karing             |     |     |
-
 ### 策略组配置教程
 
 ### 节点筛选

@@ -1,10 +1,9 @@
 # Shadowrocket
 - 在IOS支持加密协议最多的代理软件，适合小白使用，此配置文件需要自己配置订阅节点。
 
-## [Shadowrocket 配置教程](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/Shadowrocket/Shadowrocket%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.md)
+## [Shadowrocket 配置教程](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Shadowrocket/Shadowrocket%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%E5%92%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF.md)
 
-## [Shadowrocket 配置模板](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket/Config)
-
+## [Shadowrocket 配置模板](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Shadowrocket/Config)
 
 | 作者/项目地址                                                     | 配置链接                                                                                                                                                        | 介绍  |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |

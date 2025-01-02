@@ -9,14 +9,15 @@
 | [SagerNet - sing-box](https://github.com/SagerNet/sing-box)                             |          |
 | [PuerNya - sing-box](https://github.com/PuerNya/sing-box/tree/riolu?tab=readme-ov-file) | 支持代理集的内核 |
 |                                                                                         |          |
+## [Sing-Box 配置教程](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Sing-Box/Sing-Box%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%E5%92%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF.md)
 
-## 配置模板
-### XiaoE
-> 还未配置完成，配置不可用！！！
-  
-### 大佬的示例配置文件
-- [sing-box_client_windows.json](https://github.com/chika0801/sing-box-examples/blob/main/Tun/self-use/sing-box_client_windows.json)
-- https://github.com/DustinWin/clash_singbox-tutorials
+## [Sing-Box 配置模板](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Sing-Box/Config)
+
+| 作者    | 配置链接                                                                                                                               | 介绍              |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| XiaoE |                                                                                                                                    | 还未配置完成，配置不可用！！！ |
+|       | [sing-box_client_windows.json](https://github.com/chika0801/sing-box-examples/blob/main/Tun/self-use/sing-box_client_windows.json) |                 |
+|       | https://github.com/DustinWin/clash_singbox-tutorials                                                                               |                 |
 
 ## 功能预览
 

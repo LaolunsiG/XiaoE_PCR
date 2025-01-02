@@ -1,4 +1,4 @@
-# Quantumult_X_Rules
+# Quantumult_X
 - [Quantumult_X规则类型](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/rules/Quantumult_X/Quantumult_X%E8%A7%84%E5%88%99%E7%B1%BB%E5%9E%8B.md)
 - Quantumult_X规则匹配顺序
   - 本地>远程>final
@@ -7,6 +7,7 @@
   - 远程规则开插入资源：优先级会大于本地规则
 
 ## 规则分类
+
 
 ## 规则来源
 - [ios_rule_scripts](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX)

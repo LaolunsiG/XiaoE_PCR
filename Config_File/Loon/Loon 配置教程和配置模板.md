@@ -1,6 +1,6 @@
 # Loon 配置教程和配置模板
 
-## [Loon 配置模板](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon/Config)
+## [Loon 配置模板](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Loon/Config)
 
 | 作者       | 链接                                                                                                             | 介绍  |
 | -------- | -------------------------------------------------------------------------------------------------------------- | --- |

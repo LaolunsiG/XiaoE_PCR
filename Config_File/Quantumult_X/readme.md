@@ -1,9 +1,9 @@
 # Quantumult_X
 - 类 INI 语法，注意！在配置文件中，带 “;” 和 “#” 的都是注释符号，去掉前面的符号，该行才有效。
 
-## Quantumult_X 配置教程
+## [Quantumult_X 配置教程](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Quantumult_X/Quantumult_X%20%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%E5%92%8C%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF.md)
 
-## Quantumult_X 配置模板
+## [Quantumult_X 配置模板](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Quantumult_X/Config)
 
 | 作者/项目地址                                                      | 配置链接                                                                                                                                      | 介绍  |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | --- |

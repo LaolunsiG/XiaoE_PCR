@@ -6,48 +6,31 @@
 
 ## 不同代理软件的配置文件及其教程
 
-| 软件使用平台（操作系统） | 内核或软件                                                                                                                                                                          | 介绍                       |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| 多平台          | - [Clash(Old)](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Clash.Meta) |                          |
-| Android      | [Surfboard](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surfboard)                                                                                            |                          |
-| IOS or MacOS | [LanceX](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/LanceX)                                                                                                  | 此软件还未完善，不推荐使用            |
-| ^^           | [Loon](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Loon)                                                                                                      |                          |
-| ^^           | [Quantumult_X](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Quantumult_X)                                                                                      |                          |
-| ^^           | [Shadowrocket](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Shadowrocket)                                                                                      | 支持加密协议最多的代理软件            |
-| ^^           | [Stash](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Stash)                                                                                                    |                          |
-| ^^           | [Surge](https://github.com/LaolunsiG/XiaoE_PCR/tree/main/Config_File/Surge)                                                                                                    | IOS上最贵的代理工具，也是功能最全的代理工具。 |
+| 软件使用平台（操作系统） | 内核或软件                                                                                                                                                              | 介绍                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| 多平台          | - [Clash(Old)](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Clash) <br>- [Clash.Meta](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Clash.Meta) |                          |
+| Android      | [Surfboard](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Surfboard)                                                                                      |                          |
+| IOS or MacOS | [LanceX](https://github.com/LaolunsiG/PCR/tree/main/Config_File/LanceX)                                                                                            | 此软件还未完善，不推荐使用            |
+| ^^           | [Loon](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Loon)                                                                                                |                          |
+| ^^           | [Quantumult_X](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Quantumult_X)                                                                                |                          |
+| ^^           | [Shadowrocket](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Shadowrocket)                                                                                | 支持加密协议最多的代理软件            |
+| ^^           | [Stash](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Stash)                                                                                              |                          |
+| ^^           | [Surge](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Surge)                                                                                              | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
 ## 不同软件的配置文件所用的配置文件格式和注释符号
 
-| 软件 | 配置文件格式 | {单行}注释符号 |
-| -- | :--: | :--: |
-| Sing-Box | json  |  |
-| Clash_Old  | yaml & json | # |
-| Clash_Meta  | yaml & json | # |
-| Stash | yaml | # |
-| Surfboard | INI | # |
-| Surge | INI | # |  
-| Loon | INI | # | 
-| Shadowrocket | INI | # | 
-| LanceX | INI | # | 
-| Quantumult_X | INI | # | 
-
-## 代理教程
-### 部分配置教程
-- [DNS配置](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/Config_File/DNS%E9%85%8D%E7%BD%AE.md)
-- 节点配置
-   - [节点的正则表达式（节点筛选）](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
-   - [节点的测速链接](https://github.com/LaolunsiG/XiaoE_PCR/blob/main/%E6%B5%8B%E9%80%9F%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80.md)
-
-### 代理原理知识
-- [关于代理的一些问题](https://blog.revincx.icu/posts/proxy-summary/)
-- [关于代理的不完全指南](https://blog.revincx.icu/posts/proxy-summary/)
-- [什么是 MITM](https://zh.m.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)
-
-### 科学上网社区
-- [v2ex](https://fast.v2ex.com/)
-
-
+| 软件           |   配置文件格式    | {单行}注释符号 |
+| ------------ | :---------: | :------: |
+| Clash        | yaml & json |    #     |
+| Clash.Meta   | yaml & json |    #     |
+| Stash        |    yaml     |    #     |
+| Surfboard    |     INI     |    #     |
+| Surge        |     INI     |    #     |
+| Loon         |     INI     |    #     |
+| Shadowrocket |     INI     |    #     |
+| Sing-Box     |    json     |    无     |
+| LanceX       |     INI     |    #     |
+| Quantumult_X |     INI     |    #     |
 
 ## 感谢以下配置
 
