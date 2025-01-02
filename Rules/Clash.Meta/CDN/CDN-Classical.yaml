@@ -4,8 +4,9 @@
 # updata_url: https://raw.githubusercontent.com/LaolunsiG/PCR/main/Rules/Clash.Meta/CDN/CDN-Classical.yaml
 # repo: https://github.com/LaolunsiG/PCR/tree/main/Rules/Clash.Meta/CDN
 # content: 
-# DOMAIN: 2
+# DOMAIN: 3
 
 payload:
   - DOMAIN,cdn.jsdelivr.net
   - DOMAIN,fastly.jsdelivr.net
+  - DOMAIN,ghproxy.com
