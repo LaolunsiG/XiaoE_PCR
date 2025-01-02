@@ -7,6 +7,10 @@
   <summary> 更新日志和未来规划 </summary>
 
 > 只保留 5 次记录
+
+### 2025-01-02
+- 删去了不必要规则和优化了部分笔记的呈现。
+
 ### 2025-01-01
 - 决定修改规则资源和部分笔记的呈现，之后再修改优化配置文件。
 
@@ -20,8 +24,6 @@
 ### 2024-11-12
 - 修复 [loon 配置文件](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Loon/XiaoE_Loon.conf) 的 DNS 服务，配置文件整体修改，去除了不必要的代码解释。
 
-### 2024-10-27
-- 修复 [clash.meta](https://github.com/LaolunsiG/PCR/blob/main/Config_File/Clash.Meta/Config/XiaoE_Clash.Meta-stable.yaml) 的一些错误配置
 
 </details>
 
@@ -35,6 +37,7 @@
 | ^^           | [Loon](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Loon)                                                                                                |                          |
 | ^^           | [Quantumult_X](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Quantumult_X)                                                                                |                          |
 | ^^           | [Shadowrocket](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Shadowrocket)                                                                                | 支持加密协议最多的代理软件            |
+| ^^           | [Sing-Box](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Sing-Box)                                                                                | 支持加密协议最多的代理软件            |
 | ^^           | [Stash](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Stash)                                                                                              |                          |
 | ^^           | [Surge](https://github.com/LaolunsiG/PCR/tree/main/Config_File/Surge)                                                                                              | IOS上最贵的代理工具，也是功能最全的代理工具。 |
 
