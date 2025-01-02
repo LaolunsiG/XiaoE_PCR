@@ -2,7 +2,11 @@
 - 机场服务，因为机场一般都是兜底规则，在这过程中可能会有匹配到错误的规则。
 
 ## 规则使用
-### XiaoE
+### classical
+```yaml
+https://raw.githubusercontent.com/LaolunsiG/PCR/refs/heads/main/Rules/Shadowrocket/Airport/Airport-Classical.list
+```
+
 
 ## 包含的规则
 
